@@ -5,18 +5,19 @@
     "title": null,
     "missing": [],
     "expected": 96,
-    "map": "Purelight Hill",
+    "map": "Grand Aelon",
     "frames": 210,
     "frames_with_rows": 144,
     "check": {
       "rows": 96,
       "kills_in_order": true,
       "corrected": 0,
-      "caution": 3,
+      "caution": 2,
       "weapons_fixed": 0,
       "weapons_doubt": 1,
       "missing": 0
-    }
+    },
+    "zone": "Purelight Hill"
   },
   "players": [
     {
@@ -584,7 +585,7 @@
       "amount_healed": 0,
       "agreement": {
         "rank": 0.93,
-        "name": 0.81,
+        "name": 0.87,
         "guild": 1.0,
         "team": 1.0,
         "weapon1": 1.0,
@@ -830,7 +831,7 @@
       "amount_healed": 0,
       "agreement": {
         "rank": 1.0,
-        "name": 0.86,
+        "name": 0.91,
         "guild": 1.0,
         "team": 1.0,
         "weapon1": 1.0,
@@ -1082,6 +1083,10 @@
         "name": [
           [
             "Bach×",
+            0.0
+          ],
+          [
+            "Bach×",
             0.81
           ],
           [
@@ -1090,7 +1095,8 @@
           ]
         ]
       },
-      "flags": []
+      "flags": [],
+      "snapped": true
     },
     {
       "seen": 4,
@@ -1269,7 +1275,7 @@
       "agreement": {
         "rank": 1.0,
         "name": 1.0,
-        "guild": 0.59,
+        "guild": 0.53,
         "team": 1.0,
         "weapon1": 1.0,
         "weapon2": 1.0,
@@ -1285,6 +1291,10 @@
         "guild": [
           [
             "JAILEDシ",
+            0.0
+          ],
+          [
+            "JAILEDシ",
             0.53
           ],
           [
@@ -1293,9 +1303,8 @@
           ]
         ]
       },
-      "flags": [
-        "guild"
-      ]
+      "flags": [],
+      "snapped": true
     },
     {
       "seen": 7,
@@ -1677,7 +1686,7 @@
       "agreement": {
         "rank": 1.0,
         "name": 1.0,
-        "guild": 0.92,
+        "guild": 0.87,
         "team": 1.0,
         "weapon1": 1.0,
         "weapon2": 1.0,
@@ -1781,7 +1790,7 @@
     {
       "seen": 8,
       "rank": 46,
-      "name": "Astriger+",
+      "name": "Astrigerヤ",
       "guild": "BShotz",
       "team": "Red",
       "weapon1": "Longbow",
@@ -1794,7 +1803,7 @@
       "amount_healed": 2150507,
       "agreement": {
         "rank": 1.0,
-        "name": 0.52,
+        "name": 0.53,
         "guild": 0.97,
         "team": 1.0,
         "weapon1": 1.0,
@@ -1806,7 +1815,7 @@
         "damage_taken": 0.92,
         "amount_healed": 1.0
       },
-      "checks": 4,
+      "checks": 3,
       "alts": {
         "name": [
           [
@@ -2129,7 +2138,7 @@
     {
       "seen": 5,
       "rank": 55,
-      "name": "Grimmッ",
+      "name": "Grimm",
       "guild": "Supple On 3",
       "team": "Yellow",
       "weapon1": "Sword & Shield",
@@ -2142,7 +2151,7 @@
       "amount_healed": 57241,
       "agreement": {
         "rank": 0.91,
-        "name": 0.73,
+        "name": 0.81,
         "guild": 0.92,
         "team": 1.0,
         "weapon1": 1.0,
@@ -2157,10 +2166,6 @@
       "checks": 3,
       "alts": {
         "name": [
-          [
-            "Grimm",
-            0.0
-          ],
           [
             "Grimm",
             0.81
@@ -2181,8 +2186,7 @@
           ]
         ]
       },
-      "flags": [],
-      "snapped": true
+      "flags": []
     },
     {
       "seen": 4,
@@ -3178,7 +3182,7 @@
       "amount_healed": 62038,
       "agreement": {
         "rank": 1.0,
-        "name": 0.87,
+        "name": 0.91,
         "guild": 1.0,
         "team": 1.0,
         "weapon1": 0.86,
@@ -3329,7 +3333,7 @@
       "agreement": {
         "rank": 1.0,
         "name": 0.61,
-        "guild": 0.76,
+        "guild": 0.66,
         "team": 1.0,
         "weapon1": 1.0,
         "weapon2": 1.0,
@@ -3408,7 +3412,7 @@
     {
       "seen": 6,
       "rank": 90,
-      "name": "KitKat三",
+      "name": "KitKat亖",
       "guild": "BShotz",
       "team": "Red",
       "weapon1": "Longbow",

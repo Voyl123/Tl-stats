@@ -2,7 +2,7 @@
   "meta": {
     "scanned": "2026-08-04 20:00",
     "title": "Supple Dash vs Big Chillin · WG 1 · Cherno",
-    "map": "Cherno",
+    "map": "Chernobog",
     "source": "SOJU SIMPS import",
     "expected": 96,
     "missing": [],
@@ -13,7 +13,8 @@
       "tab": "8/4 Dash vs BC WG1"
     },
     "inhouse": false,
-    "siege": false
+    "siege": false,
+    "zone": "Cherno"
   },
   "players": [
     {

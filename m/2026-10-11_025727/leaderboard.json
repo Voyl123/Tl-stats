@@ -5,18 +5,19 @@
     "title": null,
     "missing": [],
     "expected": 96,
-    "map": "Grayclaw Forest",
+    "map": "Kowazan",
     "frames": 259,
     "frames_with_rows": 96,
     "check": {
       "rows": 96,
       "kills_in_order": true,
       "corrected": 0,
-      "caution": 13,
+      "caution": 12,
       "weapons_fixed": 0,
       "weapons_doubt": 0,
       "missing": 0
-    }
+    },
+    "zone": "Grayclaw Forest"
   },
   "players": [
     {
@@ -213,7 +214,7 @@
       "seen": 68,
       "rank": 5,
       "name": "stepbro老",
-      "guild": "JAILED",
+      "guild": "JAILEDシ",
       "team": "Yellow",
       "weapon1": "Dagger",
       "weapon2": "Greatsword",
@@ -226,7 +227,7 @@
       "agreement": {
         "rank": 1.0,
         "name": 0.89,
-        "guild": 0.91,
+        "guild": 0.94,
         "team": 1.0,
         "weapon1": 1.0,
         "weapon2": 1.0,
@@ -256,10 +257,6 @@
         "guild": [
           [
             "JAILEDシ",
-            0.0
-          ],
-          [
-            "JAILEDシ",
             0.94
           ],
           [
@@ -268,8 +265,7 @@
           ]
         ]
       },
-      "flags": [],
-      "snapped": true
+      "flags": []
     },
     {
       "seen": 70,
@@ -336,7 +332,7 @@
       "seen": 70,
       "rank": 7,
       "name": "Sparda",
-      "guild": "JAILED",
+      "guild": "JAILEDシ",
       "team": "Red",
       "weapon1": "Spear",
       "weapon2": "Dagger",
@@ -349,7 +345,7 @@
       "agreement": {
         "rank": 1.0,
         "name": 0.79,
-        "guild": 0.95,
+        "guild": 0.97,
         "team": 1.0,
         "weapon1": 1.0,
         "weapon2": 1.0,
@@ -383,10 +379,6 @@
         "guild": [
           [
             "JAILEDシ",
-            0.0
-          ],
-          [
-            "JAILEDシ",
             0.97
           ],
           [
@@ -395,8 +387,7 @@
           ]
         ]
       },
-      "flags": [],
-      "snapped": true
+      "flags": []
     },
     {
       "seen": 69,
@@ -623,7 +614,7 @@
       "amount_healed": 41319,
       "agreement": {
         "rank": 1.0,
-        "name": 0.83,
+        "name": 0.89,
         "guild": 1.0,
         "team": 1.0,
         "weapon1": 1.0,
@@ -686,7 +677,7 @@
       "seen": 5,
       "rank": 15,
       "name": "Hursky",
-      "guild": "JAILED",
+      "guild": "JAILEDシ",
       "team": "Yellow",
       "weapon1": "Crossbow",
       "weapon2": "Dagger",
@@ -711,16 +702,8 @@
         "amount_healed": 1.0
       },
       "checks": 5,
-      "alts": {
-        "guild": [
-          [
-            "JAILEDシ",
-            0.0
-          ]
-        ]
-      },
-      "flags": [],
-      "snapped": true
+      "alts": {},
+      "flags": []
     },
     {
       "seen": 4,
@@ -1206,8 +1189,8 @@
     {
       "seen": 3,
       "rank": 29,
-      "name": "hadley老",
-      "guild": "JAILED",
+      "name": "hadley",
+      "guild": "JAILEDシ",
       "team": "Yellow",
       "weapon1": "Dagger",
       "weapon2": "Greatsword",
@@ -1219,7 +1202,7 @@
       "amount_healed": 47306,
       "agreement": {
         "rank": 1.0,
-        "name": 0.56,
+        "name": 0.67,
         "guild": 1.0,
         "team": 1.0,
         "weapon1": 1.0,
@@ -1236,28 +1219,15 @@
         "name": [
           [
             "hadley",
-            0.0
-          ],
-          [
-            "hadley",
             0.67
           ],
           [
             "hadley老",
             0.33
           ]
-        ],
-        "guild": [
-          [
-            "JAILEDシ",
-            0.0
-          ]
         ]
       },
-      "flags": [
-        "name"
-      ],
-      "snapped": true
+      "flags": []
     },
     {
       "seen": 3,
@@ -1519,7 +1489,7 @@
       "seen": 3,
       "rank": 37,
       "name": "miumiu老",
-      "guild": "JAILED",
+      "guild": "JAILEDシ",
       "team": "Yellow",
       "weapon1": "Longbow",
       "weapon2": "Wand & Tome",
@@ -1554,16 +1524,9 @@
             "iut",
             0.28
           ]
-        ],
-        "guild": [
-          [
-            "JAILEDシ",
-            0.0
-          ]
         ]
       },
-      "flags": [],
-      "snapped": true
+      "flags": []
     },
     {
       "seen": 3,
@@ -1675,8 +1638,8 @@
     {
       "seen": 2,
       "rank": 41,
-      "name": "stepson老",
-      "guild": "JAILED",
+      "name": "stepson茡",
+      "guild": "JAILEDシ",
       "team": "Yellow",
       "weapon1": "Sword & Shield",
       "weapon2": "Greatsword",
@@ -1702,9 +1665,9 @@
       },
       "checks": 2,
       "alts": {
-        "guild": [
+        "name": [
           [
-            "JAILEDシ",
+            "stepson老",
             0.0
           ]
         ]
@@ -1882,7 +1845,7 @@
       "seen": 1,
       "rank": 47,
       "name": "Forrest",
-      "guild": "JAILED",
+      "guild": "JAILEDシ",
       "team": "Red",
       "weapon1": "Sword & Shield",
       "weapon2": "Longbow",
@@ -1907,18 +1870,10 @@
         "amount_healed": 1.0
       },
       "checks": 1,
-      "alts": {
-        "guild": [
-          [
-            "JAILEDシ",
-            0.0
-          ]
-        ]
-      },
+      "alts": {},
       "flags": [
         "single read"
-      ],
-      "snapped": true
+      ]
     },
     {
       "seen": 2,
@@ -2106,7 +2061,7 @@
       "seen": 3,
       "rank": 53,
       "name": "Vysenya",
-      "guild": "JAILED",
+      "guild": "JAILEDシ",
       "team": "Yellow",
       "weapon1": "Wand & Tome",
       "weapon2": "Orb",
@@ -2131,16 +2086,8 @@
         "amount_healed": 1.0
       },
       "checks": 3,
-      "alts": {
-        "guild": [
-          [
-            "JAILEDシ",
-            0.0
-          ]
-        ]
-      },
-      "flags": [],
-      "snapped": true
+      "alts": {},
+      "flags": []
     },
     {
       "seen": 3,
@@ -2189,7 +2136,7 @@
       "seen": 3,
       "rank": 55,
       "name": "moncler老",
-      "guild": "JAILED",
+      "guild": "JAILEDシ",
       "team": "Yellow",
       "weapon1": "Wand & Tome",
       "weapon2": "Orb",
@@ -2214,22 +2161,14 @@
         "amount_healed": 1.0
       },
       "checks": 3,
-      "alts": {
-        "guild": [
-          [
-            "JAILEDシ",
-            0.0
-          ]
-        ]
-      },
-      "flags": [],
-      "snapped": true
+      "alts": {},
+      "flags": []
     },
     {
       "seen": 3,
       "rank": 56,
       "name": "greenbean",
-      "guild": "JAILED",
+      "guild": "JAILEDシ",
       "team": "Red",
       "weapon1": "Orb",
       "weapon2": "Wand & Tome",
@@ -2254,22 +2193,14 @@
         "amount_healed": 1.0
       },
       "checks": 3,
-      "alts": {
-        "guild": [
-          [
-            "JAILEDシ",
-            0.0
-          ]
-        ]
-      },
-      "flags": [],
-      "snapped": true
+      "alts": {},
+      "flags": []
     },
     {
       "seen": 3,
       "rank": 57,
       "name": "xSouless",
-      "guild": "JAILED",
+      "guild": "JAILEDシ",
       "team": "Red",
       "weapon1": "Wand & Tome",
       "weapon2": "Longbow",
@@ -2304,22 +2235,15 @@
             "Souless",
             0.34
           ]
-        ],
-        "guild": [
-          [
-            "JAILEDシ",
-            0.0
-          ]
         ]
       },
-      "flags": [],
-      "snapped": true
+      "flags": []
     },
     {
       "seen": 3,
       "rank": 58,
       "name": "Vel",
-      "guild": "JAILED",
+      "guild": "JAILEDシ",
       "team": "Red",
       "weapon1": "Wand & Tome",
       "weapon2": "Orb",
@@ -2344,16 +2268,8 @@
         "amount_healed": 1.0
       },
       "checks": 3,
-      "alts": {
-        "guild": [
-          [
-            "JAILEDシ",
-            0.0
-          ]
-        ]
-      },
-      "flags": [],
-      "snapped": true
+      "alts": {},
+      "flags": []
     },
     {
       "seen": 2,
@@ -2454,7 +2370,7 @@
     {
       "seen": 3,
       "rank": 62,
-      "name": "Bribrix X",
+      "name": "Bribrix メ",
       "guild": "Supple On 3",
       "team": "Red",
       "weapon1": "Orb",
@@ -2467,7 +2383,7 @@
       "amount_healed": 1230382,
       "agreement": {
         "rank": 1.0,
-        "name": 0.67,
+        "name": 0.77,
         "guild": 1.0,
         "team": 1.0,
         "weapon1": 1.0,
@@ -2484,10 +2400,6 @@
         "name": [
           [
             "Bribrix メ",
-            0.0
-          ],
-          [
-            "Bribrix メ",
             0.67
           ],
           [
@@ -2496,8 +2408,7 @@
           ]
         ]
       },
-      "flags": [],
-      "snapped": true
+      "flags": []
     },
     {
       "seen": 3,
@@ -2515,7 +2426,7 @@
       "amount_healed": 2336202,
       "agreement": {
         "rank": 1.0,
-        "name": 0.36,
+        "name": 0.47,
         "guild": 1.0,
         "team": 1.0,
         "weapon1": 1.0,
@@ -3090,7 +3001,7 @@
       "seen": 2,
       "rank": 80,
       "name": "kiersii",
-      "guild": "JAILED",
+      "guild": "JAILEDシ",
       "team": "Red",
       "weapon1": "Wand & Tome",
       "weapon2": "Orb",
@@ -3115,16 +3026,8 @@
         "amount_healed": 1.0
       },
       "checks": 2,
-      "alts": {
-        "guild": [
-          [
-            "JAILEDシ",
-            0.0
-          ]
-        ]
-      },
-      "flags": [],
-      "snapped": true
+      "alts": {},
+      "flags": []
     },
     {
       "seen": 2,
@@ -3610,7 +3513,7 @@
       "seen": 2,
       "rank": 95,
       "name": "しeddyツ",
-      "guild": "JAILED",
+      "guild": "JAILEDシ",
       "team": "Red",
       "weapon1": "Sword & Shield",
       "weapon2": "Longbow",
@@ -3635,16 +3538,8 @@
         "amount_healed": 1.0
       },
       "checks": 2,
-      "alts": {
-        "guild": [
-          [
-            "JAILEDシ",
-            0.0
-          ]
-        ]
-      },
-      "flags": [],
-      "snapped": true
+      "alts": {},
+      "flags": []
     },
     {
       "seen": 2,

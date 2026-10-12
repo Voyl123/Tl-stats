@@ -2,7 +2,7 @@
   "meta": {
     "scanned": "2026-07-31 21:00",
     "title": "Supple Hori vs Disregarded · WG 2 · Cherno",
-    "map": "Cherno",
+    "map": "Chernobog",
     "source": "SOJU SIMPS import",
     "expected": 96,
     "missing": [],
@@ -13,7 +13,8 @@
       "tab": "7/31 Hori vs DR WG2"
     },
     "inhouse": false,
-    "siege": false
+    "siege": false,
+    "zone": "Cherno"
   },
   "players": [
     {

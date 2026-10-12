@@ -5,18 +5,19 @@
     "title": null,
     "missing": [],
     "expected": 96,
-    "map": "The Raging Wilds",
+    "map": "Talus",
     "frames": 210,
     "frames_with_rows": 144,
     "check": {
       "rows": 96,
       "kills_in_order": true,
       "corrected": 0,
-      "caution": 8,
+      "caution": 7,
       "weapons_fixed": 0,
       "weapons_doubt": 1,
       "missing": 0
-    }
+    },
+    "zone": "The Raging Wilds"
   },
   "players": [
     {
@@ -892,7 +893,7 @@
     {
       "seen": 11,
       "rank": 21,
-      "name": "Bini",
+      "name": "Biniツ",
       "guild": "BShotz",
       "team": "Red",
       "weapon1": "Dagger",
@@ -905,7 +906,7 @@
       "amount_healed": 0,
       "agreement": {
         "rank": 1.0,
-        "name": 0.59,
+        "name": 0.49,
         "guild": 1.0,
         "team": 1.0,
         "weapon1": 1.0,
@@ -922,6 +923,10 @@
         "name": [
           [
             "Bini",
+            0.0
+          ],
+          [
+            "Bini",
             0.59
           ],
           [
@@ -936,7 +941,8 @@
       },
       "flags": [
         "name"
-      ]
+      ],
+      "snapped": true
     },
     {
       "seen": 6,
@@ -1122,7 +1128,7 @@
     {
       "seen": 4,
       "rank": 26,
-      "name": "Bachx",
+      "name": "Bachメ",
       "guild": "BShotz",
       "team": "Red",
       "weapon1": "Greatsword",
@@ -1152,6 +1158,10 @@
         "name": [
           [
             "Bachx",
+            0.0
+          ],
+          [
+            "Bachx",
             0.77
           ],
           [
@@ -1160,7 +1170,8 @@
           ]
         ]
       },
-      "flags": []
+      "flags": [],
+      "snapped": true
     },
     {
       "seen": 4,
@@ -1520,7 +1531,7 @@
     {
       "seen": 7,
       "rank": 34,
-      "name": "Grimmッ",
+      "name": "Grimm",
       "guild": "Supple On 3",
       "team": "Yellow",
       "weapon1": "Sword & Shield",
@@ -1533,7 +1544,7 @@
       "amount_healed": 27427,
       "agreement": {
         "rank": 1.0,
-        "name": 0.53,
+        "name": 0.64,
         "guild": 0.94,
         "team": 1.0,
         "weapon1": 1.0,
@@ -1548,10 +1559,6 @@
       "checks": 4,
       "alts": {
         "name": [
-          [
-            "Grimm",
-            0.0
-          ],
           [
             "Grimm",
             0.59
@@ -1580,10 +1587,7 @@
           ]
         ]
       },
-      "flags": [
-        "name"
-      ],
-      "snapped": true
+      "flags": []
     },
     {
       "seen": 6,
@@ -1825,7 +1829,7 @@
       "agreement": {
         "rank": 1.0,
         "name": 1.0,
-        "guild": 0.89,
+        "guild": 0.83,
         "team": 1.0,
         "weapon1": 1.0,
         "weapon2": 1.0,
@@ -3270,7 +3274,7 @@
       "amount_healed": 40662,
       "agreement": {
         "rank": 0.94,
-        "name": 0.92,
+        "name": 0.95,
         "guild": 0.95,
         "team": 1.0,
         "weapon1": 0.91,
@@ -3463,7 +3467,7 @@
       "agreement": {
         "rank": 1.0,
         "name": 0.33,
-        "guild": 0.51,
+        "guild": 0.61,
         "team": 1.0,
         "weapon1": 1.0,
         "weapon2": 1.0,
@@ -3510,8 +3514,7 @@
         ]
       },
       "flags": [
-        "name",
-        "guild"
+        "name"
       ],
       "snapped": true
     },
@@ -3983,7 +3986,7 @@
     {
       "seen": 7,
       "rank": 91,
-      "name": "Astriger†",
+      "name": "Astrigerヤ",
       "guild": "BShotz",
       "team": "Red",
       "weapon1": "Longbow",
@@ -4013,6 +4016,10 @@
         "name": [
           [
             "Astriger†",
+            0.0
+          ],
+          [
+            "Astriger†",
             0.85
           ],
           [
@@ -4021,12 +4028,13 @@
           ]
         ]
       },
-      "flags": []
+      "flags": [],
+      "snapped": true
     },
     {
       "seen": 6,
       "rank": 92,
-      "name": "KitKat三",
+      "name": "KitKat亖",
       "guild": "BShotz",
       "team": "Red",
       "weapon1": "Longbow",
