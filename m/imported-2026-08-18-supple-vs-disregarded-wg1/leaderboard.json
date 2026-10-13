@@ -16,9 +16,9 @@
     "siege": false,
     "killfeed": {
       "map": "Talus Riftstone",
-      "note": "Disregarded vs Supple Dash · 20 minutes",
-      "events": null,
-      "players": 28
+      "note": "Disregarded vs Supple Dash",
+      "events": 1318,
+      "players": 44
     }
   },
   "players": [
