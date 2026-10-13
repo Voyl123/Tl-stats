@@ -18,7 +18,7 @@
       "map": "",
       "note": "",
       "events": null,
-      "players": 30
+      "players": 54
     }
   },
   "players": [
@@ -1644,7 +1644,8 @@
       "damage_dealt": 111238,
       "damage_taken": 889417,
       "amount_healed": 56326,
-      "flags": []
+      "flags": [],
+      "deaths": 15
     },
     {
       "rank": 35,
@@ -1708,7 +1709,8 @@
       "damage_dealt": 23902,
       "damage_taken": 569144,
       "amount_healed": 704943,
-      "flags": []
+      "flags": [],
+      "deaths": 9
     },
     {
       "rank": 39,
@@ -1772,7 +1774,8 @@
       "damage_dealt": 79567,
       "damage_taken": 1346056,
       "amount_healed": 215236,
-      "flags": []
+      "flags": [],
+      "deaths": 8
     },
     {
       "rank": 43,
@@ -1788,7 +1791,8 @@
       "damage_dealt": 56237,
       "damage_taken": 470650,
       "amount_healed": 599997,
-      "flags": []
+      "flags": [],
+      "deaths": 7
     },
     {
       "rank": 44,
@@ -1804,7 +1808,8 @@
       "damage_dealt": 90994,
       "damage_taken": 1348914,
       "amount_healed": 7267,
-      "flags": []
+      "flags": [],
+      "deaths": 15
     },
     {
       "rank": 45,
@@ -1932,7 +1937,8 @@
       "damage_dealt": 41493,
       "damage_taken": 838172,
       "amount_healed": 490795,
-      "flags": []
+      "flags": [],
+      "deaths": 7
     },
     {
       "rank": 53,
@@ -1948,7 +1954,8 @@
       "damage_dealt": 9322,
       "damage_taken": 468455,
       "amount_healed": 1139500,
-      "flags": []
+      "flags": [],
+      "deaths": 20
     },
     {
       "rank": 54,
@@ -2012,7 +2019,8 @@
       "damage_dealt": 17874,
       "damage_taken": 652823,
       "amount_healed": 978281,
-      "flags": []
+      "flags": [],
+      "deaths": 9
     },
     {
       "rank": 58,
@@ -2028,7 +2036,8 @@
       "damage_dealt": 1461,
       "damage_taken": 599561,
       "amount_healed": 724119,
-      "flags": []
+      "flags": [],
+      "deaths": 10
     },
     {
       "rank": 59,
@@ -2108,7 +2117,8 @@
       "damage_dealt": 13968,
       "damage_taken": 587446,
       "amount_healed": 546324,
-      "flags": []
+      "flags": [],
+      "deaths": 9
     },
     {
       "rank": 64,
@@ -2124,7 +2134,8 @@
       "damage_dealt": 9986,
       "damage_taken": 750649,
       "amount_healed": 291856,
-      "flags": []
+      "flags": [],
+      "deaths": 10
     },
     {
       "rank": 65,
@@ -2172,7 +2183,8 @@
       "damage_dealt": 10950,
       "damage_taken": 494047,
       "amount_healed": 399438,
-      "flags": []
+      "flags": [],
+      "deaths": 8
     },
     {
       "rank": 68,
@@ -2204,7 +2216,8 @@
       "damage_dealt": 30271,
       "damage_taken": 361896,
       "amount_healed": 354633,
-      "flags": []
+      "flags": [],
+      "deaths": 7
     },
     {
       "rank": 70,
@@ -2252,7 +2265,8 @@
       "damage_dealt": 5555,
       "damage_taken": 598647,
       "amount_healed": 505608,
-      "flags": []
+      "flags": [],
+      "deaths": 13
     },
     {
       "rank": 73,
@@ -2268,7 +2282,8 @@
       "damage_dealt": 111693,
       "damage_taken": 1526630,
       "amount_healed": 109964,
-      "flags": []
+      "flags": [],
+      "deaths": 7
     },
     {
       "rank": 74,
@@ -2316,7 +2331,8 @@
       "damage_dealt": 2804,
       "damage_taken": 444520,
       "amount_healed": 1165554,
-      "flags": []
+      "flags": [],
+      "deaths": 7
     },
     {
       "rank": 77,
@@ -2348,7 +2364,8 @@
       "damage_dealt": 91372,
       "damage_taken": 987197,
       "amount_healed": 192498,
-      "flags": []
+      "flags": [],
+      "deaths": 8
     },
     {
       "rank": 79,
@@ -2412,7 +2429,8 @@
       "damage_dealt": 59422,
       "damage_taken": 896004,
       "amount_healed": 427011,
-      "flags": []
+      "flags": [],
+      "deaths": 12
     },
     {
       "rank": 83,
@@ -2444,7 +2462,8 @@
       "damage_dealt": 43925,
       "damage_taken": 915367,
       "amount_healed": 54845,
-      "flags": []
+      "flags": [],
+      "deaths": 7
     },
     {
       "rank": 85,
@@ -2460,7 +2479,8 @@
       "damage_dealt": 70272,
       "damage_taken": 1119192,
       "amount_healed": 15232,
-      "flags": []
+      "flags": [],
+      "deaths": 13
     },
     {
       "rank": 86,
@@ -2492,7 +2512,8 @@
       "damage_dealt": 48240,
       "damage_taken": 1022276,
       "amount_healed": 14735,
-      "flags": []
+      "flags": [],
+      "deaths": 14
     },
     {
       "rank": 88,
@@ -2524,7 +2545,8 @@
       "damage_dealt": 71692,
       "damage_taken": 831207,
       "amount_healed": 227415,
-      "flags": []
+      "flags": [],
+      "deaths": 13
     },
     {
       "rank": 90,
@@ -2556,7 +2578,8 @@
       "damage_dealt": 85159,
       "damage_taken": 1103126,
       "amount_healed": 5881,
-      "flags": []
+      "flags": [],
+      "deaths": 8
     },
     {
       "rank": 92,
@@ -2588,7 +2611,8 @@
       "damage_dealt": 60314,
       "damage_taken": 1252536,
       "amount_healed": 2959896,
-      "flags": []
+      "flags": [],
+      "deaths": 18
     },
     {
       "rank": 94,

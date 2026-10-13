@@ -18,7 +18,7 @@
       "map": "Talus Riftstone",
       "note": "Disregarded vs Supple Dash",
       "events": 1318,
-      "players": 44
+      "players": 45
     }
   },
   "players": [
@@ -1098,7 +1098,25 @@
       "damage_dealt": 2296505,
       "damage_taken": 804748,
       "amount_healed": 19361,
-      "flags": []
+      "flags": [],
+      "deaths": 2,
+      "kf": {
+        "killed": {
+          "respawncamper": 7,
+          "Fear": 7,
+          "dabldoya": 3,
+          "YooNJ": 3,
+          "boringg": 3,
+          "pyx": 2,
+          "AtHoldTheLine": 2,
+          "Pastor": 2,
+          "Nathias": 1
+        },
+        "died_to": {
+          "Fear": 1,
+          "Nathias": 1
+        }
+      }
     },
     {
       "rank": 22,

@@ -18,7 +18,7 @@
       "map": "",
       "note": "read from an 18-minute 1440p VOD · checked against the in-game scoreboard",
       "events": null,
-      "players": 46
+      "players": 47
     }
   },
   "players": [
@@ -1377,7 +1377,32 @@
       "damage_dealt": 1098416,
       "damage_taken": 690008,
       "amount_healed": 5078,
-      "flags": []
+      "flags": [],
+      "deaths": 10,
+      "kf": {
+        "killed": {
+          "respawncamper": 3,
+          "Prefire": 2,
+          "Surgence": 2,
+          "dabldoya": 1,
+          "pyx": 1,
+          "Fear": 1,
+          "icespicefan": 1,
+          "DVK": 1,
+          "necr": 1,
+          "Steppa": 1,
+          "NyassEedent": 1
+        },
+        "died_to": {
+          "pyx": 3,
+          "dabldoya": 2,
+          "RoundAndPerky": 1,
+          "TaunoAnd'veae": 1,
+          "BIWE": 1,
+          "Fear": 1,
+          "IYA": 1
+        }
+      }
     },
     {
       "rank": 27,

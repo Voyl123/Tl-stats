@@ -18,7 +18,7 @@
       "map": "Ahzreil Riftstone",
       "note": "15-minute war · read from the kill feed, checked against the scoreboard",
       "events": null,
-      "players": 30
+      "players": 46
     }
   },
   "players": [
@@ -1491,7 +1491,8 @@
       "damage_dealt": 551672,
       "damage_taken": 1116028,
       "amount_healed": 2400,
-      "flags": []
+      "flags": [],
+      "deaths": 15
     },
     {
       "rank": 33,
@@ -1523,7 +1524,8 @@
       "damage_dealt": 80253,
       "damage_taken": 1147925,
       "amount_healed": 532538,
-      "flags": []
+      "flags": [],
+      "deaths": 7
     },
     {
       "rank": 35,
@@ -1587,7 +1589,8 @@
       "damage_dealt": 69743,
       "damage_taken": 1330957,
       "amount_healed": 462711,
-      "flags": []
+      "flags": [],
+      "deaths": 14
     },
     {
       "rank": 39,
@@ -1603,7 +1606,8 @@
       "damage_dealt": 76388,
       "damage_taken": 798862,
       "amount_healed": 33448,
-      "flags": []
+      "flags": [],
+      "deaths": 7
     },
     {
       "rank": 40,
@@ -1811,7 +1815,8 @@
       "damage_dealt": 94131,
       "damage_taken": 1412682,
       "amount_healed": 43080,
-      "flags": []
+      "flags": [],
+      "deaths": 17
     },
     {
       "rank": 53,
@@ -1875,7 +1880,8 @@
       "damage_dealt": 9584,
       "damage_taken": 662006,
       "amount_healed": 1067667,
-      "flags": []
+      "flags": [],
+      "deaths": 10
     },
     {
       "rank": 57,
@@ -1987,7 +1993,8 @@
       "damage_dealt": 30391,
       "damage_taken": 616880,
       "amount_healed": 543039,
-      "flags": []
+      "flags": [],
+      "deaths": 11
     },
     {
       "rank": 64,
@@ -2051,7 +2058,8 @@
       "damage_dealt": 16896,
       "damage_taken": 520730,
       "amount_healed": 1138665,
-      "flags": []
+      "flags": [],
+      "deaths": 7
     },
     {
       "rank": 68,
@@ -2083,7 +2091,8 @@
       "damage_dealt": 6649,
       "damage_taken": 710230,
       "amount_healed": 598944,
-      "flags": []
+      "flags": [],
+      "deaths": 8
     },
     {
       "rank": 70,
@@ -2163,7 +2172,8 @@
       "damage_dealt": 42553,
       "damage_taken": 1012115,
       "amount_healed": 2815082,
-      "flags": []
+      "flags": [],
+      "deaths": 12
     },
     {
       "rank": 75,
@@ -2195,7 +2205,8 @@
       "damage_dealt": 19645,
       "damage_taken": 752532,
       "amount_healed": 828557,
-      "flags": []
+      "flags": [],
+      "deaths": 12
     },
     {
       "rank": 77,
@@ -2227,7 +2238,8 @@
       "damage_dealt": 144036,
       "damage_taken": 897465,
       "amount_healed": 205991,
-      "flags": []
+      "flags": [],
+      "deaths": 8
     },
     {
       "rank": 79,
@@ -2387,7 +2399,8 @@
       "damage_dealt": 58803,
       "damage_taken": 848113,
       "amount_healed": 215497,
-      "flags": []
+      "flags": [],
+      "deaths": 11
     },
     {
       "rank": 89,
@@ -2435,7 +2448,8 @@
       "damage_dealt": 52944,
       "damage_taken": 1170858,
       "amount_healed": 1664621,
-      "flags": []
+      "flags": [],
+      "deaths": 12
     },
     {
       "rank": 92,
@@ -2499,7 +2513,8 @@
       "damage_dealt": 33221,
       "damage_taken": 1084125,
       "amount_healed": 16647,
-      "flags": []
+      "flags": [],
+      "deaths": 12
     },
     {
       "rank": 96,
@@ -2515,7 +2530,8 @@
       "damage_dealt": 26833,
       "damage_taken": 1207516,
       "amount_healed": 2847119,
-      "flags": []
+      "flags": [],
+      "deaths": 11
     }
   ]
 }
