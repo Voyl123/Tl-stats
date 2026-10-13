@@ -8,16 +8,16 @@
     "map": "Grand Aelon",
     "frames": 210,
     "frames_with_rows": 144,
+    "zone": "Purelight Hill",
     "check": {
       "rows": 96,
       "kills_in_order": true,
       "corrected": 0,
-      "caution": 2,
+      "caution": 3,
       "weapons_fixed": 0,
       "weapons_doubt": 1,
       "missing": 0
-    },
-    "zone": "Purelight Hill"
+    }
   },
   "players": [
     {
@@ -1291,10 +1291,6 @@
         "guild": [
           [
             "JAILEDシ",
-            0.0
-          ],
-          [
-            "JAILEDシ",
             0.53
           ],
           [
@@ -1303,8 +1299,9 @@
           ]
         ]
       },
-      "flags": [],
-      "snapped": true
+      "flags": [
+        "guild"
+      ]
     },
     {
       "seen": 7,

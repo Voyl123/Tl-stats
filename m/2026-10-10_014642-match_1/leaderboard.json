@@ -8,6 +8,7 @@
     "map": "Talus",
     "frames": 210,
     "frames_with_rows": 144,
+    "zone": "The Raging Wilds",
     "check": {
       "rows": 96,
       "kills_in_order": true,
@@ -16,8 +17,7 @@
       "weapons_fixed": 0,
       "weapons_doubt": 1,
       "missing": 0
-    },
-    "zone": "The Raging Wilds"
+    }
   },
   "players": [
     {
