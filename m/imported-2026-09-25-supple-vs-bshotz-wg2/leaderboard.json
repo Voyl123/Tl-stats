@@ -13,7 +13,13 @@
       "tab": "9/25 vs BShotz WG2"
     },
     "inhouse": false,
-    "siege": false
+    "siege": false,
+    "killfeed": {
+      "map": "",
+      "note": "",
+      "events": null,
+      "players": 30
+    }
   },
   "players": [
     {
@@ -30,7 +36,53 @@
       "damage_dealt": 3613072,
       "damage_taken": 1780529,
       "amount_healed": 35157,
-      "flags": []
+      "flags": [],
+      "deaths": 22,
+      "kf": {
+        "killed": {
+          "Fear": 6,
+          "Willan": 3,
+          "bru": 3,
+          "Rasceta": 3,
+          "Grimmッ": 3,
+          "Gon": 2,
+          "IZZY": 2,
+          "daniel·": 2,
+          "jaksterz": 2,
+          "Cxshew": 2,
+          "dabldoya": 2,
+          "respawncamper": 2,
+          "ラカフラカ": 2,
+          "Gwop": 2,
+          "cagedup": 1,
+          "boringg": 1,
+          "JUJU": 1,
+          "ツGツ": 1,
+          "Deepfist": 1,
+          "Keylosh": 1,
+          "Temper": 1,
+          "Fart": 1,
+          "GoodGuyLanzo父": 1,
+          "MyNameIsOof": 1,
+          "Sueming": 1,
+          "Weax": 1,
+          "Regentlord": 1
+        },
+        "died_to": {
+          "bru": 4,
+          "daniel·": 4,
+          "Temper": 2,
+          "dabldoya": 2,
+          "Aero": 2,
+          "Kaiwel父": 2,
+          "respawncamper": 1,
+          "Fear": 1,
+          "Straight·K·67": 1,
+          "jaksterz": 1,
+          "pyx": 1,
+          "boringg": 1
+        }
+      }
     },
     {
       "rank": 2,
@@ -46,7 +98,47 @@
       "damage_dealt": 3806075,
       "damage_taken": 754160,
       "amount_healed": 9894,
-      "flags": []
+      "flags": [],
+      "deaths": 11,
+      "kf": {
+        "killed": {
+          "Bachメ": 5,
+          "fia": 5,
+          "QueenOfCurses": 5,
+          "FollowingLife°": 4,
+          "Grimジ": 3,
+          "Aiushtha": 3,
+          "Etius1025": 3,
+          "BuffWhen°": 3,
+          "Astrigerヤ": 3,
+          "Biniツ": 2,
+          "KitKat三": 2,
+          "Boda°": 2,
+          "ItsWes": 2,
+          "·てのホ·": 2,
+          "Splice": 2,
+          "EnivN": 1,
+          "GorgeousTiger": 1,
+          "EightyEight°": 1,
+          "Fravy": 1,
+          "Biny": 1,
+          "デDURIAN气": 1,
+          "·Rey·": 1,
+          "Kred": 1,
+          "Po切": 1,
+          "Castaspella": 1,
+          "Splin": 1,
+          "Neoo": 1
+        },
+        "died_to": {
+          "QueenOfCurses": 4,
+          "EightyEight°": 2,
+          "Biniツ": 2,
+          "Bachメ": 1,
+          "Neoo": 1,
+          "Kred": 1
+        }
+      }
     },
     {
       "rank": 3,
@@ -62,7 +154,60 @@
       "damage_dealt": 3582202,
       "damage_taken": 1247739,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 20,
+      "kf": {
+        "killed": {
+          "Splice": 4,
+          "·Jules·": 3,
+          "Castaspella": 3,
+          "Breadypuddin": 2,
+          "·Boo·": 2,
+          "Neoo": 2,
+          "Grimジ": 2,
+          "Astrigerヤ": 2,
+          "Kred": 2,
+          "KitKat三": 2,
+          "Hosted°": 2,
+          "fia": 2,
+          "farnii": 2,
+          "·Ellie·": 1,
+          "SalsaSrirachaシ": 1,
+          "PoglinVEMR": 1,
+          "PegboyFYB": 1,
+          "·Rey·": 1,
+          "Grine": 1,
+          "MrGreen": 1,
+          "Decay°": 1,
+          "Asmmiyent": 1,
+          "Xay": 1,
+          "QueenOfCurses": 1,
+          "忘失": 1,
+          "Tanni": 1,
+          "Neeenz": 1,
+          "Aiushtha": 1,
+          "Shrubertメ": 1,
+          "Biniツ": 1,
+          "Fravy": 1,
+          "Peekabu": 1,
+          "·てのホ·": 1,
+          "GorgeousTiger": 1
+        },
+        "died_to": {
+          "fia": 4,
+          "·てのホ·": 2,
+          "ItsWes": 2,
+          "Kred": 2,
+          "QueenOfCurses": 2,
+          "しムこと": 2,
+          "Etius1025": 1,
+          "Grimジ": 1,
+          "Decay°": 1,
+          "L48": 1,
+          "Neoo": 1,
+          "bAE": 1
+        }
+      }
     },
     {
       "rank": 4,
@@ -78,7 +223,50 @@
       "damage_dealt": 2926126,
       "damage_taken": 1061929,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 21,
+      "kf": {
+        "killed": {
+          "Dash": 5,
+          "Fear": 3,
+          "Willan": 3,
+          "Cxshew": 3,
+          "pyx": 2,
+          "Gon": 2,
+          "respawncamper": 2,
+          "cagedup": 2,
+          "ツGツ": 1,
+          "jaksterz": 1,
+          "Azriel": 1,
+          "Deepfist": 1,
+          "bru": 1,
+          "ZEROKツ": 1,
+          "Noeliyo": 1,
+          "Cony": 1,
+          "Sueming": 1,
+          "Grimmッ": 1,
+          "Dazit": 1,
+          "Temper": 1,
+          "一大：": 1,
+          "Kaiwel父": 1,
+          "daniel·": 1,
+          "Gwop": 1,
+          "Regentlord": 1,
+          "IZZY": 1
+        },
+        "died_to": {
+          "bru": 7,
+          "Fear": 5,
+          "pyx": 2,
+          "SapirO": 1,
+          "Gon": 1,
+          "Temper": 1,
+          "daniel·": 1,
+          "respawncamper": 1,
+          "Straight·K·67": 1,
+          "Infearpvp": 1
+        }
+      }
     },
     {
       "rank": 5,
@@ -94,7 +282,50 @@
       "damage_dealt": 3652766,
       "damage_taken": 1284851,
       "amount_healed": 10134,
-      "flags": []
+      "flags": [],
+      "deaths": 22,
+      "kf": {
+        "killed": {
+          "Kred": 5,
+          "Decay°": 5,
+          "Biniツ": 4,
+          "Splice": 3,
+          "Astrigerヤ": 3,
+          "Hosted°": 2,
+          "EightyEight°": 2,
+          "Breadypuddin": 2,
+          "KitKat三": 2,
+          "·Jules·": 2,
+          "Grimジ": 2,
+          "QueenOfCurses": 2,
+          "·てのホ·": 2,
+          "Neoo": 1,
+          "FollowingLife°": 1,
+          "Neeenz": 1,
+          "Bachメ": 1,
+          "GorgeousTiger": 1,
+          "デDURIAN气": 1,
+          "JAJA": 1,
+          "farnii": 1,
+          "BuffWhen°": 1,
+          "Fravy": 1,
+          "SalsaSrirachaシ": 1,
+          "哈基米玩哈基杯": 1,
+          "しムこと": 1
+        },
+        "died_to": {
+          "Neoo": 6,
+          "fia": 4,
+          "Decay°": 3,
+          "Grimジ": 2,
+          "Kred": 2,
+          "·てのホ·": 1,
+          "EightyEight°": 1,
+          "L4E": 1,
+          "しムこと": 1,
+          "ItsWes": 1
+        }
+      }
     },
     {
       "rank": 6,
@@ -126,7 +357,47 @@
       "damage_dealt": 3509745,
       "damage_taken": 1777487,
       "amount_healed": 41050,
-      "flags": []
+      "flags": [],
+      "deaths": 19,
+      "kf": {
+        "killed": {
+          "Gon": 5,
+          "MrTorture": 3,
+          "Willan": 3,
+          "bru": 3,
+          "cagedup": 3,
+          "Keylosh": 2,
+          "Cxshew": 2,
+          "IZZY": 2,
+          "pyx": 2,
+          "daniel·": 2,
+          "Temper": 2,
+          "Fear": 2,
+          "ZEROKツ": 2,
+          "MyNameIsOof": 2,
+          "Gottimus": 1,
+          "Straight·K·67": 1,
+          "Fart": 1,
+          "Kaiwel父": 1,
+          "SapirO": 1,
+          "jaksterz": 1,
+          "Atoshen": 1,
+          "ツGツ": 1,
+          "Rasceta": 1,
+          "boringg": 1
+        },
+        "died_to": {
+          "Fear": 5,
+          "Gon": 3,
+          "daniel·": 2,
+          "bru": 2,
+          "Temper": 2,
+          "dabldoya": 2,
+          "Willan": 1,
+          "Cxshew": 1,
+          "boringg": 1
+        }
+      }
     },
     {
       "rank": 8,
@@ -142,7 +413,47 @@
       "damage_dealt": 2864571,
       "damage_taken": 1496311,
       "amount_healed": 30156,
-      "flags": []
+      "flags": [],
+      "deaths": 17,
+      "kf": {
+        "killed": {
+          "Decay°": 7,
+          "fia": 5,
+          "Neoo": 4,
+          "Astrigerヤ": 3,
+          "Breadypuddin": 2,
+          "KitKat三": 2,
+          "Kred": 2,
+          "Biniツ": 2,
+          "Grimジ": 2,
+          "しムこと": 2,
+          "Aiushtha": 1,
+          "EightyEight°": 1,
+          "Bachメ": 1,
+          "Etius1025": 1,
+          "TxkmI@ENa": 1,
+          "PegboyFYB": 1,
+          "Hosted°": 1,
+          "QueenOfCurses": 1,
+          "デDURIAN气": 1,
+          "FollowingLife°": 1,
+          "tanni": 1,
+          "farnii": 1,
+          "Splice": 1,
+          "GorgeousTiger": 1
+        },
+        "died_to": {
+          "Kred": 3,
+          "Neoo": 3,
+          "fia": 2,
+          "EightyEight°": 2,
+          "Etius1025": 2,
+          "Grimジ": 2,
+          "Decay°": 1,
+          "Biniツ": 1,
+          "QueenOfCurses": 1
+        }
+      }
     },
     {
       "rank": 9,
@@ -158,7 +469,44 @@
       "damage_dealt": 2492587,
       "damage_taken": 631985,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 10,
+      "kf": {
+        "killed": {
+          "Aiushtha": 4,
+          "fia": 3,
+          "QueenOfCurses": 3,
+          "EightyEight°": 3,
+          "Biniツ": 2,
+          "Neoo": 2,
+          "Bachメ": 2,
+          "Kred": 2,
+          "·Jules·": 2,
+          "SalsaSrirachaシ": 1,
+          "Castaspella": 1,
+          "Neeenz": 1,
+          "FollowingLife°": 1,
+          "KitKat三": 1,
+          "Shrubertメ": 1,
+          "Astrigerヤ": 1,
+          "Buhs": 1,
+          "PegboyFYB": 1,
+          "忘失": 1,
+          "ItsWes": 1,
+          "Peekabu": 1,
+          "Breadypuddin": 1,
+          "·Rey·": 1
+        },
+        "died_to": {
+          "fia": 2,
+          "Shrubertメ": 2,
+          "Neoo": 2,
+          "QueenOfCurses": 1,
+          "Etius1025": 1,
+          "Grimジ": 1,
+          "しムこと": 1
+        }
+      }
     },
     {
       "rank": 10,
@@ -174,7 +522,46 @@
       "damage_dealt": 2319009,
       "damage_taken": 1787379,
       "amount_healed": 13739,
-      "flags": []
+      "flags": [],
+      "deaths": 8,
+      "kf": {
+        "killed": {
+          "しムこと": 7,
+          "·てのホ·": 5,
+          "Bachメ": 4,
+          "Neoo": 2,
+          "Grimジ": 2,
+          "BuffWhen°": 2,
+          "EightyEight°": 2,
+          "ItsWes": 2,
+          "Bat": 1,
+          "Hosted°": 1,
+          "Biniツ": 1,
+          "Aiushtha": 1,
+          "Boda°": 1,
+          "KilKa": 1,
+          "·Rey·": 1,
+          "KitKat三": 1,
+          "Gino": 1,
+          "LASHAA": 1,
+          "fia": 1,
+          "LASKA": 1,
+          "Shrubertメ": 1,
+          "Badh": 1,
+          "LASP": 1,
+          "4gp": 1
+        },
+        "died_to": {
+          "QueenOfCurses": 1,
+          "·てのホ·": 1,
+          "LAS": 1,
+          "しムこと": 1,
+          "Kred": 1,
+          "ItsWes": 1,
+          "Decay°": 1,
+          "Shrubertメ": 1
+        }
+      }
     },
     {
       "rank": 11,
@@ -190,7 +577,40 @@
       "damage_dealt": 2746438,
       "damage_taken": 2038017,
       "amount_healed": 44676,
-      "flags": []
+      "flags": [],
+      "deaths": 11,
+      "kf": {
+        "killed": {
+          "·てのホ·": 5,
+          "fia": 4,
+          "しムこと": 4,
+          "Aiushtha": 3,
+          "KitKat三": 3,
+          "Shrubertメ": 2,
+          "BuffWhen°": 2,
+          "EightyEight°": 2,
+          "Etius1025": 2,
+          "Decay°": 2,
+          "ItsWes": 2,
+          "MEPD": 1,
+          "02225y": 1,
+          "cOT": 1,
+          "Po切": 1,
+          "America": 1,
+          "Neoo": 1,
+          "Boda°": 1
+        },
+        "died_to": {
+          "Decay°": 2,
+          "Kred": 2,
+          "EightyEight°": 2,
+          "ItsWes": 1,
+          "Etius1025": 1,
+          "Grimジ": 1,
+          "Shrubertメ": 1,
+          "fia": 1
+        }
+      }
     },
     {
       "rank": 12,
@@ -206,7 +626,46 @@
       "damage_dealt": 5178660,
       "damage_taken": 938997,
       "amount_healed": 10321,
-      "flags": []
+      "flags": [],
+      "deaths": 17,
+      "kf": {
+        "killed": {
+          "fia": 3,
+          "Astrigerヤ": 3,
+          "·てのホ·": 2,
+          "Neoo": 2,
+          "KitKat三": 2,
+          "BuffWhen°": 2,
+          "Grimジ": 2,
+          "FollowingLife°": 2,
+          "GorgeousTiger": 1,
+          "Biniツ": 1,
+          "忘失": 1,
+          "Breadypuddin": 1,
+          "哈基米玩哈基杯": 1,
+          "Hosted°": 1,
+          "mot": 1,
+          "Shrubertメ": 1,
+          "·Boo·": 1,
+          "TsuknekoA": 1,
+          "Splice": 1,
+          "SLASPHA": 1,
+          "しムこと": 1,
+          "L48": 1,
+          "Par": 1,
+          "Peekabu": 1,
+          "ItsWes": 1,
+          "sme": 1
+        },
+        "died_to": {
+          "Bachメ": 7,
+          "fia": 4,
+          "Aiushtha": 3,
+          "·てのホ·": 1,
+          "ItsWes": 1,
+          "Shrubertメ": 1
+        }
+      }
     },
     {
       "rank": 13,
@@ -222,7 +681,46 @@
       "damage_dealt": 2132416,
       "damage_taken": 1028861,
       "amount_healed": 25909,
-      "flags": []
+      "flags": [],
+      "deaths": 13,
+      "kf": {
+        "killed": {
+          "·てのホ·": 6,
+          "fia": 4,
+          "ItsWes": 3,
+          "しムこと": 3,
+          "Shrubertメ": 3,
+          "Aiushtha": 2,
+          "Bachメ": 2,
+          "Etius1025": 2,
+          "Biniツ": 2,
+          "Castaspella": 1,
+          "Po切": 1,
+          "GorgeousTiger": 1,
+          "QueenOfCurses": 1,
+          "忘失": 1,
+          "Neoo": 1,
+          "JAJA": 1,
+          "Bma": 1,
+          "COTo": 1,
+          "Grimジ": 1,
+          "Decay°": 1,
+          "COT": 1,
+          "Neeenz": 1
+        },
+        "died_to": {
+          "Grimジ": 2,
+          "Aiushtha": 2,
+          "fia": 2,
+          "Kred": 1,
+          "·てのホ·": 1,
+          "しムこと": 1,
+          "bAE": 1,
+          "Shrubertメ": 1,
+          "Etius1025": 1,
+          "QueenOfCurses": 1
+        }
+      }
     },
     {
       "rank": 14,
@@ -238,7 +736,45 @@
       "damage_dealt": 2838899,
       "damage_taken": 1271966,
       "amount_healed": 11627,
-      "flags": []
+      "flags": [],
+      "deaths": 20,
+      "kf": {
+        "killed": {
+          "Willan": 4,
+          "boringg": 4,
+          "Cxshew": 3,
+          "daniel·": 2,
+          "SapirO": 2,
+          "Temper": 2,
+          "Kaiwel父": 1,
+          "Ayoshi": 1,
+          "chaineddown": 1,
+          "dabldoya": 1,
+          "MyNameIsOof": 1,
+          "IZZY": 1,
+          "cagedup": 1,
+          "MrTorture": 1,
+          "Infearpvp": 1,
+          "Gon": 1,
+          "Gottimus": 1,
+          "bru": 1,
+          "Dartz": 1,
+          "AtHoldTheLine": 1,
+          "Straight·K·67": 1
+        },
+        "died_to": {
+          "boringg": 5,
+          "dabldoya": 3,
+          "Cxshew": 3,
+          "Gon": 2,
+          "Fear": 2,
+          "Straight·K·67": 1,
+          "Temper": 1,
+          "bru": 1,
+          "SapirO": 1,
+          "respawncamper": 1
+        }
+      }
     },
     {
       "rank": 15,
@@ -254,7 +790,47 @@
       "damage_dealt": 2256877,
       "damage_taken": 1129019,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 15,
+      "kf": {
+        "killed": {
+          "Neoo": 4,
+          "Breadypuddin": 4,
+          "Grimジ": 3,
+          "BuffWhen°": 3,
+          "MrGreen": 3,
+          "Kred": 2,
+          "PegboyFYB": 2,
+          "哈基米玩哈基杯": 1,
+          "Astrigerヤ": 1,
+          "Decay°": 1,
+          "·てのホ·": 1,
+          "しムこと": 1,
+          "farmi": 1,
+          "farnii": 1,
+          "BImy": 1,
+          "Biniツ": 1,
+          "·Ellie·": 1,
+          "Hosted°": 1,
+          "mec": 1,
+          "忘失": 1,
+          "Neeenz": 1,
+          "Fravy": 1,
+          "Po切": 1,
+          "Bachメ": 1
+        },
+        "died_to": {
+          "fia": 3,
+          "Aiushtha": 2,
+          "Neoo": 2,
+          "QueenOfCurses": 2,
+          "Kred": 2,
+          "Biniツ": 1,
+          "EightyEight°": 1,
+          "Decay°": 1,
+          "ItsWes": 1
+        }
+      }
     },
     {
       "rank": 16,
@@ -270,7 +846,49 @@
       "damage_dealt": 2433949,
       "damage_taken": 1165996,
       "amount_healed": 20132,
-      "flags": []
+      "flags": [],
+      "deaths": 21,
+      "kf": {
+        "killed": {
+          "MrTorture": 4,
+          "Straight·K·67": 2,
+          "Keylosh": 2,
+          "Deepfist": 2,
+          "respawncamper": 2,
+          "Fear": 2,
+          "cagedup": 2,
+          "IZZY": 2,
+          "bru": 2,
+          "Dash": 1,
+          "Cxshew": 1,
+          "AtHoldTheLine": 1,
+          "Grimmッ": 1,
+          "Fart": 1,
+          "MyNameIsOof": 1,
+          "Temper": 1,
+          "Gottimus": 1,
+          "pyx": 1,
+          "dabldoya": 1,
+          "Gon": 1,
+          "jaksterz": 1,
+          "Noeliyo": 1,
+          "ZEROKツ": 1
+        },
+        "died_to": {
+          "boringg": 3,
+          "daniel·": 3,
+          "Temper": 2,
+          "bru": 2,
+          "Kaiwel父": 2,
+          "Fear": 2,
+          "Aero": 2,
+          "Siia": 1,
+          "respawncamper": 1,
+          "Infearpvp": 1,
+          "Straight·K·67": 1,
+          "Cxshew": 1
+        }
+      }
     },
     {
       "rank": 17,
@@ -286,7 +904,43 @@
       "damage_dealt": 3901642,
       "damage_taken": 1072747,
       "amount_healed": 127552,
-      "flags": []
+      "flags": [],
+      "deaths": 19,
+      "kf": {
+        "killed": {
+          "fia": 2,
+          "·てのホ·": 2,
+          "FollowingLife°": 2,
+          "Biniツ": 2,
+          "PegboyFYB": 1,
+          "JAJA": 1,
+          "KitKat三": 1,
+          "Astrigerヤ": 1,
+          "Decay°": 1,
+          "ROOTE": 1,
+          "ItsWes": 1,
+          "しムこと": 1,
+          "Castaspella": 1,
+          "Splice": 1,
+          "GorgeousTiger": 1,
+          "BuffWhen°": 1,
+          "QueenOfCurses": 1,
+          "Breadypuddin": 1,
+          "Peekabu": 1,
+          "Hosted°": 1,
+          "MrGreen": 1
+        },
+        "died_to": {
+          "Bachメ": 7,
+          "Aiushtha": 4,
+          "ItsWes": 2,
+          "QueenOfCurses": 2,
+          "·てのホ·": 1,
+          "Kred": 1,
+          "fia": 1,
+          "Biniツ": 1
+        }
+      }
     },
     {
       "rank": 18,
@@ -302,7 +956,43 @@
       "damage_dealt": 3504960,
       "damage_taken": 1597275,
       "amount_healed": 303,
-      "flags": []
+      "flags": [],
+      "deaths": 20,
+      "kf": {
+        "killed": {
+          "cagedup": 2,
+          "RoundAndPerky": 2,
+          "boringg": 2,
+          "MrTorture": 2,
+          "Gon": 2,
+          "IZZY": 1,
+          "MyNameIsOof": 1,
+          "Willan": 1,
+          "daniel·": 1,
+          "Regentlord": 1,
+          "Fart": 1,
+          "ラカフラカ": 1,
+          "ツGツ": 1,
+          "bru": 1,
+          "SapirO": 1,
+          "chaineddown": 1,
+          "Dash": 1
+        },
+        "died_to": {
+          "Fear": 4,
+          "dabldoya": 2,
+          "boringg": 2,
+          "bru": 2,
+          "Straight·K·67": 2,
+          "SapirO": 2,
+          "Aero": 1,
+          "Kaiwel父": 1,
+          "daniel·": 1,
+          "Temper": 1,
+          "Cxshew": 1,
+          "Gon": 1
+        }
+      }
     },
     {
       "rank": 19,
@@ -318,7 +1008,40 @@
       "damage_dealt": 1517317,
       "damage_taken": 1198473,
       "amount_healed": 34936,
-      "flags": []
+      "flags": [],
+      "deaths": 12,
+      "kf": {
+        "killed": {
+          "Astrigerヤ": 2,
+          "·てのホ·": 2,
+          "·Jules·": 2,
+          "Neoo": 1,
+          "Shrubertメ": 1,
+          "Figlts": 1,
+          "EightyEight°": 1,
+          "CiyhwEigh": 1,
+          "Neeenz": 1,
+          "Grimジ": 1,
+          "しムこと": 1,
+          "·Rey·": 1,
+          "L42t": 1,
+          "Peekabu": 1,
+          "fia": 1,
+          "Decay°": 1,
+          "Castaspella": 1,
+          "BuffWhen°": 1,
+          "QueenOfCurses": 1
+        },
+        "died_to": {
+          "fia": 3,
+          "Decay°": 2,
+          "Grimジ": 2,
+          "Neoo": 2,
+          "Shrubertメ": 1,
+          "EightyEight°": 1,
+          "ItsWes": 1
+        }
+      }
     },
     {
       "rank": 20,
@@ -334,7 +1057,40 @@
       "damage_dealt": 1941776,
       "damage_taken": 1644661,
       "amount_healed": 28952,
-      "flags": []
+      "flags": [],
+      "deaths": 20,
+      "kf": {
+        "killed": {
+          "fia": 5,
+          "Kred": 3,
+          "·Rey·": 2,
+          "QueenOfCurses": 2,
+          "·てのホ·": 1,
+          "Decay°": 1,
+          "farnii": 1,
+          "lantAN": 1,
+          "ItsWes": 1,
+          "SalsaSrirachaシ": 1,
+          "EightyEight°": 1,
+          "Aiushtha": 1,
+          "デDURIAN气": 1,
+          "Po切": 1,
+          "Biniツ": 1
+        },
+        "died_to": {
+          "Kred": 5,
+          "fia": 3,
+          "Neoo": 2,
+          "Decay°": 2,
+          "Biniツ": 2,
+          "EightyEight°": 1,
+          "Bachメ": 1,
+          "Grimジ": 1,
+          "QueenOfCurses": 1,
+          "ItsWes": 1,
+          "Aiushtha": 1
+        }
+      }
     },
     {
       "rank": 21,
@@ -350,7 +1106,39 @@
       "damage_dealt": 2040332,
       "damage_taken": 1176355,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 21,
+      "kf": {
+        "killed": {
+          "Regentlord": 3,
+          "boringg": 2,
+          "bru": 2,
+          "pyx": 2,
+          "ZEROKツ": 2,
+          "MrTorture": 1,
+          "Fear": 1,
+          "daniel·": 1,
+          "Gon": 1,
+          "respawncamper": 1,
+          "Fart": 1,
+          "ラカフラカ": 1,
+          "ツGツ": 1
+        },
+        "died_to": {
+          "dabldoya": 3,
+          "jaksterz": 3,
+          "Infearpvp": 3,
+          "Fear": 2,
+          "pyx": 2,
+          "Kaiwel父": 2,
+          "bru": 1,
+          "respawncamper": 1,
+          "boringg": 1,
+          "Willan": 1,
+          "Gon": 1,
+          "Keylosh": 1
+        }
+      }
     },
     {
       "rank": 22,
@@ -366,7 +1154,60 @@
       "damage_dealt": 1247787,
       "damage_taken": 835543,
       "amount_healed": 19058,
-      "flags": []
+      "flags": [],
+      "deaths": 41,
+      "kf": {
+        "killed": {
+          "Cxshew": 5,
+          "Temper": 4,
+          "Aero": 4,
+          "Fear": 4,
+          "IZZY": 3,
+          "Gon": 3,
+          "daniel·": 3,
+          "respawncamper": 3,
+          "dabldoya": 2,
+          "Grimmッ": 2,
+          "bru": 2,
+          "ZEROKツ": 2,
+          "Deepfist": 2,
+          "cagedup": 2,
+          "Gottimus": 2,
+          "Azriel": 2,
+          "MyNameIsOof": 2,
+          "Straight·K·67": 2,
+          "Sueming": 1,
+          "Keylosh": 1,
+          "MrTorture": 1,
+          "Dartz": 1,
+          "SapirO": 1,
+          "jaksterz": 1,
+          "pyx": 1,
+          "Rasceta": 1,
+          "Fart": 1,
+          "Willan": 1,
+          "Atoshen": 1,
+          "AtHoldTheLine": 1
+        },
+        "died_to": {
+          "bru": 5,
+          "boringg": 5,
+          "Gon": 5,
+          "pyx": 4,
+          "Straight·K·67": 4,
+          "dabldoya": 3,
+          "Aero": 3,
+          "SapirO": 2,
+          "Temper": 2,
+          "Infearpvp": 2,
+          "Willan": 1,
+          "jaksterz": 1,
+          "AtHoldTheLine": 1,
+          "cagedup": 1,
+          "respawncamper": 1,
+          "Kaiwel父": 1
+        }
+      }
     },
     {
       "rank": 23,
@@ -382,7 +1223,38 @@
       "damage_dealt": 1689104,
       "damage_taken": 1653580,
       "amount_healed": 26054,
-      "flags": []
+      "flags": [],
+      "deaths": 12,
+      "kf": {
+        "killed": {
+          "Shrubertメ": 4,
+          "EightyEight°": 3,
+          "ItsWes": 2,
+          "Bouar'Sn": 1,
+          "Boda°": 1,
+          "Peekabu": 1,
+          "fia": 1,
+          "JAJA": 1,
+          "Neouraea": 1,
+          "Neoo": 1,
+          "Bachメ": 1,
+          "しムこと": 1,
+          "LASE": 1,
+          "b48t": 1,
+          "·てのホ·": 1
+        },
+        "died_to": {
+          "Neoo": 2,
+          "ItsWes": 2,
+          "Shrubertメ": 2,
+          "Decay°": 1,
+          "BuffWhen°": 1,
+          "Kred": 1,
+          "Grimジ": 1,
+          "fia": 1,
+          "Bachメ": 1
+        }
+      }
     },
     {
       "rank": 24,
@@ -398,7 +1270,36 @@
       "damage_dealt": 2195924,
       "damage_taken": 1375898,
       "amount_healed": 19734,
-      "flags": []
+      "flags": [],
+      "deaths": 15,
+      "kf": {
+        "killed": {
+          "SapirO": 2,
+          "Temper": 2,
+          "jaksterz": 2,
+          "Infearpvp": 2,
+          "DEAD": 1,
+          "pyx": 1,
+          "Aero": 1,
+          "Deepfist": 1,
+          "Kaiwel父": 1,
+          "respawncamper": 1,
+          "Gon": 1,
+          "daniel·": 1,
+          "Fear": 1
+        },
+        "died_to": {
+          "Straight·K·67": 3,
+          "boringg": 2,
+          "Kaiwel父": 2,
+          "pyx": 2,
+          "jaksterz": 2,
+          "SapirO": 1,
+          "Gon": 1,
+          "dabldoya": 1,
+          "Aero": 1
+        }
+      }
     },
     {
       "rank": 25,
@@ -414,7 +1315,34 @@
       "damage_dealt": 1503242,
       "damage_taken": 1268547,
       "amount_healed": 38498,
-      "flags": []
+      "flags": [],
+      "deaths": 18,
+      "kf": {
+        "killed": {
+          "SapirO": 4,
+          "Aero": 3,
+          "daniel·": 2,
+          "Deepfist": 2,
+          "Straight·K·67": 2,
+          "IZZY": 1,
+          "Infearpvp": 1,
+          "Gon": 1,
+          "Dartz": 1,
+          "Atoshen": 1
+        },
+        "died_to": {
+          "dabldoya": 4,
+          "pyx": 3,
+          "boringg": 3,
+          "Straight·K·67": 2,
+          "bru": 1,
+          "Cxshew": 1,
+          "Temper": 1,
+          "Kaiwel父": 1,
+          "Gon": 1,
+          "Infearpvp": 1
+        }
+      }
     },
     {
       "rank": 26,
@@ -430,7 +1358,33 @@
       "damage_dealt": 3831589,
       "damage_taken": 893035,
       "amount_healed": 125013,
-      "flags": []
+      "flags": [],
+      "deaths": 11,
+      "kf": {
+        "killed": {
+          "bru": 2,
+          "Willan": 2,
+          "Sueming": 1,
+          "Cxshew": 1,
+          "Temper": 1,
+          "pyx": 1,
+          "dabldoya": 1,
+          "Weax": 1,
+          "Gottimus": 1,
+          "JUJU": 1,
+          "MyNameIsOof": 1,
+          "MrTorture": 1,
+          "Straight·K·67": 1
+        },
+        "died_to": {
+          "boringg": 3,
+          "Cxshew": 2,
+          "Straight·K·67": 2,
+          "pyx": 2,
+          "bru": 1,
+          "Infearpvp": 1
+        }
+      }
     },
     {
       "rank": 27,
@@ -446,7 +1400,44 @@
       "damage_dealt": 3239574,
       "damage_taken": 923505,
       "amount_healed": 164393,
-      "flags": []
+      "flags": [],
+      "deaths": 30,
+      "kf": {
+        "killed": {
+          "Temper": 2,
+          "cagedup": 2,
+          "Poopsy": 1,
+          "ラカフラカ": 1,
+          "GoodGuyLanzo父": 1,
+          "Fart": 1,
+          "Fear": 1,
+          "Gottimus": 1,
+          "SapirO": 1,
+          "Rasceta": 1,
+          "Aero": 1,
+          "JUJU": 1,
+          "Grimmッ": 1,
+          "Deepfist": 1,
+          "Keylosh": 1,
+          "Kaiwel父": 1,
+          "MyNameIsOof": 1,
+          "Straight·K·67": 1
+        },
+        "died_to": {
+          "Straight·K·67": 6,
+          "pyx": 5,
+          "Kaiwel父": 5,
+          "Aero": 2,
+          "SapirO": 2,
+          "respawncamper": 2,
+          "boringg": 2,
+          "Fear": 2,
+          "Gon": 1,
+          "daniel·": 1,
+          "jaksterz": 1,
+          "Temper": 1
+        }
+      }
     },
     {
       "rank": 28,
@@ -462,7 +1453,26 @@
       "damage_dealt": 1678427,
       "damage_taken": 948745,
       "amount_healed": 15034,
-      "flags": []
+      "flags": [],
+      "deaths": 4,
+      "kf": {
+        "killed": {
+          "EightyEight°": 3,
+          "Bachメ": 3,
+          "Shrubertメ": 3,
+          "fia": 2,
+          "FyhryFigh": 1,
+          "Etius1025": 1,
+          "Grimジ": 1,
+          "Aiushtha": 1,
+          "Decay°": 1
+        },
+        "died_to": {
+          "ItsWes": 2,
+          "Aiushtha": 1,
+          "QueenOfCurses": 1
+        }
+      }
     },
     {
       "rank": 29,
@@ -478,7 +1488,30 @@
       "damage_dealt": 1306697,
       "damage_taken": 1349961,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 21,
+      "kf": {
+        "killed": {
+          "Aero": 7,
+          "SapirO": 7,
+          "boringg": 1,
+          "Rasceta": 1,
+          "Gon": 1,
+          "jaksterz": 1
+        },
+        "died_to": {
+          "boringg": 5,
+          "Kaiwel父": 4,
+          "Infearpvp": 3,
+          "Straight·K·67": 2,
+          "dabldoya": 2,
+          "bru": 1,
+          "Fear": 1,
+          "jaksterz": 1,
+          "Cxshew": 1,
+          "daniel·": 1
+        }
+      }
     },
     {
       "rank": 30,
@@ -494,7 +1527,32 @@
       "damage_dealt": 1585880,
       "damage_taken": 2138694,
       "amount_healed": 77854,
-      "flags": []
+      "flags": [],
+      "deaths": 17,
+      "kf": {
+        "killed": {
+          "dabldoya": 2,
+          "jaksterz": 2,
+          "Weax": 1,
+          "respawncamper": 1,
+          "Straight·K·67": 1,
+          "Aero": 1,
+          "Cxshew": 1,
+          "pyx": 1,
+          "Kaiwel父": 1
+        },
+        "died_to": {
+          "jaksterz": 4,
+          "Straight·K·67": 3,
+          "Infearpvp": 3,
+          "pyx": 2,
+          "respawncamper": 1,
+          "dabldoya": 1,
+          "Temper": 1,
+          "Aero": 1,
+          "Kaiwel父": 1
+        }
+      }
     },
     {
       "rank": 31,
@@ -510,7 +1568,35 @@
       "damage_dealt": 1726843,
       "damage_taken": 915900,
       "amount_healed": 33,
-      "flags": []
+      "flags": [],
+      "deaths": 18,
+      "kf": {
+        "killed": {
+          "QueenOfCurses": 3,
+          "Etius1025": 2,
+          "KitKat三": 2,
+          "Aiushtha": 1,
+          "Boda°": 1,
+          "Kred": 1,
+          "Biniツ": 1,
+          "Astrigerヤ": 1,
+          "Bachメ": 1,
+          "GorgeousTiger": 1,
+          "Grimジ": 1,
+          "Neeenz": 1,
+          "FollowingLife°": 1
+        },
+        "died_to": {
+          "fia": 5,
+          "Decay°": 3,
+          "QueenOfCurses": 3,
+          "Kred": 2,
+          "Neoo": 2,
+          "Grimジ": 1,
+          "Etius1025": 1,
+          "Shrubertメ": 1
+        }
+      }
     },
     {
       "rank": 32,

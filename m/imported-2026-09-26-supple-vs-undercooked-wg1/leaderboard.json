@@ -13,7 +13,13 @@
       "tab": "9/26 vs Undercooked WG1"
     },
     "inhouse": false,
-    "siege": false
+    "siege": false,
+    "killfeed": {
+      "map": "",
+      "note": "",
+      "events": null,
+      "players": 30
+    }
   },
   "players": [
     {
@@ -30,7 +36,59 @@
       "damage_dealt": 4999382,
       "damage_taken": 1336398,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 17,
+      "kf": {
+        "killed": {
+          "boringg": 5,
+          "Willan": 4,
+          "Umbreon父": 4,
+          "RoundAndPerky": 3,
+          "Liquido": 2,
+          "Bound": 2,
+          "Panda": 2,
+          "ラカフラカ": 2,
+          "ツGツ": 2,
+          "Straight・K・67": 2,
+          "ZEROKツ": 1,
+          "jaksterz": 1,
+          "Noeliyo": 1,
+          "xNotSauronx": 1,
+          "Fart": 1,
+          "Infearpvp": 1,
+          "pyx": 1,
+          "Ayoshi": 1,
+          "AtHoldTheLine": 1,
+          "Grimmッ": 1,
+          "yoy": 1,
+          "bru": 1,
+          "mpmdn": 1,
+          "Gwop": 1,
+          "MyNamelsOof": 1,
+          "Fear": 1,
+          "Aero": 1,
+          "Gottimus": 1,
+          "Regentlord": 1,
+          "Kaiwel父": 1,
+          "Dartz": 1,
+          "WillowHarper": 1
+        },
+        "died_to": {
+          "Panda": 3,
+          "WillowHarper": 3,
+          "Aero": 1,
+          "Kaiwel父": 1,
+          "dabldoya": 1,
+          "Willan": 1,
+          "pyx": 1,
+          "Straight・K・67": 1,
+          "CR8W": 1,
+          "boringg": 1,
+          "Fear": 1,
+          "NGH일": 1,
+          "Infearpvp": 1
+        }
+      }
     },
     {
       "rank": 2,
@@ -46,7 +104,55 @@
       "damage_dealt": 4798121,
       "damage_taken": 966922,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 16,
+      "kf": {
+        "killed": {
+          "・よソ尺ム・": 5,
+          "녹차": 5,
+          "narlynar": 3,
+          "Shaco": 3,
+          "xE4x": 3,
+          "stepbro茡": 2,
+          "Broccoli": 2,
+          "TheRealCheeto": 2,
+          "Mostley": 2,
+          "Realix": 2,
+          "Shabushabu": 2,
+          "Niyaaッ": 2,
+          "Paella": 2,
+          "aquillo": 1,
+          "Augustッ": 1,
+          "Tekkniquezッ": 1,
+          "EddyGSlayer": 1,
+          "Params": 1,
+          "Roxzorッ": 1,
+          "912": 1,
+          "Revioli": 1,
+          "Emperor": 1,
+          "SuperSaiyanAndy": 1,
+          "xZeroBlade": 1,
+          "BEARCLAW": 1,
+          "ShiFood": 1,
+          "MisterCannoli": 1,
+          "zayヅ": 1,
+          "Souffle": 1,
+          "Fade災": 1,
+          "Artay": 1
+        },
+        "died_to": {
+          "녹차": 5,
+          "Melee": 3,
+          "Params": 1,
+          "Paella": 1,
+          "CruMpet": 1,
+          "Fade災": 1,
+          "zayヅ": 1,
+          "stepbro茡": 1,
+          "Emperor": 1,
+          "Augustッ": 1
+        }
+      }
     },
     {
       "rank": 3,
@@ -62,7 +168,37 @@
       "damage_dealt": 3572454,
       "damage_taken": 2814670,
       "amount_healed": 24548,
-      "flags": []
+      "flags": [],
+      "deaths": 11,
+      "kf": {
+        "killed": {
+          "Straight・K・67": 3,
+          "Kaiwel父": 3,
+          "Bound": 3,
+          "Panda": 2,
+          "NGH일": 2,
+          "pyx": 2,
+          "bru": 1,
+          "Infearpvp": 1,
+          "jaksterz": 1,
+          "Liquido": 1,
+          "ツGツ": 1,
+          "Willan": 1,
+          "Fear": 1,
+          "Dash": 1,
+          "xNotSauronx": 1,
+          "Regentlord": 1,
+          "Noeliyo": 1
+        },
+        "died_to": {
+          "Infearpvp": 3,
+          "Fear": 2,
+          "bru": 2,
+          "dabldoya": 2,
+          "pyx": 1,
+          "Liquido": 1
+        }
+      }
     },
     {
       "rank": 4,
@@ -78,7 +214,43 @@
       "damage_dealt": 3745400,
       "damage_taken": 2344403,
       "amount_healed": 32410,
-      "flags": []
+      "flags": [],
+      "deaths": 20,
+      "kf": {
+        "killed": {
+          "Fear": 5,
+          "bru": 4,
+          "MyNamelsOof": 3,
+          "cagedup": 3,
+          "Bound": 2,
+          "AtHoldTheLine": 2,
+          "Gwop": 2,
+          "Panda": 2,
+          "Fart": 1,
+          "pyx": 1,
+          "ZEROKツ": 1,
+          "Liquido": 1,
+          "Infearpvp": 1,
+          "Temper": 1,
+          "ORR": 1,
+          "CR8W": 1,
+          "Aero": 1,
+          "NGH일": 1,
+          "K.08区": 1,
+          "Kaiwel父": 1
+        },
+        "died_to": {
+          "Fear": 5,
+          "Panda": 4,
+          "Aero": 3,
+          "WillowHarper": 2,
+          "pyx": 2,
+          "bru": 1,
+          "Temper": 1,
+          "Kaiwel父": 1,
+          "Bound": 1
+        }
+      }
     },
     {
       "rank": 5,
@@ -94,7 +266,47 @@
       "damage_dealt": 5227086,
       "damage_taken": 1366586,
       "amount_healed": 26304,
-      "flags": []
+      "flags": [],
+      "deaths": 15,
+      "kf": {
+        "killed": {
+          "bru": 5,
+          "boringg": 5,
+          "Temper": 3,
+          "WillowHarper": 3,
+          "Aero": 2,
+          "AtHoldTheLine": 2,
+          "Umbreon父": 2,
+          "Willan": 2,
+          "Liquido": 2,
+          "ツGツ": 2,
+          "Oll": 1,
+          "Fart": 1,
+          "Grimmッ": 1,
+          "ZEROKツ": 1,
+          "cagedup": 1,
+          "Regentlord": 1,
+          "Kaiwel父": 1,
+          "CR8W": 1,
+          "SrDrake": 1,
+          "ラカフラカ": 1,
+          "Bound": 1,
+          "Straight・K・67": 1,
+          "T13": 1,
+          "Fear": 1
+        },
+        "died_to": {
+          "Umbreon父": 2,
+          "boringg": 2,
+          "Kaiwel父": 2,
+          "pyx": 2,
+          "Panda": 2,
+          "CR8W": 2,
+          "Fear": 1,
+          "bru": 1,
+          "Bound": 1
+        }
+      }
     },
     {
       "rank": 6,
@@ -110,7 +322,42 @@
       "damage_dealt": 3947739,
       "damage_taken": 1665122,
       "amount_healed": 29265,
-      "flags": []
+      "flags": [],
+      "deaths": 17,
+      "kf": {
+        "killed": {
+          "Artay": 5,
+          "Paella": 3,
+          "stepbro茡": 2,
+          "CruMpet": 2,
+          "Wintrr": 2,
+          "Melee": 2,
+          "zayヅ": 2,
+          "Emperor": 1,
+          "Augustッ": 1,
+          "Revioli": 1,
+          "・Laney・": 1,
+          "Params": 1,
+          "BEARCLAW": 1,
+          "녹차": 1,
+          "Tekkniquezッ": 1,
+          "Shaco": 1,
+          "Mostley": 1,
+          "・よソ尺ム・": 1,
+          "Roxzorッ": 1
+        },
+        "died_to": {
+          "Augustッ": 5,
+          "녹차": 4,
+          "zayヅ": 2,
+          "stepbro茡": 1,
+          "Melee": 1,
+          "Fade災": 1,
+          "CruMpet": 1,
+          "Wintrr": 1,
+          "Params": 1
+        }
+      }
     },
     {
       "rank": 7,
@@ -126,7 +373,33 @@
       "damage_dealt": 3357603,
       "damage_taken": 1635610,
       "amount_healed": 16827,
-      "flags": []
+      "flags": [],
+      "deaths": 8,
+      "kf": {
+        "killed": {
+          "jaksterz": 4,
+          "NGH일": 3,
+          "Bound": 2,
+          "Straight・K・67": 2,
+          "Kaiwel父": 2,
+          "Infearpvp": 2,
+          "pyx": 2,
+          "Aero": 1,
+          "Regentlord": 1,
+          "Panda": 1,
+          "Fear": 1,
+          "Weax": 1
+        },
+        "died_to": {
+          "Infearpvp": 2,
+          "WillowHarper": 1,
+          "bru": 1,
+          "Regentlord": 1,
+          "Fear": 1,
+          "MrTorture": 1,
+          "Straight・K・67": 1
+        }
+      }
     },
     {
       "rank": 8,
@@ -142,7 +415,34 @@
       "damage_dealt": 2680839,
       "damage_taken": 1728802,
       "amount_healed": 42495,
-      "flags": []
+      "flags": [],
+      "deaths": 21,
+      "kf": {
+        "killed": {
+          "Temper": 3,
+          "dabldoya": 2,
+          "Aero": 2,
+          "jaksterz": 2,
+          "boringg": 2,
+          "Infearpvp": 1,
+          "Kaiwel父": 1,
+          "Bribrixメ": 1,
+          "Liquido": 1,
+          "Fart": 1,
+          "cagedup": 1
+        },
+        "died_to": {
+          "pyx": 4,
+          "CR8W": 4,
+          "Bound": 3,
+          "boringg": 2,
+          "jaksterz": 2,
+          "Panda": 2,
+          "Kaiwel父": 2,
+          "Straight・K・67": 1,
+          "Willan": 1
+        }
+      }
     },
     {
       "rank": 9,
@@ -158,7 +458,43 @@
       "damage_dealt": 2577343,
       "damage_taken": 2170349,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 17,
+      "kf": {
+        "killed": {
+          "Kaiwel父": 2,
+          "Panda": 2,
+          "Noeliyo": 2,
+          "Willan": 1,
+          "Dash": 1,
+          "Temper": 1,
+          "SrDrake": 1,
+          "pyx": 1,
+          "Bribrixメ": 1,
+          "jaksterz": 1,
+          "Ayoshi": 1,
+          "Vel": 1,
+          "xNotSauronx": 1,
+          "ツGツ": 1,
+          "ラカフラカ": 1,
+          "Way": 1,
+          "Fart": 1,
+          "CR8W": 1
+        },
+        "died_to": {
+          "NGH일": 3,
+          "WillowHarper": 2,
+          "Panda": 2,
+          "Infearpvp": 2,
+          "jaksterz": 2,
+          "Liquido": 1,
+          "CR8W": 1,
+          "Straight・K・67": 1,
+          "pyx": 1,
+          "boringg": 1,
+          "dabldoya": 1
+        }
+      }
     },
     {
       "rank": 10,
@@ -174,7 +510,38 @@
       "damage_dealt": 2626192,
       "damage_taken": 1874645,
       "amount_healed": 22973,
-      "flags": []
+      "flags": [],
+      "deaths": 14,
+      "kf": {
+        "killed": {
+          "CruMpet": 3,
+          "Keppy": 2,
+          "Augustッ": 2,
+          "CosmicBrisket": 2,
+          "Realix": 1,
+          "Fade災": 1,
+          "Revioli": 1,
+          "BEARCLAW": 1,
+          "zayヅ": 1,
+          "Caffeine": 1,
+          "xZeroBlade": 1,
+          "Portal・3": 1,
+          "Wintrr": 1,
+          "Paella": 1,
+          "녹차": 1
+        },
+        "died_to": {
+          "stepbro茡": 3,
+          "Emperor": 2,
+          "Hursky": 2,
+          "Params": 2,
+          "CosmicBrisket": 1,
+          "Augustッ": 1,
+          "Fade災": 1,
+          "Melee": 1,
+          "녹차": 1
+        }
+      }
     },
     {
       "rank": 11,
@@ -190,7 +557,37 @@
       "damage_dealt": 2070035,
       "damage_taken": 1612231,
       "amount_healed": 1933,
-      "flags": []
+      "flags": [],
+      "deaths": 13,
+      "kf": {
+        "killed": {
+          "Melee": 4,
+          "녹차": 4,
+          "Params": 3,
+          "Fade災": 3,
+          "Wintrr": 2,
+          "Hursky": 2,
+          "Paella": 2,
+          "CosmicBrisket": 2,
+          "Augustッ": 2,
+          "aquillo": 1,
+          "Artay": 1,
+          "CruMpet": 1,
+          "Niyaaッ": 1,
+          "narlynar": 1,
+          "Revioli": 1
+        },
+        "died_to": {
+          "stepbro茡": 2,
+          "Fade災": 2,
+          "Artay": 2,
+          "Hursky": 2,
+          "녹차": 2,
+          "zayヅ": 1,
+          "CruMpet": 1,
+          "Emperor": 1
+        }
+      }
     },
     {
       "rank": 12,
@@ -206,7 +603,44 @@
       "damage_dealt": 5391685,
       "damage_taken": 923960,
       "amount_healed": 16529,
-      "flags": []
+      "flags": [],
+      "deaths": 11,
+      "kf": {
+        "killed": {
+          "녹차": 3,
+          "BEARCLAW": 2,
+          "Niyaaッ": 2,
+          "TheRealCheeto": 2,
+          "Chai": 2,
+          "jillybean": 2,
+          "Melee": 2,
+          "CruMpet": 2,
+          "Fade災": 1,
+          "Shaco": 1,
+          "Paella": 1,
+          "Souffle": 1,
+          "aquillo": 1,
+          "DVS": 1,
+          "Shabushabu": 1,
+          "Portal・3": 1,
+          "Wintrr": 1,
+          "MisterCannoli": 1,
+          "EddyGSlayer": 1,
+          "Shieldシ": 1,
+          "narlynar": 1,
+          "912": 1,
+          "zayヅ": 1
+        },
+        "died_to": {
+          "Paella": 3,
+          "Augustッ": 2,
+          "CosmicBrisket": 2,
+          "Emperor": 1,
+          "녹차": 1,
+          "Fade災": 1,
+          "CruMpet": 1
+        }
+      }
     },
     {
       "rank": 13,
@@ -222,7 +656,47 @@
       "damage_dealt": 2640205,
       "damage_taken": 1483491,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 23,
+      "kf": {
+        "killed": {
+          "WillowHarper": 4,
+          "Weax": 3,
+          "Tikkiャ": 2,
+          "cagedup": 2,
+          "Fart": 2,
+          "Noeliyo": 2,
+          "Dartz": 2,
+          "Panda": 2,
+          "Straight・K・67": 1,
+          "Keifrrム": 1,
+          "boringg": 1,
+          "xNotSauronx": 1,
+          "Grimmッ": 1,
+          "FO5O": 1,
+          "LEADn": 1,
+          "CRTUDIDDS": 1,
+          "XT0AMEDY": 1,
+          "Cnim": 1,
+          "Ghinn": 1,
+          "Willan": 1,
+          "ツGツ": 1,
+          "MrTorture": 1
+        },
+        "died_to": {
+          "bru": 5,
+          "boringg": 5,
+          "NGH일": 2,
+          "jaksterz": 2,
+          "dabldoya": 2,
+          "Temper": 2,
+          "Umbreon父": 1,
+          "Panda": 1,
+          "Bound": 1,
+          "Infearpvp": 1,
+          "Fear": 1
+        }
+      }
     },
     {
       "rank": 14,
@@ -238,7 +712,41 @@
       "damage_dealt": 2707803,
       "damage_taken": 2197816,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 17,
+      "kf": {
+        "killed": {
+          "dabldoya": 4,
+          "Fear": 3,
+          "Temper": 2,
+          "CR8W": 2,
+          "Fart": 1,
+          "Grimmッ": 1,
+          "Keifrrム": 1,
+          "hac": 1,
+          "Keylosh": 1,
+          "cagedup": 1,
+          "Tikkiャ": 1,
+          "MrTorture": 1,
+          "Dartz": 1,
+          "Infearpvp": 1,
+          "bru": 1,
+          "pyx": 1,
+          "WillowHarper": 1,
+          "ZEROKツ": 1,
+          "Kaiwel父": 1,
+          "Willan": 1
+        },
+        "died_to": {
+          "Panda": 4,
+          "boringg": 3,
+          "CR8W": 3,
+          "bru": 2,
+          "Straight・K・67": 2,
+          "Aero": 2,
+          "pyx": 1
+        }
+      }
     },
     {
       "rank": 15,
@@ -254,7 +762,38 @@
       "damage_dealt": 2361773,
       "damage_taken": 874742,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 11,
+      "kf": {
+        "killed": {
+          "CosmicBrisket": 4,
+          "Melee": 3,
+          "Chai": 2,
+          "Portal・3": 2,
+          "Augustッ": 2,
+          "Hounter": 1,
+          "Paella": 1,
+          "Hursky": 1,
+          "912": 1,
+          "jillybean": 1,
+          "Revioli": 1,
+          "ShiFood": 1,
+          "TheRealCheeto": 1,
+          "Fade災": 1,
+          "・Laney・": 1,
+          "moncler茡": 1,
+          "Roxzorッ": 1
+        },
+        "died_to": {
+          "Revioli": 3,
+          "Paella": 2,
+          "Melee": 2,
+          "Augustッ": 1,
+          "녹차": 1,
+          "CruMpet": 1,
+          "Hursky": 1
+        }
+      }
     },
     {
       "rank": 16,
@@ -270,7 +809,44 @@
       "damage_dealt": 3805341,
       "damage_taken": 936358,
       "amount_healed": 19355,
-      "flags": []
+      "flags": [],
+      "deaths": 19,
+      "kf": {
+        "killed": {
+          "Artay": 5,
+          "zayヅ": 4,
+          "Melee": 3,
+          "CosmicBrisket": 2,
+          "Wintrr": 2,
+          "Paella": 2,
+          "Augustッ": 2,
+          "Roxzorッ": 1,
+          "Hounter": 1,
+          "Params": 1,
+          "Shaco": 1,
+          "ShiFood": 1,
+          "xZeroBlade": 1,
+          "TheRealCheeto": 1,
+          "xE4x": 1,
+          "Realix": 1,
+          "EddyGSlayer": 1,
+          "CruMpet": 1,
+          "Fade災": 1,
+          "Portal・3": 1,
+          "Hursky": 1
+        },
+        "died_to": {
+          "Augustッ": 5,
+          "Fade災": 5,
+          "Wintrr": 2,
+          "CosmicBrisket": 2,
+          "Artay": 1,
+          "Keppy": 1,
+          "CruMpet": 1,
+          "Caffeine": 1,
+          "Revioli": 1
+        }
+      }
     },
     {
       "rank": 17,
@@ -286,7 +862,42 @@
       "damage_dealt": 1983386,
       "damage_taken": 1575586,
       "amount_healed": 7299,
-      "flags": []
+      "flags": [],
+      "deaths": 15,
+      "kf": {
+        "killed": {
+          "Fade災": 3,
+          "zayヅ": 3,
+          "Hursky": 2,
+          "EddyGSlayer": 2,
+          "녹차": 2,
+          "xZeroBlade": 2,
+          "Chai": 1,
+          "Wintrr": 1,
+          "Revioli": 1,
+          "Emperor": 1,
+          "jillybean": 1,
+          "MisterCannoli": 1,
+          "BEARCLAW": 1,
+          "・よソ尺ム・": 1,
+          "Portal・3": 1,
+          "xE4x": 1,
+          "Paella": 1,
+          "912": 1
+        },
+        "died_to": {
+          "Artay": 4,
+          "Augustッ": 3,
+          "Params": 1,
+          "CruMpet": 1,
+          "zayヅ": 1,
+          "Paella": 1,
+          "Melee": 1,
+          "Wintrr": 1,
+          "Portal・3": 1,
+          "Fade災": 1
+        }
+      }
     },
     {
       "rank": 18,
@@ -302,7 +913,46 @@
       "damage_dealt": 2165052,
       "damage_taken": 972898,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 14,
+      "kf": {
+        "killed": {
+          "MrTorture": 2,
+          "ラカフラカ": 2,
+          "pyx": 2,
+          "cagedup": 2,
+          "Keifrrム": 1,
+          "Gottimus": 1,
+          "WillowHarper": 1,
+          "NGH일": 1,
+          "Panda": 1,
+          "Keylosh": 1,
+          "Fear": 1,
+          "Temper": 1,
+          "dabldoya": 1,
+          "Willan": 1,
+          "CR8W": 1,
+          "bru": 1,
+          "Dash": 1,
+          "DIE": 1,
+          "boringg": 1,
+          "Vel": 1,
+          "Fart": 1,
+          "Umbreon父": 1,
+          "Aero": 1
+        },
+        "died_to": {
+          "Kaiwel父": 3,
+          "Umbreon父": 2,
+          "bru": 2,
+          "Aero": 2,
+          "Temper": 1,
+          "Straight・K・67": 1,
+          "dabldoya": 1,
+          "Panda": 1,
+          "boringg": 1
+        }
+      }
     },
     {
       "rank": 19,
@@ -318,7 +968,42 @@
       "damage_dealt": 5724403,
       "damage_taken": 683457,
       "amount_healed": 2019,
-      "flags": []
+      "flags": [],
+      "deaths": 11,
+      "kf": {
+        "killed": {
+          "Augustッ": 2,
+          "xZeroBlade": 2,
+          "CruMpet": 2,
+          "Roxzorッ": 2,
+          "Realix": 2,
+          "aquillo": 2,
+          "Souffle": 2,
+          "Broccoli": 1,
+          "moncler茡": 1,
+          "narlynar": 1,
+          "Niyaaッ": 1,
+          "Artay": 1,
+          "ShiFood": 1,
+          "Mostley": 1,
+          "Portal・3": 1,
+          "Shieldシ": 1,
+          "MisterCannoli": 1,
+          "TheRealCheeto": 1,
+          "Shaco": 1,
+          "miumiu茡": 1,
+          "Wintrr": 1,
+          "Paella": 1,
+          "・よソ尺ム・": 1
+        },
+        "died_to": {
+          "Fade災": 4,
+          "Revioli": 3,
+          "Augustッ": 2,
+          "Paella": 1,
+          "CruMpet": 1
+        }
+      }
     },
     {
       "rank": 20,
@@ -334,7 +1019,38 @@
       "damage_dealt": 2543434,
       "damage_taken": 1840180,
       "amount_healed": 46984,
-      "flags": []
+      "flags": [],
+      "deaths": 15,
+      "kf": {
+        "killed": {
+          "CosmicBrisket": 4,
+          "Caffeine": 3,
+          "SuperSaiyanAndy": 2,
+          "녹차": 2,
+          "Augustッ": 2,
+          "Revioli": 2,
+          "Portal・3": 1,
+          "Shieldシ": 1,
+          "stepbro茡": 1,
+          "Melee": 1,
+          "Chai": 1,
+          "Fade災": 1,
+          "Realix": 1,
+          "Hursky": 1
+        },
+        "died_to": {
+          "Params": 3,
+          "CruMpet": 2,
+          "stepbro茡": 2,
+          "Emperor": 2,
+          "Wintrr": 1,
+          "녹차": 1,
+          "Hursky": 1,
+          "Fade災": 1,
+          "Melee": 1,
+          "Portal・3": 1
+        }
+      }
     },
     {
       "rank": 21,
@@ -350,7 +1066,35 @@
       "damage_dealt": 1580797,
       "damage_taken": 1146387,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 15,
+      "kf": {
+        "killed": {
+          "dabldoya": 2,
+          "boringg": 2,
+          "pyx": 1,
+          "ラカフラカ": 1,
+          "Fart": 1,
+          "Noeliyo": 1,
+          "RoundAndPerky": 1,
+          "Infearpvp": 1,
+          "jaksterz": 1,
+          "WillowHarper": 1,
+          "bru": 1
+        },
+        "died_to": {
+          "boringg": 2,
+          "Panda": 2,
+          "bru": 2,
+          "Straight・K・67": 2,
+          "Bound": 2,
+          "WillowHarper": 1,
+          "Aero": 1,
+          "Umbreon父": 1,
+          "Temper": 1,
+          "Kaiwel父": 1
+        }
+      }
     },
     {
       "rank": 22,
@@ -366,7 +1110,41 @@
       "damage_dealt": 2191108,
       "damage_taken": 973384,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 17,
+      "kf": {
+        "killed": {
+          "xZeroBlade": 2,
+          "jillybean": 2,
+          "Artay": 2,
+          "Params": 2,
+          "CruMpet": 1,
+          "Portal・3": 1,
+          "Paella": 1,
+          "Realix": 1,
+          "TheRealCheeto": 1,
+          "SuperSaiyanAndy": 1,
+          "BEARCLAW": 1,
+          "・よソ尺ム・": 1,
+          "912": 1,
+          "ShiFood": 1,
+          "녹차": 1,
+          "aquillo": 1,
+          "Wintrr": 1,
+          "Roxzorッ": 1
+        },
+        "died_to": {
+          "Augustッ": 3,
+          "Params": 3,
+          "CosmicBrisket": 3,
+          "Melee": 2,
+          "zayヅ": 2,
+          "Hursky": 1,
+          "녹차": 1,
+          "CruMpet": 1,
+          "Revioli": 1
+        }
+      }
     },
     {
       "rank": 23,
@@ -382,7 +1160,38 @@
       "damage_dealt": 2398333,
       "damage_taken": 1397774,
       "amount_healed": 11090,
-      "flags": []
+      "flags": [],
+      "deaths": 16,
+      "kf": {
+        "killed": {
+          "bru": 2,
+          "Temper": 2,
+          "dabldoya": 1,
+          "Panda": 1,
+          "Straight・K・67": 1,
+          "Grimmッ": 1,
+          "WillowHarper": 1,
+          "Bound": 1,
+          "Gottimus": 1,
+          "Fart": 1,
+          "Tikkiャ": 1,
+          "Fear": 1,
+          "ZEROKツ": 1,
+          "MyNamelsOof": 1,
+          "Gwop": 1
+        },
+        "died_to": {
+          "boringg": 4,
+          "WillowHarper": 3,
+          "bru": 2,
+          "dabldoya": 2,
+          "Infearpvp": 1,
+          "Kaiwel父": 1,
+          "NGH일": 1,
+          "Aero": 1,
+          "Fear": 1
+        }
+      }
     },
     {
       "rank": 24,
@@ -398,7 +1207,33 @@
       "damage_dealt": 1571219,
       "damage_taken": 1310932,
       "amount_healed": 22676,
-      "flags": []
+      "flags": [],
+      "deaths": 14,
+      "kf": {
+        "killed": {
+          "Umbreon父": 3,
+          "CR8W": 3,
+          "NGH일": 2,
+          "Bound": 1,
+          "Straight・K・67": 1,
+          "jaksterz": 1,
+          "Temper": 1,
+          "boringg": 1
+        },
+        "died_to": {
+          "Bound": 2,
+          "Infearpvp": 2,
+          "pyx": 2,
+          "WillowHarper": 1,
+          "Kaiwel父": 1,
+          "bru": 1,
+          "jaksterz": 1,
+          "CR8W": 1,
+          "Fear": 1,
+          "NGH일": 1,
+          "Panda": 1
+        }
+      }
     },
     {
       "rank": 25,
@@ -414,7 +1249,37 @@
       "damage_dealt": 11895707,
       "damage_taken": 1580775,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 17,
+      "kf": {
+        "killed": {
+          "Aero": 3,
+          "CR8W": 2,
+          "Noeliyo": 1,
+          "Bound": 1,
+          "一大": 1,
+          "WillowHarper": 1,
+          "Fear": 1,
+          "Umbreon父": 1,
+          "Dash": 1,
+          "Gwop": 1,
+          "Gottimus": 1
+        },
+        "died_to": {
+          "bru": 3,
+          "boringg": 2,
+          "Panda": 2,
+          "Fear": 2,
+          "Aero": 1,
+          "CR8W": 1,
+          "Temper": 1,
+          "NGH일": 1,
+          "Willan": 1,
+          "Umbreon父": 1,
+          "WillowHarper": 1,
+          "Kaiwel父": 1
+        }
+      }
     },
     {
       "rank": 26,
@@ -430,7 +1295,31 @@
       "damage_dealt": 2011134,
       "damage_taken": 770904,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 10,
+      "kf": {
+        "killed": {
+          "Realix": 2,
+          "Params": 2,
+          "Artay": 2,
+          "stepbro茡": 2,
+          "zayヅ": 2,
+          "Shabushabu": 1,
+          "Tekkniquezッ": 1,
+          "TheRealCheeto": 1,
+          "Fade災": 1,
+          "Keppy": 1,
+          "CruMpet": 1,
+          "Hursky": 1
+        },
+        "died_to": {
+          "Melee": 4,
+          "CosmicBrisket": 2,
+          "Wintrr": 2,
+          "zayヅ": 1,
+          "CruMpet": 1
+        }
+      }
     },
     {
       "rank": 27,
@@ -446,7 +1335,31 @@
       "damage_dealt": 1768427,
       "damage_taken": 1861377,
       "amount_healed": 22364,
-      "flags": []
+      "flags": [],
+      "deaths": 13,
+      "kf": {
+        "killed": {
+          "Caffeine": 2,
+          "Wintrr": 2,
+          "Melee": 2,
+          "CosmicBrisket": 1,
+          "CruMpet": 1,
+          "Hursky": 1,
+          "Fade災": 1,
+          "Emperor": 1
+        },
+        "died_to": {
+          "stepbro茡": 3,
+          "Emperor": 2,
+          "Fade災": 2,
+          "Keppy": 1,
+          "Artay": 1,
+          "zayヅ": 1,
+          "Revioli": 1,
+          "Params": 1,
+          "Augustッ": 1
+        }
+      }
     },
     {
       "rank": 28,
@@ -462,7 +1375,33 @@
       "damage_dealt": 2026355,
       "damage_taken": 2173334,
       "amount_healed": 32513,
-      "flags": []
+      "flags": [],
+      "deaths": 12,
+      "kf": {
+        "killed": {
+          "Temper": 3,
+          "pyx": 3,
+          "Kaiwel父": 2,
+          "Fart": 1,
+          "WillowHarper": 1,
+          "Fear": 1,
+          "Straight・K・67": 1,
+          "RoundAndPerky": 1,
+          "Gwop": 1,
+          "Bound": 1,
+          "bru": 1
+        },
+        "died_to": {
+          "Panda": 3,
+          "dabldoya": 2,
+          "Temper": 2,
+          "Fear": 1,
+          "Infearpvp": 1,
+          "boringg": 1,
+          "bru": 1,
+          "Dartz": 1
+        }
+      }
     },
     {
       "rank": 29,
@@ -494,7 +1433,31 @@
       "damage_dealt": 1650200,
       "damage_taken": 1635967,
       "amount_healed": 61914,
-      "flags": []
+      "flags": [],
+      "deaths": 9,
+      "kf": {
+        "killed": {
+          "stepbro茡": 3,
+          "Emperor": 2,
+          "Hursky": 2,
+          "Revioli": 2,
+          "zayヅ": 1,
+          "Params": 1,
+          "Caffeine": 1,
+          "Artay": 1,
+          "Fade災": 1
+        },
+        "died_to": {
+          "Emperor": 2,
+          "CosmicBrisket": 1,
+          "stepbro茡": 1,
+          "Melee": 1,
+          "녹차": 1,
+          "Caffeine": 1,
+          "Fade災": 1,
+          "Wintrr": 1
+        }
+      }
     },
     {
       "rank": 31,
@@ -510,7 +1473,31 @@
       "damage_dealt": 914676,
       "damage_taken": 1527722,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 14,
+      "kf": {
+        "killed": {
+          "CosmicBrisket": 3,
+          "Revioli": 2,
+          "Wintrr": 2,
+          "Augustッ": 1,
+          "Artay": 1,
+          "Portal・3": 1,
+          "녹차": 1,
+          "narlynar": 1
+        },
+        "died_to": {
+          "stepbro茡": 3,
+          "녹차": 2,
+          "Emperor": 2,
+          "Fade災": 2,
+          "Paella": 1,
+          "Revioli": 1,
+          "zayヅ": 1,
+          "Augustッ": 1,
+          "Params": 1
+        }
+      }
     },
     {
       "rank": 32,

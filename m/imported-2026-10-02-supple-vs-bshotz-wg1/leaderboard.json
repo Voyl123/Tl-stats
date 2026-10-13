@@ -13,7 +13,13 @@
       "tab": "10/2 vs BShotz WG1"
     },
     "inhouse": false,
-    "siege": false
+    "siege": false,
+    "killfeed": {
+      "map": "",
+      "note": "",
+      "events": null,
+      "players": 30
+    }
   },
   "players": [
     {
@@ -30,7 +36,68 @@
       "damage_dealt": 8606645,
       "damage_taken": 1284288,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 29,
+      "kf": {
+        "killed": {
+          "Rimuru骨゜": 5,
+          "Splice": 5,
+          "fia": 5,
+          "Fravy": 4,
+          "Sueby": 4,
+          "BuffWhen°": 4,
+          "ズコ": 4,
+          "しムこと": 4,
+          "Breadypuddin": 3,
+          "PegboyFYB": 3,
+          "FollowingLife": 3,
+          "Twix金": 2,
+          "Liisss": 2,
+          "djcarsun": 2,
+          "·てのホ·": 2,
+          "Ayeoki": 2,
+          "Bachメ": 2,
+          "・Rey・": 2,
+          "iRockz": 1,
+          "Neeenz": 1,
+          "Kred": 1,
+          "Biniツ": 1,
+          "Aevenien": 1,
+          "farnii": 1,
+          "QueenOfCurses": 1,
+          "Selkey°": 1,
+          "Boda°": 1,
+          "・Jules・": 1,
+          "xaher": 1,
+          "Astrigerヤ": 1,
+          "TModz": 1,
+          "Shrubertメ": 1,
+          "Neoo": 1,
+          "Po切": 1,
+          "鬼七": 1,
+          "SalsaSrirachaシ": 1,
+          "neko·": 1,
+          "ItsWes": 1,
+          "・Ellie・": 1,
+          "ホシ": 1,
+          "Hosted゜": 1,
+          "America": 1
+        },
+        "died_to": {
+          "QueenOfCurses": 8,
+          "Biniツ": 5,
+          "Aevenien": 3,
+          "ItsWes": 2,
+          "Skyscorcher": 2,
+          "Bachメ": 2,
+          "fia": 2,
+          "デDURIAN气": 1,
+          "Shrubertメ": 1,
+          "しムこと": 1,
+          "ズコ": 1,
+          "Aiushtha": 1
+        }
+      }
     },
     {
       "rank": 2,
@@ -46,7 +113,62 @@
       "damage_dealt": 9162788,
       "damage_taken": 1034513,
       "amount_healed": 241096,
-      "flags": []
+      "flags": [],
+      "deaths": 26,
+      "kf": {
+        "killed": {
+          "WillowHarper": 4,
+          "cagedup": 4,
+          "Trazッ": 3,
+          "Keifrrム": 3,
+          "MrTorture": 3,
+          "chaineddown": 3,
+          "AtHoldTheLine": 3,
+          "Gottimus": 3,
+          "Willan": 3,
+          "Regentlord": 3,
+          "Grimm": 3,
+          "Noeliyo": 2,
+          "Umbreon父": 2,
+          "Straight・K・67": 2,
+          "boringg": 2,
+          "RoundAndPerky": 2,
+          "Dash": 2,
+          "Temper": 2,
+          "Cxshew": 2,
+          "Bound": 2,
+          "Dawn": 2,
+          "SrDrake": 2,
+          "Sueming": 1,
+          "Azriel": 1,
+          "pyx": 1,
+          "Bribrixメ": 1,
+          "AndreNicky": 1,
+          "Weax": 1,
+          "Kaiwel父": 1,
+          "emilee": 1,
+          "Tikkiャ": 1,
+          "Keylosh": 1,
+          "CR8W": 1,
+          "Fear": 1,
+          "Microツ": 1
+        },
+        "died_to": {
+          "Straight・K・67": 5,
+          "dabldoya": 4,
+          "pyx": 3,
+          "boringg": 3,
+          "CR8W": 2,
+          "Onixラ": 2,
+          "Dawn": 1,
+          "Fear": 1,
+          "OnlyBans": 1,
+          "Bound": 1,
+          "Kaiwel父": 1,
+          "Temper": 1,
+          "Cxshew": 1
+        }
+      }
     },
     {
       "rank": 3,
@@ -62,7 +184,57 @@
       "damage_dealt": 5395183,
       "damage_taken": 1470995,
       "amount_healed": 5930,
-      "flags": []
+      "flags": [],
+      "deaths": 23,
+      "kf": {
+        "killed": {
+          "fia": 10,
+          "Neoo": 8,
+          "Biniツ": 6,
+          "鬼七": 6,
+          "Selkey°": 5,
+          "Ayeoki": 4,
+          "Kred": 4,
+          "Valekza": 3,
+          "·てのホ·": 3,
+          "Bachメ": 3,
+          "・Rey・": 2,
+          "BuffWhen°": 2,
+          "ItsWes": 2,
+          "デDURIAN气": 2,
+          "しムこと": 2,
+          "Boda°": 2,
+          "Fravy": 2,
+          "QueenOfCurses": 2,
+          "Aevenien": 2,
+          "Shrubertメ": 1,
+          "JAJA": 1,
+          "Neeenz": 1,
+          "neko·": 1,
+          "Twix金": 1,
+          "iRockz": 1,
+          "Astrigerヤ": 1,
+          "Aiushtha": 1,
+          "ホシ": 1,
+          "Skyscorcher": 1,
+          "Splice": 1,
+          "Rimuru骨゜": 1,
+          "FollowingLife": 1
+        },
+        "died_to": {
+          "しムこと": 5,
+          "QueenOfCurses": 4,
+          "Shrubertメ": 3,
+          "fia": 3,
+          "·てのホ·": 2,
+          "Skyscorcher": 1,
+          "ItsWes": 1,
+          "Aevenien": 1,
+          "Bachメ": 1,
+          "Selkey°": 1,
+          "鬼七": 1
+        }
+      }
     },
     {
       "rank": 4,
@@ -78,7 +250,55 @@
       "damage_dealt": 5457536,
       "damage_taken": 1351752,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 24,
+      "kf": {
+        "killed": {
+          "Breadypuddin": 6,
+          "Rimuru骨゜": 5,
+          "Hosted゜": 4,
+          "fia": 4,
+          "Castaspella": 4,
+          "Splice": 4,
+          "farnii": 3,
+          "Neoo": 2,
+          "SalsaSrirachaシ": 2,
+          "Skyscorcher": 2,
+          "・Rey・": 2,
+          "FollowingLife": 2,
+          "djcarsun": 2,
+          "BuffWhen°": 2,
+          "Sueby": 2,
+          "Twix金": 2,
+          "Fravy": 2,
+          "Kred": 1,
+          "dira": 1,
+          "ItsWes": 1,
+          "Aevenien": 1,
+          "Bachメ": 1,
+          "Astrigerヤ": 1,
+          "QueenOfCurses": 1,
+          "Neeenz": 1,
+          "PegboyFYB": 1,
+          "·てのホ·": 1,
+          "ズコ": 1,
+          "鬼七": 1,
+          "Liisss": 1,
+          "Shrubertメ": 1,
+          "・Jules・": 1,
+          "fani": 1,
+          "Po切": 1
+        },
+        "died_to": {
+          "fia": 10,
+          "Biniツ": 4,
+          "鬼七": 3,
+          "Shrubertメ": 2,
+          "Kred": 2,
+          "·てのホ·": 2,
+          "Neoo": 1
+        }
+      }
     },
     {
       "rank": 5,
@@ -110,7 +330,60 @@
       "damage_dealt": 4862740,
       "damage_taken": 2021719,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 32,
+      "kf": {
+        "killed": {
+          "Breadypuddin": 7,
+          "Rimuru骨゜": 5,
+          "Splice": 5,
+          "fia": 4,
+          "Castaspella": 3,
+          "Kred": 3,
+          "Twix金": 3,
+          "Skyscorcher": 2,
+          "Neeenz": 2,
+          "しムこと": 2,
+          "FollowingLife": 2,
+          "PegboyFYB": 2,
+          "BuffWhen°": 2,
+          "Liisss": 2,
+          "djcarsun": 2,
+          "Neoo": 2,
+          "SalsaSrirachaシ": 1,
+          "ItsWes": 1,
+          "・Jules・": 1,
+          "Biniツ": 1,
+          "Astrigerヤ": 1,
+          "・Rey・": 1,
+          "·てのホ·": 1,
+          "デDURIAN气": 1,
+          "Hosted゜": 1,
+          "Aiushtha": 1,
+          "Sueby": 1,
+          "Aevenien": 1,
+          "Xae": 1,
+          "ACE": 1,
+          "neko·": 1,
+          "Fravy": 1,
+          "・Ellie・": 1,
+          "iRockz": 1
+        },
+        "died_to": {
+          "fia": 6,
+          "鬼七": 4,
+          "Aiushtha": 4,
+          "しムこと": 3,
+          "Kred": 3,
+          "Aevenien": 3,
+          "Neoo": 3,
+          "ItsWes": 2,
+          "Biniツ": 1,
+          "America": 1,
+          "·てのホ·": 1,
+          "Skyscorcher": 1
+        }
+      }
     },
     {
       "rank": 7,
@@ -126,7 +399,55 @@
       "damage_dealt": 3696084,
       "damage_taken": 1989586,
       "amount_healed": 13636,
-      "flags": []
+      "flags": [],
+      "deaths": 21,
+      "kf": {
+        "killed": {
+          "Aevenien": 7,
+          "Skyscorcher": 4,
+          "鬼七": 4,
+          "Twix金": 3,
+          "fia": 3,
+          "Aiushtha": 3,
+          "Bachメ": 3,
+          "Splice": 3,
+          "Kred": 3,
+          "Castaspella": 2,
+          "QueenOfCurses": 2,
+          "JAJA": 2,
+          "Selkey°": 2,
+          "Astrigerヤ": 2,
+          "TModz": 2,
+          "Po切": 2,
+          "iRockz": 1,
+          "Ayeoki": 1,
+          "FollowingLife": 1,
+          "デDURIAN气": 1,
+          "Breadypuddin": 1,
+          "Neoo": 1,
+          "Liisss": 1,
+          "Hosted゜": 1,
+          "しムこと": 1,
+          "Valekza": 1,
+          "Boda°": 1,
+          "・Rey・": 1,
+          "・Ellie・": 1,
+          "PegboyFYB": 1,
+          "farnii": 1
+        },
+        "died_to": {
+          "·てのホ·": 4,
+          "fia": 3,
+          "鬼七": 3,
+          "Biniツ": 3,
+          "Kred": 3,
+          "QueenOfCurses": 1,
+          "Neoo": 1,
+          "Aevenien": 1,
+          "Aiushtha": 1,
+          "Shrubertメ": 1
+        }
+      }
     },
     {
       "rank": 8,
@@ -142,7 +463,57 @@
       "damage_dealt": 4394558,
       "damage_taken": 2390383,
       "amount_healed": 30902,
-      "flags": []
+      "flags": [],
+      "deaths": 28,
+      "kf": {
+        "killed": {
+          "FollowingLife": 4,
+          "Astrigerヤ": 3,
+          "Hosted゜": 3,
+          "Breadypuddin": 3,
+          "PegboyFYB": 3,
+          "America": 3,
+          "fia": 3,
+          "Kred": 3,
+          "JAJA": 3,
+          "Castaspella": 3,
+          "Splice": 2,
+          "TModz": 2,
+          "鬼七": 2,
+          "Aiushtha": 2,
+          "Neeenz": 2,
+          "farnii": 2,
+          "Selkey°": 2,
+          "・Ellie・": 2,
+          "Skyscorcher": 2,
+          "Twix金": 2,
+          "Rimuru骨゜": 2,
+          "·てのホ·": 1,
+          "QueenOfCurses": 1,
+          "Aevenien": 1,
+          "・Jules・": 1,
+          "Po切": 1,
+          "ItsWes": 1,
+          "Ayeoki": 1,
+          "Neoo": 1,
+          "SalsaSrirachaシ": 1,
+          "djcarsun": 1,
+          "Biniツ": 1,
+          "BuffWhen°": 1
+        },
+        "died_to": {
+          "fia": 11,
+          "Kred": 4,
+          "Biniツ": 3,
+          "鬼七": 2,
+          "Neoo": 2,
+          "·てのホ·": 2,
+          "しムこと": 1,
+          "Skyscorcher": 1,
+          "Aevenien": 1,
+          "Aiushtha": 1
+        }
+      }
     },
     {
       "rank": 9,
@@ -158,7 +529,58 @@
       "damage_dealt": 7135140,
       "damage_taken": 1354641,
       "amount_healed": 45574,
-      "flags": []
+      "flags": [],
+      "deaths": 34,
+      "kf": {
+        "killed": {
+          "PegboyFYB": 4,
+          "Twix金": 4,
+          "鬼七": 4,
+          "fia": 3,
+          "しムこと": 3,
+          "Astrigerヤ": 3,
+          "Aevenien": 3,
+          "QueenOfCurses": 3,
+          "Rimuru骨゜": 3,
+          "ホシ": 2,
+          "Splice": 2,
+          "TModz": 2,
+          "Ayeoki": 2,
+          "Hosted゜": 2,
+          "Sueby": 2,
+          "BuffWhen°": 2,
+          "Neoo": 2,
+          "デDURIAN气": 1,
+          "ズコ": 1,
+          "ItsWes": 1,
+          "Kred": 1,
+          "Fravy": 1,
+          "Valekza": 1,
+          "Shrubertメ": 1,
+          "SalsaSrirachaシ": 1,
+          "・Jules・": 1,
+          "Biniツ": 1,
+          "Neeenz": 1,
+          "iRockz": 1,
+          "Nenn": 1,
+          "JAJA": 1,
+          "Bachメ": 1
+        },
+        "died_to": {
+          "QueenOfCurses": 7,
+          "fia": 6,
+          "Biniツ": 5,
+          "Shrubertメ": 3,
+          "·てのホ·": 2,
+          "America": 2,
+          "Aiushtha": 2,
+          "Bachメ": 2,
+          "Skyscorcher": 2,
+          "しムこと": 1,
+          "Aevenien": 1,
+          "Neoo": 1
+        }
+      }
     },
     {
       "rank": 10,
@@ -174,7 +596,47 @@
       "damage_dealt": 3388192,
       "damage_taken": 1859230,
       "amount_healed": 23103,
-      "flags": []
+      "flags": [],
+      "deaths": 18,
+      "kf": {
+        "killed": {
+          "fia": 9,
+          "Bachメ": 8,
+          "Aiushtha": 6,
+          "Neoo": 4,
+          "しムこと": 4,
+          "Aevenien": 3,
+          "Ayeoki": 2,
+          "Shrubertメ": 2,
+          "BuffWhen°": 2,
+          "鬼七": 2,
+          "QueenOfCurses": 2,
+          "ItsWes": 2,
+          "デDURIAN气": 1,
+          "farnii": 1,
+          "Breadypuddin": 1,
+          "Skyscorcher": 1,
+          "ホシ": 1,
+          "·てのホ·": 1,
+          "ズコ": 1,
+          "Valekza": 1,
+          "Kred": 1
+        },
+        "died_to": {
+          "Shrubertメ": 3,
+          "Aiushtha": 2,
+          "Kred": 2,
+          "ItsWes": 2,
+          "fia": 2,
+          "しムこと": 1,
+          "JAJA": 1,
+          "Bachメ": 1,
+          "·てのホ·": 1,
+          "鬼七": 1,
+          "Skyscorcher": 1,
+          "Biniツ": 1
+        }
+      }
     },
     {
       "rank": 11,
@@ -190,7 +652,58 @@
       "damage_dealt": 4352134,
       "damage_taken": 1749116,
       "amount_healed": 89026,
-      "flags": []
+      "flags": [],
+      "deaths": 35,
+      "kf": {
+        "killed": {
+          "xNotSauronx": 4,
+          "Fear": 4,
+          "dabldoya": 3,
+          "Temper": 3,
+          "WillowHarper": 3,
+          "AndreNicky": 3,
+          "Bound": 3,
+          "Tikkiャ": 2,
+          "Keifrrム": 2,
+          "Straight・K・67": 2,
+          "Dawn": 2,
+          "Grimm": 2,
+          "MrTorture": 2,
+          "emilee": 2,
+          "Bribrixメ": 2,
+          "Cxshew": 1,
+          "Noeliyo": 1,
+          "cagedup": 1,
+          "MyNamelsOof": 1,
+          "Ayoshi": 1,
+          "Keylosh": 1,
+          "Regentlord": 1,
+          "CR8W": 1,
+          "ZEROKツ": 1,
+          "Azriel": 1,
+          "OnlyBans": 1,
+          "Kaiwel父": 1,
+          "pyx": 1,
+          "boringg": 1
+        },
+        "died_to": {
+          "dabldoya": 6,
+          "boringg": 6,
+          "WillowHarper": 4,
+          "Umbreon父": 4,
+          "Willan": 3,
+          "Dawn": 2,
+          "Kaiwel父": 2,
+          "RoundAndPerky": 1,
+          "CR8W": 1,
+          "Straight・K・67": 1,
+          "Onixラ": 1,
+          "一大": 1,
+          "Temper": 1,
+          "OnlyBans": 1,
+          "pyx": 1
+        }
+      }
     },
     {
       "rank": 12,
@@ -206,7 +719,49 @@
       "damage_dealt": 3471683,
       "damage_taken": 2725345,
       "amount_healed": 37770,
-      "flags": []
+      "flags": [],
+      "deaths": 22,
+      "kf": {
+        "killed": {
+          "fia": 9,
+          "ItsWes": 5,
+          "Aiushtha": 5,
+          "しムこと": 3,
+          "Biniツ": 3,
+          "Shrubertメ": 3,
+          "·てのホ·": 3,
+          "Skyscorcher": 3,
+          "neko·": 3,
+          "Aevenien": 2,
+          "Selkey°": 2,
+          "Fravy": 2,
+          "QueenOfCurses": 1,
+          "ホシ": 1,
+          "Castaspella": 1,
+          "COA": 1,
+          "Hosted゜": 1,
+          "BuffWhen°": 1,
+          "Valekza": 1,
+          "JAJA": 1,
+          "LAEEO": 1,
+          "鬼七": 1,
+          "Neoo": 1,
+          "Boda°": 1
+        },
+        "died_to": {
+          "Neoo": 6,
+          "Shrubertメ": 4,
+          "Biniツ": 2,
+          "ItsWes": 2,
+          "fia": 2,
+          "·てのホ·": 1,
+          "しムこと": 1,
+          "Aiushtha": 1,
+          "Bachメ": 1,
+          "鬼七": 1,
+          "Aevenien": 1
+        }
+      }
     },
     {
       "rank": 13,
@@ -222,7 +777,50 @@
       "damage_dealt": 4781621,
       "damage_taken": 2085596,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 19,
+      "kf": {
+        "killed": {
+          "Umbreon父": 5,
+          "Onixラ": 5,
+          "RoundAndPerky": 4,
+          "Temper": 4,
+          "Willan": 4,
+          "MrTorture": 3,
+          "Dawn": 3,
+          "WillowHarper": 3,
+          "Noeliyo": 2,
+          "Regentlord": 2,
+          "pyx": 2,
+          "Dartz": 2,
+          "Cxshew": 2,
+          "AndreNicky": 1,
+          "emilee": 1,
+          "Sueming": 1,
+          "Trazッ": 1,
+          "Fear": 1,
+          "Azriel": 1,
+          "Fart": 1,
+          "Tikkiャ": 1,
+          "AtHoldTheLine": 1,
+          "CR8W": 1,
+          "dabldoya": 1,
+          "Microツ": 1,
+          "Kaiwel父": 1
+        },
+        "died_to": {
+          "boringg": 6,
+          "pyx": 3,
+          "dabldoya": 2,
+          "Cxshew": 2,
+          "Onixラ": 1,
+          "Fear": 1,
+          "Bound": 1,
+          "Straight・K・67": 1,
+          "Umbreon父": 1,
+          "Dawn": 1
+        }
+      }
     },
     {
       "rank": 14,
@@ -238,7 +836,46 @@
       "damage_dealt": 3889380,
       "damage_taken": 1292708,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 20,
+      "kf": {
+        "killed": {
+          "鬼七": 6,
+          "ItsWes": 4,
+          "しムこと": 4,
+          "Neoo": 4,
+          "·てのホ·": 4,
+          "fia": 3,
+          "Kred": 3,
+          "Shrubertメ": 2,
+          "Skyscorcher": 2,
+          "Rimuru骨゜": 2,
+          "JAJA": 2,
+          "Biniツ": 2,
+          "・Jules・": 2,
+          "Astrigerヤ": 1,
+          "QueenOfCurses": 1,
+          "Boda°": 1,
+          "デDURIAN气": 1,
+          "Splice": 1,
+          "farnii": 1,
+          "Selkey°": 1,
+          "Aevenien": 1
+        },
+        "died_to": {
+          "Neoo": 5,
+          "鬼七": 3,
+          "Skyscorcher": 3,
+          "Kred": 2,
+          "ItsWes": 1,
+          "しムこと": 1,
+          "fia": 1,
+          "Biniツ": 1,
+          "Selkey°": 1,
+          "Shrubertメ": 1,
+          "Bachメ": 1
+        }
+      }
     },
     {
       "rank": 15,
@@ -254,7 +891,39 @@
       "damage_dealt": 2174737,
       "damage_taken": 1679130,
       "amount_healed": 44681,
-      "flags": []
+      "flags": [],
+      "deaths": 16,
+      "kf": {
+        "killed": {
+          "·てのホ·": 5,
+          "ItsWes": 4,
+          "Neoo": 4,
+          "しムこと": 3,
+          "fia": 3,
+          "Selkey°": 3,
+          "Bachメ": 3,
+          "Aiushtha": 3,
+          "QueenOfCurses": 2,
+          "Shrubertメ": 2,
+          "鬼七": 1,
+          "Skyscorcher": 1,
+          "Biniツ": 1,
+          "Valekza": 1,
+          "ホシ": 1
+        },
+        "died_to": {
+          "しムこと": 4,
+          "Aevenien": 2,
+          "鬼七": 2,
+          "·てのホ·": 2,
+          "Kred": 1,
+          "fia": 1,
+          "Bachメ": 1,
+          "Aiushtha": 1,
+          "Neoo": 1,
+          "Splice": 1
+        }
+      }
     },
     {
       "rank": 16,
@@ -270,7 +939,51 @@
       "damage_dealt": 3166263,
       "damage_taken": 2158196,
       "amount_healed": 45642,
-      "flags": []
+      "flags": [],
+      "deaths": 36,
+      "kf": {
+        "killed": {
+          "pyx": 6,
+          "dabldoya": 5,
+          "CR8W": 4,
+          "MyNamelsOof": 3,
+          "Fear": 3,
+          "Fart": 2,
+          "Dawn": 2,
+          "Cxshew": 2,
+          "Bound": 2,
+          "Gottimus": 1,
+          "一大": 1,
+          "WillowHarper": 1,
+          "Dash": 1,
+          "Umbreon父": 1,
+          "Azriel": 1,
+          "AtHoldTheLine": 1,
+          "RoundAndPerky": 1,
+          "OnlyBans": 1,
+          "Grimm": 1,
+          "Atoshen": 1,
+          "Straight・K・67": 1,
+          "Temper": 1
+        },
+        "died_to": {
+          "boringg": 8,
+          "Kaiwel父": 4,
+          "Straight・K・67": 4,
+          "dabldoya": 4,
+          "CR8W": 3,
+          "Temper": 2,
+          "Umbreon父": 2,
+          "Fear": 2,
+          "RoundAndPerky": 1,
+          "WillowHarper": 1,
+          "Onixラ": 1,
+          "Dawn": 1,
+          "OnlyBans": 1,
+          "Willan": 1,
+          "pyx": 1
+        }
+      }
     },
     {
       "rank": 17,
@@ -286,7 +999,46 @@
       "damage_dealt": 3036470,
       "damage_taken": 1359599,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 14,
+      "kf": {
+        "killed": {
+          "QueenOfCurses": 7,
+          "Skyscorcher": 4,
+          "Kred": 3,
+          "鬼七": 3,
+          "Twix金": 3,
+          "Shrubertメ": 3,
+          "Astrigerヤ": 2,
+          "Valekza": 2,
+          "Breadypuddin": 2,
+          "FollowingLife": 2,
+          "Aiushtha": 2,
+          "Bachメ": 1,
+          "Ayeoki": 1,
+          "Castaspella": 1,
+          "Aevenien": 1,
+          "Rimuru骨゜": 1,
+          "djcarsun": 1,
+          "TModz": 1,
+          "Neoo": 1,
+          "Boda°": 1,
+          "Splice": 1,
+          "・Rey・": 1,
+          "PegboyFYB": 1,
+          "・Jules・": 1
+        },
+        "died_to": {
+          "Biniツ": 4,
+          "·てのホ·": 3,
+          "Aevenien": 2,
+          "Skyscorcher": 1,
+          "Aiushtha": 1,
+          "QueenOfCurses": 1,
+          "fia": 1,
+          "Selkey°": 1
+        }
+      }
     },
     {
       "rank": 18,
@@ -302,7 +1054,47 @@
       "damage_dealt": 2498659,
       "damage_taken": 1139941,
       "amount_healed": 14176,
-      "flags": []
+      "flags": [],
+      "deaths": 19,
+      "kf": {
+        "killed": {
+          "fia": 5,
+          "Neoo": 3,
+          "·てのホ·": 2,
+          "BuffWhen°": 2,
+          "Sueby": 2,
+          "・Ellie・": 2,
+          "Shrubertメ": 2,
+          "ホシ": 1,
+          "Bachメ": 1,
+          "鬼七": 1,
+          "Liisss": 1,
+          "neko·": 1,
+          "Skyscorcher": 1,
+          "Ayeoki": 1,
+          "Astrigerヤ": 1,
+          "Neeenz": 1,
+          "しムこと": 1,
+          "QueenOfCurses": 1,
+          "ItsWes": 1,
+          "Kred": 1,
+          "iRockz": 1
+        },
+        "died_to": {
+          "Shrubertメ": 5,
+          "Neoo": 4,
+          "QueenOfCurses": 1,
+          "Biniツ": 1,
+          "Bachメ": 1,
+          "ItsWes": 1,
+          "しムこと": 1,
+          "鬼七": 1,
+          "FollowingLife": 1,
+          "·てのホ·": 1,
+          "Selkey°": 1,
+          "Aiushtha": 1
+        }
+      }
     },
     {
       "rank": 19,
@@ -318,7 +1110,49 @@
       "damage_dealt": 3633935,
       "damage_taken": 2911949,
       "amount_healed": 40140,
-      "flags": []
+      "flags": [],
+      "deaths": 31,
+      "kf": {
+        "killed": {
+          "Dawn": 4,
+          "MrTorture": 4,
+          "Fear": 3,
+          "AndreNicky": 3,
+          "ZEROKツ": 3,
+          "WillowHarper": 3,
+          "Keylosh": 2,
+          "Kaiwel父": 2,
+          "Temper": 2,
+          "Trazッ": 2,
+          "dabldoya": 2,
+          "Straight・K・67": 1,
+          "cagedup": 1,
+          "Cxshew": 1,
+          "Tikkiャ": 1,
+          "Weax": 1,
+          "Sueming": 1,
+          "Ayoshi": 1,
+          "xNotSauronx": 1,
+          "Azriel": 1
+        },
+        "died_to": {
+          "boringg": 4,
+          "Fear": 3,
+          "Willan": 3,
+          "Dawn": 3,
+          "Cxshew": 3,
+          "dabldoya": 3,
+          "WillowHarper": 3,
+          "Bound": 2,
+          "Onixラ": 1,
+          "Temper": 1,
+          "Fart": 1,
+          "Umbreon父": 1,
+          "OnlyBans": 1,
+          "CR8W": 1,
+          "Kaiwel父": 1
+        }
+      }
     },
     {
       "rank": 20,
@@ -334,7 +1168,38 @@
       "damage_dealt": 2570330,
       "damage_taken": 1534327,
       "amount_healed": 31067,
-      "flags": []
+      "flags": [],
+      "deaths": 14,
+      "kf": {
+        "killed": {
+          "QueenOfCurses": 6,
+          "ItsWes": 5,
+          "Aiushtha": 4,
+          "fia": 4,
+          "Shrubertメ": 4,
+          "Bachメ": 3,
+          "Aevenien": 3,
+          "しムこと": 2,
+          "·てのホ·": 1,
+          "ズコ": 1,
+          "Hosted゜": 1,
+          "Kred": 1,
+          "Neoo": 1,
+          "鬼七": 1
+        },
+        "died_to": {
+          "ItsWes": 3,
+          "Skyscorcher": 3,
+          "Bachメ": 1,
+          "fia": 1,
+          "・Ellie・": 1,
+          "しムこと": 1,
+          "Aevenien": 1,
+          "Neoo": 1,
+          "鬼七": 1,
+          "Aiushtha": 1
+        }
+      }
     },
     {
       "rank": 21,
@@ -350,7 +1215,44 @@
       "damage_dealt": 2797161,
       "damage_taken": 1491976,
       "amount_healed": 6089,
-      "flags": []
+      "flags": [],
+      "deaths": 32,
+      "kf": {
+        "killed": {
+          "Onixラ": 8,
+          "Umbreon父": 7,
+          "boringg": 4,
+          "Azriel": 3,
+          "Grimm": 3,
+          "WillowHarper": 1,
+          "ラカフラカ": 1,
+          "CR8W": 1,
+          "cagedup": 1,
+          "RoundAndPerky": 1,
+          "Willan": 1,
+          "Cxshew": 1,
+          "Atoshen": 1,
+          "chaineddown": 1,
+          "ZEROKツ": 1
+        },
+        "died_to": {
+          "Willan": 7,
+          "OnlyBans": 6,
+          "Umbreon父": 3,
+          "Straight・K・67": 2,
+          "WillowHarper": 2,
+          "boringg": 2,
+          "Kaiwel父": 2,
+          "pyx": 1,
+          "Onixラ": 1,
+          "Dawn": 1,
+          "dabldoya": 1,
+          "Temper": 1,
+          "CR8W": 1,
+          "Bound": 1,
+          "Cxshew": 1
+        }
+      }
     },
     {
       "rank": 22,
@@ -366,7 +1268,51 @@
       "damage_dealt": 3383508,
       "damage_taken": 1576707,
       "amount_healed": 1866,
-      "flags": []
+      "flags": [],
+      "deaths": 27,
+      "kf": {
+        "killed": {
+          "Onixラ": 3,
+          "Fear": 3,
+          "Straight・K・67": 2,
+          "chaineddown": 2,
+          "Willan": 2,
+          "RoundAndPerky": 2,
+          "Keylosh": 2,
+          "Cxshew": 2,
+          "WillowHarper": 1,
+          "emilee": 1,
+          "boringg": 1,
+          "AndreNicky": 1,
+          "MrTorture": 1,
+          "Regentlord": 1,
+          "Umbreon父": 1,
+          "Dawn": 1,
+          "OnlyBans": 1,
+          "Bound": 1,
+          "ZEROKツ": 1,
+          "pyx": 1,
+          "Sueming": 1,
+          "MyNamelsOof": 1,
+          "Keifrrム": 1,
+          "Trazッ": 1
+        },
+        "died_to": {
+          "WillowHarper": 7,
+          "Umbreon父": 3,
+          "OnlyBans": 3,
+          "Kaiwel父": 3,
+          "pyx": 2,
+          "boringg": 2,
+          "Onixラ": 1,
+          "Regentlord": 1,
+          "Dawn": 1,
+          "Temper": 1,
+          "Willan": 1,
+          "Fear": 1,
+          "dabldoya": 1
+        }
+      }
     },
     {
       "rank": 23,
@@ -382,7 +1328,63 @@
       "damage_dealt": 1612854,
       "damage_taken": 1209680,
       "amount_healed": 11621,
-      "flags": []
+      "flags": [],
+      "deaths": 71,
+      "kf": {
+        "killed": {
+          "Cxshew": 15,
+          "Dawn": 11,
+          "Temper": 10,
+          "Fear": 6,
+          "Umbreon父": 6,
+          "Dartz": 5,
+          "ZEROKツ": 5,
+          "Bound": 5,
+          "AtHoldTheLine": 3,
+          "WillowHarper": 3,
+          "Fart": 3,
+          "boringg": 3,
+          "Bribrixメ": 2,
+          "pyx": 2,
+          "Azriel": 2,
+          "cagedup": 2,
+          "Keylosh": 2,
+          "Kaiwel父": 2,
+          "Gottimus": 2,
+          "Onixラ": 2,
+          "xNotSauronx": 1,
+          "dabldoya": 1,
+          "OnlyBans": 1,
+          "Trazッ": 1,
+          "Straight・K・67": 1,
+          "ラカフラカ": 1,
+          "Ayoshi": 1,
+          "Weax": 1,
+          "Noeliyo": 1,
+          "Keifrrム": 1,
+          "Willan": 1
+        },
+        "died_to": {
+          "boringg": 10,
+          "pyx": 9,
+          "Kaiwel父": 9,
+          "CR8W": 5,
+          "Onixラ": 5,
+          "OnlyBans": 4,
+          "Temper": 4,
+          "Fear": 4,
+          "Umbreon父": 3,
+          "Straight・K・67": 3,
+          "Dawn": 3,
+          "WillowHarper": 3,
+          "dabldoya": 3,
+          "Bound": 2,
+          "Microツ": 1,
+          "Fart": 1,
+          "Cxshew": 1,
+          "RoundAndPerky": 1
+        }
+      }
     },
     {
       "rank": 24,
@@ -398,7 +1400,36 @@
       "damage_dealt": 2240187,
       "damage_taken": 1851008,
       "amount_healed": 17173,
-      "flags": []
+      "flags": [],
+      "deaths": 23,
+      "kf": {
+        "killed": {
+          "CR8W": 5,
+          "pyx": 4,
+          "Umbreon父": 3,
+          "Kaiwel父": 3,
+          "boringg": 3,
+          "Temper": 2,
+          "Bound": 2,
+          "Onixラ": 1,
+          "WillowHarper": 1,
+          "dabldoya": 1
+        },
+        "died_to": {
+          "OnlyBans": 4,
+          "pyx": 3,
+          "Willan": 3,
+          "Kaiwel父": 2,
+          "dabldoya": 2,
+          "Straight・K・67": 2,
+          "CR8W": 2,
+          "boringg": 1,
+          "Bound": 1,
+          "Umbreon父": 1,
+          "Onixラ": 1,
+          "Temper": 1
+        }
+      }
     },
     {
       "rank": 25,
@@ -414,7 +1445,44 @@
       "damage_dealt": 2633979,
       "damage_taken": 1686922,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 25,
+      "kf": {
+        "killed": {
+          "dabldoya": 3,
+          "Cxshew": 3,
+          "OnlyBans": 3,
+          "Fart": 2,
+          "Onixラ": 2,
+          "Regentlord": 2,
+          "Umbreon父": 2,
+          "Willan": 1,
+          "boringg": 1,
+          "ラカフラカ": 1,
+          "Dawn": 1,
+          "RoundAndPerky": 1,
+          "Gottimus": 1,
+          "Dartz": 1,
+          "Kaiwel父": 1,
+          "Fear": 1,
+          "Atoshen": 1
+        },
+        "died_to": {
+          "Willan": 4,
+          "WillowHarper": 4,
+          "pyx": 3,
+          "Fear": 2,
+          "Temper": 2,
+          "dabldoya": 2,
+          "Dawn": 2,
+          "Straight・K・67": 1,
+          "Cxshew": 1,
+          "CR8W": 1,
+          "Kaiwel父": 1,
+          "Bound": 1,
+          "boringg": 1
+        }
+      }
     },
     {
       "rank": 26,
@@ -430,7 +1498,41 @@
       "damage_dealt": 2168855,
       "damage_taken": 2264078,
       "amount_healed": 31505,
-      "flags": []
+      "flags": [],
+      "deaths": 31,
+      "kf": {
+        "killed": {
+          "OnlyBans": 3,
+          "Onixラ": 2,
+          "pyx": 2,
+          "Fear": 2,
+          "Kaiwel父": 2,
+          "dabldoya": 1,
+          "Atoshen": 1,
+          "boringg": 1,
+          "Bound": 1,
+          "Gottimus": 1,
+          "CR8W": 1,
+          "ラカフラカ": 1,
+          "Cxshew": 1,
+          "ZEROKツ": 1
+        },
+        "died_to": {
+          "pyx": 5,
+          "OnlyBans": 5,
+          "dabldoya": 4,
+          "Straight・K・67": 4,
+          "Bound": 3,
+          "boringg": 2,
+          "Kaiwel父": 2,
+          "Umbreon父": 1,
+          "Fear": 1,
+          "Temper": 1,
+          "Dawn": 1,
+          "CR8W": 1,
+          "Onixラ": 1
+        }
+      }
     },
     {
       "rank": 27,
@@ -446,7 +1548,43 @@
       "damage_dealt": 2015339,
       "damage_taken": 1469530,
       "amount_healed": 44526,
-      "flags": []
+      "flags": [],
+      "deaths": 35,
+      "kf": {
+        "killed": {
+          "boringg": 5,
+          "Straight・K・67": 4,
+          "Fear": 3,
+          "Bound": 3,
+          "dabldoya": 1,
+          "Umbreon父": 1,
+          "Kaiwel父": 1,
+          "pyx": 1,
+          "Keylosh": 1,
+          "OnlyBans": 1,
+          "Dawn": 1,
+          "CR8W": 1,
+          "chaineddown": 1,
+          "Cxshew": 1,
+          "Onixラ": 1
+        },
+        "died_to": {
+          "Kaiwel父": 4,
+          "dabldoya": 4,
+          "Onixラ": 4,
+          "Straight・K・67": 3,
+          "pyx": 3,
+          "Umbreon父": 3,
+          "Cxshew": 3,
+          "Bound": 2,
+          "boringg": 2,
+          "Fear": 2,
+          "OnlyBans": 2,
+          "CR8W": 1,
+          "chaineddown": 1,
+          "WillowHarper": 1
+        }
+      }
     },
     {
       "rank": 28,
@@ -462,7 +1600,33 @@
       "damage_dealt": 1196715,
       "damage_taken": 1458440,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 20,
+      "kf": {
+        "killed": {
+          "Aiushtha": 7,
+          "ItsWes": 3,
+          "しムこと": 2,
+          "Kred": 2,
+          "fia": 2,
+          "Biniツ": 1,
+          "Shrubertメ": 1,
+          "·てのホ·": 1,
+          "Skyscorcher": 1,
+          "QueenOfCurses": 1
+        },
+        "died_to": {
+          "fia": 5,
+          "しムこと": 3,
+          "鬼七": 3,
+          "Shrubertメ": 2,
+          "·てのホ·": 2,
+          "Neoo": 2,
+          "ItsWes": 1,
+          "Aevenien": 1,
+          "BuffWhen°": 1
+        }
+      }
     },
     {
       "rank": 29,
@@ -478,7 +1642,41 @@
       "damage_dealt": 1848482,
       "damage_taken": 1635417,
       "amount_healed": 35180,
-      "flags": []
+      "flags": [],
+      "deaths": 35,
+      "kf": {
+        "killed": {
+          "しムこと": 3,
+          "Kred": 3,
+          "ズコ": 2,
+          "Boda°": 2,
+          "Biniツ": 2,
+          "Castaspella": 1,
+          "ホシ": 1,
+          "Skyscorcher": 1,
+          "BuffWhen°": 1,
+          "QueenOfCurses": 1,
+          "Fravy": 1,
+          "fia": 1,
+          "djcarsun": 1,
+          "·てのホ·": 1
+        },
+        "died_to": {
+          "fia": 15,
+          "Skyscorcher": 3,
+          "Biniツ": 2,
+          "Aevenien": 2,
+          "·てのホ·": 2,
+          "Selkey°": 2,
+          "Neoo": 2,
+          "Bachメ": 2,
+          "Kred": 1,
+          "鬼七": 1,
+          "QueenOfCurses": 1,
+          "しムこと": 1,
+          "ItsWes": 1
+        }
+      }
     },
     {
       "rank": 30,
@@ -494,7 +1692,36 @@
       "damage_dealt": 3991163,
       "damage_taken": 897568,
       "amount_healed": 72116,
-      "flags": []
+      "flags": [],
+      "deaths": 17,
+      "kf": {
+        "killed": {
+          "Azriel": 2,
+          "cagedup": 2,
+          "Cxshew": 2,
+          "AndreNicky": 1,
+          "Keylosh": 1,
+          "boringg": 1,
+          "Dartz": 1,
+          "dabldoya": 1,
+          "Ayoshi": 1,
+          "Willan": 1,
+          "CR8W": 1,
+          "Trazッ": 1,
+          "Dash": 1,
+          "RoundAndPerky": 1
+        },
+        "died_to": {
+          "boringg": 5,
+          "Straight・K・67": 3,
+          "WillowHarper": 2,
+          "Dawn": 2,
+          "pyx": 2,
+          "Onixラ": 1,
+          "dabldoya": 1,
+          "一大": 1
+        }
+      }
     },
     {
       "rank": 31,
@@ -510,7 +1737,35 @@
       "damage_dealt": 1516031,
       "damage_taken": 1912578,
       "amount_healed": 6102,
-      "flags": []
+      "flags": [],
+      "deaths": 34,
+      "kf": {
+        "killed": {
+          "Fear": 4,
+          "Kaiwel父": 2,
+          "Umbreon父": 2,
+          "Willan": 1,
+          "WillowHarper": 1,
+          "pyx": 1,
+          "Straight・K・67": 1,
+          "OnlyBans": 1,
+          "Dawn": 1,
+          "Onixラ": 1,
+          "CR8W": 1
+        },
+        "died_to": {
+          "Bound": 7,
+          "Kaiwel父": 6,
+          "pyx": 5,
+          "OnlyBans": 4,
+          "WillowHarper": 3,
+          "Straight・K・67": 3,
+          "Dawn": 2,
+          "Willan": 2,
+          "Fear": 1,
+          "boringg": 1
+        }
+      }
     },
     {
       "rank": 32,
