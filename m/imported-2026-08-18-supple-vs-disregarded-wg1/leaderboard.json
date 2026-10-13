@@ -13,7 +13,13 @@
       "tab": "8/18 vs DR WG1"
     },
     "inhouse": false,
-    "siege": false
+    "siege": false,
+    "killfeed": {
+      "map": "Talus Riftstone",
+      "note": "Disregarded vs Supple Dash",
+      "events": 1318,
+      "players": 44
+    }
   },
   "players": [
     {
@@ -30,7 +36,57 @@
       "damage_dealt": 7510780,
       "damage_taken": 1263863,
       "amount_healed": 28781,
-      "flags": []
+      "flags": [],
+      "deaths": 28,
+      "kf": {
+        "killed": {
+          "HubertCumbrdale": 9,
+          "Nades✗": 8,
+          "Hexapod": 6,
+          "Tech": 5,
+          "P30": 5,
+          "g0tcha": 4,
+          "Params": 4,
+          "Realix": 4,
+          "Daxxie": 3,
+          "Sayaka": 3,
+          "Loudpack": 3,
+          "Rosie·": 3,
+          "Clem": 3,
+          "Noah": 2,
+          "Takumix": 2,
+          "NWGhost": 2,
+          "Justin": 2,
+          "Ossenagon": 2,
+          "chriz724": 2,
+          "Makevelli": 2,
+          "Superluigi": 2,
+          "MisterMuffinツ": 1,
+          "·Lils·": 1,
+          "·xbino·": 1,
+          "Katie": 1,
+          "Jackie": 1,
+          "春涧丶": 1,
+          "Aquaヂina": 1,
+          "of": 1,
+          "MrCantoni": 1,
+          "Jisoo": 1,
+          "Boons·": 1
+        },
+        "died_to": {
+          "春涧丶": 7,
+          "of": 6,
+          "Boons·": 4,
+          "Katie": 2,
+          "Eshaberry": 2,
+          "Params": 2,
+          "chriz724": 1,
+          "Sakki": 1,
+          "Makevelli": 1,
+          "Clem": 1,
+          "Superluigi": 1
+        }
+      }
     },
     {
       "rank": 2,
@@ -46,7 +102,51 @@
       "damage_dealt": 6877429,
       "damage_taken": 1124646,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 19,
+      "kf": {
+        "killed": {
+          "Nades✗": 6,
+          "Superluigi": 5,
+          "Hexapod": 5,
+          "·xbino·": 5,
+          "NWGhost": 5,
+          "·Lils·": 4,
+          "chriz724": 4,
+          "Katie": 3,
+          "Tech": 3,
+          "Params": 3,
+          "of": 3,
+          "Justin": 3,
+          "Sayaka": 3,
+          "California1der": 3,
+          "Realix": 3,
+          "Zero": 2,
+          "Takumix": 2,
+          "·Reina·": 2,
+          "Daxxie": 1,
+          "MrPecan": 1,
+          "Clem": 1,
+          "HubertCumbrdale": 1,
+          "Ossenagon": 1,
+          "Noah": 1,
+          "Rosie·": 1,
+          "P30": 1,
+          "Aquaヂina": 1,
+          "g0tcha": 1,
+          "iizza": 1
+        },
+        "died_to": {
+          "Params": 6,
+          "春涧丶": 3,
+          "Eshaberry": 2,
+          "Boons·": 2,
+          "of": 2,
+          "Makevelli": 1,
+          "Superluigi": 1,
+          "Sakki": 1
+        }
+      }
     },
     {
       "rank": 3,
@@ -62,7 +162,54 @@
       "damage_dealt": 5277634,
       "damage_taken": 886946,
       "amount_healed": 13141,
-      "flags": []
+      "flags": [],
+      "deaths": 15,
+      "kf": {
+        "killed": {
+          "Justin": 5,
+          "Realix": 4,
+          "Superluigi": 3,
+          "HubertCumbrdale": 3,
+          "NWGhost": 2,
+          "Sakki": 2,
+          "P30": 2,
+          "Nades✗": 2,
+          "Loudpack": 2,
+          "iizza": 2,
+          "·Reina·": 2,
+          "California1der": 1,
+          "·xbino·": 1,
+          "xE4x": 1,
+          "g0tcha": 1,
+          "Makevelli": 1,
+          "of": 1,
+          "Akaru": 1,
+          "HoodRobin": 1,
+          "·Lils·": 1,
+          "Ossenagon": 1,
+          "Takumix": 1,
+          "Zero": 1,
+          "Noah": 1,
+          "Eshaberry": 1,
+          "MisterMuffinツ": 1,
+          "Tech": 1,
+          "Hexapod": 1,
+          "Aquaヂina": 1,
+          "MrPecan": 1,
+          "chriz724": 1,
+          "Jackie": 1,
+          "Params": 1,
+          "Rosie·": 1
+        },
+        "died_to": {
+          "Makevelli": 5,
+          "Katie": 4,
+          "Clem": 2,
+          "Params": 2,
+          "of": 1,
+          "Ossenagon": 1
+        }
+      }
     },
     {
       "rank": 4,
@@ -78,7 +225,50 @@
       "damage_dealt": 4774280,
       "damage_taken": 3381686,
       "amount_healed": 115237,
-      "flags": []
+      "flags": [],
+      "deaths": 38,
+      "kf": {
+        "killed": {
+          "Fear": 6,
+          "boringg": 5,
+          "Dawn": 5,
+          "dabldoya": 5,
+          "bru": 4,
+          "respawncamper": 4,
+          "Nathias": 4,
+          "RoundAndPerky": 3,
+          "Lannisturd": 2,
+          "Regentlord": 2,
+          "·enrique·": 2,
+          "YooNJ": 2,
+          "ZigZagRule": 1,
+          "soju": 1,
+          "feistyfox": 1,
+          "icespicefan": 1,
+          "Simichy": 1,
+          "Ruthlessssssss": 1,
+          "LunaDarling": 1,
+          "Grimm": 1,
+          "·Luhz": 1
+        },
+        "died_to": {
+          "Pastor": 7,
+          "boringg": 7,
+          "bru": 4,
+          "YooNJ": 3,
+          "Steppa": 2,
+          "Dawn": 2,
+          "Nathias": 2,
+          "pyx": 1,
+          "ZigZagRule": 1,
+          "soju": 1,
+          "dabldoya": 1,
+          "icespicefan": 1,
+          "木Pho": 1,
+          "Fear": 1,
+          "Prefire": 1
+        }
+      }
     },
     {
       "rank": 5,
@@ -94,7 +284,52 @@
       "damage_dealt": 5714772,
       "damage_taken": 1355431,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 22,
+      "kf": {
+        "killed": {
+          "Nathias": 7,
+          "bru": 5,
+          "AtHoldTheLine": 4,
+          "·Luhz": 3,
+          "brattybunnyboy": 3,
+          "ZigZagRule": 2,
+          "boringg": 2,
+          "McDo": 2,
+          "feistyfox": 2,
+          "Ruthlessssssss": 2,
+          "EvoKinn": 2,
+          "icespicefan": 1,
+          "clingykitty": 1,
+          "Cooop": 1,
+          "stinkuhbug": 1,
+          "dabldoya": 1,
+          "Grynツ": 1,
+          "Wolferwolf": 1,
+          "Yarl": 1,
+          "Fear": 1,
+          "Vel": 1,
+          "Sakki": 1,
+          "·Reina·": 1,
+          "pyx": 1,
+          "Microツ": 1,
+          "Invulnerable": 1,
+          "LunaDarling": 1
+        },
+        "died_to": {
+          "boringg": 4,
+          "Fear": 3,
+          "dabldoya": 3,
+          "respawncamper": 2,
+          "YooNJ": 1,
+          "RoundAndPerky": 1,
+          "pyx": 1,
+          "icespicefan": 1,
+          "Prefire": 1,
+          "Regentlord": 1,
+          "Simichy": 1
+        }
+      }
     },
     {
       "rank": 6,
@@ -110,7 +345,46 @@
       "damage_dealt": 4746236,
       "damage_taken": 1274882,
       "amount_healed": 13123,
-      "flags": []
+      "flags": [],
+      "deaths": 12,
+      "kf": {
+        "killed": {
+          "Superluigi": 5,
+          "Makevelli": 3,
+          "California1der": 3,
+          "Daxxie": 3,
+          "Justin": 3,
+          "Tech": 3,
+          "Ossenagon": 3,
+          "P30": 3,
+          "·Lils·": 3,
+          "Realix": 3,
+          "Sakki": 2,
+          "Noah": 2,
+          "Nades✗": 2,
+          "Hexapod": 2,
+          "of": 2,
+          "Akaru": 2,
+          "HubertCumbrdale": 1,
+          "Eshaberry": 1,
+          "Katie": 1,
+          "Zero": 1,
+          "xE4x": 1,
+          "Params": 1,
+          "Aquaヂina": 1,
+          "NWGhost": 1,
+          "chriz724": 1,
+          "Jalinss": 1,
+          "Loudpack": 1
+        },
+        "died_to": {
+          "of": 5,
+          "Params": 3,
+          "Katie": 2,
+          "iizza": 1,
+          "Superluigi": 1
+        }
+      }
     },
     {
       "rank": 7,
@@ -126,7 +400,56 @@
       "damage_dealt": 5054611,
       "damage_taken": 3463451,
       "amount_healed": 45041,
-      "flags": []
+      "flags": [],
+      "deaths": 33,
+      "kf": {
+        "killed": {
+          "Hexapod": 3,
+          "Makevelli": 3,
+          "Katie": 3,
+          "chriz724": 3,
+          "·Reina·": 3,
+          "g0tcha": 3,
+          "California1der": 3,
+          "Eshaberry": 2,
+          "Daxxie": 2,
+          "Nades✗": 2,
+          "Loudpack": 2,
+          "MrPecan": 2,
+          "Realix": 2,
+          "Rosie·": 2,
+          "Tech": 2,
+          "Aquaヂina": 2,
+          "Jisoo": 2,
+          "of": 2,
+          "·Lils·": 2,
+          "NWGhost": 1,
+          "Akaru": 1,
+          "·Yortvelt": 1,
+          "chinny": 1,
+          "Sayaka": 1,
+          "春涧丶": 1,
+          "Justin": 1,
+          "MisterMuffinツ": 1,
+          "HoodRobin": 1,
+          "Jackie": 1
+        },
+        "died_to": {
+          "Clem": 7,
+          "Makevelli": 6,
+          "of": 4,
+          "Superluigi": 3,
+          "Params": 3,
+          "chriz724": 2,
+          "Eshaberry": 2,
+          "Ossenagon": 1,
+          "Katie": 1,
+          "HoodRobin": 1,
+          "Sakki": 1,
+          "Boons·": 1,
+          "春涧丶": 1
+        }
+      }
     },
     {
       "rank": 8,
@@ -142,7 +465,49 @@
       "damage_dealt": 4229799,
       "damage_taken": 1287955,
       "amount_healed": 7642,
-      "flags": []
+      "flags": [],
+      "deaths": 16,
+      "kf": {
+        "killed": {
+          "AtHoldTheLine": 6,
+          "Ruthlessssssss": 3,
+          "·Luhz": 3,
+          "Wolferwolf": 3,
+          "boringg": 3,
+          "Grimm": 2,
+          "dabldoya": 2,
+          "EvoKinn": 2,
+          "McDo": 2,
+          "icespicefan": 2,
+          "feistyfox": 2,
+          "Microツ": 1,
+          "Simichy": 1,
+          "Params": 1,
+          "Regentlord": 1,
+          "xNotSauronx": 1,
+          "clingykitty": 1,
+          "Nathias": 1,
+          "brattybunnyboy": 1,
+          "bru": 1,
+          "RoundAndPerky": 1,
+          "Dartz": 1,
+          "Lannisturd": 1,
+          "ZigZagRule": 1,
+          "Grynツ": 1,
+          "LunaDarling": 1,
+          "·enrique·": 1
+        },
+        "died_to": {
+          "Dawn": 3,
+          "Pastor": 3,
+          "木Pho": 2,
+          "Fear": 2,
+          "bru": 2,
+          "YooNJ": 1,
+          "ZigZagRule": 1,
+          "Prefire": 1
+        }
+      }
     },
     {
       "rank": 9,
@@ -158,7 +523,35 @@
       "damage_dealt": 3283094,
       "damage_taken": 1464582,
       "amount_healed": 3255,
-      "flags": []
+      "flags": [],
+      "deaths": 8,
+      "kf": {
+        "killed": {
+          "HoodRobin": 6,
+          "iizza": 6,
+          "chriz724": 5,
+          "Makevelli": 5,
+          "Katie": 5,
+          "Superluigi": 4,
+          "Sakki": 4,
+          "Boons·": 4,
+          "Eshaberry": 3,
+          "Params": 2,
+          "Zero": 1,
+          "·Lils·": 1,
+          "NWGhost": 1,
+          "of": 1,
+          "Ossenagon": 1,
+          "Clem": 1
+        },
+        "died_to": {
+          "Superluigi": 4,
+          "Boons·": 1,
+          "Katie": 1,
+          "Makevelli": 1,
+          "Params": 1
+        }
+      }
     },
     {
       "rank": 10,
@@ -174,7 +567,35 @@
       "damage_dealt": 3212733,
       "damage_taken": 1009927,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 8,
+      "kf": {
+        "killed": {
+          "of": 7,
+          "iizza": 6,
+          "Makevelli": 6,
+          "Sakki": 5,
+          "Zero": 4,
+          "Boons·": 4,
+          "chriz724": 3,
+          "HoodRobin": 3,
+          "Superluigi": 3,
+          "Ossenagon": 3,
+          "·Reina·": 2,
+          "NWGhost": 1,
+          "Daxxie": 1,
+          "Eshaberry": 1,
+          "·Lils·": 1,
+          "California1der": 1,
+          "Akaru": 1,
+          "·Yortvelt": 1
+        },
+        "died_to": {
+          "iizza": 4,
+          "Boons·": 2,
+          "春涧丶": 2
+        }
+      }
     },
     {
       "rank": 11,
@@ -190,7 +611,49 @@
       "damage_dealt": 4135991,
       "damage_taken": 2650364,
       "amount_healed": 15858,
-      "flags": []
+      "flags": [],
+      "deaths": 25,
+      "kf": {
+        "killed": {
+          "YooNJ": 6,
+          "boringg": 4,
+          "Grynツ": 3,
+          "dabldoya": 3,
+          "Nathias": 3,
+          "bru": 3,
+          "Dawn": 3,
+          "ZigZagRule": 2,
+          "pyx": 2,
+          "feistyfox": 2,
+          "Fear": 2,
+          "xNotSauronx": 1,
+          "stinkuhbug": 1,
+          "Simichy": 1,
+          "Grimm": 1,
+          "Wolferwolf": 1,
+          "Prefire": 1,
+          "respawncamper": 1,
+          "EvoKinn": 1,
+          "MyNameIsOof": 1
+        },
+        "died_to": {
+          "Fear": 4,
+          "YooNJ": 3,
+          "pyx": 3,
+          "Prefire": 2,
+          "stinkuhbug": 2,
+          "respawncamper": 1,
+          "Ossenagon": 1,
+          "木Pho": 1,
+          "boringg": 1,
+          "icespicefan": 1,
+          "RoundAndPerky": 1,
+          "Dawn": 1,
+          "bru": 1,
+          "Akaru": 1,
+          "ZigZagRule": 1
+        }
+      }
     },
     {
       "rank": 12,
@@ -206,7 +669,44 @@
       "damage_dealt": 4019930,
       "damage_taken": 604926,
       "amount_healed": 18099,
-      "flags": []
+      "flags": [],
+      "deaths": 2,
+      "kf": {
+        "killed": {
+          "Daxxie": 4,
+          "Makevelli": 3,
+          "Katie": 3,
+          "Ossenagon": 2,
+          "Realix": 2,
+          "P30": 2,
+          "Noah": 2,
+          "Superluigi": 2,
+          "MmmNomNom": 2,
+          "Oddly": 2,
+          "·Lils·": 2,
+          "·Yortvelt": 2,
+          "Aquaヂina": 1,
+          "Tech": 1,
+          "tokiski": 1,
+          "Jackie": 1,
+          "Jisoo": 1,
+          "MrPecan": 1,
+          "Params": 1,
+          "iizza": 1,
+          "Sayaka": 1,
+          "·xbino·": 1,
+          "Boons·": 1,
+          "Zero": 1,
+          "of": 1,
+          "Rosie·": 1,
+          "Nades✗": 1,
+          "NWGhost": 1
+        },
+        "died_to": {
+          "chriz724": 1,
+          "Boons·": 1
+        }
+      }
     },
     {
       "rank": 13,
@@ -222,7 +722,29 @@
       "damage_dealt": 3371164,
       "damage_taken": 1077089,
       "amount_healed": 35954,
-      "flags": []
+      "flags": [],
+      "deaths": 7,
+      "kf": {
+        "killed": {
+          "Eshaberry": 9,
+          "iizza": 8,
+          "Boons·": 8,
+          "Sakki": 7,
+          "HoodRobin": 4,
+          "Makevelli": 4,
+          "of": 2,
+          "Jisoo": 1,
+          "·Reina·": 1,
+          "Superluigi": 1
+        },
+        "died_to": {
+          "Makevelli": 3,
+          "HoodRobin": 1,
+          "Eshaberry": 1,
+          "Katie": 1,
+          "Sakki": 1
+        }
+      }
     },
     {
       "rank": 14,
@@ -254,7 +776,48 @@
       "damage_dealt": 4307473,
       "damage_taken": 1478890,
       "amount_healed": 1337,
-      "flags": []
+      "flags": [],
+      "deaths": 28,
+      "kf": {
+        "killed": {
+          "clingykitty": 4,
+          "ZigZagRule": 4,
+          "Lannisturd": 3,
+          "bru": 3,
+          "Ruthlessssssss": 3,
+          "Fear": 2,
+          "xNotSauronx": 2,
+          "Dawn": 2,
+          "icespicefan": 1,
+          "Microツ": 1,
+          "Nades✗": 1,
+          "Doug": 1,
+          "Prefire": 1,
+          "Steppa": 1,
+          "boringg": 1,
+          "Grimm": 1,
+          "Nathias": 1,
+          "brattybunnyboy": 1,
+          "dabldoya": 1,
+          "feistyfox": 1,
+          "McDo": 1,
+          "MyNameIsOof": 1,
+          "pyx": 1
+        },
+        "died_to": {
+          "Prefire": 5,
+          "YooNJ": 3,
+          "木Pho": 3,
+          "Nathias": 3,
+          "pyx": 3,
+          "bru": 2,
+          "respawncamper": 2,
+          "dabldoya": 1,
+          "Fear": 1,
+          "Dawn": 1,
+          "McDo": 1
+        }
+      }
     },
     {
       "rank": 16,
@@ -270,7 +833,47 @@
       "damage_dealt": 3571075,
       "damage_taken": 1559960,
       "amount_healed": 6544,
-      "flags": []
+      "flags": [],
+      "deaths": 24,
+      "kf": {
+        "killed": {
+          "of": 7,
+          "chriz724": 4,
+          "Clem": 4,
+          "Oddly": 3,
+          "Realix": 3,
+          "MrPecan": 2,
+          "Superluigi": 2,
+          "xE4x": 2,
+          "HoodRobin": 2,
+          "Boons·": 1,
+          "HubertCumbrdale": 1,
+          "California1der": 1,
+          "Params": 1,
+          "Loudpack": 1,
+          "Eshaberry": 1,
+          "Nades✗": 1,
+          "iizza": 1,
+          "·xbino·": 1,
+          "Tech": 1,
+          "Sayaka": 1,
+          "g0tcha": 1,
+          "Noah": 1,
+          "·Reina·": 1
+        },
+        "died_to": {
+          "of": 5,
+          "Params": 4,
+          "Ossenagon": 3,
+          "春涧丶": 3,
+          "Clem": 2,
+          "Katie": 1,
+          "Superluigi": 1,
+          "chriz724": 1,
+          "HoodRobin": 1,
+          "Eshaberry": 1
+        }
+      }
     },
     {
       "rank": 17,
@@ -286,7 +889,45 @@
       "damage_dealt": 2918448,
       "damage_taken": 2354461,
       "amount_healed": 35987,
-      "flags": []
+      "flags": [],
+      "deaths": 20,
+      "kf": {
+        "killed": {
+          "of": 4,
+          "Tech": 3,
+          "Jackie": 3,
+          "Katie": 2,
+          "Superluigi": 2,
+          "chriz724": 2,
+          "Makevelli": 2,
+          "·xbino·": 2,
+          "Ossenagon": 2,
+          "·Yortvelt": 1,
+          "California1der": 1,
+          "Nades✗": 1,
+          "chinny": 1,
+          "NWGhost": 1,
+          "Aquaヂina": 1,
+          "·Reina·": 1,
+          "Params": 1,
+          "Takumix": 1,
+          "Sayaka": 1,
+          "g0tcha": 1,
+          "·Lils·": 1,
+          "MrPecan": 1,
+          "MisterMuffinツ": 1
+        },
+        "died_to": {
+          "Clem": 5,
+          "of": 4,
+          "Params": 3,
+          "Katie": 3,
+          "Makevelli": 2,
+          "chriz724": 1,
+          "Ossenagon": 1,
+          "Boons·": 1
+        }
+      }
     },
     {
       "rank": 18,
@@ -302,7 +943,40 @@
       "damage_dealt": 2528369,
       "damage_taken": 576635,
       "amount_healed": 26934,
-      "flags": []
+      "flags": [],
+      "deaths": 5,
+      "kf": {
+        "killed": {
+          "Hexapod": 3,
+          "Makevelli": 2,
+          "Params": 2,
+          "MrPecan": 2,
+          "·Reina·": 2,
+          "Justin": 2,
+          "Realix": 1,
+          "Jackie": 1,
+          "Boons·": 1,
+          "Daxxie": 1,
+          "tokiski": 1,
+          "Jisoo": 1,
+          "MrCantoni": 1,
+          "Noah": 1,
+          "chriz724": 1,
+          "Sakki": 1,
+          "Tech": 1,
+          "·Lils·": 1,
+          "·Yortvelt": 1,
+          "Takumix": 1,
+          "Nades✗": 1
+        },
+        "died_to": {
+          "Params": 1,
+          "Clem": 1,
+          "chriz724": 1,
+          "Makevelli": 1,
+          "Boons·": 1
+        }
+      }
     },
     {
       "rank": 19,
@@ -318,7 +992,41 @@
       "damage_dealt": 3351199,
       "damage_taken": 1795734,
       "amount_healed": 3,
-      "flags": []
+      "flags": [],
+      "deaths": 42,
+      "kf": {
+        "killed": {
+          "Nathias": 6,
+          "ZigZagRule": 5,
+          "Steppa": 3,
+          "bru": 2,
+          "Microツ": 2,
+          "YooNJ": 1,
+          "Fear": 1,
+          "Prefire": 1,
+          "Dartz": 1,
+          "LunaDarling": 1,
+          "Grynツ": 1,
+          "stinkuhbug": 1,
+          "·Luhz": 1,
+          "RoundAndPerky": 1
+        },
+        "died_to": {
+          "Pastor": 6,
+          "Prefire": 5,
+          "Steppa": 4,
+          "Dawn": 3,
+          "木Pho": 3,
+          "Nathias": 3,
+          "icespicefan": 3,
+          "Fear": 2,
+          "stinkuhbug": 2,
+          "bru": 2,
+          "pyx": 2,
+          "ZigZagRule": 1,
+          "dabldoya": 1
+        }
+      }
     },
     {
       "rank": 20,
@@ -334,7 +1042,47 @@
       "damage_dealt": 2554263,
       "damage_taken": 1411285,
       "amount_healed": 6791,
-      "flags": []
+      "flags": [],
+      "deaths": 23,
+      "kf": {
+        "killed": {
+          "chriz724": 3,
+          "Clem": 3,
+          "Eshaberry": 2,
+          "xE4x": 2,
+          "NWGhost": 2,
+          "P30": 2,
+          "Jackie": 1,
+          "Katie": 1,
+          "·xbino·": 1,
+          "Makevelli": 1,
+          "Loudpack": 1,
+          "Noah": 1,
+          "Aquaヂina": 1,
+          "of": 1,
+          "Tech": 1,
+          "MisterMuffinツ": 1,
+          "Justin": 1,
+          "·Reina·": 1,
+          "Sakki": 1,
+          "Jalinss": 1,
+          "g0tcha": 1,
+          "Nades✗": 1
+        },
+        "died_to": {
+          "of": 5,
+          "Eshaberry": 3,
+          "春涧丶": 3,
+          "Params": 3,
+          "chriz724": 2,
+          "Ossenagon": 2,
+          "Clem": 1,
+          "iizza": 1,
+          "Sakki": 1,
+          "Superluigi": 1,
+          "Katie": 1
+        }
+      }
     },
     {
       "rank": 21,
@@ -366,7 +1114,39 @@
       "damage_dealt": 2532720,
       "damage_taken": 1942888,
       "amount_healed": 66955,
-      "flags": []
+      "flags": [],
+      "deaths": 34,
+      "kf": {
+        "killed": {
+          "Prefire": 4,
+          "AtHoldTheLine": 3,
+          "Nathias": 3,
+          "brattybunnyboy": 2,
+          "respawncamper": 2,
+          "YooNJ": 1,
+          "Wolferwolf": 1,
+          "boringg": 1,
+          "dabldoya": 1,
+          "Fear": 1,
+          "LunaDarling": 1,
+          "Dawn": 1
+        },
+        "died_to": {
+          "Dawn": 5,
+          "YooNJ": 5,
+          "Prefire": 4,
+          "ZigZagRule": 3,
+          "Pastor": 3,
+          "boringg": 2,
+          "bru": 2,
+          "木Pho": 2,
+          "Fear": 2,
+          "Regentlord": 1,
+          "Steppa": 1,
+          "icespicefan": 1,
+          "Rosie·": 1
+        }
+      }
     },
     {
       "rank": 23,
@@ -382,7 +1162,36 @@
       "damage_dealt": 1559281,
       "damage_taken": 1172016,
       "amount_healed": 34003,
-      "flags": []
+      "flags": [],
+      "deaths": 27,
+      "kf": {
+        "killed": {
+          "Sakki": 3,
+          "Boons·": 2,
+          "Jackie": 2,
+          "chriz724": 2,
+          "Oddly": 2,
+          "Clem": 2,
+          "Katie": 2,
+          "Params": 1,
+          "Zero": 1,
+          "Eshaberry": 1,
+          "HoodRobin": 1,
+          "·Reina·": 1,
+          "iizza": 1,
+          "Aquaヂina": 1
+        },
+        "died_to": {
+          "春涧丶": 7,
+          "HoodRobin": 5,
+          "of": 4,
+          "Sakki": 3,
+          "Boons·": 3,
+          "Superluigi": 2,
+          "iizza": 2,
+          "Params": 1
+        }
+      }
     },
     {
       "rank": 24,
@@ -398,7 +1207,39 @@
       "damage_dealt": 1686040,
       "damage_taken": 2074918,
       "amount_healed": 22546,
-      "flags": []
+      "flags": [],
+      "deaths": 27,
+      "kf": {
+        "killed": {
+          "Fear": 4,
+          "respawncamper": 3,
+          "Dartz": 2,
+          "Pastor": 2,
+          "YooNJ": 2,
+          "Prefire": 1,
+          "Cooop": 1,
+          "Panda": 1,
+          "pyx": 1,
+          "bru": 1,
+          "stinkuhbug": 1,
+          "木Pho": 1,
+          "Nathias": 1
+        },
+        "died_to": {
+          "Steppa": 8,
+          "Prefire": 4,
+          "Pastor": 4,
+          "respawncamper": 2,
+          "Panda": 2,
+          "pyx": 1,
+          "boringg": 1,
+          "icespicefan": 1,
+          "stinkuhbug": 1,
+          "Poopsy": 1,
+          "木Pho": 1,
+          "Fear": 1
+        }
+      }
     },
     {
       "rank": 25,
@@ -414,7 +1255,30 @@
       "damage_dealt": 1820572,
       "damage_taken": 1320805,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 8,
+      "kf": {
+        "killed": {
+          "HoodRobin": 4,
+          "Eshaberry": 3,
+          "iizza": 3,
+          "Makevelli": 3,
+          "Boons·": 1,
+          "chriz724": 1,
+          "Params": 1,
+          "of": 1,
+          "Clem": 1,
+          "Superluigi": 1,
+          "g0tcha": 1
+        },
+        "died_to": {
+          "Sakki": 3,
+          "Ossenagon": 2,
+          "Clem": 1,
+          "Katie": 1,
+          "of": 1
+        }
+      }
     },
     {
       "rank": 26,
@@ -430,7 +1294,41 @@
       "damage_dealt": 2555623,
       "damage_taken": 3045318,
       "amount_healed": 39992,
-      "flags": []
+      "flags": [],
+      "deaths": 39,
+      "kf": {
+        "killed": {
+          "dabldoya": 2,
+          "Nathias": 2,
+          "Ruthlessssssss": 2,
+          "bru": 1,
+          "Fear": 1,
+          "木Pho": 1,
+          "stinkuhbug": 1,
+          "clingykitty": 1,
+          "Simichy": 1,
+          "·Luhz": 1,
+          "McDo": 1,
+          "boringg": 1,
+          "Grynツ": 1
+        },
+        "died_to": {
+          "Prefire": 5,
+          "boringg": 4,
+          "YooNJ": 4,
+          "Pastor": 3,
+          "dabldoya": 3,
+          "Nathias": 3,
+          "Fear": 2,
+          "respawncamper": 2,
+          "bru": 2,
+          "pyx": 2,
+          "icespicefan": 1,
+          "stinkuhbug": 1,
+          "Dawn": 1,
+          "ZigZagRule": 1
+        }
+      }
     },
     {
       "rank": 27,
@@ -446,7 +1344,36 @@
       "damage_dealt": 1237197,
       "damage_taken": 1542196,
       "amount_healed": 19471,
-      "flags": []
+      "flags": [],
+      "deaths": 30,
+      "kf": {
+        "killed": {
+          "respawncamper": 5,
+          "Grimm": 2,
+          "Steppa": 1,
+          "pyx": 1,
+          "Yarl": 1,
+          "MyNameIsOof": 1,
+          "IPeriett": 1,
+          "Nathias": 1,
+          "·enrique·": 1,
+          "boringg": 1,
+          "Lannisturd": 1,
+          "Dartz": 1
+        },
+        "died_to": {
+          "Prefire": 6,
+          "pyx": 5,
+          "icespicefan": 4,
+          "Steppa": 4,
+          "Pastor": 3,
+          "boringg": 2,
+          "Panda": 2,
+          "respawncamper": 1,
+          "ZigZagRule": 1,
+          "Nathias": 1
+        }
+      }
     },
     {
       "rank": 28,
@@ -462,7 +1389,36 @@
       "damage_dealt": 1073148,
       "damage_taken": 1482277,
       "amount_healed": 35063,
-      "flags": []
+      "flags": [],
+      "deaths": 29,
+      "kf": {
+        "killed": {
+          "respawncamper": 3,
+          "icespicefan": 3,
+          "·Luhz": 1,
+          "LunaDarling": 1,
+          "Fear": 1,
+          "dabldoya": 1,
+          "Wolferwolf": 1,
+          "Ruthlessssssss": 1,
+          "YooNJ": 1,
+          "Steppa": 1,
+          "Nathias": 1
+        },
+        "died_to": {
+          "Steppa": 7,
+          "Pastor": 5,
+          "Prefire": 4,
+          "respawncamper": 3,
+          "Dawn": 2,
+          "ZigZagRule": 2,
+          "Clem": 1,
+          "stinkuhbug": 1,
+          "RoundAndPerky": 1,
+          "dabldoya": 1,
+          "Panda": 1
+        }
+      }
     },
     {
       "rank": 29,
@@ -478,7 +1434,30 @@
       "damage_dealt": 1248728,
       "damage_taken": 2767863,
       "amount_healed": 11501,
-      "flags": []
+      "flags": [],
+      "deaths": 37,
+      "kf": {
+        "killed": {
+          "Pastor": 4,
+          "respawncamper": 2,
+          "pyx": 2,
+          "Dawn": 1,
+          "dabldoya": 1
+        },
+        "died_to": {
+          "Steppa": 8,
+          "Pastor": 6,
+          "Prefire": 6,
+          "pyx": 4,
+          "icespicefan": 3,
+          "ZigZagRule": 2,
+          "Panda": 1,
+          "木Pho": 1,
+          "boringg": 1,
+          "respawncamper": 1,
+          "YooNJ": 1
+        }
+      }
     },
     {
       "rank": 30,
@@ -494,7 +1473,32 @@
       "damage_dealt": 1354069,
       "damage_taken": 2502778,
       "amount_healed": 92953,
-      "flags": []
+      "flags": [],
+      "deaths": 37,
+      "kf": {
+        "killed": {
+          "dabldoya": 3,
+          "YooNJ": 2,
+          "Fear": 2,
+          "Nathias": 2,
+          "Steppa": 1,
+          "boringg": 1
+        },
+        "died_to": {
+          "Steppa": 9,
+          "pyx": 7,
+          "icespicefan": 3,
+          "Prefire": 3,
+          "Nathias": 2,
+          "dabldoya": 2,
+          "Panda": 2,
+          "respawncamper": 1,
+          "Dawn": 1,
+          "boringg": 1,
+          "ZigZagRule": 1,
+          "Pastor": 1
+        }
+      }
     },
     {
       "rank": 31,
@@ -654,7 +1658,19 @@
       "damage_dealt": 283814,
       "damage_taken": 1944630,
       "amount_healed": 75278,
-      "flags": []
+      "flags": [],
+      "deaths": 21,
+      "kf": {
+        "killed": {},
+        "died_to": {
+          "Fear": 6,
+          "YooNJ": 5,
+          "Nathias": 3,
+          "stinkuhbug": 3,
+          "Dawn": 2,
+          "ZigZagRule": 1
+        }
+      }
     },
     {
       "rank": 41,
@@ -702,7 +1718,22 @@
       "damage_dealt": 300512,
       "damage_taken": 1695078,
       "amount_healed": 34913,
-      "flags": []
+      "flags": [],
+      "deaths": 23,
+      "kf": {
+        "killed": {},
+        "died_to": {
+          "Fear": 4,
+          "ZigZagRule": 4,
+          "boringg": 3,
+          "Dawn": 3,
+          "YooNJ": 3,
+          "木Pho": 2,
+          "Nathias": 2,
+          "stinkuhbug": 1,
+          "Jalinss": 1
+        }
+      }
     },
     {
       "rank": 44,
@@ -750,7 +1781,19 @@
       "damage_dealt": 85419,
       "damage_taken": 1059670,
       "amount_healed": 56129,
-      "flags": []
+      "flags": [],
+      "deaths": 12,
+      "kf": {
+        "killed": {},
+        "died_to": {
+          "Ossenagon": 3,
+          "Katie": 3,
+          "Clem": 2,
+          "chriz724": 2,
+          "of": 1,
+          "Sakki": 1
+        }
+      }
     },
     {
       "rank": 47,
@@ -766,7 +1809,19 @@
       "damage_dealt": 25595,
       "damage_taken": 845211,
       "amount_healed": 773844,
-      "flags": []
+      "flags": [],
+      "deaths": 10,
+      "kf": {
+        "killed": {},
+        "died_to": {
+          "Ossenagon": 3,
+          "Clem": 3,
+          "Sakki": 1,
+          "Makevelli": 1,
+          "chriz724": 1,
+          "of": 1
+        }
+      }
     },
     {
       "rank": 48,
@@ -846,7 +1901,17 @@
       "damage_dealt": 42022,
       "damage_taken": 457237,
       "amount_healed": 645147,
-      "flags": []
+      "flags": [],
+      "deaths": 7,
+      "kf": {
+        "killed": {},
+        "died_to": {
+          "Katie": 3,
+          "of": 2,
+          "Ossenagon": 1,
+          "HoodRobin": 1
+        }
+      }
     },
     {
       "rank": 53,
@@ -862,7 +1927,18 @@
       "damage_dealt": 12503,
       "damage_taken": 655262,
       "amount_healed": 2428607,
-      "flags": []
+      "flags": [],
+      "deaths": 7,
+      "kf": {
+        "killed": {},
+        "died_to": {
+          "Params": 3,
+          "Clem": 1,
+          "Makevelli": 1,
+          "Ossenagon": 1,
+          "chriz724": 1
+        }
+      }
     },
     {
       "rank": 54,
@@ -1054,7 +2130,24 @@
       "damage_dealt": 16811,
       "damage_taken": 1132390,
       "amount_healed": 1993455,
-      "flags": []
+      "flags": [],
+      "deaths": 18,
+      "kf": {
+        "killed": {},
+        "died_to": {
+          "Nathias": 3,
+          "Pastor": 2,
+          "YooNJ": 2,
+          "stinkuhbug": 2,
+          "ZigZagRule": 2,
+          "Clem": 1,
+          "bru": 1,
+          "Steppa": 1,
+          "respawncamper": 1,
+          "dabldoya": 1,
+          "boringg": 1
+        }
+      }
     },
     {
       "rank": 66,
@@ -1102,7 +2195,20 @@
       "damage_dealt": 71594,
       "damage_taken": 1187851,
       "amount_healed": 2393051,
-      "flags": []
+      "flags": [],
+      "deaths": 18,
+      "kf": {
+        "killed": {},
+        "died_to": {
+          "ZigZagRule": 5,
+          "Dawn": 3,
+          "YooNJ": 3,
+          "Fear": 2,
+          "stinkuhbug": 2,
+          "Nathias": 1,
+          "dabldoya": 1
+        }
+      }
     },
     {
       "rank": 69,
@@ -1198,7 +2304,18 @@
       "damage_dealt": 65324,
       "damage_taken": 790340,
       "amount_healed": 60526,
-      "flags": []
+      "flags": [],
+      "deaths": 16,
+      "kf": {
+        "killed": {},
+        "died_to": {
+          "Ossenagon": 6,
+          "Clem": 4,
+          "Superluigi": 3,
+          "春涧丶": 2,
+          "Rosie·": 1
+        }
+      }
     },
     {
       "rank": 75,
@@ -1262,7 +2379,20 @@
       "damage_dealt": 57189,
       "damage_taken": 1657373,
       "amount_healed": 70112,
-      "flags": []
+      "flags": [],
+      "deaths": 19,
+      "kf": {
+        "killed": {},
+        "died_to": {
+          "Fear": 5,
+          "Dawn": 3,
+          "木Pho": 2,
+          "ZigZagRule": 2,
+          "dabldoya": 2,
+          "Savvvvy": 1,
+          "YooNJ": 1
+        }
+      }
     },
     {
       "rank": 79,
@@ -1294,7 +2424,23 @@
       "damage_dealt": 121948,
       "damage_taken": 1470627,
       "amount_healed": 19214,
-      "flags": []
+      "flags": [],
+      "deaths": 21,
+      "kf": {
+        "killed": {},
+        "died_to": {
+          "Fear": 5,
+          "YooNJ": 3,
+          "Dawn": 3,
+          "bru": 3,
+          "Nathias": 2,
+          "木Pho": 1,
+          "dabldoya": 1,
+          "boringg": 1,
+          "stinkuhbug": 1,
+          "ZigZagRule": 1
+        }
+      }
     },
     {
       "rank": 81,
@@ -1310,7 +2456,18 @@
       "damage_dealt": 105959,
       "damage_taken": 828573,
       "amount_healed": 36740,
-      "flags": []
+      "flags": [],
+      "deaths": 7,
+      "kf": {
+        "killed": {},
+        "died_to": {
+          "Ossenagon": 2,
+          "HoodRobin": 2,
+          "Katie": 1,
+          "Params": 1,
+          "of": 1
+        }
+      }
     },
     {
       "rank": 82,
@@ -1438,7 +2595,24 @@
       "damage_dealt": 75592,
       "damage_taken": 1584363,
       "amount_healed": 30878,
-      "flags": []
+      "flags": [],
+      "deaths": 30,
+      "kf": {
+        "killed": {},
+        "died_to": {
+          "Fear": 8,
+          "YooNJ": 6,
+          "Nathias": 2,
+          "Dawn": 2,
+          "ZigZagRule": 2,
+          "Katie": 1,
+          "bru": 1,
+          "boringg": 1,
+          "木Pho": 1,
+          "stinkuhbug": 1,
+          "dabldoya": 1
+        }
+      }
     },
     {
       "rank": 90,
@@ -1486,7 +2660,18 @@
       "damage_dealt": 63060,
       "damage_taken": 1013329,
       "amount_healed": 235882,
-      "flags": []
+      "flags": [],
+      "deaths": 8,
+      "kf": {
+        "killed": {},
+        "died_to": {
+          "Clem": 2,
+          "Params": 2,
+          "Ossenagon": 2,
+          "of": 1,
+          "Katie": 1
+        }
+      }
     },
     {
       "rank": 93,
@@ -1502,7 +2687,24 @@
       "damage_dealt": 35062,
       "damage_taken": 1084457,
       "amount_healed": 15783,
-      "flags": []
+      "flags": [],
+      "deaths": 20,
+      "kf": {
+        "killed": {},
+        "died_to": {
+          "YooNJ": 5,
+          "Fear": 2,
+          "ZigZagRule": 2,
+          "dabldoya": 2,
+          "Pastor": 1,
+          "Nathias": 1,
+          "bru": 1,
+          "Prefire": 1,
+          "pyx": 1,
+          "Dawn": 1,
+          "木Pho": 1
+        }
+      }
     },
     {
       "rank": 94,
@@ -1518,7 +2720,19 @@
       "damage_dealt": 46379,
       "damage_taken": 960694,
       "amount_healed": 12573,
-      "flags": []
+      "flags": [],
+      "deaths": 8,
+      "kf": {
+        "killed": {},
+        "died_to": {
+          "Ossenagon": 3,
+          "Clem": 1,
+          "Superluigi": 1,
+          "Sakki": 1,
+          "Params": 1,
+          "Realix": 1
+        }
+      }
     },
     {
       "rank": 95,
