@@ -12,7 +12,7 @@
       "rows": 96,
       "kills_in_order": true,
       "corrected": 0,
-      "caution": 7,
+      "caution": 6,
       "weapons_fixed": 0,
       "weapons_doubt": 1,
       "missing": 0
@@ -164,7 +164,7 @@
     {
       "seen": 36,
       "rank": 4,
-      "name": "ternos",
+      "name": "ternos·",
       "guild": "Undercooked",
       "team": "Yellow",
       "weapon1": "Gauntlet",
@@ -212,7 +212,9 @@
           ]
         ]
       },
-      "flags": []
+      "flags": [],
+      "name_scan": "ternos",
+      "confirmed": true
     },
     {
       "seen": 36,
@@ -435,7 +437,7 @@
     {
       "seen": 38,
       "rank": 10,
-      "name": "stepbro老",
+      "name": "stepbro茡",
       "guild": "JAILEDシ",
       "team": "Yellow",
       "weapon1": "Dagger",
@@ -448,7 +450,7 @@
       "amount_healed": 70630,
       "agreement": {
         "rank": 1.0,
-        "name": 0.72,
+        "name": 0.62,
         "guild": 0.97,
         "team": 1.0,
         "weapon1": 1.0,
@@ -463,6 +465,10 @@
       "checks": 24,
       "alts": {
         "name": [
+          [
+            "stepbro老",
+            0.0
+          ],
           [
             "stepbro老",
             0.62
@@ -483,7 +489,10 @@
           ]
         ]
       },
-      "flags": []
+      "flags": [],
+      "snapped": true,
+      "name_scan": "stepbro老",
+      "confirmed": true
     },
     {
       "seen": 5,
@@ -680,7 +689,7 @@
     {
       "seen": 4,
       "rank": 17,
-      "name": "August ッ",
+      "name": "Augustッ",
       "guild": "Undercooked",
       "team": "Yellow",
       "weapon1": "Dagger",
@@ -718,7 +727,9 @@
           ]
         ]
       },
-      "flags": []
+      "flags": [],
+      "name_scan": "August ッ",
+      "confirmed": true
     },
     {
       "seen": 5,
@@ -830,7 +841,7 @@
     {
       "seen": 5,
       "rank": 21,
-      "name": "NGH",
+      "name": "NGH일",
       "guild": "Supple On 3",
       "team": "Red",
       "weapon1": "Dagger",
@@ -857,7 +868,9 @@
       },
       "checks": 5,
       "alts": {},
-      "flags": []
+      "flags": [],
+      "name_scan": "NGH",
+      "confirmed": true
     },
     {
       "seen": 5,
@@ -1080,7 +1093,7 @@
     {
       "seen": 6,
       "rank": 28,
-      "name": "大礼",
+      "name": "大차",
       "guild": "Undercooked",
       "team": "Yellow",
       "weapon1": "Dagger",
@@ -1118,7 +1131,9 @@
           ]
         ]
       },
-      "flags": []
+      "flags": [],
+      "name_scan": "大礼",
+      "confirmed": true
     },
     {
       "seen": 5,
@@ -1198,7 +1213,7 @@
     {
       "seen": 6,
       "rank": 31,
-      "name": "hadley老",
+      "name": "hadley茡",
       "guild": "JAILEDシ",
       "team": "Yellow",
       "weapon1": "Dagger",
@@ -1236,7 +1251,9 @@
           ]
         ]
       },
-      "flags": []
+      "flags": [],
+      "name_scan": "hadley老",
+      "confirmed": true
     },
     {
       "seen": 6,
@@ -1615,7 +1632,7 @@
     {
       "seen": 4,
       "rank": 42,
-      "name": "miumiu老",
+      "name": "miumiu茡",
       "guild": "JAILEDシ",
       "team": "Yellow",
       "weapon1": "Longbow",
@@ -1641,8 +1658,18 @@
         "amount_healed": 1.0
       },
       "checks": 4,
-      "alts": {},
-      "flags": []
+      "alts": {
+        "name": [
+          [
+            "miumiu老",
+            0.0
+          ]
+        ]
+      },
+      "flags": [],
+      "snapped": true,
+      "name_scan": "miumiu老",
+      "confirmed": true
     },
     {
       "seen": 4,
@@ -1706,7 +1733,8 @@
       },
       "checks": 4,
       "alts": {},
-      "flags": []
+      "flags": [],
+      "name_scan": "J"
     },
     {
       "seen": 4,
@@ -2438,7 +2466,7 @@
     {
       "seen": 3,
       "rank": 66,
-      "name": "moncler老",
+      "name": "moncler茡",
       "guild": "JAILEDシ",
       "team": "Yellow",
       "weapon1": "Wand & Tome",
@@ -2451,7 +2479,7 @@
       "amount_healed": 2759385,
       "agreement": {
         "rank": 1.0,
-        "name": 0.81,
+        "name": 0.73,
         "guild": 1.0,
         "team": 1.0,
         "weapon1": 1.0,
@@ -2468,6 +2496,10 @@
         "name": [
           [
             "moncler老",
+            0.0
+          ],
+          [
+            "moncler老",
             0.73
           ],
           [
@@ -2476,7 +2508,10 @@
           ]
         ]
       },
-      "flags": []
+      "flags": [],
+      "snapped": true,
+      "name_scan": "moncler老",
+      "confirmed": true
     },
     {
       "seen": 4,
@@ -2545,7 +2580,7 @@
     {
       "seen": 3,
       "rank": 69,
-      "name": "Bribrix X",
+      "name": "Bribrixメ",
       "guild": "Supple On 3",
       "team": "Red",
       "weapon1": "Orb",
@@ -2583,7 +2618,9 @@
           ]
         ]
       },
-      "flags": []
+      "flags": [],
+      "name_scan": "Bribrix X",
+      "confirmed": true
     },
     {
       "seen": 4,
@@ -2652,7 +2689,7 @@
     {
       "seen": 4,
       "rank": 72,
-      "name": "ッッッ",
+      "name": "ツ凶ツ凶ツ",
       "guild": "Supple On 3",
       "team": "Red",
       "weapon1": "Longbow",
@@ -2694,9 +2731,9 @@
           ]
         ]
       },
-      "flags": [
-        "name"
-      ]
+      "flags": [],
+      "name_scan": "ッッッ",
+      "confirmed": true
     },
     {
       "seen": 3,
@@ -2808,7 +2845,7 @@
     {
       "seen": 3,
       "rank": 76,
-      "name": "Laney",
+      "name": "·Laney·",
       "guild": "Ping Gap",
       "team": "Yellow",
       "weapon1": "Orb",
@@ -2835,7 +2872,9 @@
       },
       "checks": 3,
       "alts": {},
-      "flags": []
+      "flags": [],
+      "name_scan": "Laney",
+      "confirmed": true
     },
     {
       "seen": 4,

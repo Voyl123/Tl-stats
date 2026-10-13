@@ -12,7 +12,7 @@
       "rows": 96,
       "kills_in_order": true,
       "corrected": 0,
-      "caution": 12,
+      "caution": 9,
       "weapons_fixed": 0,
       "weapons_doubt": 0,
       "missing": 0
@@ -119,7 +119,7 @@
     {
       "seen": 67,
       "rank": 3,
-      "name": "ternos",
+      "name": "ternos·",
       "guild": "Undercooked",
       "team": "Yellow",
       "weapon1": "Gauntlet",
@@ -157,7 +157,9 @@
           ]
         ]
       },
-      "flags": []
+      "flags": [],
+      "name_scan": "ternos",
+      "confirmed": true
     },
     {
       "seen": 67,
@@ -213,7 +215,7 @@
     {
       "seen": 68,
       "rank": 5,
-      "name": "stepbro老",
+      "name": "stepbro茡",
       "guild": "JAILEDシ",
       "team": "Yellow",
       "weapon1": "Dagger",
@@ -265,7 +267,9 @@
           ]
         ]
       },
-      "flags": []
+      "flags": [],
+      "name_scan": "stepbro老",
+      "confirmed": true
     },
     {
       "seen": 70,
@@ -815,7 +819,7 @@
     {
       "seen": 3,
       "rank": 19,
-      "name": "NGH",
+      "name": "NGH일",
       "guild": "Supple On 3",
       "team": "Red",
       "weapon1": "Dagger",
@@ -842,7 +846,9 @@
       },
       "checks": 3,
       "alts": {},
-      "flags": []
+      "flags": [],
+      "name_scan": "NGH",
+      "confirmed": true
     },
     {
       "seen": 4,
@@ -1189,7 +1195,7 @@
     {
       "seen": 3,
       "rank": 29,
-      "name": "hadley",
+      "name": "hadley茡",
       "guild": "JAILEDシ",
       "team": "Yellow",
       "weapon1": "Dagger",
@@ -1227,7 +1233,9 @@
           ]
         ]
       },
-      "flags": []
+      "flags": [],
+      "name_scan": "hadley",
+      "confirmed": true
     },
     {
       "seen": 3,
@@ -1488,7 +1496,7 @@
     {
       "seen": 3,
       "rank": 37,
-      "name": "miumiu老",
+      "name": "miumiu茡",
       "guild": "JAILEDシ",
       "team": "Yellow",
       "weapon1": "Longbow",
@@ -1526,7 +1534,9 @@
           ]
         ]
       },
-      "flags": []
+      "flags": [],
+      "name_scan": "miumiu老",
+      "confirmed": true
     },
     {
       "seen": 3,
@@ -1942,7 +1952,7 @@
     {
       "seen": 4,
       "rank": 50,
-      "name": "Tikkit",
+      "name": "Tikkiャ",
       "guild": "Supple On 3",
       "team": "Red",
       "weapon1": "Longbow",
@@ -1980,7 +1990,9 @@
           ]
         ]
       },
-      "flags": []
+      "flags": [],
+      "name_scan": "Tikkit",
+      "confirmed": true
     },
     {
       "seen": 2,
@@ -2135,7 +2147,7 @@
     {
       "seen": 3,
       "rank": 55,
-      "name": "moncler老",
+      "name": "moncler茡",
       "guild": "JAILEDシ",
       "team": "Yellow",
       "weapon1": "Wand & Tome",
@@ -2162,7 +2174,9 @@
       },
       "checks": 3,
       "alts": {},
-      "flags": []
+      "flags": [],
+      "name_scan": "moncler老",
+      "confirmed": true
     },
     {
       "seen": 3,
@@ -2370,7 +2384,7 @@
     {
       "seen": 3,
       "rank": 62,
-      "name": "Bribrix メ",
+      "name": "Bribrixメ",
       "guild": "Supple On 3",
       "team": "Red",
       "weapon1": "Orb",
@@ -2408,12 +2422,14 @@
           ]
         ]
       },
-      "flags": []
+      "flags": [],
+      "name_scan": "Bribrix メ",
+      "confirmed": true
     },
     {
       "seen": 3,
       "rank": 63,
-      "name": "Roxzor ッ",
+      "name": "Roxzorッ",
       "guild": "Undercooked",
       "team": "Yellow",
       "weapon1": "Wand & Tome",
@@ -2455,9 +2471,9 @@
           ]
         ]
       },
-      "flags": [
-        "name"
-      ]
+      "flags": [],
+      "name_scan": "Roxzor ッ",
+      "confirmed": true
     },
     {
       "seen": 3,
@@ -3096,7 +3112,7 @@
     {
       "seen": 1,
       "rank": 83,
-      "name": "LARCLAW",
+      "name": "BEARCLAW",
       "guild": "Undercooked",
       "team": "Yellow",
       "weapon1": "Wand & Tome",
@@ -3123,9 +3139,9 @@
       },
       "checks": 1,
       "alts": {},
-      "flags": [
-        "single read"
-      ]
+      "flags": [],
+      "name_scan": "LARCLAW",
+      "confirmed": true
     },
     {
       "seen": 1,
@@ -3159,7 +3175,8 @@
       "alts": {},
       "flags": [
         "single read"
-      ]
+      ],
+      "name_scan": "J"
     },
     {
       "seen": 2,
@@ -3292,7 +3309,7 @@
     {
       "seen": 3,
       "rank": 89,
-      "name": "ッッッ",
+      "name": "ツ凶ツ凶ツ",
       "guild": "Supple On 3",
       "team": "Red",
       "weapon1": "Longbow",
@@ -3334,9 +3351,9 @@
           ]
         ]
       },
-      "flags": [
-        "name"
-      ]
+      "flags": [],
+      "name_scan": "ッッッ",
+      "confirmed": true
     },
     {
       "seen": 3,

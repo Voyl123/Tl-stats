@@ -3374,7 +3374,7 @@
     {
       "seen": 2,
       "rank": 94,
-      "name": "ʃ",
+      "name": "J",
       "guild": "Supple On 3",
       "team": "My Team",
       "weapon1": "Orb",
@@ -3402,6 +3402,7 @@
       "checks": 2,
       "alts": {},
       "flags": [],
+      "name_scan": "ʃ",
       "confirmed": true
     },
     {
