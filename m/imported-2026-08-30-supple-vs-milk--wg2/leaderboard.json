@@ -13,7 +13,13 @@
       "tab": "8/30 vs Milk WG2"
     },
     "inhouse": false,
-    "siege": false
+    "siege": false,
+    "killfeed": {
+      "map": "Morokai Riftstone",
+      "note": "19-minute recording · read from the kill feed, names and totals checked against the in-game scoreboard",
+      "events": null,
+      "players": 29
+    }
   },
   "players": [
     {
@@ -30,7 +36,60 @@
       "damage_dealt": 6638517,
       "damage_taken": 1787131,
       "amount_healed": 98565,
-      "flags": []
+      "flags": [],
+      "deaths": 19,
+      "kf": {
+        "killed": {
+          "Brandissimo丷": 11,
+          "Margheritaa": 8,
+          "Pluto": 7,
+          "Warthorne": 7,
+          "Nyaaarkツ": 6,
+          "Amu": 5,
+          "Dsdayn": 5,
+          "SmallBut Whole": 5,
+          "Zhavia": 4,
+          "ゐunnie": 4,
+          "Chowskie": 3,
+          "Danimals": 3,
+          "Mildredkar": 3,
+          "OnMe": 3,
+          "Emiryia": 2,
+          "Jong": 2,
+          "Van": 2,
+          "WakaPac": 2,
+          "Ziphira": 2,
+          "-GHOST": 1,
+          "Akaroyoshi": 1,
+          "BooBoosEh": 1,
+          "DIESELDIKRICH": 1,
+          "HoodRobin": 1,
+          "Izari": 1,
+          "JoToxic゜": 1,
+          "lululemonade": 1,
+          "MadMizz": 1,
+          "Melolwyn": 1,
+          "Qwazzツ": 1,
+          "Skippythewalrus": 1,
+          "VitaL+": 1,
+          "xSp00n": 1,
+          "トールンツ": 1,
+          "・sosa・": 1
+        },
+        "died_to": {
+          "Nyaaarkツ": 4,
+          "SmallBut Whole": 3,
+          "Izari": 2,
+          "paninimelt": 2,
+          "xSp00n": 2,
+          "-GHOST": 1,
+          "JoToxic゜": 1,
+          "Margheritaa": 1,
+          "pao": 1,
+          "Pluto": 1,
+          "Qwazzツ": 1
+        }
+      }
     },
     {
       "rank": 2,
@@ -46,7 +105,56 @@
       "damage_dealt": 5507405,
       "damage_taken": 828956,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 17,
+      "kf": {
+        "killed": {
+          "Ziphira": 9,
+          "Akaroyoshi": 4,
+          "Nyaaarkツ": 4,
+          "XxLudovicusxX": 4,
+          "・sosa・": 4,
+          "Amu": 3,
+          "Arkiiツ": 3,
+          "DIESELDIKRICH": 3,
+          "OnMe": 3,
+          "爪 下・チェレェ": 3,
+          "amidalarose": 2,
+          "BooBoosEh": 2,
+          "CZZR": 2,
+          "Epoche": 2,
+          "JoToxic゜": 2,
+          "Margheritaa": 2,
+          "Pluto": 2,
+          "Skippythewalrus": 2,
+          "SmallBut Whole": 2,
+          "Zhavia": 2,
+          "-GHOST": 1,
+          "BadBeatBrad": 1,
+          "Brandissimo丷": 1,
+          "Dagnerus": 1,
+          "Dsdayn": 1,
+          "Jong": 1,
+          "MadMizz": 1,
+          "Melolwyn": 1,
+          "Qwazzツ": 1,
+          "Van": 1,
+          "VitaL+": 1,
+          "Warthorne": 1,
+          "Zeelos": 1,
+          "ゐunnie": 1
+        },
+        "died_to": {
+          "Izari": 5,
+          "Pluto": 5,
+          "Nyaaarkツ": 2,
+          "MadMizz": 1,
+          "paninimelt": 1,
+          "Qwazzツ": 1,
+          "SmallBut Whole": 1,
+          "Warthorne": 1
+        }
+      }
     },
     {
       "rank": 3,
@@ -62,7 +170,57 @@
       "damage_dealt": 5364464,
       "damage_taken": 1247097,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 20,
+      "kf": {
+        "killed": {
+          "DIESELDIKRICH": 6,
+          "CZZR": 5,
+          "Chowskie": 4,
+          "Arkiiツ": 3,
+          "Dsdayn": 3,
+          "Epoche": 3,
+          "XxLudovicusxX": 3,
+          "ゐunnie": 3,
+          "-GHOST": 2,
+          "Akaroyoshi": 2,
+          "Amu": 2,
+          "Atheling": 2,
+          "Nyaaarkツ": 2,
+          "Pluto": 2,
+          "VitaL+": 2,
+          "Warthorne": 2,
+          "Zeelos": 2,
+          "Zhavia": 2,
+          "・sosa・": 2,
+          "爪 下・チェレェ": 2,
+          "Dagnerus": 1,
+          "Danimals": 1,
+          "Emiryia": 1,
+          "Izari": 1,
+          "Jong": 1,
+          "lululemonade": 1,
+          "MadMizz": 1,
+          "Margheritaa": 1,
+          "Qwazzツ": 1,
+          "Ziphira": 1
+        },
+        "died_to": {
+          "Chowskie": 4,
+          "Izari": 3,
+          "Qwazzツ": 3,
+          "Amu": 1,
+          "Brandissimo丷": 1,
+          "MadMizz": 1,
+          "Margheritaa": 1,
+          "Nyaaarkツ": 1,
+          "pao": 1,
+          "Pluto": 1,
+          "SmallBut Whole": 1,
+          "xSp00n": 1,
+          "・sosa・": 1
+        }
+      }
     },
     {
       "rank": 4,
@@ -78,7 +236,36 @@
       "damage_dealt": 3230288,
       "damage_taken": 1407388,
       "amount_healed": 21638,
-      "flags": []
+      "flags": [],
+      "deaths": 12,
+      "kf": {
+        "killed": {
+          "paninimelt": 12,
+          "Amu": 11,
+          "Warthorne": 10,
+          "Margheritaa": 7,
+          "Brandissimo丷": 6,
+          "HoodRobin": 4,
+          "pao": 3,
+          "Qwazzツ": 3,
+          "-GHOST": 2,
+          "BooBoosEh": 1,
+          "Chowskie": 1,
+          "Izari": 1,
+          "SmallBut Whole": 1,
+          "爪 下・チェレェ": 1
+        },
+        "died_to": {
+          "Izari": 3,
+          "Chowskie": 2,
+          "xSp00n": 2,
+          "MadMizz": 1,
+          "Margheritaa": 1,
+          "paninimelt": 1,
+          "Pluto": 1,
+          "SmallBut Whole": 1
+        }
+      }
     },
     {
       "rank": 5,
@@ -94,7 +281,57 @@
       "damage_dealt": 4537250,
       "damage_taken": 1314570,
       "amount_healed": 2377,
-      "flags": []
+      "flags": [],
+      "deaths": 31,
+      "kf": {
+        "killed": {
+          "Qwazzツ": 5,
+          "・sosa・": 5,
+          "Chowskie": 3,
+          "DIESELDIKRICH": 3,
+          "JoToxic゜": 3,
+          "MadMizz": 3,
+          "Nyaaarkツ": 3,
+          "Zhavia": 3,
+          "トールンツ": 3,
+          "Akaroyoshi": 2,
+          "Arkiiツ": 2,
+          "CZZR": 2,
+          "VitaL+": 2,
+          "XxLudovicusxX": 2,
+          "Zeelos": 2,
+          "-GHOST": 1,
+          "amidalarose": 1,
+          "Amu": 1,
+          "BooBoosEh": 1,
+          "Dsdayn": 1,
+          "Emiryia": 1,
+          "Izari": 1,
+          "Jong": 1,
+          "lululemonade": 1,
+          "Margheritaa": 1,
+          "paninimelt": 1,
+          "Pluto": 1,
+          "Skippythewalrus": 1,
+          "SmallBut Whole": 1,
+          "Warthorne": 1,
+          "Ziphira": 1
+        },
+        "died_to": {
+          "Qwazzツ": 7,
+          "Izari": 6,
+          "Chowskie": 4,
+          "MadMizz": 3,
+          "Nyaaarkツ": 2,
+          "paninimelt": 2,
+          "pao": 2,
+          "Amu": 1,
+          "Margheritaa": 1,
+          "Pluto": 1,
+          "Zeelos": 1,
+          "トールンツ": 1
+        }
+      }
     },
     {
       "rank": 6,
@@ -110,7 +347,43 @@
       "damage_dealt": 3086647,
       "damage_taken": 11390834,
       "amount_healed": 91973,
-      "flags": []
+      "flags": [],
+      "deaths": 21,
+      "kf": {
+        "killed": {
+          "MadMizz": 7,
+          "pao": 5,
+          "xSp00n": 5,
+          "-GHOST": 4,
+          "paninimelt": 4,
+          "SmallBut Whole": 4,
+          "Atheling": 3,
+          "Brandissimo丷": 3,
+          "HoodRobin": 3,
+          "lululemonade": 3,
+          "amidalarose": 2,
+          "VitaL+": 2,
+          "Amu": 1,
+          "Izari": 1,
+          "Margheritaa": 1,
+          "Nyaaarkツ": 1,
+          "Pluto": 1,
+          "Ziphira": 1
+        },
+        "died_to": {
+          "HoodRobin": 3,
+          "paninimelt": 3,
+          "-GHOST": 2,
+          "Brandissimo丷": 2,
+          "Izari": 2,
+          "MadMizz": 2,
+          "SmallBut Whole": 2,
+          "xSp00n": 2,
+          "Chowskie": 1,
+          "Dsdayn": 1,
+          "Pluto": 1
+        }
+      }
     },
     {
       "rank": 7,
@@ -142,7 +415,52 @@
       "damage_dealt": 4278337,
       "damage_taken": 2821501,
       "amount_healed": 24340,
-      "flags": []
+      "flags": [],
+      "deaths": 23,
+      "kf": {
+        "killed": {
+          "Pluto": 6,
+          "Margheritaa": 4,
+          "Nyaaarkツ": 4,
+          "Zeelos": 4,
+          "Akaroyoshi": 2,
+          "Arkiiツ": 2,
+          "BooBoosEh": 2,
+          "Brandissimo丷": 2,
+          "Dsdayn": 2,
+          "HoodRobin": 2,
+          "Jong": 2,
+          "JoToxic゜": 2,
+          "Qwazzツ": 2,
+          "Zhavia": 2,
+          "Ziphira": 2,
+          "-GHOST": 1,
+          "BadBeatBrad": 1,
+          "Chowskie": 1,
+          "CZZR": 1,
+          "Danimals": 1,
+          "Emiryia": 1,
+          "Izari": 1,
+          "Skippythewalrus": 1,
+          "SmallBut Whole": 1,
+          "WakaPac": 1,
+          "XxLudovicusxX": 1,
+          "ゐunnie": 1
+        },
+        "died_to": {
+          "Margheritaa": 5,
+          "Pluto": 5,
+          "pao": 3,
+          "Brandissimo丷": 2,
+          "Nyaaarkツ": 2,
+          "Amu": 1,
+          "BooBoosEh": 1,
+          "CZZR": 1,
+          "paninimelt": 1,
+          "SmallBut Whole": 1,
+          "xSp00n": 1
+        }
+      }
     },
     {
       "rank": 9,
@@ -158,7 +476,45 @@
       "damage_dealt": 2903070,
       "damage_taken": 1675367,
       "amount_healed": 53588,
-      "flags": []
+      "flags": [],
+      "deaths": 25,
+      "kf": {
+        "killed": {
+          "Sakki": 7,
+          "YooNJ": 7,
+          "Katie": 6,
+          "Brigadeiro": 5,
+          "рух": 4,
+          "Fear": 3,
+          "Prefire": 3,
+          "respawncamper": 3,
+          "nightghost1": 2,
+          "pinkpawedpuppy": 2,
+          "Straight・K・67": 2,
+          "Boons・": 1,
+          "boringg": 1,
+          "brattybunnyboy": 1,
+          "bru": 1,
+          "DreadWムll": 1,
+          "Invulnerable": 1,
+          "Yarl": 1
+        },
+        "died_to": {
+          "Boons・": 5,
+          "Sakki": 4,
+          "рух": 4,
+          "노린재": 2,
+          "Fear": 1,
+          "Katie": 1,
+          "McDo": 1,
+          "Nathias": 1,
+          "pinkpawedpuppy": 1,
+          "Prefire": 1,
+          "respawncamper": 1,
+          "Straight・K・67": 1,
+          "YooNJ": 1
+        }
+      }
     },
     {
       "rank": 10,
@@ -174,7 +530,47 @@
       "damage_dealt": 5134344,
       "damage_taken": 2142079,
       "amount_healed": 56114,
-      "flags": []
+      "flags": [],
+      "deaths": 33,
+      "kf": {
+        "killed": {
+          "nightghost1": 8,
+          "Nathias": 5,
+          "Wing": 5,
+          "bru": 3,
+          "DreadWムll": 3,
+          "IIIDunamisIII": 3,
+          "Lannisturd": 3,
+          "boringg": 2,
+          "brattybunnyboy": 2,
+          "McDo": 2,
+          "рух": 2,
+          "노린재": 2,
+          "clingykitty": 1,
+          "Dartz": 1,
+          "Fear": 1,
+          "Katie": 1,
+          "LunaDarling": 1,
+          "pinkpawedpuppy": 1,
+          "Prefire": 1,
+          "Weax": 1,
+          "雪Kyokko": 1
+        },
+        "died_to": {
+          "pinkpawedpuppy": 8,
+          "Prefire": 7,
+          "Nathias": 4,
+          "Sakki": 3,
+          "YooNJ": 3,
+          "Brigadeiro": 2,
+          "boringg": 1,
+          "Fear": 1,
+          "Katie": 1,
+          "Microツ": 1,
+          "Straight・K・67": 1,
+          "노린재": 1
+        }
+      }
     },
     {
       "rank": 11,
@@ -190,7 +586,48 @@
       "damage_dealt": 3625997,
       "damage_taken": 1999733,
       "amount_healed": 9232,
-      "flags": []
+      "flags": [],
+      "deaths": 13,
+      "kf": {
+        "killed": {
+          "Pluto": 7,
+          "Brandissimo丷": 4,
+          "Amu": 3,
+          "HoodRobin": 3,
+          "Nyaaarkツ": 3,
+          "Akaroyoshi": 2,
+          "Danimals": 2,
+          "Dsdayn": 2,
+          "Warthorne": 2,
+          "Ziphira": 2,
+          "爪 下・チェレェ": 2,
+          "-GHOST": 1,
+          "amidalarose": 1,
+          "Arkiiツ": 1,
+          "Atheling": 1,
+          "BadBeatBrad": 1,
+          "BooBoosEh": 1,
+          "Chowskie": 1,
+          "Dagnerus": 1,
+          "DIESELDIKRICH": 1,
+          "JoToxic゜": 1,
+          "lululemonade": 1,
+          "Qwazzツ": 1,
+          "SmallBut Whole": 1,
+          "WakaPac": 1,
+          "XxLudovicusxX": 1
+        },
+        "died_to": {
+          "Margheritaa": 3,
+          "Brandissimo丷": 2,
+          "Pluto": 2,
+          "SmallBut Whole": 2,
+          "HoodRobin": 1,
+          "Izari": 1,
+          "paninimelt": 1,
+          "pao": 1
+        }
+      }
     },
     {
       "rank": 12,
@@ -206,7 +643,51 @@
       "damage_dealt": 6443645,
       "damage_taken": 1352237,
       "amount_healed": 336328,
-      "flags": []
+      "flags": [],
+      "deaths": 23,
+      "kf": {
+        "killed": {
+          "IIIDunamisIII": 5,
+          "Lannisturd": 3,
+          "Boons・": 2,
+          "boringg": 2,
+          "brattybunnyboy": 2,
+          "chinny": 2,
+          "Dartz": 2,
+          "DreadWムll": 2,
+          "Glaide": 2,
+          "pinkpawedpuppy": 2,
+          "Prefire": 2,
+          "Sakki": 2,
+          "soju": 2,
+          "Straight・K・67": 2,
+          "雪Kyokko": 2,
+          "AtHoldTheLine": 1,
+          "Cooop": 1,
+          "Doug": 1,
+          "EvoKinn": 1,
+          "Fear": 1,
+          "Griefer": 1,
+          "Nathias": 1,
+          "nightghost1": 1,
+          "Rakaflaka": 1,
+          "Regentlord": 1,
+          "Wing": 1,
+          "YooNJ": 1,
+          "рух": 1
+        },
+        "died_to": {
+          "Boons・": 6,
+          "Straight・K・67": 5,
+          "respawncamper": 3,
+          "Sakki": 3,
+          "рух": 2,
+          "boringg": 1,
+          "nightghost1": 1,
+          "pinkpawedpuppy": 1,
+          "YooNJ": 1
+        }
+      }
     },
     {
       "rank": 13,
@@ -222,7 +703,45 @@
       "damage_dealt": 5462228,
       "damage_taken": 903233,
       "amount_healed": 192014,
-      "flags": []
+      "flags": [],
+      "deaths": 22,
+      "kf": {
+        "killed": {
+          "Boons・": 3,
+          "DreadWムll": 3,
+          "Nathias": 3,
+          "Cooop": 2,
+          "Glaide": 2,
+          "Griefer": 2,
+          "Katie": 2,
+          "Regentlord": 2,
+          "soju": 2,
+          "Wing": 2,
+          "boringg": 1,
+          "brattybunnyboy": 1,
+          "bru": 1,
+          "clingykitty": 1,
+          "EvoKinn": 1,
+          "Fear": 1,
+          "Lannisturd": 1,
+          "McDo": 1,
+          "pinkpawedpuppy": 1,
+          "Ruthlessssssss": 1,
+          "Sakki": 1,
+          "Yarl": 1
+        },
+        "died_to": {
+          "Straight・K・67": 5,
+          "рух": 4,
+          "Boons・": 3,
+          "Prefire": 3,
+          "nightghost1": 2,
+          "respawncamper": 2,
+          "Ruthlessssssss": 1,
+          "Wing": 1,
+          "노린재": 1
+        }
+      }
     },
     {
       "rank": 14,
@@ -238,7 +757,43 @@
       "damage_dealt": 3085279,
       "damage_taken": 2196184,
       "amount_healed": 27398,
-      "flags": []
+      "flags": [],
+      "deaths": 26,
+      "kf": {
+        "killed": {
+          "lululemonade": 6,
+          "MadMizz": 5,
+          "HoodRobin": 4,
+          "Izari": 4,
+          "pao": 4,
+          "-GHOST": 3,
+          "paninimelt": 3,
+          "VitaL+": 3,
+          "Atheling": 2,
+          "Chowskie": 2,
+          "Pluto": 2,
+          "xSp00n": 2,
+          "Amu": 1,
+          "Brandissimo丷": 1,
+          "Warthorne": 1
+        },
+        "died_to": {
+          "Izari": 4,
+          "Chowskie": 3,
+          "paninimelt": 3,
+          "Qwazzツ": 3,
+          "MadMizz": 2,
+          "Margheritaa": 2,
+          "SmallBut Whole": 2,
+          "-GHOST": 1,
+          "Brandissimo丷": 1,
+          "Dsdayn": 1,
+          "HoodRobin": 1,
+          "Pluto": 1,
+          "Warthorne": 1,
+          "xSp00n": 1
+        }
+      }
     },
     {
       "rank": 15,
@@ -254,7 +809,43 @@
       "damage_dealt": 2833744,
       "damage_taken": 11898217,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 19,
+      "kf": {
+        "killed": {
+          "노린재": 10,
+          "Katie": 7,
+          "・enrique・": 5,
+          "respawncamper": 4,
+          "Fear": 3,
+          "рух": 3,
+          "boringg": 2,
+          "nightghost1": 2,
+          "Sakki": 2,
+          "YooNJ": 2,
+          "Boons・": 1,
+          "Brigadeiro": 1,
+          "clingykitty": 1,
+          "Dartz": 1,
+          "DreadWムll": 1,
+          "pinkpawedpuppy": 1,
+          "Rakaflaka": 1,
+          "Wing": 1
+        },
+        "died_to": {
+          "Katie": 5,
+          "Prefire": 3,
+          "boringg": 2,
+          "Nathias": 2,
+          "Brigadeiro": 1,
+          "bru": 1,
+          "Fear": 1,
+          "pinkpawedpuppy": 1,
+          "Sakki": 1,
+          "YooNJ": 1,
+          "노린재": 1
+        }
+      }
     },
     {
       "rank": 16,
@@ -270,7 +861,53 @@
       "damage_dealt": 4030553,
       "damage_taken": 937122,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 17,
+      "kf": {
+        "killed": {
+          "Nyaaarkツ": 7,
+          "Brandissimo丷": 3,
+          "Pluto": 3,
+          "amidalarose": 2,
+          "Amu": 2,
+          "Chowskie": 2,
+          "lululemonade": 2,
+          "Qwazzツ": 2,
+          "Skippythewalrus": 2,
+          "Warthorne": 2,
+          "Akaroyoshi": 1,
+          "Arkiiツ": 1,
+          "BadBeatBrad": 1,
+          "BooBoosEh": 1,
+          "DIESELDIKRICH": 1,
+          "Epoche": 1,
+          "Jong": 1,
+          "Margheritaa": 1,
+          "paninimelt": 1,
+          "Van": 1,
+          "VitaL+": 1,
+          "xSp00n": 1,
+          "Zeelos": 1,
+          "Zhavia": 1,
+          "ゐunnie": 1,
+          "・sosa・": 1,
+          "爪 下・チェレェ": 1
+        },
+        "died_to": {
+          "Brandissimo丷": 2,
+          "Chowskie": 2,
+          "Margheritaa": 2,
+          "Qwazzツ": 2,
+          "xSp00n": 2,
+          "Amu": 1,
+          "Izari": 1,
+          "Nyaaarkツ": 1,
+          "paninimelt": 1,
+          "pao": 1,
+          "Pluto": 1,
+          "Warthorne": 1
+        }
+      }
     },
     {
       "rank": 17,
@@ -286,7 +923,50 @@
       "damage_dealt": 3791242,
       "damage_taken": 2478364,
       "amount_healed": 0,
-      "flags": []
+      "flags": [],
+      "deaths": 38,
+      "kf": {
+        "killed": {
+          "YooNJ": 6,
+          "Brigadeiro": 5,
+          "Nathias": 5,
+          "nightghost1": 3,
+          "Wing": 3,
+          "bru": 2,
+          "pinkpawedpuppy": 2,
+          "boringg": 1,
+          "chinny": 1,
+          "clingykitty": 1,
+          "Cooop": 1,
+          "Fear": 1,
+          "IIIDunamisIII": 1,
+          "Katie": 1,
+          "Lannisturd": 1,
+          "McDo": 1,
+          "Poopsy": 1,
+          "Prefire": 1,
+          "Regentlord": 1,
+          "Straight・K・67": 1,
+          "рух": 1,
+          "・Yortvelt": 1
+        },
+        "died_to": {
+          "bru": 7,
+          "pinkpawedpuppy": 7,
+          "Nathias": 6,
+          "boringg": 3,
+          "Brigadeiro": 2,
+          "Fear": 2,
+          "nightghost1": 2,
+          "YooNJ": 2,
+          "рух": 2,
+          "Boons・": 1,
+          "Katie": 1,
+          "respawncamper": 1,
+          "Straight・K・67": 1,
+          "노린재": 1
+        }
+      }
     },
     {
       "rank": 18,
@@ -302,7 +982,40 @@
       "damage_dealt": 32400782,
       "damage_taken": 947807,
       "amount_healed": 20285,
-      "flags": []
+      "flags": [],
+      "deaths": 17,
+      "kf": {
+        "killed": {
+          "Amu": 5,
+          "Izari": 4,
+          "MadMizz": 4,
+          "BadBeatBrad": 3,
+          "Brandissimo丷": 3,
+          "Margheritaa": 3,
+          "Warthorne": 3,
+          "xSp00n": 3,
+          "Atheling": 2,
+          "Chowskie": 2,
+          "Danimals": 2,
+          "lululemonade": 2,
+          "-GHOST": 1,
+          "amidalarose": 1,
+          "Mildredkar": 1,
+          "Qwazzツ": 1,
+          "VitaL+": 1,
+          "WakaPac": 1
+        },
+        "died_to": {
+          "Izari": 7,
+          "Qwazzツ": 2,
+          "SmallBut Whole": 2,
+          "xSp00n": 2,
+          "Brandissimo丷": 1,
+          "MadMizz": 1,
+          "paninimelt": 1,
+          "pao": 1
+        }
+      }
     },
     {
       "rank": 19,
@@ -318,7 +1031,50 @@
       "damage_dealt": 4288987,
       "damage_taken": 1650923,
       "amount_healed": 7025,
-      "flags": []
+      "flags": [],
+      "deaths": 26,
+      "kf": {
+        "killed": {
+          "Jong": 3,
+          "Margheritaa": 3,
+          "Nyaaarkツ": 3,
+          "Akaroyoshi": 2,
+          "amidalarose": 2,
+          "Chowskie": 2,
+          "JoToxic゜": 2,
+          "Pluto": 2,
+          "Warthorne": 2,
+          "Zhavia": 2,
+          "・sosa・": 2,
+          "-GHOST": 1,
+          "Amu": 1,
+          "BadBeatBrad": 1,
+          "Brandissimo丷": 1,
+          "Danimals": 1,
+          "Izari": 1,
+          "MadMizz": 1,
+          "Mildredkar": 1,
+          "OnMe": 1,
+          "Qwazzツ": 1,
+          "SmallBut Whole": 1,
+          "xSp00n": 1,
+          "Zeelos": 1,
+          "ゐunnie": 1,
+          "トールンツ": 1,
+          "爪 下・チェレェ": 1
+        },
+        "died_to": {
+          "Izari": 7,
+          "Pluto": 6,
+          "paninimelt": 3,
+          "JoToxic゜": 2,
+          "MadMizz": 2,
+          "Nyaaarkツ": 2,
+          "Qwazzツ": 2,
+          "Amu": 1,
+          "xSp00n": 1
+        }
+      }
     },
     {
       "rank": 20,
@@ -334,7 +1090,49 @@
       "damage_dealt": 3904674,
       "damage_taken": 2955204,
       "amount_healed": 86379,
-      "flags": []
+      "flags": [],
+      "deaths": 22,
+      "kf": {
+        "killed": {
+          "Nyaaarkツ": 5,
+          "Akaroyoshi": 4,
+          "Ziphira": 4,
+          "Chowskie": 2,
+          "pao": 2,
+          "Pluto": 2,
+          "SmallBut Whole": 2,
+          "Amu": 1,
+          "BooBoosEh": 1,
+          "Brandissimo丷": 1,
+          "Dagnerus": 1,
+          "DIESELDIKRICH": 1,
+          "Emiryia": 1,
+          "Jong": 1,
+          "lululemonade": 1,
+          "MadMizz": 1,
+          "paninimelt": 1,
+          "VitaL+": 1,
+          "WakaPac": 1,
+          "xSp00n": 1,
+          "XxLudovicusxX": 1,
+          "Zeelos": 1,
+          "Zhavia": 1,
+          "ゐunnie": 1,
+          "・sosa・": 1
+        },
+        "died_to": {
+          "Margheritaa": 8,
+          "Pluto": 3,
+          "Brandissimo丷": 2,
+          "Izari": 2,
+          "Qwazzツ": 2,
+          "Chowskie": 1,
+          "MadMizz": 1,
+          "Nyaaarkツ": 1,
+          "SmallBut Whole": 1,
+          "xSp00n": 1
+        }
+      }
     },
     {
       "rank": 21,
@@ -350,7 +1148,40 @@
       "damage_dealt": 2084036,
       "damage_taken": 1350671,
       "amount_healed": 22131,
-      "flags": []
+      "flags": [],
+      "deaths": 16,
+      "kf": {
+        "killed": {
+          "xSp00n": 6,
+          "Izari": 5,
+          "Amu": 4,
+          "HoodRobin": 3,
+          "MadMizz": 3,
+          "pao": 3,
+          "amidalarose": 2,
+          "Chowskie": 2,
+          "SmallBut Whole": 2,
+          "Warthorne": 2,
+          "-GHOST": 1,
+          "Atheling": 1,
+          "paninimelt": 1,
+          "Pluto": 1,
+          "VitaL+": 1,
+          "XxLudovicusxX": 1
+        },
+        "died_to": {
+          "pao": 3,
+          "SmallBut Whole": 3,
+          "MadMizz": 2,
+          "xSp00n": 2,
+          "-GHOST": 1,
+          "Izari": 1,
+          "Nyaaarkツ": 1,
+          "paninimelt": 1,
+          "Qwazzツ": 1,
+          "WakaPac": 1
+        }
+      }
     },
     {
       "rank": 22,
@@ -366,7 +1197,40 @@
       "damage_dealt": 1801876,
       "damage_taken": 2162554,
       "amount_healed": 45551,
-      "flags": []
+      "flags": [],
+      "deaths": 21,
+      "kf": {
+        "killed": {
+          "respawncamper": 7,
+          "Boons・": 3,
+          "pinkpawedpuppy": 3,
+          "・enrique・": 3,
+          "bru": 2,
+          "Sakki": 2,
+          "Straight・K・67": 2,
+          "рух": 2,
+          "Brigadeiro": 1,
+          "Fear": 1,
+          "Jackie": 1,
+          "Nathias": 1,
+          "nightghost1": 1,
+          "Prefire": 1
+        },
+        "died_to": {
+          "pinkpawedpuppy": 4,
+          "Straight・K・67": 4,
+          "Boons・": 2,
+          "Brigadeiro": 2,
+          "nightghost1": 2,
+          "bru": 1,
+          "Katie": 1,
+          "Nathias": 1,
+          "Prefire": 1,
+          "Regentlord": 1,
+          "respawncamper": 1,
+          "YooNJ": 1
+        }
+      }
     },
     {
       "rank": 23,
@@ -382,7 +1246,42 @@
       "damage_dealt": 2023361,
       "damage_taken": 1017118,
       "amount_healed": 127950,
-      "flags": []
+      "flags": [],
+      "deaths": 26,
+      "kf": {
+        "killed": {
+          "・Yortvelt": 7,
+          "respawncamper": 3,
+          "Straight・K・67": 3,
+          "YooNJ": 3,
+          "рух": 3,
+          "・enrique・": 3,
+          "Dartz": 2,
+          "Katie": 2,
+          "pinkpawedpuppy": 2,
+          "Boons・": 1,
+          "boringg": 1,
+          "Brigadeiro": 1,
+          "bru": 1,
+          "LunaDarling": 1,
+          "Nathias": 1,
+          "Prefire": 1,
+          "Sakki": 1,
+          "Weax": 1
+        },
+        "died_to": {
+          "Prefire": 12,
+          "Straight・K・67": 4,
+          "рух": 3,
+          "Boons・": 1,
+          "boringg": 1,
+          "Katie": 1,
+          "nightghost1": 1,
+          "Poopsy": 1,
+          "respawncamper": 1,
+          "・enrique・": 1
+        }
+      }
     },
     {
       "rank": 24,
@@ -398,7 +1297,47 @@
       "damage_dealt": 3896241,
       "damage_taken": 4201009,
       "amount_healed": 75023,
-      "flags": []
+      "flags": [],
+      "deaths": 39,
+      "kf": {
+        "killed": {
+          "pinkpawedpuppy": 4,
+          "Regentlord": 3,
+          "雪Kyokko": 3,
+          "Brigadeiro": 2,
+          "Katie": 2,
+          "Nathias": 2,
+          "Ruthlessssssss": 2,
+          "YooNJ": 2,
+          "・Yortvelt": 2,
+          "Boons・": 1,
+          "boringg": 1,
+          "brattybunnyboy": 1,
+          "Cooop": 1,
+          "Doug": 1,
+          "EvoKinn": 1,
+          "Fear": 1,
+          "Glaide": 1,
+          "IIIDunamisIII": 1,
+          "Lannisturd": 1,
+          "nightghost1": 1,
+          "Rakaflaka": 1,
+          "Wing": 1,
+          "・enrique・": 1
+        },
+        "died_to": {
+          "boringg": 7,
+          "pinkpawedpuppy": 6,
+          "nightghost1": 5,
+          "Brigadeiro": 4,
+          "Nathias": 4,
+          "bru": 3,
+          "Katie": 3,
+          "YooNJ": 3,
+          "Fear": 2,
+          "Straight・K・67": 1
+        }
+      }
     },
     {
       "rank": 25,
@@ -414,7 +1353,43 @@
       "damage_dealt": 1720222,
       "damage_taken": 1170325,
       "amount_healed": 11341,
-      "flags": []
+      "flags": [],
+      "deaths": 20,
+      "kf": {
+        "killed": {
+          "Van": 4,
+          "xSp00n": 3,
+          "lululemonade": 2,
+          "pao": 2,
+          "-GHOST": 1,
+          "amidalarose": 1,
+          "Arkiiツ": 1,
+          "Atheling": 1,
+          "BooBoosEh": 1,
+          "Chowskie": 1,
+          "Danimals": 1,
+          "Emiryia": 1,
+          "HoodRobin": 1,
+          "Izari": 1,
+          "Jong": 1,
+          "MadMizz": 1,
+          "paninimelt": 1,
+          "Pluto": 1,
+          "SmallBut Whole": 1,
+          "VitaL+": 1,
+          "WakaPac": 1,
+          "Warthorne": 1,
+          "Ziphira": 1
+        },
+        "died_to": {
+          "SmallBut Whole": 7,
+          "Qwazzツ": 4,
+          "Izari": 3,
+          "paninimelt": 3,
+          "Chowskie": 2,
+          "Amu": 1
+        }
+      }
     },
     {
       "rank": 26,
@@ -430,7 +1405,34 @@
       "damage_dealt": 1788078,
       "damage_taken": 1186391,
       "amount_healed": 18385,
-      "flags": []
+      "flags": [],
+      "deaths": 23,
+      "kf": {
+        "killed": {
+          "EvoKinn": 3,
+          "Straight・K・67": 3,
+          "Dartz": 2,
+          "Yarl": 2,
+          "・enrique・": 2,
+          "bru": 1,
+          "chinny": 1,
+          "Jackie": 1,
+          "Rakaflaka": 1,
+          "Weax": 1,
+          "рух": 1
+        },
+        "died_to": {
+          "Prefire": 4,
+          "рух": 4,
+          "Boons・": 3,
+          "bru": 3,
+          "Straight・K・67": 3,
+          "Nathias": 2,
+          "노린재": 2,
+          "pinkpawedpuppy": 1,
+          "respawncamper": 1
+        }
+      }
     },
     {
       "rank": 27,
@@ -446,7 +1448,40 @@
       "damage_dealt": 1956314,
       "damage_taken": 2017543,
       "amount_healed": 44689,
-      "flags": []
+      "flags": [],
+      "deaths": 27,
+      "kf": {
+        "killed": {
+          "Fear": 4,
+          "Katie": 4,
+          "рух": 3,
+          "boringg": 2,
+          "Prefire": 2,
+          "respawncamper": 2,
+          "노린재": 2,
+          "Doug": 1,
+          "Glaide": 1,
+          "nightghost1": 1,
+          "Straight・K・67": 1,
+          "・enrique・": 1
+        },
+        "died_to": {
+          "Fear": 4,
+          "Katie": 3,
+          "pinkpawedpuppy": 3,
+          "Boons・": 2,
+          "boringg": 2,
+          "nightghost1": 2,
+          "Sakki": 2,
+          "YooNJ": 2,
+          "рух": 2,
+          "bru": 1,
+          "Nathias": 1,
+          "Prefire": 1,
+          "respawncamper": 1,
+          "Wing": 1
+        }
+      }
     },
     {
       "rank": 28,
@@ -462,7 +1497,42 @@
       "damage_dealt": 2358170,
       "damage_taken": 1473847,
       "amount_healed": 4490,
-      "flags": []
+      "flags": [],
+      "deaths": 37,
+      "kf": {
+        "killed": {
+          "boringg": 2,
+          "bru": 2,
+          "IIIDunamisIII": 2,
+          "Nathias": 2,
+          "nightghost1": 2,
+          "Straight・K・67": 2,
+          "DreadWムll": 1,
+          "Fear": 1,
+          "Griefer": 1,
+          "Invulnerable": 1,
+          "McDo": 1,
+          "Microツ": 1,
+          "Ruthlessssssss": 1,
+          "Sakki": 1,
+          "Wing": 1,
+          "Yarl": 1,
+          "рух": 1
+        },
+        "died_to": {
+          "pinkpawedpuppy": 12,
+          "Prefire": 6,
+          "bru": 4,
+          "boringg": 3,
+          "Sakki": 3,
+          "Straight・K・67": 3,
+          "Nathias": 2,
+          "Brigadeiro": 1,
+          "nightghost1": 1,
+          "YooNJ": 1,
+          "рух": 1
+        }
+      }
     },
     {
       "rank": 29,
@@ -478,7 +1548,42 @@
       "damage_dealt": 3157608,
       "damage_taken": 2259514,
       "amount_healed": 79192,
-      "flags": []
+      "flags": [],
+      "deaths": 37,
+      "kf": {
+        "killed": {
+          "brattybunnyboy": 5,
+          "Ruthlessssssss": 3,
+          "EvoKinn": 2,
+          "Microツ": 2,
+          "AtHoldTheLine": 1,
+          "boringg": 1,
+          "Brigadeiro": 1,
+          "Cooop": 1,
+          "Glaide": 1,
+          "Lannisturd": 1,
+          "soju": 1,
+          "Weax": 1,
+          "рух": 1
+        },
+        "died_to": {
+          "Prefire": 10,
+          "pinkpawedpuppy": 7,
+          "Sakki": 3,
+          "Boons・": 2,
+          "boringg": 2,
+          "bru": 2,
+          "Fear": 2,
+          "YooNJ": 2,
+          "Brigadeiro": 1,
+          "Katie": 1,
+          "Poopsy": 1,
+          "Regentlord": 1,
+          "respawncamper": 1,
+          "рух": 1,
+          "노린재": 1
+        }
+      }
     },
     {
       "rank": 30,
@@ -494,7 +1599,38 @@
       "damage_dealt": 11213447,
       "damage_taken": 1941178,
       "amount_healed": 49700,
-      "flags": []
+      "flags": [],
+      "deaths": 29,
+      "kf": {
+        "killed": {
+          "Katie": 3,
+          "Boons・": 2,
+          "Straight・K・67": 2,
+          "YooNJ": 2,
+          "рух": 2,
+          "Brigadeiro": 1,
+          "Fear": 1,
+          "McDo": 1,
+          "nightghost1": 1,
+          "Prefire": 1,
+          "Regentlord": 1,
+          "Sakki": 1
+        },
+        "died_to": {
+          "Straight・K・67": 7,
+          "рух": 5,
+          "Sakki": 4,
+          "Boons・": 3,
+          "Katie": 3,
+          "Brigadeiro": 1,
+          "Fear": 1,
+          "nightghost1": 1,
+          "pinkpawedpuppy": 1,
+          "respawncamper": 1,
+          "YooNJ": 1,
+          "・enrique・": 1
+        }
+      }
     },
     {
       "rank": 31,
