@@ -305,6 +305,28 @@ svg.wi .dia{fill:var(--panel2);stroke:var(--gold)}
 #lbt th[data-k=rank]{width:44px}#lbt th[data-k=weapons]{width:84px}
 @media(max-width:560px){.tabs{width:100%;justify-content:space-between;overflow-x:auto;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}
  .tab-b{padding:0 7px;font-size:11px;letter-spacing:.04em}.tab-b .ct{margin-left:3px;padding:0 4px}}
+/* ---------- hover: show what can be clicked ---------- */
+svg.dnut .seg-p{transition:opacity .12s,stroke .12s,stroke-width .12s,transform .12s;transform-box:fill-box;transform-origin:center}
+svg.dnut .seg-p[data-dk]:hover{opacity:1;stroke:#fff;stroke-width:2.6;transform:scale(1.045);filter:drop-shadow(0 0 4px rgba(255,255,255,.35))}
+svg.dnut .seg-p[data-dk]{cursor:pointer}
+.pl2 li[data-dk]{border-radius:3px;padding:1.5px 4px;margin:0 -4px;transition:background .12s,box-shadow .12s}
+.pl2 li[data-dk]:hover{background:var(--hover);box-shadow:inset 0 0 0 1px var(--gold)}
+.h2r[data-dk]{border-radius:3px;transition:box-shadow .12s,background .12s}
+.h2r[data-dk]:hover{background:var(--hover);box-shadow:0 0 0 1px var(--gold)}
+.h2r[data-dk]:hover .hb i{opacity:1;filter:brightness(1.15)}
+.tile.clk{transition:box-shadow .12s,transform .12s}.tile.clk:hover{box-shadow:0 0 0 1px var(--gold),0 6px 18px rgba(0,0,0,.45);transform:translateY(-1px)}
+tr.clk td,#gbody tr td{transition:background .1s}
+tr.clk:hover td,#gbody tr:hover td{background:var(--hover)!important;box-shadow:inset 0 1px 0 var(--gold),inset 0 -1px 0 var(--gold)}
+tr.clk:hover td:first-child,#gbody tr:hover td:first-child{box-shadow:inset 2px 0 0 var(--gold),inset 0 1px 0 var(--gold),inset 0 -1px 0 var(--gold)}
+#gbody tr{cursor:pointer}
+.lk[data-dk]{border-radius:2px;transition:box-shadow .12s}.lk[data-dk]:hover{box-shadow:0 0 0 1px var(--gold);text-decoration:none}
+.wp[data-dk]{cursor:pointer;border-radius:3px;padding:1px;transition:box-shadow .12s}.wp[data-dk]:hover{box-shadow:0 0 0 1px var(--gold)}
+.cw:not(.zero){cursor:pointer;transition:box-shadow .12s,background .12s}.cw:not(.zero):hover{box-shadow:0 0 0 1px var(--gold);background:var(--gold-bg2)}
+.vs-bar{transition:box-shadow .12s}.vs-bar:hover{box-shadow:0 0 0 1px var(--gold)}
+.lb th[data-k]{cursor:pointer;transition:color .12s,background .12s}.lb th[data-k]:hover{color:var(--text);background:var(--hover)}
+.seg button:not([aria-pressed=true]):hover,.tab-b[aria-selected=false]:hover{box-shadow:inset 0 -2px 0 var(--line2)}
+.gsec>summary{transition:background .12s}.gsec>summary:hover{background:var(--hover)}
+@media(hover:none){svg.dnut .seg-p[data-dk]:hover{transform:none}}
 /* ---------- click-through breakdown ---------- */
 [data-dk]{cursor:pointer}.clk:hover td,.tile.clk:hover{background:var(--hover)}.pl2 li[data-dk]:hover .pn{color:var(--text)}
 .lk[data-dk]:hover{text-decoration:underline;text-underline-offset:3px}
