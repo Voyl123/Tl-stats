@@ -294,6 +294,10 @@ svg.wi .dia{fill:var(--panel2);stroke:var(--gold)}
 @media(max-width:700px){.sg{grid-template-columns:repeat(2,minmax(0,1fr))}.vs-r,.vs-h{grid-template-columns:76px 1fr 76px;gap:8px}.vs-v{font-size:12.5px}}
 /* Warcraft Logs feel: brighter class-colour amount bars, solid header row */
 .lb td.bar-c{background-size:100% 100%}
+/* even stat columns: the name takes the slack, every number column gets the same width */
+#lbt th[data-k=name]{width:20%}#lbt th[data-k=guild]{width:13%}
+#lbt th[data-k=defeat],#lbt th[data-k=assist],#lbt th[data-k=damage_dealt],#lbt th[data-k=tdp],#lbt th[data-k=damage_taken],#lbt th[data-k=amount_healed],#lbt th[data-k=thp],#lbt th[data-k=deaths],#lbt th[data-k=games]{width:96px}
+#lbt th[data-k=rank]{width:44px}#lbt th[data-k=weapons]{width:84px}
 /* ---------- click-through breakdown ---------- */
 [data-dk]{cursor:pointer}.clk:hover td,.tile.clk:hover{background:var(--hover)}.pl2 li[data-dk]:hover .pn{color:var(--text)}
 .lk[data-dk]:hover{text-decoration:underline;text-underline-offset:3px}
@@ -429,7 +433,7 @@ const numOf=s=>{s=(s||"").replace(/[,\s%]/g,"");const m=s.match(/^(-?\d+(?:\.\d+
 function barify(t,fallback){if(!t||!t.tBodies[0])return;const hs=[...t.tHead.rows[0].cells];let th=hs.find(h=>h.classList.contains("sorted"));
  if(!th||th.classList.contains("l")||th.classList.contains("c")||["rank","games"].includes(th.dataset.k))th=hs.find(h=>h.dataset.k===fallback);if(!th)return;
  const ix=hs.indexOf(th),rows=[...t.tBodies[0].rows].filter(r=>r.cells.length===hs.length),vals=rows.map(r=>numOf(r.cells[ix].textContent)),mx=Math.max(0,...vals.filter(v=>v>0));if(!mx)return;
- rows.forEach((r,i)=>{const td=r.cells[ix],w=vals[i]>0?Math.max(1.5,100*vals[i]/mx):0,c=r.dataset.cc||"var(--gold)";td.classList.add("bar-c");
+ rows.forEach((r,i)=>{const td=r.cells[ix],w=vals[i]>0?100*vals[i]/mx:0,c=r.dataset.cc||"var(--gold)";td.classList.add("bar-c");
   td.style.backgroundImage=`linear-gradient(90deg,color-mix(in srgb,${c} 34%,transparent) 0 ${w}%,transparent ${w}%)`})}
 function barAll(){const fb=D.meta&&D.meta.siege?"defeat":"damage_dealt";document.querySelectorAll("table.lb").forEach(t=>barify(t,t.id==="jt"?"damage_dealt":t.id==="gtab"?"damage_dealt":fb))}
 if(window.top===window&&!/^(127\.0\.0\.1|localhost|)$/.test(location.hostname)&&/\/m\/[^/]+\/?(index\.html)?$/.test(location.pathname))$("#brandl").hidden=false;
@@ -586,7 +590,7 @@ $("#teams").addEventListener("click",e=>{const c=e.target.closest(".cw[data-w]")
   `<span class="pl"><em>${p.rank??""}</em>${wIcon(p.weapon1,p.weapon1===w?"hl":"dim")}${wIcon(p.weapon2,p.weapon2===w?"hl":"dim")}<b>${esc(p.name)}</b><i>${esc(p.class)}</i></span>`).join("")}</div>`});
 
 /* ---------- player table (shared by Leaderboard and Guilds) ---------- */
-const COLS=[["rank","#","c"],["weapons","Weapons","c"],["role","Class","l"],["guild","Guild","l"],["name","Name","l"],["parse","Parse","c"],
+const COLS=[["rank","#","c"],["weapons","Weapons","c"],["guild","Guild","l"],["name","Name","l"],["parse","Parse","c"],
  ["defeat","Kills"],["assist","Assist"],["damage_dealt","Damage Dealt"],["tdp","Team Dmg %"],["damage_taken","Damage Taken"],["amount_healed","Amount Healed"],["thp","Team Heal %"]];
 function tdpCell(p,k="tdp",what="damage"){const v=p[k];if(v==null)return"<td></td>";
  const o=pq(k,v,"all","");const c=o?pcolor(o.q):"var(--faint)";
@@ -643,7 +647,7 @@ function renderChk(){const c=D.meta.check;if(!c){$("#chk").innerHTML="";return}
  const b=$("#cautbtn");if(b)b.onclick=()=>{cautOnly=!cautOnly;render()}}
 function render(){
  renderChk();
- $("#hdr").innerHTML=COLS.map(([k,l,a])=>`<th data-k="${k}" class="${a||""} ${k===sortKey?"sorted"+(asc?" asc":""):""}">${l}</th>`).join("");
+ $("#hdr").innerHTML=COLS.map(([k,l,a])=>{const on=k===sortKey||(k==="weapons"&&sortKey==="role");return`<th data-k="${k}" class="${a||""} ${on?"sorted"+(asc?" asc":""):""}"${k==="weapons"?' title="Group by class and spec"':""}>${l}</th>`}).join("");
  const q=$("#q").value.trim().toLowerCase(),tf=$("#f-team").value,gf=$("#f-guild").value,rf=$("#f-role").value,jf=$("#f-job").value;
  const rows=P.filter(p=>(!cautOnly||(p.flags||[]).length)&&(!tf||p.team===tf)&&(!gf||p.guild===gf)&&(!rf||p.role===rf)&&(!jf||p.class===jf)&&
   (!q||(p.name||"").toLowerCase().includes(q)||(p.guild||"").toLowerCase().includes(q))).sort(sorter(sortKey,asc));
@@ -655,7 +659,7 @@ function render(){
    h+=`<tr class="grp job-h"><td colspan="${COLS.length}"><span class="job${/ \+ /.test(p.class)?" un":""}">${esc(p.class||"Unknown job")}</span><span class="gc">${n}</span></td></tr>`}
   return h+rowHTML(p,COLS)}).join("")||`<tr><td colspan="${COLS.length}" class="c empty">No players match these filters.</td></tr>`;
  renderLegend();barAll()}
-$("#hdr").addEventListener("click",e=>{const th=e.target.closest("th");if(!th)return;const k=th.dataset.k;
+$("#hdr").addEventListener("click",e=>{const th=e.target.closest("th");if(!th)return;let k=th.dataset.k;if(k==="weapons")k="role";
  if(k===sortKey)asc=!asc;else{sortKey=k;asc=TEXTK.has(k)}render()});
 ["q","f-team","f-guild","f-role","f-job","pmode","pstat"].forEach(id=>$("#"+id).addEventListener("input",()=>{if(id==="pmode"||id==="pstat")recalc();render();if(tab==="gd")renderGuilds()}));
 
@@ -855,13 +859,12 @@ function renderStand(ps){
 <td class="l"><span class="pill role ${esc(r.p.role)}"><span class="dot"></span>${esc(r.p.class||r.p.role||"?")}</span></td>
 <td class="l">${r.a.map(({k,o})=>`<span class="ochip ${o.dir>0?"up":"dn"}${o.tier>1?" x2":""}" data-tip="${ttxt(r.p)}\n${esc(NLAB[k])}: <b>${fmt(o.val)}</b>\n${otxt(o)}">${o.dir>0?"▲":"▼"} ${esc(NLAB[k].replace("Damage ","Dmg ").replace("Amount ",""))} <b>${short(o.val)}</b>${o.ratio!=null?` <i>${o.ratio>=10?Math.round(o.ratio):o.ratio.toFixed(1)}×</i>`:""}</span>`).join("")}</td></tr>`).join("")}</tbody></table></div>`}
 let jSort="n",jAsc=false;
-const JCOLS=[["job","Spec","l"],["role","Class","l"],["n","Players"],...NUM.map(k=>[k,"Avg "+NLAB[k].replace("Amount ","").replace("Damage ","dmg ").toLowerCase()]),["top","Top player","l"]];
+const JCOLS=[["job","Spec","l"],["n","Players"],...NUM.map(k=>[k,"Avg "+NLAB[k].replace("Amount ","").replace("Damage ","dmg ").toLowerCase()]),["top","Top player","l"]];
 function renderJobTable(G,k){
  const rows=G.map(g=>{const o={job:g.job,role:g.role,n:g.ps.length,ps:g.ps};NUM.forEach(c=>o[c]=g.ps.reduce((a,p)=>a+(p[c]||0),0)/g.ps.length);
   o.topP=[...g.ps].sort((a,b)=>(b[k]||0)-(a[k]||0))[0];o.top=o.topP?o.topP.name:"";return o}).sort(sorter(jSort,jAsc));
  $("#jhdr").innerHTML=JCOLS.map(([c,l,a])=>`<th data-k="${c}" class="${a||""} ${c===jSort?"sorted"+(jAsc?" asc":""):""}">${l}</th>`).join("");
- $("#jbody").innerHTML=rows.map(o=>`<tr><td class="l"><span class="job${/ \+ /.test(o.job)?" un":""}">${esc(o.job)}</span></td>
-<td class="l"><span class="pill role ${esc(o.role)}"><span class="dot"></span>${esc(o.role)}</span></td><td><b>${o.n}</b></td>
+ $("#jbody").innerHTML=rows.map(o=>`<tr data-cc="${ccol(o.job,o.role)}"><td class="l"><span class="job lk${/ \+ /.test(o.job)?" un":""}" data-dk="class" data-dv="${esc(o.job)}" style="color:${ccol(o.job,o.role)}">${esc(o.job)}</span></td><td><b>${o.n}</b></td>
 ${NUM.map(c=>`<td>${fmt(Math.round(o[c]))}</td>`).join("")}<td class="l"><span class="nm">${esc(o.top)}</span> <span style="color:var(--dim)">${o.topP?short(o.topP[k]):""}</span></td></tr>`).join("")||`<tr><td colspan="${JCOLS.length}" class="c empty">No specs in this filter.</td></tr>`}
 $("#jhdr").addEventListener("click",e=>{const th=e.target.closest("th");if(!th)return;const c=th.dataset.k;
  if(c===jSort)jAsc=!jAsc;else{jSort=c;jAsc=c==="job"||c==="role"||c==="top"}renderGraphs()});
@@ -978,9 +981,9 @@ function renderClasses(){
   $("#cl-h2h-c").hidden=!rows.length}else $("#cl-h2h-c").hidden=true;
  // totals table
  $("#cl-tt").textContent=`Combined totals by ${clName(by).toLowerCase()}${side?" · "+side:""}`;
- $("#clhdr").innerHTML=`<th class="l">${clName(by)}</th>`+(by==="role"?"":`<th class="l">Role</th>`)+cols.map(([k,l])=>`<th data-k="${k}" class="${k===K?"sorted":""}">${l}</th>`).join("")+`<th class="l">Top player</th>`;
+ $("#clhdr").innerHTML=`<th class="l">${clName(by)}</th>`+cols.map(([k,l])=>`<th data-k="${k}" class="${k===K?"sorted":""}">${l}</th>`).join("")+`<th class="l">Top player</th>`;
  $("#clbody").innerHTML=G.map(g=>{const c=clCol(g,by),t=clTop(g,K),b=clBase(K);
-  return`<tr data-cc="${c}" data-dk="${by}" data-dv="${esc(g.key)}" class="clk"><td class="l"><b style="color:${c}">${esc(g.key)}</b></td>${by==="role"?"":`<td class="l"><span class="dot" style="--c:${RCOL[g.role]||"var(--faint)"}"></span> ${esc(g.role||"–")}</td>`}
+  return`<tr data-cc="${c}" data-dk="${by}" data-dv="${esc(g.key)}" class="clk"><td class="l"><b style="color:${c}">${esc(g.key)}</b></td>
 ${cols.map(([k])=>`<td class="num${k===K?" srt":""}">${clVal(g,k)}</td>`).join("")}<td class="l">${t?`<span style="color:${ccol(t.class,t.role)}">${esc(t.name)}</span> <span class="faint">${b==="damage_dealt"?short(t[b]):fmt(t[b]||0)}</span>`:"–"}</td></tr>`}).join("");
  $$("#clhdr th[data-k]").forEach(th=>th.onclick=()=>{const k=th.dataset.k;CS.dir=CS.sort===k?-CS.dir:-1;CS.sort=k;store.set("clSort",k);$("#cl-stat").value=k;renderClasses()});
  barify($("#clt"),"damage_dealt")}
