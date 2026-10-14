@@ -1,3617 +1,3617 @@
 {
-  "meta": {
-    "scanned": "2026-10-11 02:57",
-    "source": "Wargames: Supple v UC + Fills Game 2 Kowa · video @ 0:01",
-    "title": null,
-    "missing": [],
-    "expected": 96,
-    "map": "Kowazan",
-    "frames": 259,
-    "frames_with_rows": 96,
-    "check": {
-      "rows": 96,
-      "kills_in_order": true,
-      "corrected": 0,
-      "caution": 9,
-      "weapons_fixed": 0,
-      "weapons_doubt": 0,
-      "missing": 0
-    },
-    "zone": "Grayclaw Forest"
+ "meta": {
+  "scanned": "2026-10-11 02:57",
+  "source": "Wargames: Supple v UC + Fills Game 2 Kowa · video @ 0:01",
+  "title": null,
+  "missing": [],
+  "expected": 96,
+  "map": "Kowazan",
+  "frames": 259,
+  "frames_with_rows": 96,
+  "check": {
+   "rows": 96,
+   "kills_in_order": true,
+   "corrected": 0,
+   "caution": 9,
+   "weapons_fixed": 0,
+   "weapons_doubt": 0,
+   "missing": 0
   },
-  "players": [
-    {
-      "seen": 62,
-      "rank": 1,
-      "name": "Nathias",
-      "guild": "Ping Gap",
-      "team": "Yellow",
-      "weapon1": "Gauntlet",
-      "weapon2": "Dagger",
-      "guild_icon": "guild_17",
-      "defeat": 102,
-      "assist": 108,
-      "damage_dealt": 5915900,
-      "damage_taken": 2195043,
-      "amount_healed": 0,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.98,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 0.98,
-        "weapon2": 1.0,
-        "guild_icon": 0.87,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 60,
-      "alts": {
-        "name": [
-          [
-            "Nathias",
-            0.97
-          ],
-          [
-            "Nathias1",
-            0.03
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 61,
-      "rank": 2,
-      "name": "BanhッMi",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Crossbow",
-      "weapon2": "Dagger",
-      "guild_icon": "guild_48",
-      "defeat": 90,
-      "assist": 156,
-      "damage_dealt": 7855069,
-      "damage_taken": 1000365,
-      "amount_healed": 14567,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.99,
-        "guild": 0.99,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 0.99,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 60,
-      "alts": {
-        "name": [
-          [
-            "Banhッ Mi",
-            0.98
-          ],
-          [
-            "Banhy Mi",
-            0.02
-          ]
-        ],
-        "guild": [
-          [
-            "Undercooked",
-            0.98
-          ],
-          [
-            "Undercopked",
-            0.02
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 67,
-      "rank": 3,
-      "name": "ternos·",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Gauntlet",
-      "weapon2": "Dagger",
-      "guild_icon": "guild_48",
-      "defeat": 80,
-      "assist": 85,
-      "damage_dealt": 4365982,
-      "damage_taken": 1554449,
-      "amount_healed": 63348,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.99,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 0.98,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 66,
-      "alts": {
-        "name": [
-          [
-            "ternos·",
-            0.98
-          ],
-          [
-            "ternes",
-            0.02
-          ]
-        ]
-      },
-      "flags": [],
-      "name_scan": "ternos",
-      "confirmed": true
-    },
-    {
-      "seen": 67,
-      "rank": 4,
-      "name": "chiraqkilla",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Gauntlet",
-      "weapon2": "Dagger",
-      "guild_icon": "guild_01",
-      "defeat": 78,
-      "assist": 88,
-      "damage_dealt": 5578415,
-      "damage_taken": 2113052,
-      "amount_healed": 69927,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.96,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 0.98,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 63,
-      "alts": {
-        "name": [
-          [
-            "chiraqkilla",
-            0.94
-          ],
-          [
-            "chirakilla",
-            0.03
-          ],
-          [
-            "chiragkilła",
-            0.02
-          ],
-          [
-            "chiragkilla",
-            0.02
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 68,
-      "rank": 5,
-      "name": "stepbro茡",
-      "guild": "JAILEDシ",
-      "team": "Yellow",
-      "weapon1": "Dagger",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_06",
-      "defeat": 75,
-      "assist": 102,
-      "damage_dealt": 4214660,
-      "damage_taken": 2724032,
-      "amount_healed": 14886,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.83,
-        "guild": 0.94,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 57,
-      "alts": {
-        "name": [
-          [
-            "stepbro老",
-            0.0
-          ],
-          [
-            "stepbro老",
-            0.83
-          ],
-          [
-            "stepbro",
-            0.14
-          ],
-          [
-            "ste",
-            0.03
-          ]
-        ],
-        "guild": [
-          [
-            "JAILEDシ",
-            0.94
-          ],
-          [
-            "JAILED",
-            0.06
-          ]
-        ]
-      },
-      "flags": [],
-      "snapped": true,
-      "name_scan": "stepbro老",
-      "confirmed": true
-    },
-    {
-      "seen": 70,
-      "rank": 6,
-      "name": "Augustッ",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Dagger",
-      "weapon2": "Staff",
-      "guild_icon": "guild_48",
-      "defeat": 65,
-      "assist": 124,
-      "damage_dealt": 4501553,
-      "damage_taken": 1447299,
-      "amount_healed": 0,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.88,
-        "guild": 0.99,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 0.97,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 58,
-      "alts": {
-        "name": [
-          [
-            "August ッ",
-            0.83
-          ],
-          [
-            "August",
-            0.1
-          ],
-          [
-            "Augustッ1",
-            0.03
-          ],
-          [
-            "August y",
-            0.01
-          ]
-        ],
-        "guild": [
-          [
-            "Undercooked",
-            0.99
-          ],
-          [
-            "Undered",
-            0.01
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 70,
-      "rank": 7,
-      "name": "Sparda",
-      "guild": "JAILEDシ",
-      "team": "Red",
-      "weapon1": "Spear",
-      "weapon2": "Dagger",
-      "guild_icon": "guild_06",
-      "defeat": 64,
-      "assist": 96,
-      "damage_dealt": 4276218,
-      "damage_taken": 2012318,
-      "amount_healed": 55346,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.79,
-        "guild": 0.97,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 49,
-      "alts": {
-        "name": [
-          [
-            "Sparda",
-            0.7
-          ],
-          [
-            "Sparda山",
-            0.27
-          ],
-          [
-            "Spard",
-            0.01
-          ],
-          [
-            "SpardaL",
-            0.01
-          ]
-        ],
-        "guild": [
-          [
-            "JAILEDシ",
-            0.97
-          ],
-          [
-            "JAILED>",
-            0.03
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 69,
-      "rank": 8,
-      "name": "SprayMachine",
-      "guild": "Gear Gap",
-      "team": "Yellow",
-      "weapon1": "Crossbow",
-      "weapon2": "Dagger",
-      "guild_icon": "guild_35",
-      "defeat": 64,
-      "assist": 66,
-      "damage_dealt": 3420951,
-      "damage_taken": 2220985,
-      "amount_healed": 0,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.99,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 0.97,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 68,
-      "alts": {
-        "name": [
-          [
-            "SprayMachine",
-            0.99
-          ],
-          [
-            "SprayMachin",
-            0.01
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 70,
-      "rank": 9,
-      "name": "大尸ho",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Dagger",
-      "weapon2": "Crossbow",
-      "guild_icon": "guild_48",
-      "defeat": 62,
-      "assist": 160,
-      "damage_dealt": 7332730,
-      "damage_taken": 1162772,
-      "amount_healed": 0,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.98,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 0.58,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 68,
-      "alts": {
-        "name": [
-          [
-            "大尸ho",
-            0.97
-          ],
-          [
-            "大尸",
-            0.01
-          ],
-          [
-            "大尸h",
-            0.01
-          ]
-        ]
-      },
-      "flags": [
-        "guild_icon"
-      ]
-    },
-    {
-      "seen": 71,
-      "rank": 10,
-      "name": "Fade災",
-      "guild": "Ping Gap",
-      "team": "Yellow",
-      "weapon1": "Staff",
-      "weapon2": "Dagger",
-      "guild_icon": "guild_33",
-      "defeat": 54,
-      "assist": 108,
-      "damage_dealt": 3688425,
-      "damage_taken": 1557464,
-      "amount_healed": 45389,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 0.91,
-        "weapon2": 0.99,
-        "guild_icon": 0.65,
-        "defeat": 0.99,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 70,
-      "alts": {
-        "name": [
-          [
-            "Fade災",
-            1.0
-          ],
-          [
-            "adx",
-            0.0
-          ]
-        ],
-        "guild": [
-          [
-            "Ping Gap",
-            0.99
-          ],
-          [
-            "SBingjeGa",
-            0.01
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 10,
-      "rank": 11,
-      "name": "Fear",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Staff",
-      "weapon2": "Orb",
-      "guild_icon": "guild_01",
-      "defeat": 54,
-      "assist": 62,
-      "damage_dealt": 3930321,
-      "damage_taken": 1477011,
-      "amount_healed": 8,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 10,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 5,
-      "rank": 12,
-      "name": "boringg",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Staff",
-      "weapon2": "Dagger",
-      "guild_icon": "guild_01",
-      "defeat": 51,
-      "assist": 118,
-      "damage_dealt": 4693722,
-      "damage_taken": 1336017,
-      "amount_healed": 22291,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 5,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 6,
-      "rank": 13,
-      "name": "Surgence",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Staff",
-      "weapon2": "Dagger",
-      "guild_icon": "guild_01",
-      "defeat": 49,
-      "assist": 109,
-      "damage_dealt": 4051859,
-      "damage_taken": 1101804,
-      "amount_healed": 41319,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.89,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 5,
-      "alts": {
-        "name": [
-          [
-            "Surgence",
-            0.83
-          ],
-          [
-            "Sure",
-            0.17
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 5,
-      "rank": 14,
-      "name": "CR8W",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Crossbow",
-      "weapon2": "Dagger",
-      "guild_icon": "guild_01",
-      "defeat": 43,
-      "assist": 37,
-      "damage_dealt": 2544399,
-      "damage_taken": 1200119,
-      "amount_healed": 29478,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 5,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 5,
-      "rank": 15,
-      "name": "Hursky",
-      "guild": "JAILEDシ",
-      "team": "Yellow",
-      "weapon1": "Crossbow",
-      "weapon2": "Dagger",
-      "guild_icon": "guild_06",
-      "defeat": 42,
-      "assist": 71,
-      "damage_dealt": 2534912,
-      "damage_taken": 2276877,
-      "amount_healed": 53168,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 5,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 4,
-      "rank": 16,
-      "name": "dabldoya",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Staff",
-      "weapon2": "Dagger",
-      "guild_icon": "guild_01",
-      "defeat": 41,
-      "assist": 74,
-      "damage_dealt": 3009316,
-      "damage_taken": 1503581,
-      "amount_healed": 0,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.84,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {
-        "name": [
-          [
-            "dabldoya",
-            0.76
-          ],
-          [
-            "dalNdoya",
-            0.24
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 4,
-      "rank": 17,
-      "name": "pyx",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Greatsword",
-      "weapon2": "Dagger",
-      "guild_icon": "guild_01",
-      "defeat": 40,
-      "assist": 72,
-      "damage_dealt": 2805611,
-      "damage_taken": 2383498,
-      "amount_healed": 17189,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 4,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 4,
-      "rank": 18,
-      "name": "Emperor",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Greatsword",
-      "weapon2": "Dagger",
-      "guild_icon": "guild_48",
-      "defeat": 39,
-      "assist": 93,
-      "damage_dealt": 3028385,
-      "damage_taken": 2173730,
-      "amount_healed": 52845,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 4,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 19,
-      "name": "NGH일",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Dagger",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_01",
-      "defeat": 39,
-      "assist": 72,
-      "damage_dealt": 3211596,
-      "damage_taken": 2073111,
-      "amount_healed": 0,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": [],
-      "name_scan": "NGH",
-      "confirmed": true
-    },
-    {
-      "seen": 4,
-      "rank": 20,
-      "name": "Aero",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Crossbow",
-      "weapon2": "Dagger",
-      "guild_icon": "guild_01",
-      "defeat": 38,
-      "assist": 104,
-      "damage_dealt": 5400290,
-      "damage_taken": 748613,
-      "amount_healed": 18770,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.86,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {
-        "name": [
-          [
-            "Aero",
-            0.79
-          ],
-          [
-            "AL",
-            0.21
-          ]
-        ]
-      },
-      "flags": [
-        "damage_dealt"
-      ]
-    },
-    {
-      "seen": 4,
-      "rank": 21,
-      "name": "Wintrr",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Gauntlet",
-      "weapon2": "Dagger",
-      "guild_icon": "guild_48",
-      "defeat": 35,
-      "assist": 49,
-      "damage_dealt": 2138836,
-      "damage_taken": 1311614,
-      "amount_healed": 63261,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 4,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 22,
-      "name": "CruMpet",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Orb",
-      "weapon2": "Dagger",
-      "guild_icon": "guild_48",
-      "defeat": 34,
-      "assist": 71,
-      "damage_dealt": 2118804,
-      "damage_taken": 945202,
-      "amount_healed": 0,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 4,
-      "rank": 23,
-      "name": "zayヅ",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Spear",
-      "weapon2": "Dagger",
-      "guild_icon": "guild_48",
-      "defeat": 33,
-      "assist": 57,
-      "damage_dealt": 1884142,
-      "damage_taken": 1475638,
-      "amount_healed": 15081,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.84,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {
-        "name": [
-          [
-            "zayヅ",
-            0.76
-          ],
-          [
-            "za",
-            0.24
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 4,
-      "rank": 24,
-      "name": "Splice",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Staff",
-      "weapon2": "Orb",
-      "guild_icon": "guild_48",
-      "defeat": 32,
-      "assist": 103,
-      "damage_dealt": 2615637,
-      "damage_taken": 1314674,
-      "amount_healed": 0,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 4,
-      "alts": {
-        "name": [
-          [
-            "Spice",
-            0.0
-          ]
-        ]
-      },
-      "flags": [],
-      "snapped": true
-    },
-    {
-      "seen": 4,
-      "rank": 25,
-      "name": "SapirO",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Longbow",
-      "weapon2": "Crossbow",
-      "guild_icon": "guild_01",
-      "defeat": 32,
-      "assist": 63,
-      "damage_dealt": 3834357,
-      "damage_taken": 1059768,
-      "amount_healed": 17859,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.84,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {
-        "name": [
-          [
-            "SapirO",
-            0.76
-          ],
-          [
-            "Sa",
-            0.24
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 4,
-      "rank": 26,
-      "name": "OnlyBans",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Dagger",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_01",
-      "defeat": 31,
-      "assist": 110,
-      "damage_dealt": 3304383,
-      "damage_taken": 2103926,
-      "amount_healed": 17023,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 4,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 4,
-      "rank": 27,
-      "name": "Cookies",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Crossbow",
-      "weapon2": "Dagger",
-      "guild_icon": "guild_48",
-      "defeat": 31,
-      "assist": 47,
-      "damage_dealt": 1541145,
-      "damage_taken": 1635222,
-      "amount_healed": 0,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.83,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {
-        "name": [
-          [
-            "Cookies",
-            0.75
-          ],
-          [
-            "es",
-            0.25
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 4,
-      "rank": 28,
-      "name": "Straight·K·67",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Dagger",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_01",
-      "defeat": 27,
-      "assist": 49,
-      "damage_dealt": 2108669,
-      "damage_taken": 1756077,
-      "amount_healed": 42198,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 4,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 29,
-      "name": "hadley茡",
-      "guild": "JAILEDシ",
-      "team": "Yellow",
-      "weapon1": "Dagger",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_06",
-      "defeat": 22,
-      "assist": 71,
-      "damage_dealt": 1775292,
-      "damage_taken": 2714273,
-      "amount_healed": 47306,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.67,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {
-        "name": [
-          [
-            "hadley",
-            0.0
-          ],
-          [
-            "hadley",
-            0.67
-          ],
-          [
-            "hadley老",
-            0.33
-          ]
-        ]
-      },
-      "flags": [],
-      "snapped": true,
-      "name_scan": "hadley",
-      "confirmed": true
-    },
-    {
-      "seen": 3,
-      "rank": 30,
-      "name": "Cxshew",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Dagger",
-      "weapon2": "Staff",
-      "guild_icon": "guild_01",
-      "defeat": 16,
-      "assist": 58,
-      "damage_dealt": 1537765,
-      "damage_taken": 1304916,
-      "amount_healed": 25673,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.82,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {
-        "name": [
-          [
-            "Cxshew",
-            0.75
-          ],
-          [
-            "Sxshew",
-            0.25
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 31,
-      "name": "Willan",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Gauntlet",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_01",
-      "defeat": 12,
-      "assist": 53,
-      "damage_dealt": 1275385,
-      "damage_taken": 1198024,
-      "amount_healed": 11716,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 32,
-      "name": "Bound",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Dagger",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_01",
-      "defeat": 9,
-      "assist": 47,
-      "damage_dealt": 899001,
-      "damage_taken": 1725663,
-      "amount_healed": 0,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.76,
-        "guild": 0.76,
-        "team": 1.0,
-        "weapon1": 0.66,
-        "weapon2": 0.66,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {
-        "name": [
-          [
-            "Bound",
-            0.66
-          ],
-          [
-            "Round",
-            0.34
-          ]
-        ],
-        "guild": [
-          [
-            "Supple On 3",
-            0.67
-          ],
-          [
-            "Sunnle On 3",
-            0.33
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 33,
-      "name": "Temper",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Staff",
-      "weapon2": "Orb",
-      "guild_icon": "guild_01",
-      "defeat": 5,
-      "assist": 13,
-      "damage_dealt": 495605,
-      "damage_taken": 493800,
-      "amount_healed": 0,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 34,
-      "name": "RoundAndPerky",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_01",
-      "defeat": 4,
-      "assist": 46,
-      "damage_dealt": 527731,
-      "damage_taken": 1326592,
-      "amount_healed": 98894,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 4,
-      "rank": 35,
-      "name": "TheRealCheeto",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Longbow",
-      "guild_icon": "guild_48",
-      "defeat": 3,
-      "assist": 54,
-      "damage_dealt": 114769,
-      "damage_taken": 1037458,
-      "amount_healed": 99624,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 4,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 36,
-      "name": "Portal·3",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Gauntlet",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_48",
-      "defeat": 3,
-      "assist": 32,
-      "damage_dealt": 279826,
-      "damage_taken": 1147443,
-      "amount_healed": 120459,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 37,
-      "name": "miumiu茡",
-      "guild": "JAILEDシ",
-      "team": "Yellow",
-      "weapon1": "Longbow",
-      "weapon2": "Wand & Tome",
-      "guild_icon": "guild_06",
-      "defeat": 2,
-      "assist": 104,
-      "damage_dealt": 60438,
-      "damage_taken": 792895,
-      "amount_healed": 4192884,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.72,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {
-        "name": [
-          [
-            "miumiu老",
-            0.0
-          ],
-          [
-            "miumiu老",
-            0.72
-          ],
-          [
-            "iut",
-            0.28
-          ]
-        ]
-      },
-      "flags": [],
-      "snapped": true,
-      "name_scan": "miumiu老",
-      "confirmed": true
-    },
-    {
-      "seen": 3,
-      "rank": 38,
-      "name": "SrDrake",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Longbow",
-      "guild_icon": "guild_01",
-      "defeat": 2,
-      "assist": 83,
-      "damage_dealt": 147635,
-      "damage_taken": 993176,
-      "amount_healed": 3469528,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 39,
-      "name": "Regentlord",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_01",
-      "defeat": 2,
-      "assist": 80,
-      "damage_dealt": 391204,
-      "damage_taken": 2444777,
-      "amount_healed": 71058,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.78,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {
-        "name": [
-          [
-            "Regentlord",
-            0.69
-          ],
-          [
-            "entlord",
-            0.31
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 40,
-      "name": "VRChat",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Longbow",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_48",
-      "defeat": 2,
-      "assist": 76,
-      "damage_dealt": 317023,
-      "damage_taken": 1400199,
-      "amount_healed": 1272679,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 2,
-      "rank": 41,
-      "name": "stepson茡",
-      "guild": "JAILEDシ",
-      "team": "Yellow",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_06",
-      "defeat": 2,
-      "assist": 68,
-      "damage_dealt": 271375,
-      "damage_taken": 1285626,
-      "amount_healed": 58036,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {
-        "name": [
-          [
-            "stepson老",
-            0.0
-          ]
-        ]
-      },
-      "flags": [],
-      "snapped": true
-    },
-    {
-      "seen": 3,
-      "rank": 42,
-      "name": "DVS",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Longbow",
-      "weapon2": "Wand & Tome",
-      "guild_icon": "guild_48",
-      "defeat": 1,
-      "assist": 144,
-      "damage_dealt": 251196,
-      "damage_taken": 563806,
-      "amount_healed": 2751953,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 43,
-      "name": "Souffle",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Longbow",
-      "guild_icon": "guild_48",
-      "defeat": 1,
-      "assist": 134,
-      "damage_dealt": 171501,
-      "damage_taken": 873076,
-      "amount_healed": 2816695,
-      "agreement": {
-        "rank": 0.81,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 0.81,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 0.81,
-        "damage_taken": 0.95,
-        "amount_healed": 0.95
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 1,
-      "rank": 44,
-      "name": "GoodGuyLanzo父",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Longbow",
-      "guild_icon": "guild_01",
-      "defeat": 1,
-      "assist": 79,
-      "damage_dealt": 59542,
-      "damage_taken": 1255100,
-      "amount_healed": 4131291,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 1,
-      "alts": {},
-      "flags": [
-        "single read"
-      ]
-    },
-    {
-      "seen": 1,
-      "rank": 45,
-      "name": "Turnip",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Longbow",
-      "guild_icon": "guild_48",
-      "defeat": 1,
-      "assist": 54,
-      "damage_dealt": 80031,
-      "damage_taken": 1112441,
-      "amount_healed": 407234,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 1,
-      "alts": {},
-      "flags": [
-        "single read"
-      ]
-    },
-    {
-      "seen": 1,
-      "rank": 46,
-      "name": "hammyjammy",
-      "guild": "Gear Gap",
-      "team": "Yellow",
-      "weapon1": "Longbow",
-      "weapon2": "Wand & Tome",
-      "guild_icon": "guild_35",
-      "defeat": 1,
-      "assist": 53,
-      "damage_dealt": 75750,
-      "damage_taken": 999784,
-      "amount_healed": 1893080,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 1,
-      "alts": {},
-      "flags": [
-        "single read"
-      ]
-    },
-    {
-      "seen": 1,
-      "rank": 47,
-      "name": "Forrest",
-      "guild": "JAILEDシ",
-      "team": "Red",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Longbow",
-      "guild_icon": "guild_06",
-      "defeat": 1,
-      "assist": 48,
-      "damage_dealt": 172447,
-      "damage_taken": 1373333,
-      "amount_healed": 79085,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 1,
-      "alts": {},
-      "flags": [
-        "single read"
-      ]
-    },
-    {
-      "seen": 2,
-      "rank": 48,
-      "name": "Grimmッ",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_01",
-      "defeat": 1,
-      "assist": 31,
-      "damage_dealt": 205326,
-      "damage_taken": 1414523,
-      "amount_healed": 52342,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 2,
-      "rank": 49,
-      "name": "Topazmini",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Longbow",
-      "guild_icon": "guild_48",
-      "defeat": 1,
-      "assist": 25,
-      "damage_dealt": 100776,
-      "damage_taken": 1092350,
-      "amount_healed": 2515413,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 4,
-      "rank": 50,
-      "name": "Tikkiャ",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Longbow",
-      "weapon2": "Wand & Tome",
-      "guild_icon": "guild_01",
-      "defeat": 1,
-      "assist": 24,
-      "damage_dealt": 48415,
-      "damage_taken": 1113997,
-      "amount_healed": 2044282,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.92,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 0.87,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 0.96,
-        "damage_dealt": 0.94,
-        "damage_taken": 0.95,
-        "amount_healed": 0.94
-      },
-      "checks": 3,
-      "alts": {
-        "name": [
-          [
-            "Tikkit",
-            0.88
-          ],
-          [
-            "Tkki",
-            0.12
-          ]
-        ]
-      },
-      "flags": [],
-      "name_scan": "Tikkit",
-      "confirmed": true
-    },
-    {
-      "seen": 2,
-      "rank": 51,
-      "name": "cagedup",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_01",
-      "defeat": 1,
-      "assist": 22,
-      "damage_dealt": 82038,
-      "damage_taken": 1579454,
-      "amount_healed": 49954,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 2,
-      "rank": 52,
-      "name": "一大",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Gauntlet",
-      "guild_icon": "guild_01",
-      "defeat": 1,
-      "assist": 9,
-      "damage_dealt": 83755,
-      "damage_taken": 1137578,
-      "amount_healed": 54827,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.76,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 1,
-      "alts": {
-        "name": [
-          [
-            "一大",
-            0.67
-          ],
-          [
-            "猜",
-            0.33
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 53,
-      "name": "Vysenya",
-      "guild": "JAILEDシ",
-      "team": "Yellow",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Orb",
-      "guild_icon": "guild_06",
-      "defeat": 0,
-      "assist": 126,
-      "damage_dealt": 21480,
-      "damage_taken": 385061,
-      "amount_healed": 2259770,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 54,
-      "name": "SourFlour",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Orb",
-      "weapon2": "Wand & Tome",
-      "guild_icon": "guild_48",
-      "defeat": 0,
-      "assist": 119,
-      "damage_dealt": 17695,
-      "damage_taken": 536580,
-      "amount_healed": 648105,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.77,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {
-        "name": [
-          [
-            "SourFlour",
-            0.67
-          ],
-          [
-            "lour",
-            0.33
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 55,
-      "name": "moncler茡",
-      "guild": "JAILEDシ",
-      "team": "Yellow",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Orb",
-      "guild_icon": "guild_06",
-      "defeat": 0,
-      "assist": 112,
-      "damage_dealt": 7910,
-      "damage_taken": 624839,
-      "amount_healed": 2477272,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {
-        "name": [
-          [
-            "moncler老",
-            0.0
-          ]
-        ]
-      },
-      "flags": [],
-      "snapped": true,
-      "name_scan": "moncler老",
-      "confirmed": true
-    },
-    {
-      "seen": 3,
-      "rank": 56,
-      "name": "greenbean",
-      "guild": "JAILEDシ",
-      "team": "Red",
-      "weapon1": "Orb",
-      "weapon2": "Wand & Tome",
-      "guild_icon": "guild_06",
-      "defeat": 0,
-      "assist": 101,
-      "damage_dealt": 8527,
-      "damage_taken": 696025,
-      "amount_healed": 1036200,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 57,
-      "name": "xSouless",
-      "guild": "JAILEDシ",
-      "team": "Red",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Longbow",
-      "guild_icon": "guild_06",
-      "defeat": 0,
-      "assist": 100,
-      "damage_dealt": 115147,
-      "damage_taken": 1353888,
-      "amount_healed": 4581214,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.76,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {
-        "name": [
-          [
-            "xSouless",
-            0.66
-          ],
-          [
-            "Souless",
-            0.34
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 58,
-      "name": "Vel",
-      "guild": "JAILEDシ",
-      "team": "Red",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Orb",
-      "guild_icon": "guild_06",
-      "defeat": 0,
-      "assist": 91,
-      "damage_dealt": 11762,
-      "damage_taken": 1275361,
-      "amount_healed": 1110650,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 2,
-      "rank": 59,
-      "name": "Doug",
-      "guild": "Ping Gap",
-      "team": "Yellow",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Orb",
-      "guild_icon": "guild_17",
-      "defeat": 0,
-      "assist": 90,
-      "damage_dealt": 36847,
-      "damage_taken": 655466,
-      "amount_healed": 331293,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 60,
-      "name": "Clyzmo°",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Orb",
-      "weapon2": "Wand & Tome",
-      "guild_icon": "guild_48",
-      "defeat": 0,
-      "assist": 83,
-      "damage_dealt": 24058,
-      "damage_taken": 692742,
-      "amount_healed": 1069054,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 61,
-      "name": "Poopsy",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_01",
-      "defeat": 0,
-      "assist": 79,
-      "damage_dealt": 205249,
-      "damage_taken": 1702673,
-      "amount_healed": 1472623,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 62,
-      "name": "Bribrixメ",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Orb",
-      "weapon2": "Wand & Tome",
-      "guild_icon": "guild_01",
-      "defeat": 0,
-      "assist": 66,
-      "damage_dealt": 25595,
-      "damage_taken": 1175034,
-      "amount_healed": 1230382,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.77,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {
-        "name": [
-          [
-            "Bribrix メ",
-            0.67
-          ],
-          [
-            "Rribrix",
-            0.33
-          ]
-        ]
-      },
-      "flags": [],
-      "name_scan": "Bribrix メ",
-      "confirmed": true
-    },
-    {
-      "seen": 3,
-      "rank": 63,
-      "name": "Roxzorッ",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Longbow",
-      "guild_icon": "guild_48",
-      "defeat": 0,
-      "assist": 65,
-      "damage_dealt": 73092,
-      "damage_taken": 1111859,
-      "amount_healed": 2336202,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.47,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 1,
-      "alts": {
-        "name": [
-          [
-            "Roxzor ッ",
-            0.36
-          ],
-          [
-            "Roxzor ツ",
-            0.35
-          ],
-          [
-            "Roxzor",
-            0.3
-          ]
-        ]
-      },
-      "flags": [],
-      "name_scan": "Roxzor ッ",
-      "confirmed": true
-    },
-    {
-      "seen": 3,
-      "rank": 64,
-      "name": "Broccoli",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_48",
-      "defeat": 0,
-      "assist": 63,
-      "damage_dealt": 78359,
-      "damage_taken": 1331974,
-      "amount_healed": 89191,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.77,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {
-        "name": [
-          [
-            "Broccoli",
-            0.68
-          ],
-          [
-            "oli",
-            0.32
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 65,
-      "name": "MoistPickle",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Orb",
-      "guild_icon": "guild_48",
-      "defeat": 0,
-      "assist": 63,
-      "damage_dealt": 2224,
-      "damage_taken": 425930,
-      "amount_healed": 380651,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 66,
-      "name": "SuperSaiyanAndy",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Longbow",
-      "guild_icon": "guild_48",
-      "defeat": 0,
-      "assist": 62,
-      "damage_dealt": 154596,
-      "damage_taken": 1491518,
-      "amount_healed": 1077148,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 67,
-      "name": "Yarl",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Orb",
-      "weapon2": "Wand & Tome",
-      "guild_icon": "guild_01",
-      "defeat": 0,
-      "assist": 60,
-      "damage_dealt": 36097,
-      "damage_taken": 928747,
-      "amount_healed": 576528,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.81,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {
-        "name": [
-          [
-            "Yarl",
-            0.73
-          ],
-          [
-            "Xar",
-            0.27
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 2,
-      "rank": 68,
-      "name": "Tekkniquezッ",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Orb",
-      "weapon2": "Wand & Tome",
-      "guild_icon": "guild_48",
-      "defeat": 0,
-      "assist": 59,
-      "damage_dealt": 12526,
-      "damage_taken": 771246,
-      "amount_healed": 2046995,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 69,
-      "name": "·Laney·",
-      "guild": "Ping Gap",
-      "team": "Yellow",
-      "weapon1": "Orb",
-      "weapon2": "Wand & Tome",
-      "guild_icon": "guild_61",
-      "defeat": 0,
-      "assist": 59,
-      "damage_dealt": 10706,
-      "damage_taken": 448598,
-      "amount_healed": 656326,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 2,
-      "rank": 70,
-      "name": "xNotSauronx",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Longbow",
-      "weapon2": "Wand & Tome",
-      "guild_icon": "guild_01",
-      "defeat": 0,
-      "assist": 56,
-      "damage_dealt": 52375,
-      "damage_taken": 1225021,
-      "amount_healed": 2731772,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 2,
-      "rank": 71,
-      "name": "Hounter",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Orb",
-      "guild_icon": "guild_48",
-      "defeat": 0,
-      "assist": 53,
-      "damage_dealt": 15129,
-      "damage_taken": 759011,
-      "amount_healed": 559125,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 2,
-      "rank": 72,
-      "name": "ZEROKツ",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Orb",
-      "guild_icon": "guild_01",
-      "defeat": 0,
-      "assist": 46,
-      "damage_dealt": 22551,
-      "damage_taken": 605061,
-      "amount_healed": 384106,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 1,
-      "rank": 73,
-      "name": "aquillo",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Orb",
-      "guild_icon": "guild_48",
-      "defeat": 0,
-      "assist": 45,
-      "damage_dealt": 20189,
-      "damage_taken": 744390,
-      "amount_healed": 883832,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 1,
-      "alts": {},
-      "flags": [
-        "single read"
-      ]
-    },
-    {
-      "seen": 2,
-      "rank": 74,
-      "name": "Dartz",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Orb",
-      "guild_icon": "guild_01",
-      "defeat": 0,
-      "assist": 44,
-      "damage_dealt": 45429,
-      "damage_taken": 722609,
-      "amount_healed": 666551,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 2,
-      "rank": 75,
-      "name": "Niyaaッ",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Orb",
-      "weapon2": "Wand & Tome",
-      "guild_icon": "guild_48",
-      "defeat": 0,
-      "assist": 44,
-      "damage_dealt": 13210,
-      "damage_taken": 740032,
-      "amount_healed": 855981,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 2,
-      "rank": 76,
-      "name": "MyNamelsOof",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Orb",
-      "weapon2": "Wand & Tome",
-      "guild_icon": "guild_01",
-      "defeat": 0,
-      "assist": 44,
-      "damage_dealt": 2184,
-      "damage_taken": 647852,
-      "amount_healed": 722608,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 2,
-      "rank": 77,
-      "name": "Suricata",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_48",
-      "defeat": 0,
-      "assist": 43,
-      "damage_dealt": 93699,
-      "damage_taken": 710192,
-      "amount_healed": 34020,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 1,
-      "rank": 78,
-      "name": "Shabushabu",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Longbow",
-      "guild_icon": "guild_48",
-      "defeat": 0,
-      "assist": 42,
-      "damage_dealt": 61402,
-      "damage_taken": 746658,
-      "amount_healed": 312648,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 1,
-      "alts": {},
-      "flags": [
-        "single read"
-      ]
-    },
-    {
-      "seen": 2,
-      "rank": 79,
-      "name": "·Azulibuli·",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Orb",
-      "weapon2": "Wand & Tome",
-      "guild_icon": "guild_01",
-      "defeat": 0,
-      "assist": 41,
-      "damage_dealt": 17144,
-      "damage_taken": 609082,
-      "amount_healed": 509520,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 2,
-      "rank": 80,
-      "name": "kiersii",
-      "guild": "JAILEDシ",
-      "team": "Red",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Orb",
-      "guild_icon": "guild_06",
-      "defeat": 0,
-      "assist": 37,
-      "damage_dealt": 4612,
-      "damage_taken": 910284,
-      "amount_healed": 548991,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 2,
-      "rank": 81,
-      "name": "AtHoldTheLine",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_01",
-      "defeat": 0,
-      "assist": 36,
-      "damage_dealt": 100570,
-      "damage_taken": 1444105,
-      "amount_healed": 101153,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 2,
-      "rank": 82,
-      "name": "xZeroBlade",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_48",
-      "defeat": 0,
-      "assist": 36,
-      "damage_dealt": 82338,
-      "damage_taken": 1168096,
-      "amount_healed": 17875,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 1,
-      "rank": 83,
-      "name": "BEARCLAW",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Orb",
-      "guild_icon": "guild_48",
-      "defeat": 0,
-      "assist": 34,
-      "damage_dealt": 18107,
-      "damage_taken": 625575,
-      "amount_healed": 646206,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 1,
-      "alts": {},
-      "flags": [],
-      "name_scan": "LARCLAW",
-      "confirmed": true
-    },
-    {
-      "seen": 1,
-      "rank": 84,
-      "name": "J",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Orb",
-      "guild_icon": "guild_01",
-      "defeat": 0,
-      "assist": 33,
-      "damage_dealt": 8724,
-      "damage_taken": 804347,
-      "amount_healed": 881708,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 1,
-      "alts": {},
-      "flags": [
-        "single read"
-      ],
-      "name_scan": "J"
-    },
-    {
-      "seen": 2,
-      "rank": 85,
-      "name": "Shieldシ",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_48",
-      "defeat": 0,
-      "assist": 29,
-      "damage_dealt": 115984,
-      "damage_taken": 1023109,
-      "amount_healed": 68052,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 2,
-      "rank": 86,
-      "name": "ElPose",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Longbow",
-      "guild_icon": "guild_48",
-      "defeat": 0,
-      "assist": 29,
-      "damage_dealt": 44799,
-      "damage_taken": 759175,
-      "amount_healed": 1324548,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 4,
-      "rank": 87,
-      "name": "IZZY",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Orb",
-      "guild_icon": "guild_01",
-      "defeat": 0,
-      "assist": 28,
-      "damage_dealt": 2397,
-      "damage_taken": 674452,
-      "amount_healed": 604944,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 4,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 88,
-      "name": "Keylosh",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Wand & Tome",
-      "weapon2": "Orb",
-      "guild_icon": "guild_01",
-      "defeat": 0,
-      "assist": 26,
-      "damage_dealt": 68808,
-      "damage_taken": 738402,
-      "amount_healed": 845403,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 89,
-      "name": "ツ凶ツ凶ツ",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Longbow",
-      "weapon2": "Wand & Tome",
-      "guild_icon": "guild_01",
-      "defeat": 0,
-      "assist": 26,
-      "damage_dealt": 59770,
-      "damage_taken": 629827,
-      "amount_healed": 1414560,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.36,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 1,
-      "alts": {
-        "name": [
-          [
-            "ッッッ",
-            0.36
-          ],
-          [
-            "ツッッ",
-            0.35
-          ],
-          [
-            "ツツッ",
-            0.29
-          ]
-        ]
-      },
-      "flags": [],
-      "name_scan": "ッッッ",
-      "confirmed": true
-    },
-    {
-      "seen": 3,
-      "rank": 90,
-      "name": "xE4x",
-      "guild": "Undercooked",
-      "team": "Yellow",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_48",
-      "defeat": 0,
-      "assist": 24,
-      "damage_dealt": 56435,
-      "damage_taken": 990990,
-      "amount_healed": 28053,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 91,
-      "name": "chaineddown",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Longbow",
-      "guild_icon": "guild_01",
-      "defeat": 0,
-      "assist": 21,
-      "damage_dealt": 85330,
-      "damage_taken": 1401092,
-      "amount_healed": 228999,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 92,
-      "name": "Gwop",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Longbow",
-      "weapon2": "Wand & Tome",
-      "guild_icon": "guild_01",
-      "defeat": 0,
-      "assist": 21,
-      "damage_dealt": 72168,
-      "damage_taken": 1340471,
-      "amount_healed": 2386879,
-      "agreement": {
-        "rank": 1.0,
-        "name": 0.87,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {
-        "name": [
-          [
-            "Gwop",
-            0.8
-          ],
-          [
-            "L",
-            0.2
-          ]
-        ]
-      },
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 93,
-      "name": "Sueming",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Longbow",
-      "weapon2": "Wand & Tome",
-      "guild_icon": "guild_01",
-      "defeat": 0,
-      "assist": 21,
-      "damage_dealt": 41388,
-      "damage_taken": 1727704,
-      "amount_healed": 3724085,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 3,
-      "rank": 94,
-      "name": "Keifrrム",
-      "guild": "Supple On 3",
-      "team": "Red",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Greatsword",
-      "guild_icon": "guild_01",
-      "defeat": 0,
-      "assist": 18,
-      "damage_dealt": 26073,
-      "damage_taken": 1388958,
-      "amount_healed": 125766,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 3,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 2,
-      "rank": 95,
-      "name": "しeddyツ",
-      "guild": "JAILEDシ",
-      "team": "Red",
-      "weapon1": "Sword & Shield",
-      "weapon2": "Longbow",
-      "guild_icon": "guild_06",
-      "defeat": 0,
-      "assist": 15,
-      "damage_dealt": 42782,
-      "damage_taken": 1415302,
-      "amount_healed": 435670,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    },
-    {
-      "seen": 2,
-      "rank": 96,
-      "name": "塔高托",
-      "guild": "Gear Gap",
-      "team": "Yellow",
-      "weapon1": "Orb",
-      "weapon2": "Wand & Tome",
-      "guild_icon": "guild_02",
-      "defeat": 0,
-      "assist": 8,
-      "damage_dealt": 33322,
-      "damage_taken": 975019,
-      "amount_healed": 1078263,
-      "agreement": {
-        "rank": 1.0,
-        "name": 1.0,
-        "guild": 1.0,
-        "team": 1.0,
-        "weapon1": 1.0,
-        "weapon2": 1.0,
-        "guild_icon": 1.0,
-        "defeat": 1.0,
-        "assist": 1.0,
-        "damage_dealt": 1.0,
-        "damage_taken": 1.0,
-        "amount_healed": 1.0
-      },
-      "checks": 2,
-      "alts": {},
-      "flags": []
-    }
-  ]
+  "zone": "Grayclaw Forest"
+ },
+ "players": [
+  {
+   "seen": 62,
+   "rank": 1,
+   "name": "Nathias",
+   "guild": "Ping Gap",
+   "team": "Yellow",
+   "weapon1": "Gauntlet",
+   "weapon2": "Dagger",
+   "guild_icon": "guild_17",
+   "defeat": 102,
+   "assist": 108,
+   "damage_dealt": 5915900,
+   "damage_taken": 2195043,
+   "amount_healed": 0,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.98,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 0.98,
+    "weapon2": 1.0,
+    "guild_icon": 0.87,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 60,
+   "alts": {
+    "name": [
+     [
+      "Nathias",
+      0.97
+     ],
+     [
+      "Nathias1",
+      0.03
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 61,
+   "rank": 2,
+   "name": "BanhッMi",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Crossbow",
+   "weapon2": "Dagger",
+   "guild_icon": "guild_48",
+   "defeat": 90,
+   "assist": 156,
+   "damage_dealt": 7855069,
+   "damage_taken": 1000365,
+   "amount_healed": 14567,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.99,
+    "guild": 0.99,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 0.99,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 60,
+   "alts": {
+    "name": [
+     [
+      "Banhッ Mi",
+      0.98
+     ],
+     [
+      "Banhy Mi",
+      0.02
+     ]
+    ],
+    "guild": [
+     [
+      "Undercooked",
+      0.98
+     ],
+     [
+      "Undercopked",
+      0.02
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 67,
+   "rank": 3,
+   "name": "ternos·",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Gauntlet",
+   "weapon2": "Dagger",
+   "guild_icon": "guild_48",
+   "defeat": 80,
+   "assist": 85,
+   "damage_dealt": 4365982,
+   "damage_taken": 1554449,
+   "amount_healed": 63348,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.99,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 0.98,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 66,
+   "alts": {
+    "name": [
+     [
+      "ternos·",
+      0.98
+     ],
+     [
+      "ternes",
+      0.02
+     ]
+    ]
+   },
+   "flags": [],
+   "name_scan": "ternos",
+   "confirmed": true
+  },
+  {
+   "seen": 67,
+   "rank": 4,
+   "name": "chiraqkilla",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Gauntlet",
+   "weapon2": "Dagger",
+   "guild_icon": "guild_01",
+   "defeat": 78,
+   "assist": 88,
+   "damage_dealt": 5578415,
+   "damage_taken": 2113052,
+   "amount_healed": 69927,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.96,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 0.98,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 63,
+   "alts": {
+    "name": [
+     [
+      "chiraqkilla",
+      0.94
+     ],
+     [
+      "chirakilla",
+      0.03
+     ],
+     [
+      "chiragkilła",
+      0.02
+     ],
+     [
+      "chiragkilla",
+      0.02
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 68,
+   "rank": 5,
+   "name": "stepbro茡",
+   "guild": "JAILEDシ",
+   "team": "Yellow",
+   "weapon1": "Dagger",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_06",
+   "defeat": 75,
+   "assist": 102,
+   "damage_dealt": 4214660,
+   "damage_taken": 2724032,
+   "amount_healed": 14886,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.83,
+    "guild": 0.94,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 57,
+   "alts": {
+    "name": [
+     [
+      "stepbro老",
+      0.0
+     ],
+     [
+      "stepbro老",
+      0.83
+     ],
+     [
+      "stepbro",
+      0.14
+     ],
+     [
+      "ste",
+      0.03
+     ]
+    ],
+    "guild": [
+     [
+      "JAILEDシ",
+      0.94
+     ],
+     [
+      "JAILED",
+      0.06
+     ]
+    ]
+   },
+   "flags": [],
+   "snapped": true,
+   "name_scan": "stepbro老",
+   "confirmed": true
+  },
+  {
+   "seen": 70,
+   "rank": 6,
+   "name": "Augustッ",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Dagger",
+   "weapon2": "Staff",
+   "guild_icon": "guild_48",
+   "defeat": 65,
+   "assist": 124,
+   "damage_dealt": 4501553,
+   "damage_taken": 1447299,
+   "amount_healed": 0,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.88,
+    "guild": 0.99,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 0.97,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 58,
+   "alts": {
+    "name": [
+     [
+      "August ッ",
+      0.83
+     ],
+     [
+      "August",
+      0.1
+     ],
+     [
+      "Augustッ1",
+      0.03
+     ],
+     [
+      "August y",
+      0.01
+     ]
+    ],
+    "guild": [
+     [
+      "Undercooked",
+      0.99
+     ],
+     [
+      "Undered",
+      0.01
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 70,
+   "rank": 7,
+   "name": "Sparda",
+   "guild": "JAILEDシ",
+   "team": "Red",
+   "weapon1": "Spear",
+   "weapon2": "Dagger",
+   "guild_icon": "guild_06",
+   "defeat": 64,
+   "assist": 96,
+   "damage_dealt": 4276218,
+   "damage_taken": 2012318,
+   "amount_healed": 55346,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.79,
+    "guild": 0.97,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 49,
+   "alts": {
+    "name": [
+     [
+      "Sparda",
+      0.7
+     ],
+     [
+      "Sparda山",
+      0.27
+     ],
+     [
+      "Spard",
+      0.01
+     ],
+     [
+      "SpardaL",
+      0.01
+     ]
+    ],
+    "guild": [
+     [
+      "JAILEDシ",
+      0.97
+     ],
+     [
+      "JAILED>",
+      0.03
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 69,
+   "rank": 8,
+   "name": "SprayMachine",
+   "guild": "Gear Gap",
+   "team": "Yellow",
+   "weapon1": "Crossbow",
+   "weapon2": "Dagger",
+   "guild_icon": "guild_35",
+   "defeat": 64,
+   "assist": 66,
+   "damage_dealt": 3420951,
+   "damage_taken": 2220985,
+   "amount_healed": 0,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.99,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 0.97,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 68,
+   "alts": {
+    "name": [
+     [
+      "SprayMachine",
+      0.99
+     ],
+     [
+      "SprayMachin",
+      0.01
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 70,
+   "rank": 9,
+   "name": "大尸ho",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Dagger",
+   "weapon2": "Crossbow",
+   "guild_icon": "guild_48",
+   "defeat": 62,
+   "assist": 160,
+   "damage_dealt": 7332730,
+   "damage_taken": 1162772,
+   "amount_healed": 0,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.98,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 0.58,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 68,
+   "alts": {
+    "name": [
+     [
+      "大尸ho",
+      0.97
+     ],
+     [
+      "大尸",
+      0.01
+     ],
+     [
+      "大尸h",
+      0.01
+     ]
+    ]
+   },
+   "flags": [
+    "guild_icon"
+   ]
+  },
+  {
+   "seen": 71,
+   "rank": 10,
+   "name": "Fade災",
+   "guild": "Ping Gap",
+   "team": "Yellow",
+   "weapon1": "Staff",
+   "weapon2": "Dagger",
+   "guild_icon": "guild_33",
+   "defeat": 54,
+   "assist": 108,
+   "damage_dealt": 3688425,
+   "damage_taken": 1557464,
+   "amount_healed": 45389,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 0.91,
+    "weapon2": 0.99,
+    "guild_icon": 0.65,
+    "defeat": 0.99,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 70,
+   "alts": {
+    "name": [
+     [
+      "Fade災",
+      1.0
+     ],
+     [
+      "adx",
+      0.0
+     ]
+    ],
+    "guild": [
+     [
+      "Ping Gap",
+      0.99
+     ],
+     [
+      "SBingjeGa",
+      0.01
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 10,
+   "rank": 11,
+   "name": "Fear",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Staff",
+   "weapon2": "Orb",
+   "guild_icon": "guild_01",
+   "defeat": 54,
+   "assist": 62,
+   "damage_dealt": 3930321,
+   "damage_taken": 1477011,
+   "amount_healed": 8,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 10,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 5,
+   "rank": 12,
+   "name": "boringg",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Staff",
+   "weapon2": "Dagger",
+   "guild_icon": "guild_01",
+   "defeat": 51,
+   "assist": 118,
+   "damage_dealt": 4693722,
+   "damage_taken": 1336017,
+   "amount_healed": 22291,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 5,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 6,
+   "rank": 13,
+   "name": "Surgence",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Staff",
+   "weapon2": "Dagger",
+   "guild_icon": "guild_01",
+   "defeat": 49,
+   "assist": 109,
+   "damage_dealt": 4051859,
+   "damage_taken": 1101804,
+   "amount_healed": 41319,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.89,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 5,
+   "alts": {
+    "name": [
+     [
+      "Surgence",
+      0.83
+     ],
+     [
+      "Sure",
+      0.17
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 5,
+   "rank": 14,
+   "name": "CR8W",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Crossbow",
+   "weapon2": "Dagger",
+   "guild_icon": "guild_01",
+   "defeat": 43,
+   "assist": 37,
+   "damage_dealt": 2544399,
+   "damage_taken": 1200119,
+   "amount_healed": 29478,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 5,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 5,
+   "rank": 15,
+   "name": "Hursky",
+   "guild": "JAILEDシ",
+   "team": "Yellow",
+   "weapon1": "Crossbow",
+   "weapon2": "Dagger",
+   "guild_icon": "guild_06",
+   "defeat": 42,
+   "assist": 71,
+   "damage_dealt": 2534912,
+   "damage_taken": 2276877,
+   "amount_healed": 53168,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 5,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 4,
+   "rank": 16,
+   "name": "dabldoya",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Staff",
+   "weapon2": "Dagger",
+   "guild_icon": "guild_01",
+   "defeat": 41,
+   "assist": 74,
+   "damage_dealt": 3009316,
+   "damage_taken": 1503581,
+   "amount_healed": 0,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.84,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {
+    "name": [
+     [
+      "dabldoya",
+      0.76
+     ],
+     [
+      "dalNdoya",
+      0.24
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 4,
+   "rank": 17,
+   "name": "pyx",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Greatsword",
+   "weapon2": "Dagger",
+   "guild_icon": "guild_01",
+   "defeat": 40,
+   "assist": 72,
+   "damage_dealt": 2805611,
+   "damage_taken": 2383498,
+   "amount_healed": 17189,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 4,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 4,
+   "rank": 18,
+   "name": "Emperor",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Greatsword",
+   "weapon2": "Dagger",
+   "guild_icon": "guild_48",
+   "defeat": 39,
+   "assist": 93,
+   "damage_dealt": 3028385,
+   "damage_taken": 2173730,
+   "amount_healed": 52845,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 4,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 19,
+   "name": "NGH일",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Dagger",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_01",
+   "defeat": 39,
+   "assist": 72,
+   "damage_dealt": 3211596,
+   "damage_taken": 2073111,
+   "amount_healed": 0,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": [],
+   "name_scan": "NGH",
+   "confirmed": true
+  },
+  {
+   "seen": 4,
+   "rank": 20,
+   "name": "Aero",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Crossbow",
+   "weapon2": "Dagger",
+   "guild_icon": "guild_01",
+   "defeat": 38,
+   "assist": 104,
+   "damage_dealt": 5400290,
+   "damage_taken": 748613,
+   "amount_healed": 18770,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.86,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {
+    "name": [
+     [
+      "Aero",
+      0.79
+     ],
+     [
+      "AL",
+      0.21
+     ]
+    ]
+   },
+   "flags": [
+    "damage_dealt"
+   ]
+  },
+  {
+   "seen": 4,
+   "rank": 21,
+   "name": "Wintrr",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Gauntlet",
+   "weapon2": "Dagger",
+   "guild_icon": "guild_48",
+   "defeat": 35,
+   "assist": 49,
+   "damage_dealt": 2138836,
+   "damage_taken": 1311614,
+   "amount_healed": 63261,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 4,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 22,
+   "name": "CruMpet",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Orb",
+   "weapon2": "Dagger",
+   "guild_icon": "guild_48",
+   "defeat": 34,
+   "assist": 71,
+   "damage_dealt": 2118804,
+   "damage_taken": 945202,
+   "amount_healed": 0,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 4,
+   "rank": 23,
+   "name": "zayヅ",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Spear",
+   "weapon2": "Dagger",
+   "guild_icon": "guild_48",
+   "defeat": 33,
+   "assist": 57,
+   "damage_dealt": 1884142,
+   "damage_taken": 1475638,
+   "amount_healed": 15081,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.84,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {
+    "name": [
+     [
+      "zayヅ",
+      0.76
+     ],
+     [
+      "za",
+      0.24
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 4,
+   "rank": 24,
+   "name": "Splice",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Staff",
+   "weapon2": "Orb",
+   "guild_icon": "guild_48",
+   "defeat": 32,
+   "assist": 103,
+   "damage_dealt": 2615637,
+   "damage_taken": 1314674,
+   "amount_healed": 0,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 4,
+   "alts": {
+    "name": [
+     [
+      "Spice",
+      0.0
+     ]
+    ]
+   },
+   "flags": [],
+   "snapped": true
+  },
+  {
+   "seen": 4,
+   "rank": 25,
+   "name": "SapirO",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Longbow",
+   "weapon2": "Crossbow",
+   "guild_icon": "guild_01",
+   "defeat": 32,
+   "assist": 63,
+   "damage_dealt": 3834357,
+   "damage_taken": 1059768,
+   "amount_healed": 17859,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.84,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {
+    "name": [
+     [
+      "SapirO",
+      0.76
+     ],
+     [
+      "Sa",
+      0.24
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 4,
+   "rank": 26,
+   "name": "OnlyBans",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Dagger",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_01",
+   "defeat": 31,
+   "assist": 110,
+   "damage_dealt": 3304383,
+   "damage_taken": 2103926,
+   "amount_healed": 17023,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 4,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 4,
+   "rank": 27,
+   "name": "Cookies",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Crossbow",
+   "weapon2": "Dagger",
+   "guild_icon": "guild_48",
+   "defeat": 31,
+   "assist": 47,
+   "damage_dealt": 1541145,
+   "damage_taken": 1635222,
+   "amount_healed": 0,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.83,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {
+    "name": [
+     [
+      "Cookies",
+      0.75
+     ],
+     [
+      "es",
+      0.25
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 4,
+   "rank": 28,
+   "name": "Straight·K·67",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Dagger",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_01",
+   "defeat": 27,
+   "assist": 49,
+   "damage_dealt": 2108669,
+   "damage_taken": 1756077,
+   "amount_healed": 42198,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 4,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 29,
+   "name": "hadley茡",
+   "guild": "JAILEDシ",
+   "team": "Yellow",
+   "weapon1": "Dagger",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_06",
+   "defeat": 22,
+   "assist": 71,
+   "damage_dealt": 1775292,
+   "damage_taken": 2714273,
+   "amount_healed": 47306,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.67,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {
+    "name": [
+     [
+      "hadley",
+      0.0
+     ],
+     [
+      "hadley",
+      0.67
+     ],
+     [
+      "hadley老",
+      0.33
+     ]
+    ]
+   },
+   "flags": [],
+   "snapped": true,
+   "name_scan": "hadley",
+   "confirmed": true
+  },
+  {
+   "seen": 3,
+   "rank": 30,
+   "name": "Cxshew",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Dagger",
+   "weapon2": "Staff",
+   "guild_icon": "guild_01",
+   "defeat": 16,
+   "assist": 58,
+   "damage_dealt": 1537765,
+   "damage_taken": 1304916,
+   "amount_healed": 25673,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.82,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {
+    "name": [
+     [
+      "Cxshew",
+      0.75
+     ],
+     [
+      "Sxshew",
+      0.25
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 31,
+   "name": "Willan",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Gauntlet",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_01",
+   "defeat": 12,
+   "assist": 53,
+   "damage_dealt": 1275385,
+   "damage_taken": 1198024,
+   "amount_healed": 11716,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 32,
+   "name": "Bound",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Dagger",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_01",
+   "defeat": 9,
+   "assist": 47,
+   "damage_dealt": 899001,
+   "damage_taken": 1725663,
+   "amount_healed": 0,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.76,
+    "guild": 0.76,
+    "team": 1.0,
+    "weapon1": 0.66,
+    "weapon2": 0.66,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {
+    "name": [
+     [
+      "Bound",
+      0.66
+     ],
+     [
+      "Round",
+      0.34
+     ]
+    ],
+    "guild": [
+     [
+      "Supple On 3",
+      0.67
+     ],
+     [
+      "Sunnle On 3",
+      0.33
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 33,
+   "name": "Temper",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Staff",
+   "weapon2": "Orb",
+   "guild_icon": "guild_01",
+   "defeat": 5,
+   "assist": 13,
+   "damage_dealt": 495605,
+   "damage_taken": 493800,
+   "amount_healed": 0,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 34,
+   "name": "RoundAndPerky",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_01",
+   "defeat": 4,
+   "assist": 46,
+   "damage_dealt": 527731,
+   "damage_taken": 1326592,
+   "amount_healed": 98894,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 4,
+   "rank": 35,
+   "name": "TheRealCheeto",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Longbow",
+   "guild_icon": "guild_48",
+   "defeat": 3,
+   "assist": 54,
+   "damage_dealt": 114769,
+   "damage_taken": 1037458,
+   "amount_healed": 99624,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 4,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 36,
+   "name": "Portal·3",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Gauntlet",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_48",
+   "defeat": 3,
+   "assist": 32,
+   "damage_dealt": 279826,
+   "damage_taken": 1147443,
+   "amount_healed": 120459,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 37,
+   "name": "miumiu茡",
+   "guild": "JAILEDシ",
+   "team": "Yellow",
+   "weapon1": "Longbow",
+   "weapon2": "Wand & Tome",
+   "guild_icon": "guild_06",
+   "defeat": 2,
+   "assist": 104,
+   "damage_dealt": 60438,
+   "damage_taken": 792895,
+   "amount_healed": 4192884,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.72,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {
+    "name": [
+     [
+      "miumiu老",
+      0.0
+     ],
+     [
+      "miumiu老",
+      0.72
+     ],
+     [
+      "iut",
+      0.28
+     ]
+    ]
+   },
+   "flags": [],
+   "snapped": true,
+   "name_scan": "miumiu老",
+   "confirmed": true
+  },
+  {
+   "seen": 3,
+   "rank": 38,
+   "name": "SrDrake",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Longbow",
+   "guild_icon": "guild_01",
+   "defeat": 2,
+   "assist": 83,
+   "damage_dealt": 147635,
+   "damage_taken": 993176,
+   "amount_healed": 3469528,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 39,
+   "name": "Regentlord",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_01",
+   "defeat": 2,
+   "assist": 80,
+   "damage_dealt": 391204,
+   "damage_taken": 2444777,
+   "amount_healed": 71058,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.78,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {
+    "name": [
+     [
+      "Regentlord",
+      0.69
+     ],
+     [
+      "entlord",
+      0.31
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 40,
+   "name": "VRChat",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Longbow",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_48",
+   "defeat": 2,
+   "assist": 76,
+   "damage_dealt": 317023,
+   "damage_taken": 1400199,
+   "amount_healed": 1272679,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 2,
+   "rank": 41,
+   "name": "stepson茡",
+   "guild": "JAILEDシ",
+   "team": "Yellow",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_06",
+   "defeat": 2,
+   "assist": 68,
+   "damage_dealt": 271375,
+   "damage_taken": 1285626,
+   "amount_healed": 58036,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {
+    "name": [
+     [
+      "stepson老",
+      0.0
+     ]
+    ]
+   },
+   "flags": [],
+   "snapped": true
+  },
+  {
+   "seen": 3,
+   "rank": 42,
+   "name": "DVS",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Longbow",
+   "weapon2": "Wand & Tome",
+   "guild_icon": "guild_48",
+   "defeat": 1,
+   "assist": 144,
+   "damage_dealt": 251196,
+   "damage_taken": 563806,
+   "amount_healed": 2751953,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 43,
+   "name": "Souffle",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Longbow",
+   "guild_icon": "guild_48",
+   "defeat": 1,
+   "assist": 134,
+   "damage_dealt": 171501,
+   "damage_taken": 873076,
+   "amount_healed": 2816695,
+   "agreement": {
+    "rank": 0.81,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 0.81,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 0.81,
+    "damage_taken": 0.95,
+    "amount_healed": 0.95
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 1,
+   "rank": 44,
+   "name": "GoodGuyLanzo父",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Longbow",
+   "guild_icon": "guild_01",
+   "defeat": 1,
+   "assist": 79,
+   "damage_dealt": 59542,
+   "damage_taken": 1255100,
+   "amount_healed": 4131291,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 1,
+   "alts": {},
+   "flags": [
+    "single read"
+   ]
+  },
+  {
+   "seen": 1,
+   "rank": 45,
+   "name": "Turnip",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Longbow",
+   "guild_icon": "guild_48",
+   "defeat": 1,
+   "assist": 54,
+   "damage_dealt": 80031,
+   "damage_taken": 1112441,
+   "amount_healed": 407234,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 1,
+   "alts": {},
+   "flags": [
+    "single read"
+   ]
+  },
+  {
+   "seen": 1,
+   "rank": 46,
+   "name": "hammyjammy",
+   "guild": "Gear Gap",
+   "team": "Yellow",
+   "weapon1": "Longbow",
+   "weapon2": "Wand & Tome",
+   "guild_icon": "guild_35",
+   "defeat": 1,
+   "assist": 53,
+   "damage_dealt": 75750,
+   "damage_taken": 999784,
+   "amount_healed": 1893080,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 1,
+   "alts": {},
+   "flags": [
+    "single read"
+   ]
+  },
+  {
+   "seen": 1,
+   "rank": 47,
+   "name": "Forrest",
+   "guild": "JAILEDシ",
+   "team": "Red",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Longbow",
+   "guild_icon": "guild_06",
+   "defeat": 1,
+   "assist": 48,
+   "damage_dealt": 172447,
+   "damage_taken": 1373333,
+   "amount_healed": 79085,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 1,
+   "alts": {},
+   "flags": [
+    "single read"
+   ]
+  },
+  {
+   "seen": 2,
+   "rank": 48,
+   "name": "Grimmッ",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_01",
+   "defeat": 1,
+   "assist": 31,
+   "damage_dealt": 205326,
+   "damage_taken": 1414523,
+   "amount_healed": 52342,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 2,
+   "rank": 49,
+   "name": "Topazmini",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Longbow",
+   "guild_icon": "guild_48",
+   "defeat": 1,
+   "assist": 25,
+   "damage_dealt": 100776,
+   "damage_taken": 1092350,
+   "amount_healed": 2515413,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 4,
+   "rank": 50,
+   "name": "Tikkiャ",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Longbow",
+   "weapon2": "Wand & Tome",
+   "guild_icon": "guild_01",
+   "defeat": 1,
+   "assist": 24,
+   "damage_dealt": 48415,
+   "damage_taken": 1113997,
+   "amount_healed": 2044282,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.92,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 0.87,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 0.96,
+    "damage_dealt": 0.94,
+    "damage_taken": 0.95,
+    "amount_healed": 0.94
+   },
+   "checks": 3,
+   "alts": {
+    "name": [
+     [
+      "Tikkit",
+      0.88
+     ],
+     [
+      "Tkki",
+      0.12
+     ]
+    ]
+   },
+   "flags": [],
+   "name_scan": "Tikkit",
+   "confirmed": true
+  },
+  {
+   "seen": 2,
+   "rank": 51,
+   "name": "cagedup",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_01",
+   "defeat": 1,
+   "assist": 22,
+   "damage_dealt": 82038,
+   "damage_taken": 1579454,
+   "amount_healed": 49954,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 2,
+   "rank": 52,
+   "name": "一大",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Gauntlet",
+   "guild_icon": "guild_01",
+   "defeat": 1,
+   "assist": 9,
+   "damage_dealt": 83755,
+   "damage_taken": 1137578,
+   "amount_healed": 54827,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.76,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 1,
+   "alts": {
+    "name": [
+     [
+      "一大",
+      0.67
+     ],
+     [
+      "猜",
+      0.33
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 53,
+   "name": "Vysenya",
+   "guild": "JAILEDシ",
+   "team": "Yellow",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Orb",
+   "guild_icon": "guild_06",
+   "defeat": 0,
+   "assist": 126,
+   "damage_dealt": 21480,
+   "damage_taken": 385061,
+   "amount_healed": 2259770,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 54,
+   "name": "SourFlour",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Orb",
+   "weapon2": "Wand & Tome",
+   "guild_icon": "guild_48",
+   "defeat": 0,
+   "assist": 119,
+   "damage_dealt": 17695,
+   "damage_taken": 536580,
+   "amount_healed": 648105,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.77,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {
+    "name": [
+     [
+      "SourFlour",
+      0.67
+     ],
+     [
+      "lour",
+      0.33
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 55,
+   "name": "moncler茡",
+   "guild": "JAILEDシ",
+   "team": "Yellow",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Orb",
+   "guild_icon": "guild_06",
+   "defeat": 0,
+   "assist": 112,
+   "damage_dealt": 7910,
+   "damage_taken": 624839,
+   "amount_healed": 2477272,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {
+    "name": [
+     [
+      "moncler老",
+      0.0
+     ]
+    ]
+   },
+   "flags": [],
+   "snapped": true,
+   "name_scan": "moncler老",
+   "confirmed": true
+  },
+  {
+   "seen": 3,
+   "rank": 56,
+   "name": "greenbean",
+   "guild": "JAILEDシ",
+   "team": "Red",
+   "weapon1": "Orb",
+   "weapon2": "Wand & Tome",
+   "guild_icon": "guild_06",
+   "defeat": 0,
+   "assist": 101,
+   "damage_dealt": 8527,
+   "damage_taken": 696025,
+   "amount_healed": 1036200,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 57,
+   "name": "xSouless",
+   "guild": "JAILEDシ",
+   "team": "Red",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Longbow",
+   "guild_icon": "guild_06",
+   "defeat": 0,
+   "assist": 100,
+   "damage_dealt": 115147,
+   "damage_taken": 1353888,
+   "amount_healed": 4581214,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.76,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {
+    "name": [
+     [
+      "xSouless",
+      0.66
+     ],
+     [
+      "Souless",
+      0.34
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 58,
+   "name": "Vel",
+   "guild": "JAILEDシ",
+   "team": "Red",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Orb",
+   "guild_icon": "guild_06",
+   "defeat": 0,
+   "assist": 91,
+   "damage_dealt": 11762,
+   "damage_taken": 1275361,
+   "amount_healed": 1110650,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 2,
+   "rank": 59,
+   "name": "Doug",
+   "guild": "Ping Gap",
+   "team": "Yellow",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Orb",
+   "guild_icon": "guild_17",
+   "defeat": 0,
+   "assist": 90,
+   "damage_dealt": 36847,
+   "damage_taken": 655466,
+   "amount_healed": 331293,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 60,
+   "name": "Clyzmo°",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Orb",
+   "weapon2": "Wand & Tome",
+   "guild_icon": "guild_48",
+   "defeat": 0,
+   "assist": 83,
+   "damage_dealt": 24058,
+   "damage_taken": 692742,
+   "amount_healed": 1069054,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 61,
+   "name": "Poopsy",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_01",
+   "defeat": 0,
+   "assist": 79,
+   "damage_dealt": 205249,
+   "damage_taken": 1702673,
+   "amount_healed": 1472623,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 62,
+   "name": "Bribrixメ",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Orb",
+   "weapon2": "Wand & Tome",
+   "guild_icon": "guild_01",
+   "defeat": 0,
+   "assist": 66,
+   "damage_dealt": 25595,
+   "damage_taken": 1175034,
+   "amount_healed": 1230382,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.77,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {
+    "name": [
+     [
+      "Bribrix メ",
+      0.67
+     ],
+     [
+      "Rribrix",
+      0.33
+     ]
+    ]
+   },
+   "flags": [],
+   "name_scan": "Bribrix メ",
+   "confirmed": true
+  },
+  {
+   "seen": 3,
+   "rank": 63,
+   "name": "Roxzorッ",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Longbow",
+   "guild_icon": "guild_48",
+   "defeat": 0,
+   "assist": 65,
+   "damage_dealt": 73092,
+   "damage_taken": 1111859,
+   "amount_healed": 2336202,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.47,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 1,
+   "alts": {
+    "name": [
+     [
+      "Roxzor ッ",
+      0.36
+     ],
+     [
+      "Roxzor ツ",
+      0.35
+     ],
+     [
+      "Roxzor",
+      0.3
+     ]
+    ]
+   },
+   "flags": [],
+   "name_scan": "Roxzor ッ",
+   "confirmed": true
+  },
+  {
+   "seen": 3,
+   "rank": 64,
+   "name": "Broccoli",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_48",
+   "defeat": 0,
+   "assist": 63,
+   "damage_dealt": 78359,
+   "damage_taken": 1331974,
+   "amount_healed": 89191,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.77,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {
+    "name": [
+     [
+      "Broccoli",
+      0.68
+     ],
+     [
+      "oli",
+      0.32
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 65,
+   "name": "MoistPickle",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Orb",
+   "guild_icon": "guild_48",
+   "defeat": 0,
+   "assist": 63,
+   "damage_dealt": 2224,
+   "damage_taken": 425930,
+   "amount_healed": 380651,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 66,
+   "name": "SuperSaiyanAndy",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Longbow",
+   "guild_icon": "guild_48",
+   "defeat": 0,
+   "assist": 62,
+   "damage_dealt": 154596,
+   "damage_taken": 1491518,
+   "amount_healed": 1077148,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 67,
+   "name": "Yarl",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Orb",
+   "weapon2": "Wand & Tome",
+   "guild_icon": "guild_01",
+   "defeat": 0,
+   "assist": 60,
+   "damage_dealt": 36097,
+   "damage_taken": 928747,
+   "amount_healed": 576528,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.81,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {
+    "name": [
+     [
+      "Yarl",
+      0.73
+     ],
+     [
+      "Xar",
+      0.27
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 2,
+   "rank": 68,
+   "name": "Tekkniquezッ",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Orb",
+   "weapon2": "Wand & Tome",
+   "guild_icon": "guild_48",
+   "defeat": 0,
+   "assist": 59,
+   "damage_dealt": 12526,
+   "damage_taken": 771246,
+   "amount_healed": 2046995,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 69,
+   "name": "·Laney·",
+   "guild": "Ping Gap",
+   "team": "Yellow",
+   "weapon1": "Orb",
+   "weapon2": "Wand & Tome",
+   "guild_icon": "guild_61",
+   "defeat": 0,
+   "assist": 59,
+   "damage_dealt": 10706,
+   "damage_taken": 448598,
+   "amount_healed": 656326,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 2,
+   "rank": 70,
+   "name": "xNotSauronx",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Longbow",
+   "weapon2": "Wand & Tome",
+   "guild_icon": "guild_01",
+   "defeat": 0,
+   "assist": 56,
+   "damage_dealt": 52375,
+   "damage_taken": 1225021,
+   "amount_healed": 2731772,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 2,
+   "rank": 71,
+   "name": "Hounter",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Orb",
+   "guild_icon": "guild_48",
+   "defeat": 0,
+   "assist": 53,
+   "damage_dealt": 15129,
+   "damage_taken": 759011,
+   "amount_healed": 559125,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 2,
+   "rank": 72,
+   "name": "ZEROKツ",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Orb",
+   "guild_icon": "guild_01",
+   "defeat": 0,
+   "assist": 46,
+   "damage_dealt": 22551,
+   "damage_taken": 605061,
+   "amount_healed": 384106,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 1,
+   "rank": 73,
+   "name": "aquillo",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Orb",
+   "guild_icon": "guild_48",
+   "defeat": 0,
+   "assist": 45,
+   "damage_dealt": 20189,
+   "damage_taken": 744390,
+   "amount_healed": 883832,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 1,
+   "alts": {},
+   "flags": [
+    "single read"
+   ]
+  },
+  {
+   "seen": 2,
+   "rank": 74,
+   "name": "Dartz",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Orb",
+   "guild_icon": "guild_01",
+   "defeat": 0,
+   "assist": 44,
+   "damage_dealt": 45429,
+   "damage_taken": 722609,
+   "amount_healed": 666551,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 2,
+   "rank": 75,
+   "name": "Niyaaッ",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Orb",
+   "weapon2": "Wand & Tome",
+   "guild_icon": "guild_48",
+   "defeat": 0,
+   "assist": 44,
+   "damage_dealt": 13210,
+   "damage_taken": 740032,
+   "amount_healed": 855981,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 2,
+   "rank": 76,
+   "name": "MyNamelsOof",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Orb",
+   "weapon2": "Wand & Tome",
+   "guild_icon": "guild_01",
+   "defeat": 0,
+   "assist": 44,
+   "damage_dealt": 2184,
+   "damage_taken": 647852,
+   "amount_healed": 722608,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 2,
+   "rank": 77,
+   "name": "Suricata",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_48",
+   "defeat": 0,
+   "assist": 43,
+   "damage_dealt": 93699,
+   "damage_taken": 710192,
+   "amount_healed": 34020,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 1,
+   "rank": 78,
+   "name": "Shabushabu",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Longbow",
+   "guild_icon": "guild_48",
+   "defeat": 0,
+   "assist": 42,
+   "damage_dealt": 61402,
+   "damage_taken": 746658,
+   "amount_healed": 312648,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 1,
+   "alts": {},
+   "flags": [
+    "single read"
+   ]
+  },
+  {
+   "seen": 2,
+   "rank": 79,
+   "name": "·Azulibuli·",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Orb",
+   "weapon2": "Wand & Tome",
+   "guild_icon": "guild_01",
+   "defeat": 0,
+   "assist": 41,
+   "damage_dealt": 17144,
+   "damage_taken": 609082,
+   "amount_healed": 509520,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 2,
+   "rank": 80,
+   "name": "kiersii",
+   "guild": "JAILEDシ",
+   "team": "Red",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Orb",
+   "guild_icon": "guild_06",
+   "defeat": 0,
+   "assist": 37,
+   "damage_dealt": 4612,
+   "damage_taken": 910284,
+   "amount_healed": 548991,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 2,
+   "rank": 81,
+   "name": "AtHoldTheLine",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_01",
+   "defeat": 0,
+   "assist": 36,
+   "damage_dealt": 100570,
+   "damage_taken": 1444105,
+   "amount_healed": 101153,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 2,
+   "rank": 82,
+   "name": "xZeroBlade",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_48",
+   "defeat": 0,
+   "assist": 36,
+   "damage_dealt": 82338,
+   "damage_taken": 1168096,
+   "amount_healed": 17875,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 1,
+   "rank": 83,
+   "name": "BEARCLAW",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Orb",
+   "guild_icon": "guild_48",
+   "defeat": 0,
+   "assist": 34,
+   "damage_dealt": 18107,
+   "damage_taken": 625575,
+   "amount_healed": 646206,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 1,
+   "alts": {},
+   "flags": [],
+   "name_scan": "LARCLAW",
+   "confirmed": true
+  },
+  {
+   "seen": 1,
+   "rank": 84,
+   "name": "J",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Orb",
+   "guild_icon": "guild_01",
+   "defeat": 0,
+   "assist": 33,
+   "damage_dealt": 8724,
+   "damage_taken": 804347,
+   "amount_healed": 881708,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 1,
+   "alts": {},
+   "flags": [
+    "single read"
+   ],
+   "name_scan": "J"
+  },
+  {
+   "seen": 2,
+   "rank": 85,
+   "name": "Shieldシ",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_48",
+   "defeat": 0,
+   "assist": 29,
+   "damage_dealt": 115984,
+   "damage_taken": 1023109,
+   "amount_healed": 68052,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 2,
+   "rank": 86,
+   "name": "ElPose",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Longbow",
+   "guild_icon": "guild_48",
+   "defeat": 0,
+   "assist": 29,
+   "damage_dealt": 44799,
+   "damage_taken": 759175,
+   "amount_healed": 1324548,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 4,
+   "rank": 87,
+   "name": "IZZY",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Orb",
+   "guild_icon": "guild_01",
+   "defeat": 0,
+   "assist": 28,
+   "damage_dealt": 2397,
+   "damage_taken": 674452,
+   "amount_healed": 604944,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 4,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 88,
+   "name": "Keylosh",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Wand & Tome",
+   "weapon2": "Orb",
+   "guild_icon": "guild_01",
+   "defeat": 0,
+   "assist": 26,
+   "damage_dealt": 68808,
+   "damage_taken": 738402,
+   "amount_healed": 845403,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 89,
+   "name": "ツ凶ツ凶ツ",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Longbow",
+   "weapon2": "Wand & Tome",
+   "guild_icon": "guild_01",
+   "defeat": 0,
+   "assist": 26,
+   "damage_dealt": 59770,
+   "damage_taken": 629827,
+   "amount_healed": 1414560,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.36,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 1,
+   "alts": {
+    "name": [
+     [
+      "ッッッ",
+      0.36
+     ],
+     [
+      "ツッッ",
+      0.35
+     ],
+     [
+      "ツツッ",
+      0.29
+     ]
+    ]
+   },
+   "flags": [],
+   "name_scan": "ッッッ",
+   "confirmed": true
+  },
+  {
+   "seen": 3,
+   "rank": 90,
+   "name": "xE4x",
+   "guild": "Undercooked",
+   "team": "Yellow",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_48",
+   "defeat": 0,
+   "assist": 24,
+   "damage_dealt": 56435,
+   "damage_taken": 990990,
+   "amount_healed": 28053,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 91,
+   "name": "chaineddown",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Longbow",
+   "guild_icon": "guild_01",
+   "defeat": 0,
+   "assist": 21,
+   "damage_dealt": 85330,
+   "damage_taken": 1401092,
+   "amount_healed": 228999,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 92,
+   "name": "Gwop",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Longbow",
+   "weapon2": "Wand & Tome",
+   "guild_icon": "guild_01",
+   "defeat": 0,
+   "assist": 21,
+   "damage_dealt": 72168,
+   "damage_taken": 1340471,
+   "amount_healed": 2386879,
+   "agreement": {
+    "rank": 1.0,
+    "name": 0.87,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {
+    "name": [
+     [
+      "Gwop",
+      0.8
+     ],
+     [
+      "L",
+      0.2
+     ]
+    ]
+   },
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 93,
+   "name": "Sueming",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Longbow",
+   "weapon2": "Wand & Tome",
+   "guild_icon": "guild_01",
+   "defeat": 0,
+   "assist": 21,
+   "damage_dealt": 41388,
+   "damage_taken": 1727704,
+   "amount_healed": 3724085,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 3,
+   "rank": 94,
+   "name": "Keifrrム",
+   "guild": "Supple On 3",
+   "team": "Red",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Greatsword",
+   "guild_icon": "guild_01",
+   "defeat": 0,
+   "assist": 18,
+   "damage_dealt": 26073,
+   "damage_taken": 1388958,
+   "amount_healed": 125766,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 3,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 2,
+   "rank": 95,
+   "name": "しeddyツ",
+   "guild": "JAILEDシ",
+   "team": "Red",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Longbow",
+   "guild_icon": "guild_06",
+   "defeat": 0,
+   "assist": 15,
+   "damage_dealt": 42782,
+   "damage_taken": 1415302,
+   "amount_healed": 435670,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  },
+  {
+   "seen": 2,
+   "rank": 96,
+   "name": "塔高托",
+   "guild": "Gear Gap",
+   "team": "Yellow",
+   "weapon1": "Orb",
+   "weapon2": "Wand & Tome",
+   "guild_icon": "guild_02",
+   "defeat": 0,
+   "assist": 8,
+   "damage_dealt": 33322,
+   "damage_taken": 975019,
+   "amount_healed": 1078263,
+   "agreement": {
+    "rank": 1.0,
+    "name": 1.0,
+    "guild": 1.0,
+    "team": 1.0,
+    "weapon1": 1.0,
+    "weapon2": 1.0,
+    "guild_icon": 1.0,
+    "defeat": 1.0,
+    "assist": 1.0,
+    "damage_dealt": 1.0,
+    "damage_taken": 1.0,
+    "amount_healed": 1.0
+   },
+   "checks": 2,
+   "alts": {},
+   "flags": []
+  }
+ ]
 }
