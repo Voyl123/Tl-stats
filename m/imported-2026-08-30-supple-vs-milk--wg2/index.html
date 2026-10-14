@@ -264,12 +264,17 @@ svg.wi .dia{fill:var(--panel2);stroke:var(--gold)}
 .gsec>summary{border-top-width:2px}
 .sec-t{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--gold2)}
 /* ---------- donuts + top performers ---------- */
-.pies{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px 22px;margin-top:8px}
+.pie-rows{display:grid;gap:18px;margin-top:10px}
+.pies{display:grid;gap:14px 28px}.pies.p1{grid-template-columns:minmax(0,1fr)}.pies.p2{grid-template-columns:repeat(2,minmax(0,1fr))}.pies.p3{grid-template-columns:repeat(3,minmax(0,1fr));padding-top:16px;border-top:1px solid var(--line)}
+.pies.p2+.pies.p3:empty{display:none}
+#gpies.pies{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:1100px){.pies.p3,#gpies.pies{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.pies.p2,.pies.p3,#gpies.pies{grid-template-columns:minmax(0,1fr)}}
 .pie{min-width:0}.pt{font-weight:700;font-size:12.5px;color:var(--text);margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .pw{display:flex;gap:12px;align-items:center}svg.dnut{width:132px;height:132px;flex:0 0 132px}
 .seg-p{stroke:var(--panel);stroke-width:1.2;transition:opacity .15s}svg.dnut:hover .seg-p{opacity:.55}svg.dnut .seg-p:hover{opacity:1}
 .dv{fill:var(--text);font-size:17px;font-weight:800;text-anchor:middle}.dl2{fill:var(--faint);font-size:9.5px;text-anchor:middle;text-transform:uppercase;letter-spacing:.08em}
-.pl2{list-style:none;margin:0;padding:0;min-width:0;flex:1;font-size:12px}
+.pl2{list-style:none;margin:0;padding:0;min-width:0;flex:1;max-width:250px;font-size:12px}
 .pl2 li{display:flex;align-items:center;gap:7px;padding:1.5px 0}.pl2 i{width:9px;height:9px;border-radius:2px;flex:0 0 9px}
 .pl2 .pn{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--dim)}.pl2 b{font-variant-numeric:tabular-nums}
 .topp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:8px}
@@ -284,7 +289,7 @@ svg.wi .dia{fill:var(--panel2);stroke:var(--gold)}
 .sg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:3px;overflow:hidden}
 .sgc{background:var(--panel2);padding:7px 10px;min-width:0}.sgc span{display:block;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
 .sgc b{display:block;font-size:16px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--text);white-space:nowrap}.sgc b.pos{color:var(--pos)}.sgc b.neg{color:var(--neg)}
-.tc .mix{margin-top:10px}
+.tc .mix{margin-top:10px}.tcb>div:first-child{flex:1 1 320px;min-width:0}.sg{width:100%}
 .vs{padding:14px 18px 16px;margin-bottom:16px}
 .vs-h{display:grid;grid-template-columns:110px 1fr 110px;align-items:center;font-weight:800;font-size:14px;margin-bottom:8px}.vs-h .sec-t{text-align:center;margin:0}.vs-h span:last-child{text-align:right}
 .vs-g{display:grid;gap:5px}.vs-r{display:grid;grid-template-columns:110px 1fr 110px;align-items:center;gap:12px}
@@ -298,6 +303,8 @@ svg.wi .dia{fill:var(--panel2);stroke:var(--gold)}
 #lbt th[data-k=name]{width:20%}#lbt th[data-k=guild]{width:13%}
 #lbt th[data-k=defeat],#lbt th[data-k=assist],#lbt th[data-k=damage_dealt],#lbt th[data-k=tdp],#lbt th[data-k=damage_taken],#lbt th[data-k=amount_healed],#lbt th[data-k=thp],#lbt th[data-k=deaths],#lbt th[data-k=games]{width:96px}
 #lbt th[data-k=rank]{width:44px}#lbt th[data-k=weapons]{width:84px}
+@media(max-width:560px){.tabs{width:100%;justify-content:space-between;overflow-x:auto;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}
+ .tab-b{padding:0 7px;font-size:11px;letter-spacing:.04em}.tab-b .ct{margin-left:3px;padding:0 4px}}
 /* ---------- click-through breakdown ---------- */
 [data-dk]{cursor:pointer}.clk:hover td,.tile.clk:hover{background:var(--hover)}.pl2 li[data-dk]:hover .pn{color:var(--text)}
 .lk[data-dk]:hover{text-decoration:underline;text-underline-offset:3px}
@@ -372,7 +379,7 @@ dialog.drill::backdrop{background:rgba(0,0,0,.6);backdrop-filter:blur(2px)}
   <span class="cl-note" id="cl-note"></span>
  </div>
  <div class="tiles" id="cl-tiles"></div>
- <div class="card chart" style="margin-bottom:16px"><div class="pie-hd"><h3 class="sec-t" id="cl-pie-t">Share by spec</h3><div class="seg pstat" id="cl-pie-sw" role="group" aria-label="Pie stat"></div></div><p class="sec-s" id="cl-pie-s"></p><div class="pies" id="cl-pies"></div></div>
+ <div class="card chart" style="margin-bottom:16px"><div class="pie-hd"><h3 class="sec-t" id="cl-pie-t">Share by spec</h3><div class="seg pstat" id="cl-pie-sw" role="group" aria-label="Pie stat"></div></div><p class="sec-s" id="cl-pie-s"></p><div class="pie-rows" id="cl-pies"></div></div>
  <div class="card chart" id="cl-h2h-c"><h3 class="sec-t" id="cl-h2h-t">Head to head</h3><p class="sec-s" id="cl-h2h-s"></p><div id="cl-h2h"></div></div>
  <div class="card chart" style="margin-top:16px"><h3 class="sec-t" id="cl-tt">Combined totals</h3><p class="sec-s" id="cl-ts">Every player of the group added together. Click a header to sort.</p>
   <div class="tw"><table class="lb" id="clt" style="min-width:1000px"><thead><tr id="clhdr"></tr></thead><tbody id="clbody"></tbody></table></div></div>
@@ -391,7 +398,7 @@ dialog.drill::backdrop{background:rgba(0,0,0,.6);backdrop-filter:blur(2px)}
  </div>
  <div class="card chart"><h3 class="sec-t">Top performers</h3><p class="sec-s">The best player for each stat in the current filter, with the rest of their line.</p><div class="topp" id="topp"></div></div>
  <div class="tiles" id="tiles" style="margin-top:16px"></div>
- <div class="card chart" style="margin-bottom:16px"><div class="pie-hd"><h3 class="sec-t" id="pie-t">Share of the fight</h3><div class="seg pstat" id="pie-sw" role="group" aria-label="Pie stat"></div></div><p class="sec-s" id="pie-s"></p><div class="pies" id="pies"></div></div>
+ <div class="card chart" style="margin-bottom:16px"><div class="pie-hd"><h3 class="sec-t" id="pie-t">Share of the fight</h3><div class="seg pstat" id="pie-sw" role="group" aria-label="Pie stat"></div></div><p class="sec-s" id="pie-s"></p><div class="pie-rows" id="pies"></div></div>
  <div class="card chart"><h3 class="sec-t" id="c1t"></h3><p class="sec-s">One row per spec, one dot per player. Players with similar numbers bunch together, the shaded band is the typical range (middle half) with the median line. <b>Ringed, named dots are outliers</b> – far above ▲ or below ▼ the rest of their spec. Specs with fewer than 5 players aren't judged.</p><div id="c1"></div>
  <div class="card chart" id="stand"></div></div>
  <div class="g2">
@@ -712,6 +719,7 @@ function gPlayers(){const t=$("#g-team").value,r=$("#g-role").value;return P.fil
 function jobGroups(ps){const m={};ps.forEach(p=>{if(!p.class)return;(m[p.class]??={job:p.class,ps:[],roles:{}}).ps.push(p);m[p.class].roles[p.role]=(m[p.class].roles[p.role]||0)+1});
  return Object.values(m).map(g=>({...g,role:Object.entries(g.roles).sort((a,b)=>b[1]-a[1])[0][0]}))}
 /* ---------- donut charts ---------- */
+const GPAL=[["#f2c94c","#ff9f43","#e3e36b","#c99a3c","#ffd98a"],["#ff5b57","#ff6fae","#c94a6e","#ff8f70","#b84040"],["#4c8dff","#36cfc9","#7f8cff","#5fb4ff"],["#3fd17c","#a3e05a","#2fae8e"]];
 const PST=[["damage_dealt","Damage"],["defeat","Kills"],["assist","Assists"],["amount_healed","Healing"],["damage_taken","Taken"]];
 const pieSt={gr:store.get("pieGr")||"",cl:store.get("pieCl")||""};
 function pieSwitch(el,cur,onPick){const av=PST.filter(([k])=>P.some(p=>p[k]));if(!av.some(x=>x[0]===cur))cur=av[0]?av[0][0]:"defeat";
@@ -732,15 +740,16 @@ function donut(title,items,sub){const tot=items.reduce((a,b)=>a+b.v,0),seen={};
  return`<div class="pie"><div class="pt">${esc(title)}</div><div class="pw"><svg viewBox="0 0 140 140" class="dnut">${segs}<text x="70" y="66" class="dv">${short(tot)}</text><text x="70" y="84" class="dl2">total</text></svg>
 <ul class="pl2">${items.map(it=>`<li${it.dk?` data-dk="${it.dk}" data-dv="${esc(it.dv??it.label)}"`:""} data-tip="<b>${esc(it.label)}</b>\n${short(it.v)} · ${(100*it.v/tot).toFixed(1)}%${it.tip?"\n"+esc(it.tip):""}"><i style="background:${it.c}"></i><span class="pn">${esc(it.label)}</span><b>${(100*it.v/tot).toFixed(0)}%</b></li>`).join("")}</ul></div></div>`}
 const sideCol=t=>SIDE[t]||"var(--dim)";
-function sharePies(ps,k,lab){const out=[],sides=[...new Set(ps.map(p=>p.team))].filter(Boolean),v=p=>p[k]||0;
+function sharePies(ps,k,lab){const sides=TT.filter(t=>ps.some(p=>p.team===t)),v=p=>p[k]||0;
  const bySpec=list=>{const m={};list.forEach(p=>{const key=p.class||"Unknown";(m[key]??={label:key,v:0,c:ccol(p.class,p.role),dk:"class"}).v+=v(p)});return topN(Object.values(m),8)};
- if(sides.length>1)out.push(donut(`${lab} by side`,sides.map(t=>({label:t,v:ps.filter(p=>p.team===t).reduce((a,p)=>a+v(p),0),c:sideCol(t),dk:"team"})),lab.toLowerCase()));
- sides.forEach(t=>out.push(donut(`${t} · ${lab.toLowerCase()} by spec`,bySpec(ps.filter(p=>p.team===t)),lab.toLowerCase())));
- out.push(donut(`${lab} by role`,ROLES.map(r=>({label:r,v:ps.filter(p=>p.role===r).reduce((a,p)=>a+v(p),0),c:RCOL[r],dk:"role"})),lab.toLowerCase()));
- const gm={};ps.forEach(p=>{if(!p.guild)return;(gm[p.guild]??={label:p.guild,v:0,c:sideCol(p.team),dk:"guild"}).v+=v(p)});
- const gi=topN(Object.values(gm),7).map((g,i)=>({...g,c:g.c==="var(--faint)"?g.c:`color-mix(in srgb,${g.c} ${100-i*11}%,var(--panel2))`}));
- if(gi.length>1)out.push(donut(`${lab} by guild`,gi,lab.toLowerCase()));
- return out.join("")}
+ const top=sides.map(t=>donut(`${t} · ${lab.toLowerCase()} by spec`,bySpec(ps.filter(p=>p.team===t)),lab.toLowerCase()));
+ const low=[];
+ if(sides.length>1)low.push(donut(`${lab} by side`,sides.map(t=>({label:t,v:ps.filter(p=>p.team===t).reduce((a,p)=>a+v(p),0),c:sideCol(t),dk:"team"})),lab.toLowerCase()));
+ low.push(donut(`${lab} by role`,ROLES.map(r=>({label:r,v:ps.filter(p=>p.role===r).reduce((a,p)=>a+v(p),0),c:RCOL[r],dk:"role"})),lab.toLowerCase()));
+ const gm={};ps.forEach(p=>{if(!p.guild)return;(gm[p.guild]??={label:p.guild,v:0,team:p.team,dk:"guild"}).v+=v(p)});
+ const used={},gl=Object.values(gm).sort((a,b)=>b.v-a.v).map(g=>{const si=Math.max(0,TT.indexOf(g.team)),pal=GPAL[si%GPAL.length],i=used[si]=(used[si]||0);used[si]++;return{...g,c:pal[i%pal.length],tip:g.team?"Side: "+g.team:""}});
+ if(gl.length>1)low.push(donut(`${lab} by guild`,topN(gl,8),lab.toLowerCase()));
+ return`<div class="pies p${Math.min(top.length,2)}">${top.join("")}</div><div class="pies p3">${low.join("")}</div>`}
 /* ---------- top performers ---------- */
 function topPerf(ps){const stats=[["defeat","Most kills"],["damage_dealt","Most damage"],["tdp","Biggest team dmg share"],["assist","Most assists"],["amount_healed","Most healing"],["thp","Biggest team heal share"],["damage_taken","Most damage taken"]]
   .filter(([k])=>ps.some(p=>p[k]));
@@ -878,7 +887,6 @@ function guildRows(){const m={};P.forEach(p=>{const g=p.guild||"(no guild)",key=
  const o=m[key]??={guild:g,team:p.team||"",ps:[],icon:p.guild_icon,players:0,...Object.fromEntries(NUM.map(k=>[k,0]))};
  o.ps.push(p);o.players++;NUM.forEach(k=>o[k]+=p[k]||0)});
  return Object.values(m).map(o=>({...o,avg:o.damage_dealt/o.players}))}
-const GPAL=[["#f2c94c","#ff9f43","#e3e36b","#c99a3c","#ffd98a"],["#ff5b57","#ff6fae","#c94a6e","#ff8f70","#b84040"],["#4c8dff","#36cfc9","#7f8cff","#5fb4ff"],["#3fd17c","#a3e05a","#2fae8e"]];
 function guildPies(){const gs={};P.forEach(p=>{if(!p.guild)return;const g=gs[p.guild]??={name:p.guild,team:p.team,n:0,defeat:0,assist:0,damage_dealt:0,amount_healed:0,damage_taken:0};
   g.n++;["defeat","assist","damage_dealt","amount_healed","damage_taken"].forEach(k=>g[k]+=p[k]||0)});
  const L=Object.values(gs).sort((a,b)=>b.damage_dealt-a.damage_dealt||b.defeat-a.defeat||b.n-a.n);
@@ -964,7 +972,7 @@ function renderClasses(){
  $("#cl-tiles").innerHTML=T.map(([h,g,f])=>`<div class="card tile clk" data-dk="${by}" data-dv="${esc(g.key)}" style="--c:${clCol(g,by)}"><div class="h"><span class="s">${h}</span></div><div class="big" style="color:${clCol(g,by)}">${esc(g.key)}</div><div class="s">${f(g)}</div></div>`).join("");
  { const b=pieSt.cl=pieSwitch($("#cl-pie-sw"),pieSt.cl||clBase(K),v=>{pieSt.cl=v;store.set("pieCl",v);renderClasses()}),lb=NLAB[b]||"Damage Dealt",sides=side?[side]:TT,m=t=>{const o={};P.filter(p=>p.team===t).forEach(p=>clKeys(p,by).forEach(key=>{(o[key]??={label:key,v:0,c:by==="role"?(RCOL[key]||"var(--dim)"):ccol(key,p.role),dk:by}).v+=p[b]||0}));return topN(Object.values(o),8)};
   $("#cl-pie-t").textContent=`${lb} by ${clName(by).toLowerCase()}`;$("#cl-pie-s").textContent=`How each side's ${lb.toLowerCase()} splits between ${clName(by).toLowerCase()}s.`;
-  $("#cl-pies").innerHTML=sides.map(t=>donut(t,m(t),lb.toLowerCase())).join("")+(by!=="role"?donut(`${side||"Both sides"} · by role`,ROLES.map(r=>({label:r,v:(side?P.filter(p=>p.team===side):P).filter(p=>p.role===r).reduce((a,p)=>a+(p[b]||0),0),c:RCOL[r],dk:"role"})),lb.toLowerCase()):""); }
+  $("#cl-pies").innerHTML=`<div class="pies p${Math.min(sides.length,2)}">${sides.map(t=>donut(t,m(t),lb.toLowerCase())).join("")}</div>`+(by!=="role"?`<div class="pies p3">`+donut(`${side||"Both sides"} · by role`,ROLES.map(r=>({label:r,v:(side?P.filter(p=>p.team===side):P).filter(p=>p.role===r).reduce((a,p)=>a+(p[b]||0),0),c:RCOL[r],dk:"role"})),lb.toLowerCase())+`</div>`:""); }
  // head to head (two sides, per group, chosen stat)
  const sides=TT.slice(0,2);
  if(sides.length===2&&!side){
