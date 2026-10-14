@@ -522,4 +522,11 @@ function route(){const f=$("#fab");if(f&&!location.hash.match(/^#\/?$/))f.remove
  document.title=(view==="player"&&P.get(arg)?P.get(arg).n+" · ":view==="guild"&&arg?arg+" · ":view==="leaders"?"Leaderboards · ":view!=="matches"&&view!==""?view[0].toUpperCase()+view.slice(1)+" · ":"")+D.title;
  window.scrollTo(0,0)}
 addEventListener("hashchange",route);route();
+/* a newer upload replaces a cached copy of the site */
+const BUILD="caa290530e05";let vAt=0;
+function vchk(){const n=Date.now();if(n-vAt<30000)return;vAt=n;
+ fetch(ROOT+"version.txt?"+n,{cache:"no-store"}).then(r=>r.ok?r.text():"").then(v=>{v=(v||"").trim();
+  if(!v||v===BUILD||new URLSearchParams(location.search).get("v")===v)return;
+  location.replace(location.pathname+"?v="+encodeURIComponent(v)+location.hash)}).catch(()=>{})}
+vchk();addEventListener("hashchange",vchk);document.addEventListener("visibilitychange",()=>{if(!document.hidden)vchk()});
 </script></body></html>
