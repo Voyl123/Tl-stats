@@ -881,6 +881,7 @@ let rz;addEventListener("resize",()=>{clearTimeout(rz);rz=setTimeout(()=>{if(tab
 
 /* ---------- guilds ---------- */
 const GCOLS=COLS.filter(c=>c[0]!=="guild");
+let gpSort="rank",gpAsc=true;     // sort inside each guild's player table (one setting for all of them)
 let gSort="damage_dealt",gAsc=false;
 const GSUM=[["guild","Guild","l"],["team","Team","l"],["players","Players"],["mix","Classes","l"],...NUM.map(k=>[k,NLAB[k]]),["avg","Avg dealt"]];
 function guildRows(){const m={};P.forEach(p=>{const g=p.guild||"(no guild)",key=g+"|"+(p.team||"");
@@ -904,13 +905,15 @@ function renderGuilds(){guildPies();
 <td class="l"><span class="tm ${esc(o.team)}">${esc(o.team)}</span></td><td><b>${o.players}</b></td><td class="l"><span class="mix" style="margin:0">${mixPills(o.ps)}</span></td>
 ${NUM.map(k=>`<td>${fmt(o[k])}</td>`).join("")}<td>${fmt(Math.round(o.avg))}</td></tr>`).join("")||`<tr><td colspan="${GSUM.length}" class="c empty">No guilds match.</td></tr>`;
  const open=new Set($$("#gsecs details[open]").map(d=>d.dataset.g));const first=!$("#gsecs").dataset.done;
- $("#gsecs").innerHTML=G.map((o,i)=>{const ps=o.ps.filter(p=>!q||o.guild.toLowerCase().includes(q)||(p.name||"").toLowerCase().includes(q)).sort((a,b)=>(a.rank??1e9)-(b.rank??1e9));
+ $("#gsecs").innerHTML=G.map((o,i)=>{const ps=o.ps.filter(p=>!q||o.guild.toLowerCase().includes(q)||(p.name||"").toLowerCase().includes(q)).sort(sorter(gpSort,gpAsc));
   const id=o.guild+"|"+o.team,isOpen=first?i<3:open.has(id);
   return`<details class="card gsec" data-g="${esc(id)}" id="g-${i}" style="--side:${SIDE[o.team]||"var(--line2)"}"${isOpen?" open":""}><summary>
 <span class="chev">▶</span><span class="gn">${gIcon(o.icon,o.guild)}${esc(o.guild)}</span><span class="tm ${esc(o.team)}">${esc(o.team)}</span><span class="mix" style="margin:0">${mixPills(o.ps)}</span>
 <span class="st"><span>Players <b>${o.players}</b></span><span>Kills <b>${fmt(o.defeat)}</b></span><span>Assists <b>${fmt(o.assist)}</b></span><span>Dealt <b>${short(o.damage_dealt)}</b></span><span>Taken <b>${short(o.damage_taken)}</b></span><span>Healed <b>${short(o.amount_healed)}</b></span></span></summary>
-<div class="tw"><table class="lb"><thead><tr>${GCOLS.map(([k,l,a])=>`<th class="${a||""}" style="cursor:default">${l}</th>`).join("")}</tr></thead><tbody>${ps.map(p=>rowHTML(p,GCOLS)).join("")}</tbody></table></div></details>`}).join("");
- $("#gsecs").dataset.done="1"}
+<div class="tw"><table class="lb"><thead><tr>${GCOLS.map(([k,l,a])=>{const on=k===gpSort||(k==="weapons"&&gpSort==="role");return`<th data-k="${k}" class="${a||""} ${on?"sorted"+(gpAsc?" asc":""):""}">${l}</th>`}).join("")}</tr></thead><tbody>${ps.map(p=>rowHTML(p,GCOLS)).join("")}</tbody></table></div></details>`}).join("");
+ $("#gsecs").dataset.done="1";barAll()}
+$("#gsecs").addEventListener("click",e=>{const th=e.target.closest("thead th[data-k]");if(!th)return;let k=th.dataset.k;if(k==="weapons")k="role";
+ if(k===gpSort)gpAsc=!gpAsc;else{gpSort=k;gpAsc=TEXTK.has(k)}renderGuilds()});
 $("#ghdr").addEventListener("click",e=>{const th=e.target.closest("th");if(!th)return;const c=th.dataset.k;
  if(c===gSort)gAsc=!gAsc;else{gSort=c;gAsc=c==="guild"||c==="team"||c==="mix"}renderGuilds()});
 $("#gbody").addEventListener("click",e=>{const tr=e.target.closest("tr[data-i]");if(!tr)return;const d=$("#g-"+tr.dataset.i);if(d){d.open=true;d.scrollIntoView({behavior:"smooth",block:"start"})}});
