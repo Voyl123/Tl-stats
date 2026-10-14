@@ -228,7 +228,7 @@
       "amount_healed": 14886,
       "agreement": {
         "rank": 1.0,
-        "name": 0.89,
+        "name": 0.83,
         "guild": 0.94,
         "team": 1.0,
         "weapon1": 1.0,
@@ -243,6 +243,10 @@
       "checks": 57,
       "alts": {
         "name": [
+          [
+            "stepbro老",
+            0.0
+          ],
           [
             "stepbro老",
             0.83
@@ -268,6 +272,7 @@
         ]
       },
       "flags": [],
+      "snapped": true,
       "name_scan": "stepbro老",
       "confirmed": true
     },
@@ -1225,6 +1230,10 @@
         "name": [
           [
             "hadley",
+            0.0
+          ],
+          [
+            "hadley",
             0.67
           ],
           [
@@ -1234,6 +1243,7 @@
         ]
       },
       "flags": [],
+      "snapped": true,
       "name_scan": "hadley",
       "confirmed": true
     },
@@ -1509,7 +1519,7 @@
       "amount_healed": 4192884,
       "agreement": {
         "rank": 1.0,
-        "name": 0.8,
+        "name": 0.72,
         "guild": 1.0,
         "team": 1.0,
         "weapon1": 1.0,
@@ -1526,6 +1536,10 @@
         "name": [
           [
             "miumiu老",
+            0.0
+          ],
+          [
+            "miumiu老",
             0.72
           ],
           [
@@ -1535,6 +1549,7 @@
         ]
       },
       "flags": [],
+      "snapped": true,
       "name_scan": "miumiu老",
       "confirmed": true
     },
@@ -2173,8 +2188,16 @@
         "amount_healed": 1.0
       },
       "checks": 3,
-      "alts": {},
+      "alts": {
+        "name": [
+          [
+            "moncler老",
+            0.0
+          ]
+        ]
+      },
       "flags": [],
+      "snapped": true,
       "name_scan": "moncler老",
       "confirmed": true
     },

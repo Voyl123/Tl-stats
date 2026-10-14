@@ -1243,6 +1243,10 @@
         "name": [
           [
             "hadley老",
+            0.0
+          ],
+          [
+            "hadley老",
             0.84
           ],
           [
@@ -1252,6 +1256,7 @@
         ]
       },
       "flags": [],
+      "snapped": true,
       "name_scan": "hadley老",
       "confirmed": true
     },
