@@ -4,7 +4,7 @@
 <title>Supple vs Disregarded · WG 1 · Talus</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0a0a0c;--bg2:#0f0f12;--panel:#141417;--panel2:#1b1b1f;--raise:#222227;--hover:#1f1f24;--line:#26262c;--line2:#36363e;--text:#ece8e1;--dim:#a39e96;--faint:#6f6b65;--off:#bab5ad;--gold:#f0a43a;--gold2:#ffc46b;--gold-bg:rgba(240,164,58,.12);--gold-bg2:rgba(240,164,58,.07);--stripe:rgba(255,255,255,.018);--yellow:#f2c94c;--red:#ff5b57;--blue:#4c8dff;--green:#3fd17c;--tank:#6b9be6;--support:#43c08a;--dps:#ef7f45;--pos:#3fd17c;--neg:#ff5b57;--warn:#f0a85a;
+:root{--bg:#0c0c0d;--bg2:#101011;--panel:#161617;--panel2:#1d1d1f;--raise:#242426;--hover:#232325;--line:#2a2a2d;--line2:#3a3a3e;--text:#e8e6e3;--dim:#a8a5a0;--faint:#73706b;--off:#c2beb7;--gold:#f0a43a;--gold2:#ffc46b;--gold-bg:rgba(240,164,58,.13);--gold-bg2:rgba(240,164,58,.07);--stripe:rgba(255,255,255,.022);--yellow:#f2c94c;--red:#ff5b57;--blue:#4c8dff;--green:#3fd17c;--tank:#6b9be6;--support:#43c08a;--dps:#ef7f45;--pos:#3fd17c;--neg:#ff5b57;--warn:#f0a85a;
  --r-s:6px;--r-m:10px;--r-l:14px;
 }
 *{box-sizing:border-box}
@@ -279,6 +279,20 @@ svg.wi .dia{fill:var(--panel2);stroke:var(--gold)}
 .tpn{font-weight:800;font-size:15px;margin-top:1px}.tps{color:var(--dim);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .tp:only-child{grid-column:1/-1}@media(max-width:1000px){.topp{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.topp{grid-template-columns:1fr}}
 .tpl{display:flex;flex-wrap:wrap;gap:4px 10px;margin-top:7px;font-size:11.5px;color:var(--faint)}.tpl b{color:var(--text);font-weight:700}
+/* ---------- side cards + sides compared ---------- */
+.sg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:3px;overflow:hidden}
+.sgc{background:var(--panel2);padding:7px 10px;min-width:0}.sgc span{display:block;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+.sgc b{display:block;font-size:16px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--text);white-space:nowrap}.sgc b.pos{color:var(--pos)}.sgc b.neg{color:var(--neg)}
+.tc .mix{margin-top:10px}
+.vs{padding:14px 18px 16px;margin-bottom:16px}
+.vs-h{display:grid;grid-template-columns:110px 1fr 110px;align-items:center;font-weight:800;font-size:14px;margin-bottom:8px}.vs-h .sec-t{text-align:center;margin:0}.vs-h span:last-child{text-align:right}
+.vs-g{display:grid;gap:5px}.vs-r{display:grid;grid-template-columns:110px 1fr 110px;align-items:center;gap:12px}
+.vs-v{font-variant-numeric:tabular-nums;font-size:14px;color:var(--dim);font-weight:700}.vs-v.r{text-align:right}.vs-v.w{color:var(--text)}
+.vs-bar{position:relative;display:flex;height:22px;border-radius:2px;overflow:hidden;background:var(--panel2)}.vs-bar i{display:block;height:100%;opacity:.62}
+.vs-bar span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;text-shadow:0 1px 2px #000,0 0 6px rgba(0,0,0,.8)}
+@media(max-width:700px){.sg{grid-template-columns:repeat(2,minmax(0,1fr))}.vs-r,.vs-h{grid-template-columns:76px 1fr 76px;gap:8px}.vs-v{font-size:12.5px}}
+/* Warcraft Logs feel: brighter class-colour amount bars, solid header row */
+.lb td.bar-c{background-size:100% 100%}
 /* ---------- click-through breakdown ---------- */
 [data-dk]{cursor:pointer}.clk:hover td,.tile.clk:hover{background:var(--hover)}.pl2 li[data-dk]:hover .pn{color:var(--text)}
 .lk[data-dk]:hover{text-decoration:underline;text-underline-offset:3px}
@@ -303,7 +317,9 @@ dialog.drill::backdrop{background:rgba(0,0,0,.6);backdrop-filter:blur(2px)}
 .hk{text-align:center;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .hv{font-variant-numeric:tabular-nums;color:var(--dim);text-align:right}.hv:last-child{text-align:left}.hv.w{color:var(--text);font-weight:700}
 .faint{color:var(--faint)}
-@media(max-width:700px){.h2r{grid-template-columns:52px 1fr 92px 1fr 52px;gap:6px;font-size:12px}}
+@media(max-width:700px){.h2r{grid-template-columns:58px 1fr 1fr 58px;grid-template-areas:"k k k k" "va ba bb vb";gap:2px 6px;font-size:12px;padding:4px 0;border-bottom:1px solid var(--line)}
+ .h2r .hk{grid-area:k;text-align:left;display:flex;gap:8px;align-items:baseline}.h2r .hn{display:inline}
+ .h2r>.hv:first-child{grid-area:va}.h2r>.hb.l{grid-area:ba}.h2r>.hb.r{grid-area:bb}.h2r>.hv:last-child{grid-area:vb}}
 </style></head><body>
 <header class="top"><div class="topin">
  <div class="ttl"><a class="brandl" id="brandl" href="../../" hidden>Supple Stats</a><h1>Supple vs Disregarded · WG 1 · Talus</h1><div class="sub" id="sub"></div></div>
@@ -319,6 +335,7 @@ dialog.drill::backdrop{background:rgba(0,0,0,.6);backdrop-filter:blur(2px)}
 <!-- ======================= LEADERBOARD ======================= -->
 <section class="tab on" id="t-lb" role="tabpanel">
  <div class="card vods" id="vods" hidden></div>
+ <div class="card vs" id="vs" hidden></div>
  <div class="teams" id="teams"></div>
  <div class="plist card" id="plist" hidden></div>
  <div class="bar">
@@ -412,7 +429,7 @@ function barify(t,fallback){if(!t||!t.tBodies[0])return;const hs=[...t.tHead.row
  if(!th||th.classList.contains("l")||th.classList.contains("c")||["rank","games"].includes(th.dataset.k))th=hs.find(h=>h.dataset.k===fallback);if(!th)return;
  const ix=hs.indexOf(th),rows=[...t.tBodies[0].rows].filter(r=>r.cells.length===hs.length),vals=rows.map(r=>numOf(r.cells[ix].textContent)),mx=Math.max(0,...vals.filter(v=>v>0));if(!mx)return;
  rows.forEach((r,i)=>{const td=r.cells[ix],w=vals[i]>0?Math.max(1.5,100*vals[i]/mx):0,c=r.dataset.cc||"var(--gold)";td.classList.add("bar-c");
-  td.style.backgroundImage=`linear-gradient(90deg,color-mix(in srgb,${c} 22%,transparent) 0 ${w}%,transparent ${w}%)`})}
+  td.style.backgroundImage=`linear-gradient(90deg,color-mix(in srgb,${c} 34%,transparent) 0 ${w}%,transparent ${w}%)`})}
 function barAll(){const fb=D.meta&&D.meta.siege?"defeat":"damage_dealt";document.querySelectorAll("table.lb").forEach(t=>barify(t,t.id==="jt"?"damage_dealt":t.id==="gtab"?"damage_dealt":fb))}
 if(window.top===window&&!/^(127\.0\.0\.1|localhost|)$/.test(location.hostname)&&/\/m\/[^/]+\/?(index\.html)?$/.test(location.pathname))$("#brandl").hidden=false;
 
@@ -549,11 +566,9 @@ function renderTeams(){
   const k=kdx(t),dg=(v.damage_dealt||0)-(v.damage_taken||0);const c={};
   ps.forEach(p=>new Set([p.weapon1,p.weapon2].filter(realW)).forEach(w=>c[w]=(c[w]||0)+1));
   return`<div class="card tc" style="--side:${SIDE[t]||"var(--line2)"}"><h3>${esc(names.join(" + ")||t)} · ${v.players} players<small>${esc(t)} side</small></h3><div class="tcb"><div>
-<div class="kv"><span>Kills</span><b>${fmt(v.defeat)}</b><span>Assists</span><b>${fmt(v.assist)}</b>
-${HASDMG?`<span>Dealt</span><b>${fmt(v.damage_dealt)}</b><span>Taken</span><b>${fmt(v.damage_taken)}</b>
-<span>Healed</span><b>${fmt(v.amount_healed)}</b><span></span><b></b>`:""}
-<span>K/D</span><b>${k.kd==null?"–":k.kd.toFixed(2)}</b><span title="This side's K/D minus the other side's">K/D gap</span><b class="gap ${k.gap>0?"pos":k.gap<0?"neg":""}">${sgn(k.gap,2)}</b>
-${HASDMG?`<span>Dmg gap</span><b class="gap ${dg>0?"pos":dg<0?"neg":""}">${sgn(dg)}</b>`:""}</div>
+<div class="sg">${[["Kills",fmt(v.defeat)],["Assists",fmt(v.assist)],["K/D",k.kd==null?"–":k.kd.toFixed(2)],["K/D gap",sgn(k.gap,2),k.gap>0?"pos":k.gap<0?"neg":""],
+ ...(HASDMG?[["Damage",short(v.damage_dealt)],["Taken",short(v.damage_taken)],["Healed",short(v.amount_healed)],["Dmg gap",(dg>0?"+":dg<0?"−":"")+short(Math.abs(dg)),dg>0?"pos":dg<0?"neg":""]]:[])]
+ .map(([l,x,c])=>`<div class="sgc"><span>${l}</span><b class="${c||""}">${x}</b></div>`).join("")}</div>
 <div class="mix">${mixPills(ps)}</div></div>
 ${Object.keys(c).length?`<div class="comp"><div class="lab">Comp · players per weapon</div><div class="cg">${WSLOTS.map(w=>{const n=c[w]||0;return`<div class="cw${n?"":" zero"}" data-t="${esc(t)}" data-w="${esc(w)}" title="${esc(w)}: ${n} player${n===1?"":"s"}">${wIcon(w)}<b>${n}</b><span>${esc(SHORTW[w]||w)}</span></div>`}).join("")}</div></div>`:""}
 </div></div>`}).join("")}
@@ -566,7 +581,7 @@ $("#teams").addEventListener("click",e=>{const c=e.target.closest(".cw[data-w]")
   `<span class="pl"><em>${p.rank??""}</em>${wIcon(p.weapon1,p.weapon1===w?"hl":"dim")}${wIcon(p.weapon2,p.weapon2===w?"hl":"dim")}<b>${esc(p.name)}</b><i>${esc(p.class)}</i></span>`).join("")}</div>`});
 
 /* ---------- player table (shared by Leaderboard and Guilds) ---------- */
-const COLS=[["rank","#","c"],["weapons","Weapons","c"],["role","Class","l"],["class","Spec","l"],["guild","Guild","l"],["name","Name","l"],["parse","Parse","c"],
+const COLS=[["rank","#","c"],["weapons","Weapons","c"],["role","Class","l"],["guild","Guild","l"],["name","Name","l"],["parse","Parse","c"],
  ["defeat","Kills"],["assist","Assist"],["damage_dealt","Damage Dealt"],["tdp","Team Dmg %"],["damage_taken","Damage Taken"],["amount_healed","Amount Healed"]];
 function tdpCell(p){const v=p.tdp;if(v==null)return"<td></td>";
  const o=pq("tdp",v,"all","");const c=o?pcolor(o.q):"var(--faint)";
@@ -574,7 +589,7 @@ function tdpCell(p){const v=p.tdp;if(v==null)return"<td></td>";
 function rowHTML(p,cols){const r=p.rank,mc=r&&r<=3?` m${r}`:"";
  const fl=(p.flags||[]).length?`<span class="flag" title="Double-check this row: ${esc(p.flags.join(", "))}${p.wcheck?` · weapon check: ${esc(p.wcheck.join("; "))}`:""}${p.alts&&p.alts.name?` · other name reads: ${esc(p.alts.name.map(a=>a[0]).join(" / "))}`:""}${p.checks?` · read the same way in ${p.checks} frame(s)`:""}">⚠</span>`:"";
  const cell={rank:`<td class="c rk${mc}">${r??"?"}</td>`,
-  weapons:`<td class="c"><span class="wp">${wIcon(p.weapon1,hlW&&p.weapon1===hlW?"hl":"")}${wIcon(p.weapon2,hlW&&p.weapon2===hlW?"hl":"")}</span></td>`,
+  weapons:`<td class="c"><span class="wp"${p.class?` data-dk="class" data-dv="${esc(p.class)}" data-tip="<b>${esc(p.class)}</b>\n${esc([p.weapon1,p.weapon2].filter(realW).join(" + "))}\nClick for everyone on this spec"`:""}>${wIcon(p.weapon1,hlW&&p.weapon1===hlW?"hl":"")}${wIcon(p.weapon2,hlW&&p.weapon2===hlW?"hl":"")}</span></td>`,
   role:`<td class="l">${p.role&&!(grouped&&cols===COLS)?`<span class="pill role ${esc(p.role)}"><span class="dot"></span>${esc(p.role)}</span>`:""}</td>`,
   class:`<td class="l"><span class="job lk${/ \+ /.test(p.class)?" un":""}" data-dk="class" data-dv="${esc(p.class)}" title="Everyone on ${esc(p.class)} in this match" style="color:${ccol(p.class,p.role)}">${esc(p.class)}</span></td>`,
   guild:`<td class="l"><span class="gd lk"${p.guild?` data-dk="guild" data-dv="${esc(p.guild)}" title="Everyone in ${esc(p.guild)} in this match"`:""}>${gIcon(p.guild_icon)}${esc(p.guild)}</span></td>`,
@@ -993,7 +1008,17 @@ function openDrill(by,v){const ps=P.filter(p=>drillMatch(p,by,v));if(!ps.length)
  draw();const d=$("#drill");if(!d.open)d.showModal();$("#tip").style.display="none"}
 document.addEventListener("click",e=>{if(e.target.closest("a"))return;const el=e.target.closest("[data-dk]");if(!el||el.closest("#drill"))return;openDrill(el.dataset.dk,el.dataset.dv)});
 $("#dr-x").onclick=()=>$("#drill").close();$("#drill").addEventListener("click",e=>{if(e.target.id==="drill")$("#drill").close()});
-renderTeams();render();$("#n-gd").textContent=guildRows().length;showTab(["lb","cl","gr","gd"].includes(tab)?tab:"lb");
+/* ---------- sides compared: one row per stat, both sides in fixed columns ---------- */
+function renderVs(){const el=$("#vs");if(TT.length<2){el.hidden=true;return}const [a,b]=TT,A=D.teams[a],B=D.teams[b],ka=kdx(a),kb=kdx(b);
+ const pa=P.filter(p=>p.team===a).length,pb=P.filter(p=>p.team===b).length;
+ const R=[["Players",pa,pb,fmt],["Kills",A.defeat,B.defeat,fmt],["Assists",A.assist,B.assist,fmt],["K/D",ka.kd,kb.kd,x=>x==null?"–":x.toFixed(2)]];
+ if(HASDMG)R.push(["Damage dealt",A.damage_dealt,B.damage_dealt,short],["Damage taken",A.damage_taken,B.damage_taken,short,1],["Healing",A.amount_healed,B.amount_healed,short],
+  ["Damage / player",pa?A.damage_dealt/pa:0,pb?B.damage_dealt/pb:0,short],["Kills / player",pa?A.defeat/pa:0,pb?B.defeat/pb:0,x=>x.toFixed(1)]);
+ const ca=SIDE[a]||"var(--yellow)",cb=SIDE[b]||"var(--red)";
+ el.hidden=false;el.innerHTML=`<div class="vs-h"><span style="color:${ca}">${esc(a)}</span><span class="sec-t">Sides compared</span><span style="color:${cb}">${esc(b)}</span></div>
+<div class="vs-g">${R.map(([l,x,y,f,low])=>{x=x||0;y=y||0;const t=x+y,wa=t?100*x/t:50,win=low?(x<y?"a":x>y?"b":""):(x>y?"a":x<y?"b":"");
+  return`<div class="vs-r"><b class="vs-v ${win==="a"?"w":""}">${f(x)}</b><div class="vs-bar" data-tip="<b>${l}</b>\n${esc(a)}: ${f(x)} (${wa.toFixed(0)}%)\n${esc(b)}: ${f(y)} (${(100-wa).toFixed(0)}%)${low?"\nLower is better":""}"><i style="width:${wa}%;background:${ca}"></i><i style="width:${100-wa}%;background:${cb}"></i><span>${l}</span></div><b class="vs-v r ${win==="b"?"w":""}">${f(y)}</b></div>`}).join("")}</div>`}
+renderVs();renderTeams();render();$("#n-gd").textContent=guildRows().length;showTab(["lb","cl","gr","gd"].includes(tab)?tab:"lb");
 
 {const _rg=renderGuilds;renderGuilds=function(){_rg.apply(this,arguments);barAll()};const _rj=renderJobTable;renderJobTable=function(){_rj.apply(this,arguments);barAll()}}
 </script></body></html>
