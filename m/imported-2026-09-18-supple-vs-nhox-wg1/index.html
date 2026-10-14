@@ -4,14 +4,7 @@
 <title>Supple vs NHOX · WG 1 · Pakilo</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{
- --bg:#0d0f15;--panel:#141824;--panel2:#1a1f2d;--raise:#212739;--line:#262d3f;--line2:#323a50;
- --text:#ece9e1;--dim:#a3a092;--faint:#6f6d68;
- --gold:#d8b46a;--gold2:#f3d79b;--off:#aab3c8;
- --yellow:#e8c34f;--red:#ff6b62;--blue:#5b8de0;--green:#4fd18b;
- --pos:#4fd18b;--neg:#ff6b62;--warn:#f0a85a;
- /* class (role) colours: validated as a set on this surface (colour-blind safe) */
- --tank:#3987e5;--support:#199e70;--dps:#d95926;
+:root{--bg:#0a0a0c;--bg2:#0f0f12;--panel:#141417;--panel2:#1b1b1f;--raise:#222227;--hover:#1f1f24;--line:#26262c;--line2:#36363e;--text:#ece8e1;--dim:#a39e96;--faint:#6f6b65;--off:#bab5ad;--gold:#f0a43a;--gold2:#ffc46b;--gold-bg:rgba(240,164,58,.12);--gold-bg2:rgba(240,164,58,.07);--stripe:rgba(255,255,255,.018);--yellow:#f2c94c;--red:#ff5b57;--blue:#4c8dff;--green:#3fd17c;--tank:#6b9be6;--support:#43c08a;--dps:#ef7f45;--pos:#3fd17c;--neg:#ff5b57;--warn:#f0a85a;
  --r-s:6px;--r-m:10px;--r-l:14px;
 }
 *{box-sizing:border-box}
@@ -23,7 +16,7 @@ button,input,select{font:inherit;color:inherit}
 .num{font-variant-numeric:tabular-nums}
 
 /* ---------- top bar + tabs ---------- */
-.top{position:sticky;top:0;z-index:20;background:rgba(13,15,21,.92);backdrop-filter:blur(8px);
+.top{position:sticky;top:0;z-index:20;background:rgba(10,10,12,.92);backdrop-filter:blur(8px);
  border-bottom:1px solid var(--line)}
 .topin{max-width:1560px;margin:0 auto;padding:16px 24px 0;display:flex;flex-wrap:wrap;align-items:flex-end;gap:8px 24px}
 .ttl{flex:1 1 360px;min-width:0;padding-bottom:12px}
@@ -126,7 +119,7 @@ table.lb{border-collapse:separate;border-spacing:0;width:100%;min-width:1180px}
 .lb td.nc:hover .v{background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px currentColor;font-weight:700}
 .lb td.nc.best .v{font-weight:800}
 .pb.none{border-style:dotted;opacity:.35;color:var(--faint)}
-.mbar{display:block;height:3px;border-radius:2px;margin-top:4px;margin-left:auto;background:currentColor;opacity:.4}
+.mbar{display:block;height:2px;border-radius:1px;margin:2px 0 -4px auto;background:currentColor;opacity:.45}
 
 /* ---------- icons: HD vector weapons, every one centred in the same diamond ---------- */
 .wp{display:inline-flex;gap:6px;vertical-align:middle}
@@ -213,10 +206,9 @@ img.gi{width:20px;height:20px;object-fit:contain;border-radius:4px;flex:none}
  .tab-b{padding:10px 12px 12px}
 }
 /* ===== Warcraft Logs look (overrides) ===== */
-:root{--bg:#09090b;--panel:#141417;--panel2:#1b1b1f;--raise:#24242a;--line:#26262c;--line2:#38383f;--text:#ebe7e1;--dim:#a29d95;--faint:#6d6963;
- --gold:#f0a43a;--gold2:#ffc46b;--yellow:#f2c94c;--red:#ff5b57;--blue:#4c8dff;--green:#3fd17c;--tank:#4c8dff;--support:#3fd17c;--dps:#ff7a3d;--r-s:3px;--r-m:3px;--r-l:4px}
+:root{--r-s:3px;--r-m:3px;--r-l:4px}
 body{background:var(--bg) radial-gradient(1400px 420px at 50% -140px,rgba(240,164,58,.10),transparent 70%) no-repeat;font:13.5px/1.45 "Open Sans","Segoe UI Variable Text","Segoe UI",Inter,system-ui,"Microsoft YaHei","Malgun Gothic","Yu Gothic UI",sans-serif}
-.top{background:#000;backdrop-filter:none;border-bottom:1px solid #1f1f24;box-shadow:0 2px 14px rgba(0,0,0,.6)}
+.top{background:#000;backdrop-filter:none;border-bottom:1px solid var(--hover);box-shadow:0 2px 14px rgba(0,0,0,.6)}
 .topin{padding:0 24px;align-items:stretch;gap:0 24px;min-height:60px}
 .ttl{display:flex;flex-direction:column;justify-content:center;padding:8px 0}
 .brandl{display:inline-flex;align-items:center;gap:7px;font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;margin-bottom:2px}
@@ -227,35 +219,35 @@ body{background:var(--bg) radial-gradient(1400px 420px at 50% -140px,rgba(240,16
 h1{font-size:21px;color:#fff;letter-spacing:.005em}
 .sub{color:var(--faint);font-size:11.5px}
 .tabs{gap:0;align-items:stretch}
-.tab-b{border-radius:0;padding:0 16px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:#b9b4ac;border-bottom:2px solid transparent;margin-bottom:-1px}
-.tab-b:hover{background:#111114;color:#fff}
+.tab-b{border-radius:0;padding:0 16px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--off);border-bottom:2px solid transparent;margin-bottom:-1px}
+.tab-b:hover{background:var(--bg2);color:#fff}
 .tab-b[aria-selected=true]{color:#fff;border-bottom-color:var(--gold);background:linear-gradient(0deg,rgba(240,164,58,.13),transparent)}
-.tab-b .ct{border-radius:2px;background:#1c1c21;color:var(--gold2);letter-spacing:0}
-.card{background:linear-gradient(180deg,#17171a,#131316);border-radius:3px}
+.tab-b .ct{border-radius:2px;background:var(--panel2);color:var(--gold2);letter-spacing:0}
+.card{background:linear-gradient(180deg,var(--panel),var(--panel));border-radius:3px}
 .tc{border-top-width:2px}
 .tc h3{font-size:14px}
 .lab{color:var(--gold2);font-weight:800;letter-spacing:.11em}
-.cw{border-radius:3px}.cw.sel{border-color:var(--gold);background:#2a2118}
+.cw{border-radius:3px}.cw.sel{border-color:var(--gold);background:var(--gold-bg)}
 .pl{border-radius:2px}
 .pill{border-radius:2px;font-size:11px;letter-spacing:.03em}
 .dot{border-radius:1px;width:7px;height:7px;transform:rotate(45deg)}
-.bar{padding:8px;background:#0f0f12;border:1px solid var(--line);border-radius:3px}
-.in,.sel{background:#18181c;border-color:#303037;border-radius:3px;min-height:32px;font-size:13px}
+.bar{padding:8px;background:var(--bg2);border:1px solid var(--line);border-radius:3px}
+.in,.sel{background:var(--panel2);border-color:var(--line2);border-radius:3px;min-height:32px;font-size:13px}
 .in:focus,.sel:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 2px rgba(240,164,58,.2)}
-.seg{border-color:#303037;padding:0;overflow:hidden;background:#18181c;border-radius:3px}
-.seg button{border-radius:0;border-right:1px solid #303037;padding:6px 11px;font-size:12px;font-weight:700}.seg button:last-child{border-right:0}
-.seg button[aria-pressed=true]{background:#2a2118;color:var(--gold2);box-shadow:inset 0 -2px 0 var(--gold)}
+.seg{border-color:var(--line2);padding:0;overflow:hidden;background:var(--panel2);border-radius:3px}
+.seg button{border-radius:0;border-right:1px solid var(--line2);padding:6px 11px;font-size:12px;font-weight:700}.seg button:last-child{border-right:0}
+.seg button[aria-pressed=true]{background:var(--gold-bg);color:var(--gold2);box-shadow:inset 0 -2px 0 var(--gold)}
 .legend{font-size:11.5px}
 .chk button{border-radius:3px}
 .tw{border-radius:3px;background:var(--panel)}
-.lb th{background:#1d1d22;color:#9a958d;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:9px 10px;border-bottom:1px solid var(--line2)}
-.lb th.sorted{color:var(--gold2);background:#231f1a}
-.lb td{padding:5px 10px;border-bottom:1px solid #1c1c21}
+.lb th{background:var(--raise);color:var(--dim);font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:9px 10px;border-bottom:1px solid var(--line2)}
+.lb th.sorted{color:var(--gold2);background:var(--gold-bg2)}
+.lb td{padding:5px 10px;border-bottom:1px solid var(--panel2)}
 .lb tbody tr:nth-child(even) td{background:rgba(255,255,255,.018)}
-.lb tbody tr:hover td{background:#1f1f25}
+.lb tbody tr:hover td{background:var(--hover)}
 .lb td:first-child{box-shadow:inset 3px 0 0 var(--side,transparent)}
-.lb tr.grp td,.lb tr.grp:hover td{background:#0f0f12;padding:12px 12px 6px;border-bottom:1px solid var(--line2)}
-.lb tr.grp.job-h td,.lb tr.grp.job-h:hover td{background:#121215;padding:7px 12px 5px 28px;font-size:12.5px}
+.lb tr.grp td,.lb tr.grp:hover td{background:var(--bg2);padding:12px 12px 6px;border-bottom:1px solid var(--line2)}
+.lb tr.grp.job-h td,.lb tr.grp.job-h:hover td{background:var(--bg2);padding:7px 12px 5px 28px;font-size:12.5px}
 .lb td.bar-c{background-repeat:no-repeat!important;text-shadow:0 1px 2px #000}
 .rk{color:var(--faint)}.rk.m1{color:#e5cc80}.rk.m2{color:#c9ced6}.rk.m3{color:#d0905a}
 .nm{font-weight:700}
@@ -263,18 +255,47 @@ h1{font-size:21px;color:#fff;letter-spacing:.005em}
 .gd{color:var(--dim);vertical-align:middle}
 .pb{border-width:1px}.pb.cl,.pb.wn{border-radius:2px}.pb.jb,.pb.ov{border-radius:2px}
 .lb td.nc .v{border-radius:2px}
-svg.wi .dia{fill:#1b1b1f;stroke:var(--gold)}
+svg.wi .dia{fill:var(--panel2);stroke:var(--gold)}
 .tile{border-left-width:2px}.tile .big{color:#fff}
-.chart .grid{stroke:#232328}
+.chart .grid{stroke:var(--line)}
 .ochip,.vg a{border-radius:2px}
-.tip{background:#0b0b0d;border-color:#3a3a42;border-radius:3px;box-shadow:0 10px 28px rgba(0,0,0,.7)}
+.tip{background:var(--bg);border-color:var(--line2);border-radius:3px;box-shadow:0 10px 28px rgba(0,0,0,.7)}
 .gsec>summary{border-top-width:2px}
 .sec-t{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--gold2)}
+/* ---------- donuts + top performers ---------- */
+.pies{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px 22px;margin-top:8px}
+.pie{min-width:0}.pt{font-weight:700;font-size:12.5px;color:var(--text);margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pw{display:flex;gap:12px;align-items:center}.dn{width:132px;height:132px;flex:0 0 132px}
+.seg-p{stroke:var(--panel);stroke-width:1.2;transition:opacity .15s}.dn:hover .seg-p{opacity:.55}.dn .seg-p:hover{opacity:1}
+.dv{fill:var(--text);font-size:17px;font-weight:800;text-anchor:middle}.dl2{fill:var(--faint);font-size:9.5px;text-anchor:middle;text-transform:uppercase;letter-spacing:.08em}
+.pl2{list-style:none;margin:0;padding:0;min-width:0;flex:1;font-size:12px}
+.pl2 li{display:flex;align-items:center;gap:7px;padding:1.5px 0}.pl2 i{width:9px;height:9px;border-radius:2px;flex:0 0 9px}
+.pl2 .pn{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--dim)}.pl2 b{font-variant-numeric:tabular-nums}
+.topp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:8px}
+.tp{background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--c);border-radius:3px;padding:10px 12px}
+.tph{font-size:10.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--faint)}
+.tpv{font-size:24px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--text);display:flex;align-items:baseline;gap:8px}
+.lead{font-size:11px;font-weight:700;color:var(--pos)}
+.tpn{font-weight:800;font-size:15px;margin-top:1px}.tps{color:var(--dim);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tp:only-child{grid-column:1/-1}@media(max-width:1000px){.topp{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.topp{grid-template-columns:1fr}}
+.tpl{display:flex;flex-wrap:wrap;gap:4px 10px;margin-top:7px;font-size:11.5px;color:var(--faint)}.tpl b{color:var(--text);font-weight:700}
+/* ---------- classes tab ---------- */
+.cl-note{color:var(--faint);font-size:12px}
+.h2h{display:grid;gap:5px;margin-top:6px}
+.h2r{display:grid;grid-template-columns:76px 1fr 150px 1fr 76px;align-items:center;gap:10px;font-size:13px;padding:2px 0}
+.h2r:hover{background:var(--panel2)}
+.hb{height:14px;background:var(--panel2);display:flex;border-radius:2px;overflow:hidden}
+.hb.l{justify-content:flex-end}.hb i{display:block;height:100%;opacity:.85}
+.hk{text-align:center;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hv{font-variant-numeric:tabular-nums;color:var(--dim);text-align:right}.hv:last-child{text-align:left}.hv.w{color:var(--text);font-weight:700}
+.faint{color:var(--faint)}
+@media(max-width:700px){.h2r{grid-template-columns:52px 1fr 92px 1fr 52px;gap:6px;font-size:12px}}
 </style></head><body>
 <header class="top"><div class="topin">
  <div class="ttl"><a class="brandl" id="brandl" href="../../" hidden>Supple Stats</a><h1>Supple vs NHOX · WG 1 · Pakilo</h1><div class="sub" id="sub"></div></div>
  <nav class="tabs" role="tablist" aria-label="Views">
   <button class="tab-b" role="tab" data-t="lb" aria-selected="true">Leaderboard <span class="ct" id="n-lb"></span></button>
+  <button class="tab-b" role="tab" data-t="cl" aria-selected="false">Classes <span class="ct" id="n-cl"></span></button>
   <button class="tab-b" role="tab" data-t="gr" aria-selected="false">Graphs</button>
   <button class="tab-b" role="tab" data-t="gd" aria-selected="false">Guilds <span class="ct" id="n-gd"></span></button>
  </nav>
@@ -305,6 +326,22 @@ svg.wi .dia{fill:#1b1b1f;stroke:var(--gold)}
  <div class="tw"><table class="lb" id="lbt"><thead><tr id="hdr"></tr></thead><tbody id="body"></tbody></table></div>
 </section>
 
+<!-- ======================= CLASSES ======================= -->
+<section class="tab" id="t-cl" role="tabpanel">
+ <div class="bar">
+  <div class="seg" id="cl-by" role="group" aria-label="Group by"><button data-b="class" aria-pressed="true">Specs</button><button data-b="role" aria-pressed="false">Roles</button><button data-b="weapon" aria-pressed="false">Weapons</button></div>
+  <select class="sel" id="cl-side" aria-label="Side"><option value="">Both sides</option></select>
+  <select class="sel" id="cl-stat" aria-label="Compare by"></select>
+  <span class="sp"></span>
+  <span class="cl-note" id="cl-note"></span>
+ </div>
+ <div class="tiles" id="cl-tiles"></div>
+ <div class="card chart" style="margin-bottom:16px"><h3 class="sec-t" id="cl-pie-t">Share by spec</h3><p class="sec-s" id="cl-pie-s"></p><div class="pies" id="cl-pies"></div></div>
+ <div class="card chart" id="cl-h2h-c"><h3 class="sec-t" id="cl-h2h-t">Head to head</h3><p class="sec-s" id="cl-h2h-s"></p><div id="cl-h2h"></div></div>
+ <div class="card chart" style="margin-top:16px"><h3 class="sec-t" id="cl-tt">Combined totals</h3><p class="sec-s" id="cl-ts">Every player of the group added together. Click a header to sort.</p>
+  <div class="tw"><table class="lb" id="clt" style="min-width:1000px"><thead><tr id="clhdr"></tr></thead><tbody id="clbody"></tbody></table></div></div>
+</section>
+
 <!-- ======================= GRAPHS ======================= -->
 <section class="tab" id="t-gr" role="tabpanel">
  <div class="bar">
@@ -316,7 +353,9 @@ svg.wi .dia{fill:#1b1b1f;stroke:var(--gold)}
   <span class="sp"></span>
   <div class="legend" style="margin:0"><span class="k"><span class="dot" style="--c:var(--tank)"></span>Tank</span><span class="k"><span class="dot" style="--c:var(--support)"></span>Support</span><span class="k"><span class="dot" style="--c:var(--dps)"></span>DPS</span></div>
  </div>
- <div class="tiles" id="tiles"></div>
+ <div class="card chart"><h3 class="sec-t">Top performers</h3><p class="sec-s">The best player for each stat in the current filter, with the rest of their line.</p><div class="topp" id="topp"></div></div>
+ <div class="tiles" id="tiles" style="margin-top:16px"></div>
+ <div class="card chart" style="margin-bottom:16px"><h3 class="sec-t" id="pie-t">Share of the fight</h3><p class="sec-s" id="pie-s"></p><div class="pies" id="pies"></div></div>
  <div class="card chart"><h3 class="sec-t" id="c1t"></h3><p class="sec-s">One row per spec, one dot per player. Players with similar numbers bunch together, the shaded band is the typical range (middle half) with the median line. <b>Ringed, named dots are outliers</b> – far above ▲ or below ▼ the rest of their spec. Specs with fewer than 5 players aren't judged.</p><div id="c1"></div>
  <div class="card chart" id="stand"></div></div>
  <div class="g2">
@@ -335,6 +374,7 @@ svg.wi .dia{fill:#1b1b1f;stroke:var(--gold)}
   <span class="sp"></span>
   <div class="seg" role="group" aria-label="Expand"><button id="g-open" aria-pressed="false">Expand all</button><button id="g-close" aria-pressed="false">Collapse all</button></div>
  </div>
+ <div class="card chart" id="gpies-c" style="margin-bottom:16px"><h3 class="sec-t">Guilds compared</h3><p class="sec-s">Each guild's combined numbers as a share of the match. Guilds on the same side share a colour family (hover for the side).</p><div class="pies" id="gpies"></div></div>
  <div class="tw"><table class="lb gt" id="gtab" style="min-width:980px"><thead><tr id="ghdr"></tr></thead><tbody id="gbody"></tbody></table></div>
  <div id="gsecs"></div>
 </section>
@@ -388,7 +428,7 @@ let tab=store.get("lbTab")||"lb";
 function showTab(t){tab=t;store.set("lbTab",t);
  $$(".tab-b").forEach(b=>b.setAttribute("aria-selected",b.dataset.t===t));
  $$(".tab").forEach(s=>s.classList.toggle("on",s.id==="t-"+t));
- if(t==="gr")renderGraphs();if(t==="gd")renderGuilds();}
+ if(t==="gr")renderGraphs();if(t==="gd")renderGuilds();if(t==="cl")renderClasses();}
 $$(".tab-b").forEach(b=>b.onclick=()=>showTab(b.dataset.t));
 
 /* ---------- HD weapon icons (vector, auto-centred) ---------- */
@@ -631,8 +671,45 @@ function placeLabels(items,dots,x0,x1){const boxes=[],res=[];
 function gPlayers(){const t=$("#g-team").value,r=$("#g-role").value;return P.filter(p=>(!t||p.team===t)&&(!r||p.role===r))}
 function jobGroups(ps){const m={};ps.forEach(p=>{if(!p.class)return;(m[p.class]??={job:p.class,ps:[],roles:{}}).ps.push(p);m[p.class].roles[p.role]=(m[p.class].roles[p.role]||0)+1});
  return Object.values(m).map(g=>({...g,role:Object.entries(g.roles).sort((a,b)=>b[1]-a[1])[0][0]}))}
+/* ---------- donut charts ---------- */
+function topN(items,n){items=items.filter(i=>i.v>0).sort((a,b)=>b.v-a.v);if(items.length<=n)return items;
+ const rest=items.slice(n-1);return[...items.slice(0,n-1),{label:`Other (${rest.length})`,v:rest.reduce((a,b)=>a+b.v,0),c:"var(--faint)",tip:rest.slice(0,12).map(i=>i.label+" "+short(i.v)).join("\n")}]}
+function donut(title,items,sub){const tot=items.reduce((a,b)=>a+b.v,0),seen={};
+ items=items.map(it=>{const n=seen[it.c]=(seen[it.c]||0)+1;return n===1||it.c==="var(--faint)"?it:{...it,c:`color-mix(in srgb,${it.c} ${n%2?55:62}%,${n%2?"#000":"#fff"})`}});
+ if(!tot)return`<div class="pie"><div class="pt">${esc(title)}</div><div class="empty">No data</div></div>`;
+ const R=62,r=40,C=70;let a0=-Math.PI/2,segs="";
+ const pt=(rad,a)=>`${(C+rad*Math.cos(a)).toFixed(2)} ${(C+rad*Math.sin(a)).toFixed(2)}`;
+ items.forEach(it=>{const f=it.v/tot,a1=a0+2*Math.PI*Math.min(f,.9999),big=f>.5?1:0;
+  const tip=`<b>${esc(it.label)}</b>\n${short(it.v)} · ${(100*f).toFixed(1)}%${it.tip?"\n"+esc(it.tip):""}`;
+  segs+=`<path class="seg-p" d="M${pt(R,a0)}A${R} ${R} 0 ${big} 1 ${pt(R,a1)}L${pt(r,a1)}A${r} ${r} 0 ${big} 0 ${pt(r,a0)}Z" fill="${it.c}" data-tip="${tip}"/>`;a0=a0+2*Math.PI*f});
+ return`<div class="pie"><div class="pt">${esc(title)}</div><div class="pw"><svg viewBox="0 0 140 140" class="dn">${segs}<text x="70" y="66" class="dv">${short(tot)}</text><text x="70" y="84" class="dl2">total</text></svg>
+<ul class="pl2">${items.map(it=>`<li data-tip="<b>${esc(it.label)}</b>\n${short(it.v)} · ${(100*it.v/tot).toFixed(1)}%${it.tip?"\n"+esc(it.tip):""}"><i style="background:${it.c}"></i><span class="pn">${esc(it.label)}</span><b>${(100*it.v/tot).toFixed(0)}%</b></li>`).join("")}</ul></div></div>`}
+const sideCol=t=>SIDE[t]||"var(--dim)";
+function sharePies(ps,k,lab){const out=[],sides=[...new Set(ps.map(p=>p.team))].filter(Boolean),v=p=>p[k]||0;
+ const bySpec=list=>{const m={};list.forEach(p=>{const key=p.class||"Unknown";(m[key]??={label:key,v:0,c:ccol(p.class,p.role)}).v+=v(p)});return topN(Object.values(m),8)};
+ if(sides.length>1)out.push(donut(`${lab} by side`,sides.map(t=>({label:t,v:ps.filter(p=>p.team===t).reduce((a,p)=>a+v(p),0),c:sideCol(t)})),lab.toLowerCase()));
+ sides.forEach(t=>out.push(donut(`${t} · ${lab.toLowerCase()} by spec`,bySpec(ps.filter(p=>p.team===t)),lab.toLowerCase())));
+ out.push(donut(`${lab} by role`,ROLES.map(r=>({label:r,v:ps.filter(p=>p.role===r).reduce((a,p)=>a+v(p),0),c:RCOL[r]})),lab.toLowerCase()));
+ const gm={};ps.forEach(p=>{if(!p.guild)return;(gm[p.guild]??={label:p.guild,v:0,c:sideCol(p.team)}).v+=v(p)});
+ const gi=topN(Object.values(gm),7).map((g,i)=>({...g,c:g.c==="var(--faint)"?g.c:`color-mix(in srgb,${g.c} ${100-i*11}%,var(--panel2))`}));
+ if(gi.length>1)out.push(donut(`${lab} by guild`,gi,lab.toLowerCase()));
+ return out.join("")}
+/* ---------- top performers ---------- */
+function topPerf(ps){const stats=[["defeat","Most kills"],["damage_dealt","Most damage"],["tdp","Biggest team dmg share"],["assist","Most assists"],["amount_healed","Most healing"],["damage_taken","Most damage taken"]]
+  .filter(([k])=>ps.some(p=>p[k]));
+ const sideRank=(p,k)=>{const s=ps.filter(q=>q.team===p.team).sort((a,b)=>(b[k]||0)-(a[k]||0));return s.indexOf(p)+1};
+ return stats.map(([k,h])=>{const p=ps.slice().sort((a,b)=>(b[k]||0)-(a[k]||0))[0];if(!p)return"";const c=ccol(p.class,p.role);
+  const val=k==="tdp"?p.tdp.toFixed(1)+"%":["damage_dealt","damage_taken","amount_healed"].includes(k)?short(p[k]):fmt(p[k]);
+  const second=ps.slice().sort((a,b)=>(b[k]||0)-(a[k]||0))[1],lead=second&&second[k]?((p[k]/second[k]-1)*100):null;
+  const line=[["K",p.defeat,fmt],["A",p.assist,fmt],["Dmg",p.damage_dealt,short],["Taken",p.damage_taken,short],["Heal",p.amount_healed,short]].filter(x=>x[1]!=null).map(([l,v,f])=>`<span>${l} <b>${f(v)}</b></span>`).join("");
+  return`<div class="tp" style="--c:${c};--s:${sideCol(p.team)}"><div class="tph">${h}</div><div class="tpv">${val}${lead!=null&&lead>0?`<span class="lead" data-tip="Ahead of the next best (${esc(second.name)}) by ${lead.toFixed(0)}%">+${lead.toFixed(0)}%</span>`:""}</div>
+<div class="tpn" style="color:${c}">${esc(p.name)}</div><div class="tps">${esc(p.class||p.role||"")}${p.guild?" · "+esc(p.guild):""} · <span style="color:${sideCol(p.team)}">${esc(p.team||"")}</span></div>
+<div class="tpl">${line}${p.tdp!=null&&k!=="tdp"?`<span>Team dmg <b>${p.tdp.toFixed(1)}%</b></span>`:""}<span>#${sideRank(p,k)} on side</span></div></div>`}).join("")}
 function renderGraphs(){
  const ps=gPlayers(),k=$("#g-metric").value,lab=NLAB[k];const avg=a=>a.length?a.reduce((x,y)=>x+y,0)/a.length:0;
+ $("#topp").innerHTML=topPerf(ps);
+ $("#pie-t").textContent=`Share of the fight · ${lab}`;$("#pie-s").textContent="Who the "+lab.toLowerCase()+" came from: each side, each side's specs, the roles and the guilds. Hover a slice for the number.";
+ $("#pies").innerHTML=sharePies(ps,k,lab);
  // tiles
  $("#tiles").innerHTML=ROLES.map(r=>{const rs=ps.filter(p=>p.role===r);const v=rs.map(p=>p[k]||0);
   return`<div class="card tile" style="--c:${RCOL[r]}"><div class="h"><span class="dot" style="--c:${RCOL[r]}"></span>${r}</div>
@@ -754,7 +831,16 @@ function guildRows(){const m={};P.forEach(p=>{const g=p.guild||"(no guild)",key=
  const o=m[key]??={guild:g,team:p.team||"",ps:[],icon:p.guild_icon,players:0,...Object.fromEntries(NUM.map(k=>[k,0]))};
  o.ps.push(p);o.players++;NUM.forEach(k=>o[k]+=p[k]||0)});
  return Object.values(m).map(o=>({...o,avg:o.damage_dealt/o.players}))}
-function renderGuilds(){
+const GPAL=[["#f2c94c","#ff9f43","#e3e36b","#c99a3c","#ffd98a"],["#ff5b57","#ff6fae","#c94a6e","#ff8f70","#b84040"],["#4c8dff","#36cfc9","#7f8cff","#5fb4ff"],["#3fd17c","#a3e05a","#2fae8e"]];
+function guildPies(){const gs={};P.forEach(p=>{if(!p.guild)return;const g=gs[p.guild]??={name:p.guild,team:p.team,n:0,defeat:0,damage_dealt:0,amount_healed:0,damage_taken:0};
+  g.n++;["defeat","damage_dealt","amount_healed","damage_taken"].forEach(k=>g[k]+=p[k]||0)});
+ const L=Object.values(gs).sort((a,b)=>b.damage_dealt-a.damage_dealt||b.defeat-a.defeat||b.n-a.n);
+ if(L.length<2){$("#gpies-c").hidden=true;return}$("#gpies-c").hidden=false;
+ const col={},used={};L.forEach(g=>{const si=Math.max(0,TT.indexOf(g.team)),pal=GPAL[si%GPAL.length],i=used[si]=(used[si]||0);used[si]++;col[g.name]=pal[i%pal.length]});
+ const mk=(k,t)=>{const it=L.map(g=>({label:g.name,v:k==="n"?g.n:g[k],c:col[g.name],tip:g.team?"Side: "+g.team:""}));
+  return it.some(x=>x.v>0)?donut(t,topN(it,9),""):""};
+ $("#gpies").innerHTML=[mk("damage_dealt","Damage dealt by guild"),mk("defeat","Kills by guild"),mk("n","Players by guild"),mk("amount_healed","Healing by guild")].join("")}
+function renderGuilds(){guildPies();
  const q=$("#gq").value.trim().toLowerCase(),tf=$("#gd-team").value;
  let G=guildRows().filter(o=>(!tf||o.team===tf)&&(!q||o.guild.toLowerCase().includes(q)||o.ps.some(p=>(p.name||"").toLowerCase().includes(q))));
  G.sort(sorter(gSort,gAsc));$("#n-gd").textContent=guildRows().length;
@@ -797,7 +883,69 @@ const vodSite=u=>{try{const h=new URL(u).host.replace(/^www\./,"");return/youtu/
 (function(){const vs=(D.meta.vods||[]).filter(v=>/^https?:\/\//i.test(v.url));if(!vs.length)return;
  const el=$("#vods");el.hidden=false;
  el.innerHTML=`<h3>VODs &amp; clips</h3><div class="vg">${vs.map(v=>`<a href="${esc(vodHref(v))}" target="_blank" rel="noopener noreferrer"><i>${esc(vodSite(v.url))}</i>${esc(v.label||"Watch")}${v.time?` <small>@ ${esc(v.time)}</small>`:""}</a>`).join("")}</div>`})();
-renderTeams();render();$("#n-gd").textContent=guildRows().length;showTab(["lb","gr","gd"].includes(tab)?tab:"lb");
+/* ---------- classes: combined totals per spec / role / weapon ---------- */
+const CLC=[["players","Players"],["defeat","Kills"],["kpp","Kills / player"],["assist","Assists"],["damage_dealt","Damage"],["share","Dmg share"],["dpp","Dmg / player"],["damage_taken","Taken"],["amount_healed","Healed"]];
+const CLLAB=Object.fromEntries(CLC);
+const CS={by:store.get("clBy")||"class",side:"",sort:store.get("clSort")||(D.meta&&D.meta.siege?"defeat":"damage_dealt"),dir:-1};
+const clKeys=(p,by)=>by==="role"?[p.role||"Unknown"]:by==="weapon"?[p.weapon1,p.weapon2].filter(realW):[p.class||"Unknown"];
+const clBase=k=>k==="kpp"?"defeat":k==="dpp"||k==="share"||k==="players"?"damage_dealt":k;
+function clGroups(ps,by){const m={},tot=ps.reduce((a,p)=>a+(p.damage_dealt||0),0);
+ ps.forEach(p=>clKeys(p,by).forEach(k=>{const g=m[k]??={key:k,ps:[],rc:{}};g.ps.push(p);g.rc[p.role||""]=(g.rc[p.role||""]||0)+1}));
+ return Object.values(m).map(g=>{const o={key:g.key,ps:g.ps,players:g.ps.length};NUM.forEach(f=>o[f]=g.ps.reduce((a,p)=>a+(p[f]||0),0));
+  o.kpp=o.players?o.defeat/o.players:0;o.dpp=o.players?o.damage_dealt/o.players:0;o.share=tot?100*o.damage_dealt/tot:0;
+  o.role=by==="role"?g.key:Object.entries(g.rc).sort((a,b)=>b[1]-a[1])[0][0];return o})}
+const clCol=(g,by)=>by==="role"?(RCOL[g.key]||"var(--dim)"):by==="weapon"?ccol(g.key,g.role):ccol(g.key,g.role);
+const clShort=(g,k)=>["damage_dealt","damage_taken","amount_healed"].includes(k)?short(g[k]):clVal(g,k);
+const clVal=(g,k)=>k==="kpp"?g.kpp.toFixed(1):k==="share"?g.share.toFixed(1)+"%":k==="dpp"?short(g.dpp):k==="players"?fmt(g.players):fmt(g[k]);
+const clName=by=>by==="role"?"Role":by==="weapon"?"Weapon":"Spec";
+function clTop(g,k){const b=clBase(k);let t=null;g.ps.forEach(p=>{if(!t||(p[b]||0)>(t[b]||0))t=p});return t}
+function renderClasses(){
+ const by=CS.by,side=$("#cl-side").value,ps=side?P.filter(p=>p.team===side):P;
+ $$("#cl-by button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.b===by));
+ const cols=CLC.filter(([k])=>k==="players"||k==="kpp"||k==="dpp"||k==="share"?true:P.some(p=>p[k]));
+ if(!cols.some(c=>c[0]===CS.sort))CS.sort="damage_dealt";
+ $("#cl-note").textContent=by==="weapon"?"Each player counts once for each of their two weapons, so weapon shares add up to about 200%.":"";
+ const G=clGroups(ps,by),K=CS.sort,num=g=>K==="players"?g.players:g[K]||0;
+ G.sort((a,b)=>CS.dir*(num(a)-num(b))||b.players-a.players);
+ // highlight tiles
+ const big=G.filter(g=>g.players>=Math.min(3,Math.max(1,...G.map(x=>x.players))));
+ const pick=(arr,f)=>arr.slice().sort((a,b)=>f(b)-f(a))[0];
+ const T=[["Most damage",pick(G,g=>g.damage_dealt),g=>short(g.damage_dealt)+" · "+g.share.toFixed(1)+"% of "+(side?"side":"all")+" damage"],
+  ["Most kills",pick(G,g=>g.defeat),g=>fmt(g.defeat)+" kills · "+g.kpp.toFixed(1)+" per player"],
+  ["Most played",pick(G,g=>g.players),g=>g.players+" players · "+(ps.length?Math.round(100*g.players/ps.length):0)+"%"],
+  ["Hardest hitting",pick(big,g=>g.dpp),g=>short(g.dpp)+" damage per player"]].filter(t=>t[1]&&(t[0]!=="Most kills"||t[1].defeat));
+ $("#cl-tiles").innerHTML=T.map(([h,g,f])=>`<div class="card tile" style="--c:${clCol(g,by)}"><div class="h"><span class="s">${h}</span></div><div class="big" style="color:${clCol(g,by)}">${esc(g.key)}</div><div class="s">${f(g)}</div></div>`).join("");
+ { const b=clBase(K),lb=NLAB[b]||"Damage Dealt",sides=side?[side]:TT,m=t=>{const o={};P.filter(p=>p.team===t).forEach(p=>clKeys(p,by).forEach(key=>{(o[key]??={label:key,v:0,c:by==="role"?(RCOL[key]||"var(--dim)"):ccol(key,p.role)}).v+=p[b]||0}));return topN(Object.values(o),8)};
+  $("#cl-pie-t").textContent=`${lb} by ${clName(by).toLowerCase()}`;$("#cl-pie-s").textContent=`How each side's ${lb.toLowerCase()} splits between ${clName(by).toLowerCase()}s.`;
+  $("#cl-pies").innerHTML=sides.map(t=>donut(t,m(t),lb.toLowerCase())).join("")+(by!=="role"?donut(`${side||"Both sides"} · by role`,ROLES.map(r=>({label:r,v:(side?P.filter(p=>p.team===side):P).filter(p=>p.role===r).reduce((a,p)=>a+(p[b]||0),0),c:RCOL[r]})),lb.toLowerCase()):""); }
+ // head to head (two sides, per group, chosen stat)
+ const sides=TT.slice(0,2);
+ if(sides.length===2&&!side){
+  const A=clGroups(P.filter(p=>p.team===sides[0]),by),B=clGroups(P.filter(p=>p.team===sides[1]),by),keys=[...new Set([...A,...B].map(g=>g.key))];
+  const ga=Object.fromEntries(A.map(g=>[g.key,g])),gb=Object.fromEntries(B.map(g=>[g.key,g]));
+  const rows=keys.map(k=>({k,a:ga[k],b:gb[k],va:ga[k]?num(ga[k]):0,vb:gb[k]?num(gb[k]):0})).filter(r=>r.va||r.vb).sort((x,y)=>(y.va+y.vb)-(x.va+x.vb)).slice(0,14);
+  const mx=Math.max(1,...rows.map(r=>Math.max(r.va,r.vb))),ca=SIDE[sides[0]]||"var(--yellow)",cb=SIDE[sides[1]]||"var(--red)";
+  $("#cl-h2h-t").textContent=`Head to head · ${CLLAB[K]} by ${clName(by).toLowerCase()}`;
+  $("#cl-h2h-s").innerHTML=`<span style="color:${ca}">${esc(sides[0])}</span> on the left, <span style="color:${cb}">${esc(sides[1])}</span> on the right. The longer bar won that ${clName(by).toLowerCase()}.`;
+  $("#cl-h2h").innerHTML=`<div class="h2h">${rows.map(r=>{const w1=100*r.va/mx,w2=100*r.vb/mx,c=clCol(r.a||r.b,by);
+   return`<div class="h2r" data-tip="<b>${esc(r.k)}</b>\n${esc(sides[0])}: ${r.a?clVal(r.a,K):"–"} (${r.a?r.a.players:0} pl)\n${esc(sides[1])}: ${r.b?clVal(r.b,K):"–"} (${r.b?r.b.players:0} pl)">
+<span class="hv${r.va>r.vb?" w":""}">${r.a?clShort(r.a,K):"–"}</span><span class="hb l"><i style="width:${w1}%;background:${ca}"></i></span>
+<span class="hk" style="color:${c}">${esc(r.k)}</span><span class="hb r"><i style="width:${w2}%;background:${cb}"></i></span><span class="hv${r.vb>r.va?" w":""}">${r.b?clShort(r.b,K):"–"}</span></div>`}).join("")}</div>`;
+  $("#cl-h2h-c").hidden=!rows.length}else $("#cl-h2h-c").hidden=true;
+ // totals table
+ $("#cl-tt").textContent=`Combined totals by ${clName(by).toLowerCase()}${side?" · "+side:""}`;
+ $("#clhdr").innerHTML=`<th class="l">${clName(by)}</th>`+(by==="role"?"":`<th class="l">Role</th>`)+cols.map(([k,l])=>`<th data-k="${k}" class="${k===K?"sorted":""}">${l}</th>`).join("")+`<th class="l">Top player</th>`;
+ $("#clbody").innerHTML=G.map(g=>{const c=clCol(g,by),t=clTop(g,K),b=clBase(K);
+  return`<tr data-cc="${c}"><td class="l"><b style="color:${c}">${esc(g.key)}</b></td>${by==="role"?"":`<td class="l"><span class="dot" style="--c:${RCOL[g.role]||"var(--faint)"}"></span> ${esc(g.role||"–")}</td>`}
+${cols.map(([k])=>`<td class="num${k===K?" srt":""}">${clVal(g,k)}</td>`).join("")}<td class="l">${t?`<span style="color:${ccol(t.class,t.role)}">${esc(t.name)}</span> <span class="faint">${b==="damage_dealt"?short(t[b]):fmt(t[b]||0)}</span>`:"–"}</td></tr>`}).join("");
+ $$("#clhdr th[data-k]").forEach(th=>th.onclick=()=>{const k=th.dataset.k;CS.dir=CS.sort===k?-CS.dir:-1;CS.sort=k;store.set("clSort",k);$("#cl-stat").value=k;renderClasses()});
+ barify($("#clt"),"damage_dealt")}
+(function(){const st=$("#cl-stat");st.innerHTML=CLC.map(([k,l])=>`<option value="${k}">Compare by: ${l}</option>`).join("");st.value=CS.sort;
+ st.onchange=()=>{CS.sort=st.value;CS.dir=-1;store.set("clSort",CS.sort);renderClasses()};
+ $("#cl-side").innerHTML+=TT.map(t=>`<option value="${esc(t)}">${esc(t)} only</option>`).join("");$("#cl-side").onchange=renderClasses;
+ $$("#cl-by button").forEach(b=>b.onclick=()=>{CS.by=b.dataset.b;store.set("clBy",CS.by);renderClasses()});
+ $("#n-cl").textContent=new Set(P.map(p=>p.class).filter(Boolean)).size||""})();
+renderTeams();render();$("#n-gd").textContent=guildRows().length;showTab(["lb","cl","gr","gd"].includes(tab)?tab:"lb");
 
 {const _rg=renderGuilds;renderGuilds=function(){_rg.apply(this,arguments);barAll()};const _rj=renderJobTable;renderJobTable=function(){_rj.apply(this,arguments);barAll()}}
 </script></body></html>
