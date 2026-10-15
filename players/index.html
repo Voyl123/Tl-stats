@@ -564,10 +564,11 @@ async function vAdmin(){
  admNav();
  const GL=ADM.games||[];const gs=AS.g?GL.filter(g=>g.id===AS.g):GL;
  const A=new Map();const pair=new Map();let dTot=0;
- const CM={},CK={},CD={};
+ const CM={},CK={},CD={},CS={red:{CM:{},CK:{},CD:{}},yellow:{CM:{},CK:{},CD:{}}};
  gs.forEach(g=>(g.p||[]).forEach(([n,gu,tm,cl,ro,kills,de,K,Dt,KC,DC])=>{const k=key(n);if(!k)return;
   let a=A.get(k);if(!a){a={k,n,gu,cl,ro,g:0,ki:0,de:0,dg:0,K:{},Dt:{},KC:{},DC:{},h:[]};A.set(k,a)}
-  const kc=cl||"?";for(const[v,c]of Object.entries(KC||{})){a.KC[v]=(a.KC[v]||0)+c;(CM[kc]??={})[v]=(CM[kc][v]||0)+c;CK[kc]=(CK[kc]||0)+c;CD[v]=(CD[v]||0)+c}
+  const kc=cl||"?",ts=CS[String(tm||"").toLowerCase()];for(const[v,c]of Object.entries(KC||{})){a.KC[v]=(a.KC[v]||0)+c;(CM[kc]??={})[v]=(CM[kc][v]||0)+c;CK[kc]=(CK[kc]||0)+c;CD[v]=(CD[v]||0)+c;
+   if(ts){(ts.CM[kc]??={})[v]=(ts.CM[kc][v]||0)+c;ts.CK[kc]=(ts.CK[kc]||0)+c;ts.CD[v]=(ts.CD[v]||0)+c}}
   for(const[v,c]of Object.entries(DC||{}))a.DC[v]=(a.DC[v]||0)+c;
   a.g++;a.ki+=kills||0;if(de!=null){a.de+=de;a.dg++;dTot+=de}if(gu)a.gu=gu;if(cl){a.cl=cl;a.ro=ro}
   for(const[v,c]of Object.entries(K||{})){a.K[v]=(a.K[v]||0)+c;const pk2=n+"\u0000"+v;pair.set(pk2,(pair.get(pk2)||0)+c)}
@@ -583,7 +584,7 @@ async function vAdmin(){
  <div id="asel"></div>
  <h2>Deaths <small class="g">click a player for who they killed and who killed them</small></h2><div class="tw"><table id="at"></table></div><div class="more" id="amore"></div>
  <h2 id="afd-h">Kill feed <small class="g" id="afd-s"></small></h2><div class="tw"><table id="afd"></table></div><div class="more" id="afd-more"></div>
- <h2 style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">Who killed which class <span class="seg" id="acm-sw"><button data-m="k">⚔ Killer → victims</button><button data-m="v">🛡 Victim ← killers</button></span><small class="g" id="acm-sub"></small></h2><div class="tw" id="acm"></div>
+ <h2 style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">Who killed which class <span class="seg" id="acm-sw"><button data-m="k">⚔ Killer → victims</button><button data-m="v">🛡 Victim ← killers</button></span><span class="seg" id="acm-sd"><button data-s="">Both sides</button><button data-s="red" style="color:#ff6b6b">Red's kills</button><button data-s="yellow" style="color:#f0d33a">Yellow's kills</button></span><small class="g" id="acm-sub"></small></h2><div class="tw" id="acm"></div>
  <h2>Who killed who <small class="g">killer → victim, from the kill feed</small></h2><div class="tw"><table id="apt"></table></div><div class="more" id="apmore"></div>`;
  const cols=[["name","Player","l",a=>a.n.toLowerCase()],["cls","Class","l",a=>a.cl||"~"],["g","Games","",a=>a.g],["k","Kills","",a=>a.ki],["de","Deaths","",a=>a.dg?a.de:-1],
   ["kd","K/D","",a=>a.dg?(a.de?a.ki/a.de:a.ki):-1],["dpg","Deaths / game","",a=>a.dg?a.de/a.dg:-1],["tk","Killed most by","l",a=>(top(a.Dt)[0]||[""])[0].toLowerCase()||"~"]];
@@ -613,7 +614,10 @@ async function vAdmin(){
   bindSort($("#apt"),AS.ps,draw)};
  $("#ag").onchange=e=>{AS.g=e.target.value;AS.sel="";vAdmin()};$("#aq").oninput=e=>{AS.q=e.target.value;AS.n=150;draw();drawFD()};
  $("#alock").onclick=()=>{admPw.clear();ADM=null;document.querySelector('nav a[data-v=admin]')?.remove();vAdmin()};
- const drawCM=()=>{if(!Object.keys(CK).length){$("#acm").innerHTML=`<p class="empty">No class data yet.</p>`;return}
+ const drawCM=()=>{const SD=AS.csd&&CS[AS.csd]?CS[AS.csd]:{CM,CK,CD};
+  document.querySelectorAll("#acm-sd button").forEach(b=>{b.classList.toggle("on",(b.dataset.s||"")===(AS.csd||""));b.onclick=()=>{AS.csd=b.dataset.s;AS.cs="tot";drawCM()}});
+  {const CM=SD.CM,CK=SD.CK,CD=SD.CD;
+  if(!Object.keys(CK).length){$("#acm").innerHTML=`<p class="empty">No class data for this side.</p>`;return}
   const fl=AS.cf==="v";                       // flipped: rows = victim class, columns = the classes that killed it
   const T={};if(fl){for(const[k,m]of Object.entries(CM))for(const[v,n]of Object.entries(m||{}))(T[v]??={})[k]=n}else Object.assign(T,CM);
   const RT=fl?CD:CK,CT=fl?CK:CD,rk=fl?"vv":"kk",ck=fl?"kk":"vv",col=fl?"74,155,232":"229,62,62";
@@ -631,7 +635,7 @@ async function vAdmin(){
    <tr class="vh">${cols.map(v=>`<th data-x="${esc(v)}" class="vc${so===v?" on":""}" title="Sort by ${esc(v)}">${aIco(v)}<span>${esc(v)}</span></th>`).join("")}<th data-x="tot" class="kt k1${so==="tot"?" on":""}" title="Sort by total">${L.n}</th><th class="l kt">${L.most}</th></tr></thead><tbody>${rows.map(r=>{const m=T[r]||{},t=top(m)[0];
    return`<tr><td class="l rh">${ico(r)}</td>${cols.map(v=>{const n=m[v]||0;return`<td title="${esc(L.cell(r,v,n))}" style="${n?`background:rgba(${col},${(0.08+0.62*n/mx).toFixed(2)})`:"color:var(--faint)"}">${n||"·"}</td>`}).join("")}<td class="kt k1"><b>${nf(RT[r])}</b></td><td class="l kt">${t?`${aIco(t[0])} ×${t[1]}`:""}</td></tr>`}).join("")}
    <tr class="tot"><td class="l rh cf">${L.foot}</td>${cols.map(v=>`<td class="vc">${nf(CT[v])}</td>`).join("")}<td class="kt k1"></td><td class="kt"></td></tr></tbody></table>`;
-  document.querySelectorAll("#acm th[data-x]").forEach(th=>th.onclick=()=>{AS.cs=th.dataset.x;drawCM()})};
+  document.querySelectorAll("#acm th[data-x]").forEach(th=>th.onclick=()=>{AS.cs=th.dataset.x;drawCM()})}};
  drawCM();
  // the kill feed itself: one game -> every kill; all games -> every kill of the selected player
  const drawFD=()=>{const one=!!AS.g,clsOf=g=>{const m={};(g.p||[]).forEach(e=>{if(e[0]&&!(e[0] in m))m[e[0]]=e[3]||""});return m};
@@ -664,7 +668,7 @@ function route(){const f=$("#fab");if(f&&!location.hash.match(/^#\/?$/))f.remove
  window.scrollTo(0,0)}
 addEventListener("hashchange",route);route();
 /* a newer upload replaces a cached copy of the site */
-const BUILD="090dbe74408e";let vAt=0;
+const BUILD="783337f6b603";let vAt=0;
 function vchk(){const n=Date.now();if(n-vAt<30000)return;vAt=n;
  fetch(ROOT+"version.txt?"+n,{cache:"no-store"}).then(r=>r.ok?r.text():"").then(v=>{v=(v||"").trim();
   if(!v||v===BUILD||new URLSearchParams(location.search).get("v")===v)return;
