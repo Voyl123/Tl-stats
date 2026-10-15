@@ -97,19 +97,20 @@ table.gh{width:100%;table-layout:fixed}table.gh td{padding:5px 6px;white-space:n
 .acm th.l,.acm td.l{text-align:left;white-space:nowrap}.acm th{cursor:pointer;font-weight:600;color:var(--dim)}
 .acm th.vh span{writing-mode:vertical-rl;transform:rotate(180deg);display:inline-block;white-space:nowrap}.acm th.on{text-decoration:underline}
 .acm tr.tot td{color:var(--dim)}
-.acm{--kc:#e53e3e;--vc:#4a9be8}.acm td.rh{border-right:2px solid var(--kc);background:color-mix(in srgb,var(--kc) 5%,transparent)}
+#acm-sw button{text-transform:none;letter-spacing:0}#acm-sw button[data-m=k].on{color:#ff6b6b;background:rgba(229,62,62,.16);box-shadow:inset 0 -2px 0 #e53e3e}#acm-sw button[data-m=v].on{color:#6fb3f2;background:rgba(74,155,232,.16);box-shadow:inset 0 -2px 0 #4a9be8}
+.acm{--kc:#e53e3e;--vc:#4a9be8;--rc:var(--kc);--cc:var(--vc)}.acm.fl{--rc:var(--vc);--cc:var(--kc)}.acm td.rh{border-right:2px solid var(--rc);background:color-mix(in srgb,var(--rc) 5%,transparent)}
 .acm .cn{font-size:11.5px;color:var(--text);margin-left:4px}
 .acm tr.band th{font-size:10.5px;letter-spacing:.08em;font-weight:700;cursor:default;padding:5px 6px;text-decoration:none}
-.acm th.vband{color:var(--vc);background:color-mix(in srgb,var(--vc) 14%,transparent);border-bottom:2px solid var(--vc)}
-.acm th.kband{color:var(--kc);background:color-mix(in srgb,var(--kc) 12%,transparent)}
+.acm th.cband{color:var(--cc);background:color-mix(in srgb,var(--cc) 14%,transparent);border-bottom:2px solid var(--cc)}
+.acm th.rband{color:var(--rc);background:color-mix(in srgb,var(--rc) 12%,transparent)}
 .acm th.side{writing-mode:vertical-rl;transform:rotate(180deg);font-size:10.5px;letter-spacing:.08em;padding:8px 4px;border-left:2px solid var(--kc);border-bottom:none;cursor:default;width:22px}
-.acm th.corner{cursor:default;font-size:11px;text-align:left;vertical-align:bottom;border-bottom:2px solid var(--vc)}
+.acm th.corner{cursor:default;font-size:11px;text-align:left;vertical-align:bottom;border-bottom:2px solid var(--cc)}
 .acm .kk{color:var(--kc);font-weight:700}.acm .vv{color:var(--vc);font-weight:700}
-.acm tr.vh th{vertical-align:bottom;border-bottom:2px solid var(--vc);background:color-mix(in srgb,var(--vc) 6%,transparent)}
+.acm tr.vh th{vertical-align:bottom;border-bottom:2px solid var(--cc);background:color-mix(in srgb,var(--cc) 6%,transparent)}
 .acm tr.vh th.vc span{display:block;writing-mode:vertical-rl;transform:rotate(180deg);margin:4px auto 0;font-size:11px;font-weight:500;color:var(--text);text-transform:none;letter-spacing:0}
-.acm tr.vh th.kt{background:color-mix(in srgb,var(--kc) 8%,transparent)}
-.acm td.kt{background:color-mix(in srgb,var(--kc) 6%,transparent)}.acm .k1{border-left:2px solid var(--kc)}
-.acm tr.tot td{border-top:2px solid var(--vc)}.acm tr.tot td.vc{color:var(--vc);font-weight:600}
+.acm tr.vh th.kt{background:color-mix(in srgb,var(--rc) 8%,transparent)}
+.acm td.kt{background:color-mix(in srgb,var(--rc) 6%,transparent)}.acm .k1{border-left:2px solid var(--rc)}
+.acm tr.tot td{border-top:2px solid var(--cc)}.acm tr.tot td.vc,.acm td.cf{color:var(--cc);font-weight:600}
 .aico{display:inline-flex;gap:2px;vertical-align:middle}.aico img{width:22px;height:22px;object-fit:contain;border-radius:3px;background:rgba(0,0,0,.35);outline:1px solid rgba(255,255,255,.08)}
 .acm th .aico img{width:24px;height:24px}
 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:12px}
@@ -582,7 +583,7 @@ async function vAdmin(){
  <div id="asel"></div>
  <h2>Deaths <small class="g">click a player for who they killed and who killed them</small></h2><div class="tw"><table id="at"></table></div><div class="more" id="amore"></div>
  <h2 id="afd-h">Kill feed <small class="g" id="afd-s"></small></h2><div class="tw"><table id="afd"></table></div><div class="more" id="afd-more"></div>
- <h2>Who killed which class <small class="g"><span style="color:#e53e3e">rows = killer</span> · <span style="color:#4a9be8">columns = victim</span> · each cell = how many times the row class killed the column class · click a header to sort</small></h2><div class="tw" id="acm"></div>
+ <h2 style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">Who killed which class <span class="seg" id="acm-sw"><button data-m="k">⚔ Killer → victims</button><button data-m="v">🛡 Victim ← killers</button></span><small class="g" id="acm-sub"></small></h2><div class="tw" id="acm"></div>
  <h2>Who killed who <small class="g">killer → victim, from the kill feed</small></h2><div class="tw"><table id="apt"></table></div><div class="more" id="apmore"></div>`;
  const cols=[["name","Player","l",a=>a.n.toLowerCase()],["cls","Class","l",a=>a.cl||"~"],["g","Games","",a=>a.g],["k","Kills","",a=>a.ki],["de","Deaths","",a=>a.dg?a.de:-1],
   ["kd","K/D","",a=>a.dg?(a.de?a.ki/a.de:a.ki):-1],["dpg","Deaths / game","",a=>a.dg?a.de/a.dg:-1],["tk","Killed most by","l",a=>(top(a.Dt)[0]||[""])[0].toLowerCase()||"~"]];
@@ -612,16 +613,24 @@ async function vAdmin(){
   bindSort($("#apt"),AS.ps,draw)};
  $("#ag").onchange=e=>{AS.g=e.target.value;AS.sel="";vAdmin()};$("#aq").oninput=e=>{AS.q=e.target.value;AS.n=150;draw();drawFD()};
  $("#alock").onclick=()=>{admPw.clear();ADM=null;document.querySelector('nav a[data-v=admin]')?.remove();vAdmin()};
- const drawCM=()=>{const rows=Object.keys(CK);if(!rows.length){$("#acm").innerHTML=`<p class="empty">No class data yet.</p>`;return}
-  const cols=Object.keys(CD).sort((a,b)=>CD[b]-CD[a]).slice(0,16);
-  rows.sort((a,b)=>AS.cs==="tot"||!AS.cs?CK[b]-CK[a]:((CM[b]||{})[AS.cs]||0)-((CM[a]||{})[AS.cs]||0)||CK[b]-CK[a]);
-  const mx=Math.max(1,...rows.flatMap(r=>cols.map(v=>(CM[r]||{})[v]||0)));
-  const nmC=c=>`<span class="cn">${esc(c||"?")}</span>`;
-  $("#acm").innerHTML=`<table class="acm"><thead>
-   <tr class="band"><th class="corner" rowspan="2"><span class="vv">Victim →</span><br><span class="kk">Killer ↓</span></th><th class="vband" colspan="${cols.length}">▼ VICTIM — the class that died</th><th class="kband" colspan="2">KILLER TOTALS</th></tr>
-   <tr class="vh">${cols.map(v=>`<th data-x="${esc(v)}" class="vc${AS.cs===v?" on":""}" title="Sort killers by how often they killed ${esc(v)}">${aIco(v)}<span>${esc(v)}</span></th>`).join("")}<th data-x="tot" class="kt k1${!AS.cs||AS.cs==="tot"?" on":""}" title="Sort by total kills">Kills</th><th class="l kt">Killed most</th></tr></thead><tbody>${rows.map((r,i)=>{const m=CM[r]||{},t=top(m)[0];
-   return`<tr><td class="l rh">${(i=>i.includes("<img")?i+" "+nmC(r):nmC(r))(aIco(r))}</td>${cols.map(v=>{const n=m[v]||0;return`<td title="${esc(r)} killed ${esc(v)} ×${n}" style="${n?`background:rgba(229,62,62,${(0.08+0.62*n/mx).toFixed(2)})`:"color:var(--faint)"}">${n||"·"}</td>`}).join("")}<td class="kt k1"><b>${nf(CK[r])}</b></td><td class="l kt">${t?`${aIco(t[0])} ×${t[1]}`:""}</td></tr>`}).join("")}
-   <tr class="tot"><td class="l rh vv">Deaths (times died)</td>${cols.map(v=>`<td class="vc">${nf(CD[v])}</td>`).join("")}<td class="kt k1"></td><td class="kt"></td></tr></tbody></table>`;
+ const drawCM=()=>{if(!Object.keys(CK).length){$("#acm").innerHTML=`<p class="empty">No class data yet.</p>`;return}
+  const fl=AS.cf==="v";                       // flipped: rows = victim class, columns = the classes that killed it
+  const T={};if(fl){for(const[k,m]of Object.entries(CM))for(const[v,n]of Object.entries(m||{}))(T[v]??={})[k]=n}else Object.assign(T,CM);
+  const RT=fl?CD:CK,CT=fl?CK:CD,rk=fl?"vv":"kk",ck=fl?"kk":"vv",col=fl?"74,155,232":"229,62,62";
+  const rows=Object.keys(RT).filter(r=>RT[r]),cols=Object.keys(CT).filter(c=>CT[c]).sort((a,b)=>CT[b]-CT[a]).slice(0,16);
+  const so=AS.cs&&(AS.cs==="tot"||cols.includes(AS.cs))?AS.cs:"tot";
+  rows.sort((a,b)=>so==="tot"?RT[b]-RT[a]:((T[b]||{})[so]||0)-((T[a]||{})[so]||0)||RT[b]-RT[a]);
+  const mx=Math.max(1,...rows.flatMap(r=>cols.map(v=>(T[r]||{})[v]||0)));
+  const nmC=c=>`<span class="cn">${esc(c||"?")}</span>`,ico=c=>{const i=aIco(c);return i.includes("<img")?i+" "+nmC(c):nmC(c)};
+  const L=fl?{rows:"Victim",cols:"Killer",band:"▲ KILLER — the class that got the kill",tot:"VICTIM TOTALS",n:"Deaths",most:"Killed most by",foot:"Kills (times killed)",cell:(r,v,n)=>`${v} killed ${r} ×${n}`,sub:`<span style="color:#4a9be8">rows = victim</span> · <span style="color:#e53e3e">columns = the killer</span> · each cell = how many times the column class killed the row class`}
+          :{rows:"Killer",cols:"Victim",band:"▼ VICTIM — the class that died",tot:"KILLER TOTALS",n:"Kills",most:"Killed most",foot:"Deaths (times died)",cell:(r,v,n)=>`${r} killed ${v} ×${n}`,sub:`<span style="color:#e53e3e">rows = killer</span> · <span style="color:#4a9be8">columns = victim</span> · each cell = how many times the row class killed the column class`};
+  $("#acm-sub").innerHTML=L.sub+" · click a header to sort";
+  document.querySelectorAll("#acm-sw button").forEach(b=>{b.classList.toggle("on",(b.dataset.m==="v")===fl);b.onclick=()=>{AS.cf=b.dataset.m;AS.cs="tot";drawCM()}});
+  $("#acm").innerHTML=`<table class="acm${fl?" fl":""}"><thead>
+   <tr class="band"><th class="corner" rowspan="2"><span class="${ck}">${L.cols} →</span><br><span class="${rk}">${L.rows} ↓</span></th><th class="cband" colspan="${cols.length}">${L.band}</th><th class="rband" colspan="2">${L.tot}</th></tr>
+   <tr class="vh">${cols.map(v=>`<th data-x="${esc(v)}" class="vc${so===v?" on":""}" title="Sort by ${esc(v)}">${aIco(v)}<span>${esc(v)}</span></th>`).join("")}<th data-x="tot" class="kt k1${so==="tot"?" on":""}" title="Sort by total">${L.n}</th><th class="l kt">${L.most}</th></tr></thead><tbody>${rows.map(r=>{const m=T[r]||{},t=top(m)[0];
+   return`<tr><td class="l rh">${ico(r)}</td>${cols.map(v=>{const n=m[v]||0;return`<td title="${esc(L.cell(r,v,n))}" style="${n?`background:rgba(${col},${(0.08+0.62*n/mx).toFixed(2)})`:"color:var(--faint)"}">${n||"·"}</td>`}).join("")}<td class="kt k1"><b>${nf(RT[r])}</b></td><td class="l kt">${t?`${aIco(t[0])} ×${t[1]}`:""}</td></tr>`}).join("")}
+   <tr class="tot"><td class="l rh cf">${L.foot}</td>${cols.map(v=>`<td class="vc">${nf(CT[v])}</td>`).join("")}<td class="kt k1"></td><td class="kt"></td></tr></tbody></table>`;
   document.querySelectorAll("#acm th[data-x]").forEach(th=>th.onclick=()=>{AS.cs=th.dataset.x;drawCM()})};
  drawCM();
  // the kill feed itself: one game -> every kill; all games -> every kill of the selected player
@@ -655,7 +664,7 @@ function route(){const f=$("#fab");if(f&&!location.hash.match(/^#\/?$/))f.remove
  window.scrollTo(0,0)}
 addEventListener("hashchange",route);route();
 /* a newer upload replaces a cached copy of the site */
-const BUILD="ffcf24f9ec34";let vAt=0;
+const BUILD="090dbe74408e";let vAt=0;
 function vchk(){const n=Date.now();if(n-vAt<30000)return;vAt=n;
  fetch(ROOT+"version.txt?"+n,{cache:"no-store"}).then(r=>r.ok?r.text():"").then(v=>{v=(v||"").trim();
   if(!v||v===BUILD||new URLSearchParams(location.search).get("v")===v)return;
