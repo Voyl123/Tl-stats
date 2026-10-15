@@ -568,6 +568,7 @@ async function vAdmin(){
  <div class="stats">${[["Games",gs.length],["Players",A.size],["Deaths",nf(dTot)],["Kills in feed",nf(fed)]].map(([l,v])=>`<div class="stat"><b>${v}</b><span>${l}</span></div>`).join("")}</div>
  <div id="asel"></div>
  <h2>Deaths <small class="g">click a player for who they killed and who killed them</small></h2><div class="tw"><table id="at"></table></div><div class="more" id="amore"></div>
+ <h2 id="afd-h">Kill feed <small class="g" id="afd-s"></small></h2><div class="tw"><table id="afd"></table></div><div class="more" id="afd-more"></div>
  <h2>Who killed which class <small class="g">rows: the killer's spec · columns: the victim's · click a header to sort</small></h2><div class="tw" id="acm"></div>
  <h2>Who killed who <small class="g">killer → victim, from the kill feed</small></h2><div class="tw"><table id="apt"></table></div><div class="more" id="apmore"></div>`;
  const cols=[["name","Player","l",a=>a.n.toLowerCase()],["cls","Class","l",a=>a.cl||"~"],["g","Games","",a=>a.g],["k","Kills","",a=>a.ki],["de","Deaths","",a=>a.dg?a.de:-1],
@@ -580,7 +581,7 @@ async function vAdmin(){
   <div class="two" style="margin-top:10px">${col("Killed",a.K)}${col("Died to",a.Dt)}</div>
   <div class="two" style="margin-top:10px">${colC("Classes they killed",a.KC)}${colC("Classes that killed them",a.DC)}</div>
   <div class="tw" style="margin-top:10px"><table><thead><tr><th class="l">Game</th><th>Kills</th><th>Deaths</th></tr></thead><tbody>${a.h.map(([g,k,d])=>`<tr><td class="l">${esc((g.d||"").slice(0,10))} · ${esc(g.t||g.id)}</td><td>${nf(k)}</td><td>${d==null?"<span class=g>–</span>":nf(d)}</td></tr>`).join("")}</tbody></table></div></div>`;
-  $("#ax").onclick=()=>{AS.sel="";sel();draw()};el.scrollIntoView({block:"nearest"})};
+  $("#ax").onclick=()=>{AS.sel="";sel();draw();drawFD()};el.scrollIntoView({block:"nearest"})};
  const draw=()=>{const q=AS.q.trim().toLowerCase();
   const rows=[...A.values()].filter(a=>!q||(a.n+" "+(a.gu||"")+" "+(a.cl||"")).toLowerCase().includes(q));
   $("#at").innerHTML=sortable(cols,rows,AS.st)+`<tbody>${rows.slice(0,AS.n).map(a=>{const tk=top(a.Dt)[0];return`<tr class="go${a.k===AS.sel?" on":""}" data-a="${esc(a.k)}"><td class="l"><span class="nm" style="color:${ccol(a.cl,a.ro)}">${esc(a.n)}</span>${gTag(a.gu)}</td><td class="l">${aIco(a.cl)}</td><td>${a.g}</td><td>${nf(a.ki)}</td>
@@ -588,7 +589,7 @@ async function vAdmin(){
   $("#amore").innerHTML=rows.length>AS.n?`<button>Show more (${nf(rows.length-AS.n)} left)</button>`:rows.length?"":`<p class="empty">No player matches.</p>`;
   const mb=$("#amore button");if(mb)mb.onclick=()=>{AS.n+=300;draw()};
   bindSort($("#at"),AS.st,draw);
-  $("#at tbody").onclick=e=>{const tr=e.target.closest("tr[data-a]");if(!tr)return;AS.sel=AS.sel===tr.dataset.a?"":tr.dataset.a;sel();draw()};
+  $("#at tbody").onclick=e=>{const tr=e.target.closest("tr[data-a]");if(!tr)return;AS.sel=AS.sel===tr.dataset.a?"":tr.dataset.a;AS.fn=300;sel();draw();drawFD()};
   const pc=[["kr","Killer","l",x=>x[0].toLowerCase()],["vi","Victim","l",x=>x[1].toLowerCase()],["c","Times","",x=>x[2]]];
   const prs=[...pair.entries()].map(([k,c])=>{const i=k.indexOf("\u0000");return[k.slice(0,i),k.slice(i+1),c]}).filter(x=>!q||(x[0]+" "+x[1]).toLowerCase().includes(q));
   const cl=n=>{const a=A.get(key(n));return a?ccol(a.cl,a.ro):""};
@@ -596,7 +597,7 @@ async function vAdmin(){
   $("#apmore").innerHTML=prs.length>(AS.pn||200)?`<button>Show more (${nf(prs.length-(AS.pn||200))} left)</button>`:prs.length?"":`<p class="empty">No kills read.</p>`;
   const pb=$("#apmore button");if(pb)pb.onclick=()=>{AS.pn=(AS.pn||200)+500;draw()};
   bindSort($("#apt"),AS.ps,draw)};
- $("#ag").onchange=e=>{AS.g=e.target.value;AS.sel="";vAdmin()};$("#aq").oninput=e=>{AS.q=e.target.value;AS.n=150;draw()};
+ $("#ag").onchange=e=>{AS.g=e.target.value;AS.sel="";vAdmin()};$("#aq").oninput=e=>{AS.q=e.target.value;AS.n=150;draw();drawFD()};
  $("#alock").onclick=()=>{admPw.clear();ADM=null;document.querySelector('nav a[data-v=admin]')?.remove();vAdmin()};
  const drawCM=()=>{const rows=Object.keys(CK);if(!rows.length){$("#acm").innerHTML=`<p class="empty">No class data yet.</p>`;return}
   const cols=Object.keys(CD).sort((a,b)=>CD[b]-CD[a]).slice(0,16);
@@ -607,6 +608,26 @@ async function vAdmin(){
    <tr class="tot"><td class="l">Deaths</td>${cols.map(v=>`<td>${nf(CD[v])}</td>`).join("")}<td></td><td></td></tr></tbody></table>`;
   document.querySelectorAll("#acm th[data-x]").forEach(th=>th.onclick=()=>{AS.cs=th.dataset.x;drawCM()})};
  drawCM();
+ // the kill feed itself: one game -> every kill; all games -> every kill of the selected player
+ const drawFD=()=>{const one=!!AS.g,clsOf=g=>{const m={};(g.p||[]).forEach(e=>{if(e[0]&&!(e[0] in m))m[e[0]]=e[3]||""});return m};
+  const q=AS.q.trim().toLowerCase(),selN=AS.sel?(A.get(AS.sel)||{}).n:"";
+  let rows=[];gs.forEach(g=>{const fd=(g.kf&&g.kf.feed)||[];if(!fd.length)return;const cm=clsOf(g);
+   fd.forEach(([t,k,v])=>rows.push({g,t,k,v,kc:cm[k]||"",vc:cm[v]||""}))});
+  if(!one&&!selN){$("#afd-s").textContent="pick a game above, or click a player, to see every kill";$("#afd").innerHTML="";$("#afd-more").innerHTML="";return}
+  if(selN)rows=rows.filter(r=>r.k===selN||r.v===selN);
+  if(q)rows=rows.filter(r=>(r.k+" "+r.v).toLowerCase().includes(q));
+  const fs=AS.fs||(AS.fs={k:"t",a:true}),val={t:r=>(r.g.d||"")+String(r.t).padStart(8,"0"),k:r=>(r.k||"~").toLowerCase(),v:r=>r.v.toLowerCase(),kc:r=>r.kc||"~",vc:r=>r.vc||"~"};
+  rows.sort((a,b)=>{const x=val[fs.k](a),y=val[fs.k](b);return(x<y?-1:x>y?1:0)*(fs.a?1:-1)});
+  const tm=s=>{s=Math.round(s);return`${Math.floor(s/60)}:${String(s%60).padStart(2,"0")}`};
+  $("#afd-s").textContent=`${rows.length.toLocaleString()} kills${selN?" involving "+selN:""}${one?"":" across "+gs.length+" games"} · only names on that game's scoreboard · click a header to sort`;
+  const th=(k,l,c="")=>`<th data-fk="${k}" class="${c}${fs.k===k?" on":""}" style="cursor:pointer">${l}${fs.k===k?(fs.a?" ▲":" ▼"):""}</th>`;
+  const nm=(n,c,me)=>n?`<span class="nm"${me?' style="text-decoration:underline"':""}>${esc(n)}</span> ${aIco(c)}`:`<span class="g">unreadable</span>`;
+  const n=AS.fn||300;
+  $("#afd").innerHTML=`<thead><tr>${one?"":th("t","Game","l")}${th("t","Time","l")}${th("k","Killer","l")}<th></th>${th("v","Victim","l")}</tr></thead><tbody>${rows.slice(0,n).map(r=>`<tr>${one?"":`<td class="l g">${esc((r.g.d||"").slice(0,10))} · ${esc(r.g.t||r.g.id)}</td>`}<td class="l">${tm(r.t)}</td><td class="l">${nm(r.k,r.kc,r.k===selN)}</td><td style="color:#e53e3e">⚔</td><td class="l">${nm(r.v,r.vc,r.v===selN)}</td></tr>`).join("")}</tbody>`;
+  $("#afd-more").innerHTML=rows.length>n?`<button>Show more (${(rows.length-n).toLocaleString()} left)</button>`:rows.length?"":`<p class="empty">No kills match.</p>`;
+  const mb=$("#afd-more button");if(mb)mb.onclick=()=>{AS.fn=n+500;drawFD()};
+  document.querySelectorAll("#afd th[data-fk]").forEach(h=>h.onclick=()=>{const k=h.dataset.fk;if(fs.k===k)fs.a=!fs.a;else{fs.k=k;fs.a=true}drawFD()})};
+ drawFD();
  sel();draw()}
 admNav();
 
@@ -618,7 +639,7 @@ function route(){const f=$("#fab");if(f&&!location.hash.match(/^#\/?$/))f.remove
  window.scrollTo(0,0)}
 addEventListener("hashchange",route);route();
 /* a newer upload replaces a cached copy of the site */
-const BUILD="0d1d7eacb306";let vAt=0;
+const BUILD="de9fcde308e5";let vAt=0;
 function vchk(){const n=Date.now();if(n-vAt<30000)return;vAt=n;
  fetch(ROOT+"version.txt?"+n,{cache:"no-store"}).then(r=>r.ok?r.text():"").then(v=>{v=(v||"").trim();
   if(!v||v===BUILD||new URLSearchParams(location.search).get("v")===v)return;
