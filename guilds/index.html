@@ -112,6 +112,17 @@ details.asec[open]>summary{border-bottom:1px solid var(--line)}
 @media (max-width:640px){.atabs{position:static}details.asec{scroll-margin-top:calc(var(--navh,56px) + 8px)}.atabs a{padding:5px 8px;font-size:12px}details.asec>summary{padding:10px 12px}.abody{padding:10px 10px 12px}}
 .acm.amu tr.vh th.corner{background:transparent;border-bottom:3px solid var(--cc)}.amu tr.vh th span{color:var(--text)}
 .amu td{min-width:54px;line-height:1.15}.amu td b{display:block;font-size:12.5px}.amu td small{display:block;font-size:10.5px;color:rgba(255,255,255,.65)}.amu td.few{opacity:.75}.amu td.mu0{color:var(--faint)}
+.sdr[data-b]{cursor:pointer;border-radius:3px;padding:2px 4px;margin:0 -4px;transition:background .12s}.sdr[data-b]:hover{background:var(--hover)}.sdr.on{background:color-mix(in srgb,var(--acc) 16%,transparent);outline:1px solid color-mix(in srgb,var(--acc) 45%,transparent)}
+.dn path{cursor:pointer;transition:opacity .15s,transform .15s;transform-origin:56px 56px}.dn path:hover{opacity:.85;transform:scale(1.03)}
+.sdwh{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}.sdwh h4{margin:0 0 8px;font-size:13px;display:flex;gap:6px;flex-wrap:wrap;align-items:baseline}
+.sdwho{max-height:360px;overflow:auto}.sdp>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,150px) 1fr 40px;gap:8px;align-items:center;font-size:12.5px;padding:3px 4px;border-radius:3px}
+.sdp>summary::-webkit-details-marker{display:none}.sdp>summary:hover{background:var(--hover)}.sdp[open]>summary{background:color-mix(in srgb,var(--acc) 10%,transparent)}
+.sdp .sdbar{height:8px;background:rgba(255,255,255,.05);display:block;border-radius:2px;overflow:hidden}.sdp .sdbar i{display:block;height:100%}
+.sdp .pn{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:600}.sdp b{text-align:right;font-variant-numeric:tabular-nums}
+.sdpo{display:flex;flex-wrap:wrap;gap:4px;padding:6px 4px 8px 12px;animation:asecIn .18s ease-out}.sdpo span{font-size:11.5px;background:rgba(255,255,255,.05);padding:2px 7px;border-radius:3px;display:inline-flex;gap:4px;align-items:center}.sdpo .aico img{width:14px;height:14px}
+.sdx{cursor:pointer;font-size:11.5px;margin-left:6px;color:var(--acc)}
+.amu td.sel{outline:2px solid var(--acc);outline-offset:-2px}.amu td[data-r]:hover{filter:brightness(1.25)}
+.mudr{margin-top:12px;border:1px solid var(--line);border-radius:6px;padding:12px 14px;background:var(--panel2);animation:asecIn .2s ease-out}.mudh{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px}.mudr h4{margin:0 0 6px;font-size:13px}
 .sdg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:12px;margin-bottom:12px}
 .sdc{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:12px 14px}.sdc h3,.sdh h3{margin:0 0 10px;font-size:14px}
 .sdtop{display:flex;gap:14px;align-items:center}.dn{width:132px;height:132px;flex:none}.dn path{cursor:pointer;stroke:var(--panel);stroke-width:.8}.dn path:hover{opacity:.8}
@@ -624,6 +635,7 @@ async function vAdmin(){
  GL.forEach(g=>{const seen=new Set();(g.p||[]).forEach(r=>{mcAdd(r[0],r[3]);seen.add(key(r[0]))});for(const[n,c]of Object.entries(g.cls||{}))if(!seen.has(key(n)))mcAdd(n,c)});
  const mainCls=n=>{const m=MC.get(key(n));if(!m)return"";return Object.entries(m).sort((a,b)=>b[1]-a[1])[0][0]};
  const A=new Map();const pair=new Map();let dTot=0;const UNV={},UNK={};   // who is behind a "?" class, for the charts
+ const PX=[];   // every killer -> victim pair with both classes and sides: the charts drill down into these
  const CM={},CK={},CD={},CS={};["us","them","red","yellow"].forEach(k=>CS[k]={CM:{},CK:{},CD:{}});
  // sides by guild: the team our guild played on is "us" in every game, so games add up whatever
  // colour we were; a game without our guild keeps its colours. Guild names label each side.
@@ -641,7 +653,7 @@ async function vAdmin(){
   const clOf=x=>gcl.get(key(x))||mainCls(x)||"?";
   const kc=clOf(n),ts=CS[sideKey(g,tm)];
   const KCx={};const tl=sideKey(g,tm);
-  for(const[vn,c]of Object.entries(K||{})){const vc=clOf(vn);KCx[vc]=(KCx[vc]||0)+c;
+  for(const[vn,c]of Object.entries(K||{})){const vc=clOf(vn);KCx[vc]=(KCx[vc]||0)+c;PX.push({ks:tl,k:n,kc,v:vn,vc,c,g:g.id});
    if(vc==="?"){const u=((UNV[tl]??={})[kc]??={});u[vn]=(u[vn]||0)+c}
    if(kc==="?"){const u=((UNK[tl]??={})[vc]??={});u[n]=(u[n]||0)+c}}
   const DCx={};for(const[kn,c]of Object.entries(Dt||{})){const xc=clOf(kn);DCx[xc]=(DCx[xc]||0)+c}
@@ -736,7 +748,14 @@ async function vAdmin(){
     :`M${p(R*Math.cos(a),R*Math.sin(a))}A${R},${R} 0 ${L} 1 ${p(R*Math.cos(b),R*Math.sin(b))}L${p(r*Math.cos(b),r*Math.sin(b))}A${r},${r} 0 ${L} 0 ${p(r*Math.cos(a),r*Math.sin(a))}Z`;
    a=b;return`<path d="${d}" fill="${col}" data-c="${esc(lab)}"><title>${esc(lab)} ${v} (${Math.round(100*f)}%)</title></path>`}).join("");
   return`<svg viewBox="0 0 112 112" class="dn">${seg}<text x="56" y="56" text-anchor="middle" class="dnv">${nf(tot)}</text><text x="56" y="68" text-anchor="middle" class="dnl">TOTAL</text></svg>`};
- AS.sds=AS.sds||{};
+ AS.sds=AS.sds||{};AS.sdb=AS.sdb||{};
+ // players behind a slice: group pairs by one side, list who they were with on the other
+ const drill=(L,by,cap)=>{const G=new Map();L.forEach(x=>{const n=by==="v"?x.v:x.k,o=by==="v"?x.k:x.v,oc=by==="v"?x.kc:x.vc;
+   const e=G.get(n)||{n,c:by==="v"?x.vc:x.kc,t:0,o:new Map()};e.t+=x.c;const q=e.o.get(o)||{n:o,c:oc,t:0};q.t+=x.c;e.o.set(o,q);G.set(n,e)});
+  const R=[...G.values()].sort((a,b)=>b.t-a.t),mx=R.length?R[0].t:1;
+  if(!R.length)return`<p class="g" style="margin:6px 0">Nobody.</p>`;
+  return`<div class="sdwho">${R.slice(0,cap||40).map(e=>`<details class="sdp"><summary><span class="pn">${esc(e.n)}</span><span class="sdbar"><i style="width:${(100*e.t/mx).toFixed(1)}%;background:${ccol(e.c)}"></i></span><b>${e.t}</b></summary>
+   <div class="sdpo">${[...e.o.values()].sort((a,b)=>b.t-a.t).map(q=>`<span>${aIco(q.c)} ${esc(q.n)} <b>×${q.t}</b></span>`).join("")}</div></details>`).join("")}${R.length>(cap||40)?`<p class="g">+${R.length-(cap||40)} more</p>`:""}</div>`};
  const drawSD=()=>{const dm=(AS.sdm||"d")==="d";
   document.querySelectorAll("#asd-m button").forEach(b=>{b.classList.toggle("on",(b.dataset.m==="d")===dm);b.onclick=()=>{AS.sdm=b.dataset.m;drawSD()}});
   $("#asd-sub").textContent=dm?"each side's specs by how often they died · click a spec for what killed it":"each side's specs by kills · click a spec for what it killed";
@@ -754,14 +773,21 @@ async function vAdmin(){
     <div class="sdb"><h4>${aIco(sel)} <span style="color:${ccol(sel)}">${nm[t]} ${esc(sel)}</span> ${dm?"died to":"killed"} <small class="g">${bt} · ${nm[oth(t)]}'s specs</small></h4>
     ${B.slice(0,10).map(([c,v])=>c==="?"?(()=>{const who=dm?((UNK[oth(t)]||{})[sel]||{}):((UNV[t]||{})[sel]||{});const L=top(who);
       return`<div class="sdr unk"><span class="aico">❔</span><span class="n" title="${esc(L.map(([n,k])=>n+" ×"+k).join(", "))}">Class not read</span><span class="sdbar"><i style="width:${(100*v/bm).toFixed(1)}%;background:#777"></i></span><b>${v}</b><em>${Math.round(100*v/Math.max(1,bt))}%</em></div>
-      <div class="sdunk">${L.slice(0,12).map(([n,k])=>`<span>${esc(n)} ×${k}</span>`).join("")}${L.length>12?`<span>+${L.length-12} more</span>`:""}</div>`})():`<div class="sdr">${aIco(c)}<span class="n">${esc(c)}</span><span class="sdbar"><i style="width:${(100*v/bm).toFixed(1)}%;background:${ccol(c)}"></i></span><b>${v}</b><em>${Math.round(100*v/Math.max(1,bt))}%</em></div>`).join("")||`<p class="empty">None.</p>`}</div></div>`};
+      <div class="sdunk">${L.slice(0,12).map(([n,k])=>`<span>${esc(n)} ×${k}</span>`).join("")}${L.length>12?`<span>+${L.length-12} more</span>`:""}</div>`})():`<div class="sdr${AS.sdb[t]===c?" on":""}" data-b="${esc(c)}" title="Click: only the ${esc(sel)}s ${dm?"killed by":"who killed"} ${esc(c)}s">${aIco(c)}<span class="n">${esc(c)}</span><span class="sdbar"><i style="width:${(100*v/bm).toFixed(1)}%;background:${ccol(c)}"></i></span><b>${v}</b><em>${Math.round(100*v/Math.max(1,bt))}%</em></div>`).join("")||`<p class="empty">None.</p>`}
+    <div class="sdwh">${(()=>{const b=AS.sdb[t]&&B.some(x=>x[0]===AS.sdb[t])?AS.sdb[t]:"";
+      const L=dm?PX.filter(x=>x.ks===oth(t)&&x.vc===sel&&(!b||x.kc===b)):PX.filter(x=>x.ks===t&&x.kc===sel&&(!b||x.vc===b));
+      return`<h4>${dm?`Who died`:`Who got the kills`} <small class="g">${nm[t]} ${esc(sel)}s${b?` · ${dm?"killed by":"killing"} ${esc(b)}s <a class="sdx" data-clear="1">✕ all</a>`:" · click a player for "+(dm?"who killed them":"who they killed")+(B.length?" · click a spec above to narrow":"")}</small></h4>${drill(L,dm?"v":"k")}`})()}</div></div></div>`};
   // head to head: the same spec on each side, Yellow left and Red right
   const Y=by(SK[0]),Rr=by(SK[1]),specs=[...new Set([...Object.keys(Y),...Object.keys(Rr)])].sort((a,b)=>((Y[b]||0)+(Rr[b]||0))-((Y[a]||0)+(Rr[a]||0)));
   const hm=Math.max(1,...specs.map(c=>Math.max(Y[c]||0,Rr[c]||0)));
   const h2h=`<div class="sdh"><h3>Head to head · ${dm?"deaths":"kills"} by spec <small class="g"><span style="color:${tc[SK[0]]}">${esc(nm[SK[0]])}</span> on the left, <span style="color:${tc[SK[1]]}">${esc(nm[SK[1]])}</span> on the right${dm?" — the longer bar died more":" — the longer bar won that spec"}</small></h3>
    ${specs.slice(0,16).map(c=>{const y=Y[c]||0,r=Rr[c]||0;return`<div class="hh"><div class="hn">${aIco(c)}<span style="color:${ccol(c)}">${esc(c)}</span></div><div class="hb"><b class="${y>=r?"w":""}">${y||"–"}</b><span class="l"><i style="width:${(100*y/hm).toFixed(1)}%;background:${tc[SK[0]]}"></i></span><span class="r"><i style="width:${(100*r/hm).toFixed(1)}%;background:${tc[SK[1]]}"></i></span><b class="${r>=y?"w":""}">${r||"–"}</b></div></div>`}).join("")}</div>`;
   $("#asd").innerHTML=`<div class="sdg">${sides.map(card).join("")}</div>${h2h}`;
-  document.querySelectorAll("#asd .sdc").forEach(cd=>cd.onclick=e=>{const li=e.target.closest("[data-c]");if(!li||li.dataset.c==="Other")return;AS.sds[cd.dataset.t]=li.dataset.c;drawSD()})};
+  document.querySelectorAll("#asd .sdc").forEach(cd=>cd.onclick=e=>{const t=cd.dataset.t;
+   if(e.target.closest("details.sdp"))return;
+   if(e.target.closest("[data-clear]")){AS.sdb[t]="";drawSD();return}
+   const br=e.target.closest("[data-b]");if(br){AS.sdb[t]=AS.sdb[t]===br.dataset.b?"":br.dataset.b;drawSD();return}
+   const li=e.target.closest("[data-c]");if(!li||li.dataset.c==="Other")return;AS.sds[t]=li.dataset.c;AS.sdb[t]="";drawSD()})};
  drawSD();
  // matchups: for each pair, how often the row spec killed the column spec against the reverse.
  // Green = the row spec wins that matchup, red = it loses; faded = too few kills to say.
@@ -776,12 +802,20 @@ async function vAdmin(){
   $("#amu-sub").textContent=`cell = row spec's kills on the column spec – the column's kills on it · green: row wins, red: row loses · faded: under 6 kills between them`;
   const cell=(r,c)=>{const w=win(r,c),l=loss(r,c),n=w+l;if(!n)return`<td class="mu0">·</td>`;
    const f=w/n,dev=f-.5,a=Math.min(1,Math.abs(dev)*2)*(n<6?.35:1);const bg=dev>=0?`rgba(72,187,120,${(0.12+0.6*a).toFixed(2)})`:`rgba(229,62,62,${(0.12+0.6*a).toFixed(2)})`;
-   return`<td style="background:${bg}" class="${n<6?"few":""}" title="${esc((nmR?nmR+" ":"")+r)} killed ${esc((nmC?nmC+" ":"")+c)} ${w}× · was killed by it ${l}× (${Math.round(100*f)}% won)"><b>${Math.round(100*f)}%</b><small>${w}–${l}</small></td>`};
+   return`<td style="background:${bg};cursor:pointer" data-r="${esc(r)}" data-c="${esc(c)}" class="${n<6?"few":""}${AS.mup&&AS.mup[0]===r&&AS.mup[1]===c?" sel":""}" title="${esc((nmR?nmR+" ":"")+r)} killed ${esc((nmC?nmC+" ":"")+c)} ${w}× · was killed by it ${l}× (${Math.round(100*f)}% won)"><b>${Math.round(100*f)}%</b><small>${w}–${l}</small></td>`};
   const rec=r=>{let w=0,l=0;cols.forEach(c=>{w+=win(r,c);l+=loss(r,c)});return[w,l]};
   const rc=sd?SCOL[sd]:"#e53e3e",cc=sd?SCOL[SOTH(sd)]:"#4a9be8";
   $("#amu").innerHTML=`<table class="acm amu" style="--rc:${rc};--cc:${cc};--kc:${rc};--vc:${cc}"><thead><tr class="vh"><th class="l corner"><span class="kk">${nmR||"Row"} spec</span> vs<br><span class="vv">${nmC||"column"} spec →</span></th>${cols.map(c=>`<th class="vc">${aIco(c)}<span>${esc(c)}</span></th>`).join("")}<th class="kt k1">Overall</th></tr></thead><tbody>${
    rows.map(r=>{const[w,l]=rec(r),f=w+l?w/(w+l):0;return`<tr><td class="l rh">${aIco(r)} <span class="cn">${esc(r)}</span></td>${cols.map(c=>cell(r,c)).join("")}<td class="kt k1" style="color:${f>=.5?"#7fd8a0":"#ff8a8a"}"><b>${Math.round(100*f)}%</b><small>${w}–${l}</small></td></tr>`}).join("")}</tbody></table>
-   <p class="g" style="margin:6px 0 0;font-size:12px">Read across a row: where that spec wins (green) and loses (red). Best counters to a spec: go down its column and find the greenest row.</p>`};
+   <p class="g" style="margin:6px 0 0;font-size:12px">Read across a row: where that spec wins (green) and loses (red). Best counters to a spec: go down its column and find the greenest row. Click a cell for the players behind it.</p><div id="amu-dr"></div>`;
+  const dr=()=>{const box=$("#amu-dr");if(!AS.mup){box.innerHTML="";return}const[r,c]=AS.mup;
+   const inA=x=>sd?x.ks===sd:true,inB=x=>sd?x.ks===SOTH(sd):true;
+   const W=PX.filter(x=>inA(x)&&x.kc===r&&x.vc===c),Lo=PX.filter(x=>inB(x)&&x.kc===c&&x.vc===r);
+   box.innerHTML=`<div class="mudr"><div class="mudh"><b>${aIco(r)} ${esc((nmR?nmR+" ":"")+r)}</b> vs <b>${aIco(c)} ${esc((nmC?nmC+" ":"")+c)}</b><a class="sdx" id="mu-x">✕ close</a></div>
+    <div class="two"><div><h4 style="color:#7fd8a0">${esc(r)} killed ${esc(c)} · ${W.reduce((a,x)=>a+x.c,0)}</h4>${drill(W,"k")}</div><div><h4 style="color:#ff8a8a">${esc(c)} killed ${esc(r)} · ${Lo.reduce((a,x)=>a+x.c,0)}</h4>${drill(Lo,"k")}</div></div></div>`;
+   $("#mu-x").onclick=()=>{AS.mup=null;drawMU()};box.scrollIntoView({behavior:"smooth",block:"nearest"})};
+  $("#amu").onclick=e=>{const td=e.target.closest("td[data-r]");if(!td)return;AS.mup=AS.mup&&AS.mup[0]===td.dataset.r&&AS.mup[1]===td.dataset.c?null:[td.dataset.r,td.dataset.c];drawMU()};
+  dr()};
  drawMU();
  // priority targets: per war, set in the app. Our side's kills of them earn the reward.
  const drawPT=()=>{const W=gs.filter(g=>g.pt&&g.pt.t&&Object.keys(g.pt.t).length);const box=$("#apt-wrap");
@@ -829,7 +863,7 @@ function route(){const f=$("#fab");if(f&&!location.hash.match(/^#\/?$/))f.remove
  window.scrollTo(0,0)}
 addEventListener("hashchange",route);route();
 /* a newer upload replaces a cached copy of the site */
-const BUILD="52ac44a68d16";let vAt=0;
+const BUILD="bf43d47bfcd4";let vAt=0;
 function vchk(){const n=Date.now();if(n-vAt<30000)return;vAt=n;
  fetch(ROOT+"version.txt?"+n,{cache:"no-store"}).then(r=>r.ok?r.text():"").then(v=>{v=(v||"").trim();
   if(!v||v===BUILD||new URLSearchParams(location.search).get("v")===v)return;
