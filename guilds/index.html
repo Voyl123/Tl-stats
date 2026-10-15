@@ -126,7 +126,8 @@ table.gh{width:100%;table-layout:fixed}table.gh td{padding:5px 6px;white-space:n
 .acm th.corner{cursor:default;font-size:11px;text-align:left;vertical-align:bottom;border-bottom:2px solid var(--cc)}
 .acm .kk{color:var(--kc);font-weight:700}.acm .vv{color:var(--vc);font-weight:700}
 .acm tr.vh th{vertical-align:bottom;border-bottom:2px solid var(--cc);background:color-mix(in srgb,var(--cc) 6%,transparent)}
-.acm tr.vh th.vc span{display:block;writing-mode:vertical-rl;transform:rotate(180deg);margin:4px auto 0;font-size:11px;font-weight:500;color:var(--text);text-transform:none;letter-spacing:0}
+.acm tr.vh th.vc .aico{display:inline-flex;writing-mode:horizontal-tb;transform:none;margin:0 auto 4px;gap:1px}.acm tr.vh th.vc .aico img{width:20px;height:20px}
+.acm tr.vh th.vc > span:not(.aico){display:block;writing-mode:vertical-rl;transform:rotate(180deg);margin:4px auto 0;font-size:11px;font-weight:500;color:var(--text);text-transform:none;letter-spacing:0}
 .acm tr.vh th.kt{background:color-mix(in srgb,var(--rc) 8%,transparent)}
 .acm td.kt{background:color-mix(in srgb,var(--rc) 6%,transparent)}.acm .k1{border-left:2px solid var(--rc)}
 .acm tr.tot td{border-top:2px solid var(--cc)}.acm tr.tot td.vc,.acm td.cf{color:var(--cc);font-weight:600}
@@ -791,7 +792,7 @@ function route(){const f=$("#fab");if(f&&!location.hash.match(/^#\/?$/))f.remove
  window.scrollTo(0,0)}
 addEventListener("hashchange",route);route();
 /* a newer upload replaces a cached copy of the site */
-const BUILD="d1c6f85da37f";let vAt=0;
+const BUILD="91dee6624b05";let vAt=0;
 function vchk(){const n=Date.now();if(n-vAt<30000)return;vAt=n;
  fetch(ROOT+"version.txt?"+n,{cache:"no-store"}).then(r=>r.ok?r.text():"").then(v=>{v=(v||"").trim();
   if(!v||v===BUILD||new URLSearchParams(location.search).get("v")===v)return;
