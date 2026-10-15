@@ -93,6 +93,7 @@ table.gh{width:100%;table-layout:fixed}table.gh td{padding:5px 6px;white-space:n
 .akl{list-style:none;margin:0;padding:0;display:grid;gap:3px}.akl li{position:relative;display:flex;justify-content:space-between;gap:10px;padding:3px 8px;font-size:13px;z-index:0}
 .akl li i{position:absolute;left:0;top:0;bottom:0;background:color-mix(in srgb,var(--acc) 9%,transparent);z-index:-1;border-radius:2px}.akl b{font-variant-numeric:tabular-nums}
 #at tr.on td{background:var(--hover)}
+.acm.amu tr.vh th{background:color-mix(in srgb,var(--cc) 42%,#111);border-bottom:3px solid var(--cc)}.acm.amu tr.vh th.corner{background:transparent;border-bottom:3px solid var(--cc)}.amu tr.vh th span{color:var(--text)}
 .amu td{min-width:54px;line-height:1.15}.amu td b{display:block;font-size:12.5px}.amu td small{display:block;font-size:10.5px;color:rgba(255,255,255,.65)}.amu td.few{opacity:.75}.amu td.mu0{color:var(--faint)}
 .sdg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:12px;margin-bottom:12px}
 .sdc{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:12px 14px}.sdc h3,.sdh h3{margin:0 0 10px;font-size:14px}
@@ -106,6 +107,7 @@ table.gh{width:100%;table-layout:fixed}table.gh td{padding:5px 6px;white-space:n
 .sdr{display:grid;grid-template-columns:auto 120px 1fr 40px 38px;gap:8px;align-items:center;font-size:12.5px;padding:2px 0}.sdr .n{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .sdr .sdbar{height:9px;background:rgba(255,255,255,.05);display:block}.sdr .sdbar i{display:block;height:100%}.sdr b{text-align:right;font-variant-numeric:tabular-nums}.sdr em{color:var(--dim);font-style:normal;text-align:right}
 .sdr .aico img{width:18px;height:18px}
+.sdunk{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 6px 30px}.sdunk span{font-size:11.5px;color:var(--dim);background:rgba(255,255,255,.05);padding:1px 6px;border-radius:2px}
 .sdh{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:12px 14px;margin-bottom:12px}
 .hh{display:grid;grid-template-columns:170px 1fr;gap:10px;align-items:center;border-bottom:1px solid var(--line);padding:4px 0}.hh:last-child{border-bottom:0}.hn{display:flex;gap:6px;align-items:center;font-weight:700;font-size:13px;min-width:0}.hn span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.hn .aico img{width:18px;height:18px}
 .hb{display:grid;grid-template-columns:44px 1fr 1fr 44px;gap:6px;align-items:center}.hb b{font-variant-numeric:tabular-nums;color:var(--dim);font-weight:500}.hb b:first-child{text-align:right}.hb b.w{color:var(--text);font-weight:700}
@@ -582,18 +584,22 @@ async function vAdmin(){
  const GL=ADM.games||[];const gs=AS.g?GL.filter(g=>g.id===AS.g):GL;
  // each player's main class over every game: a game where their weapons weren't read ("?")
  // takes it, and so do the class charts (a victim's class comes from the same table)
- const MC=new Map();GL.forEach(g=>(g.p||[]).forEach(r=>{const k=key(r[0]),c=r[3];if(!k||!c||c==="?")return;const m=MC.get(k)||{};m[c]=(m[c]||0)+1;MC.set(k,m)}));
+ const MC=new Map();const mcAdd=(n,c)=>{const k=key(n);if(!k||!c||c==="?")return;const m=MC.get(k)||{};m[c]=(m[c]||0)+1;MC.set(k,m)};
+ GL.forEach(g=>{const seen=new Set();(g.p||[]).forEach(r=>{mcAdd(r[0],r[3]);seen.add(key(r[0]))});for(const[n,c]of Object.entries(g.cls||{}))if(!seen.has(key(n)))mcAdd(n,c)});
  const mainCls=n=>{const m=MC.get(key(n));if(!m)return"";return Object.entries(m).sort((a,b)=>b[1]-a[1])[0][0]};
- const A=new Map();const pair=new Map();let dTot=0;
+ const A=new Map();const pair=new Map();let dTot=0;const UNV={},UNK={};   // who is behind a "?" class, for the charts
  const CM={},CK={},CD={},CS={red:{CM:{},CK:{},CD:{}},yellow:{CM:{},CK:{},CD:{}}};
  gs.forEach(g=>(g.p||[]).forEach(([n,gu,tm,cl,ro,kills,de,K,Dt,KC,DC])=>{const k=key(n);if(!k)return;
   let a=A.get(k);if(!a){a={k,n,gu,cl,ro,g:0,ki:0,de:0,dg:0,K:{},Dt:{},KC:{},DC:{},h:[],cs:{}};A.set(k,a)}
   if(cl&&cl!=="?"){const e=a.cs[cl]||(a.cs[cl]={g:0,ro});e.g++;}
   // the class they played in this game; when it wasn't read, the class they play most
-  const gcl=g._gc||(g._gc=new Map((g.p||[]).filter(r=>r[3]&&r[3]!=="?").map(r=>[key(r[0]),r[3]])));
+  const gcl=g._gc||(g._gc=new Map([...Object.entries(g.cls||{}).map(([n,c])=>[key(n),c]),...(g.p||[]).filter(r=>r[3]&&r[3]!=="?").map(r=>[key(r[0]),r[3]])]));
   const clOf=x=>gcl.get(key(x))||mainCls(x)||"?";
   const kc=clOf(n),ts=CS[String(tm||"").toLowerCase()];
-  const KCx={};for(const[vn,c]of Object.entries(K||{})){const vc=clOf(vn);KCx[vc]=(KCx[vc]||0)+c}
+  const KCx={};const tl=String(tm||"").toLowerCase();
+  for(const[vn,c]of Object.entries(K||{})){const vc=clOf(vn);KCx[vc]=(KCx[vc]||0)+c;
+   if(vc==="?"){const u=((UNV[tl]??={})[kc]??={});u[vn]=(u[vn]||0)+c}
+   if(kc==="?"){const u=((UNK[tl]??={})[vc]??={});u[n]=(u[n]||0)+c}}
   const DCx={};for(const[kn,c]of Object.entries(Dt||{})){const xc=clOf(kn);DCx[xc]=(DCx[xc]||0)+c}
   KC=Object.keys(KCx).length?KCx:KC;DC=Object.keys(DCx).length?DCx:DC;
   for(const[v,c]of Object.entries(KC||{})){a.KC[v]=(a.KC[v]||0)+c;(CM[kc]??={})[v]=(CM[kc][v]||0)+c;CK[kc]=(CK[kc]||0)+c;CD[v]=(CD[v]||0)+c;
@@ -664,7 +670,8 @@ async function vAdmin(){
           :{rows:"Killer",cols:"Victim",band:"▼ VICTIM — the class that died",tot:"KILLER TOTALS",n:"Kills",most:"Killed most",foot:"Deaths (times died)",cell:(r,v,n)=>`${r} killed ${v} ×${n}`,sub:`<span style="color:#e53e3e">rows = killer</span> · <span style="color:#4a9be8">columns = victim</span> · each cell = how many times the row class killed the column class`};
   $("#acm-sub").innerHTML=L.sub+" · click a header to sort";
   document.querySelectorAll("#acm-sw button").forEach(b=>{b.classList.toggle("on",(b.dataset.m==="v")===fl);b.onclick=()=>{AS.cf=b.dataset.m;AS.cs="tot";drawCM()}});
-  $("#acm").innerHTML=`<table class="acm${fl?" fl":""}"><thead>
+  const SC={red:"#e53e3e",yellow:"#e8b923"},sdk=AS.csd&&SC[AS.csd]?`--kc:${SC[AS.csd]};--vc:${SC[AS.csd==="red"?"yellow":"red"]}`:"";
+  $("#acm").innerHTML=`<table class="acm${fl?" fl":""}" style="${sdk}"><thead>
    <tr class="band"><th class="corner" rowspan="2"><span class="${ck}">${L.cols} →</span><br><span class="${rk}">${L.rows} ↓</span></th><th class="cband" colspan="${cols.length}">${L.band}</th><th class="rband" colspan="2">${L.tot}</th></tr>
    <tr class="vh">${cols.map(v=>`<th data-x="${esc(v)}" class="vc${so===v?" on":""}" title="Sort by ${esc(v)}">${aIco(v)}<span>${esc(v)}</span></th>`).join("")}<th data-x="tot" class="kt k1${so==="tot"?" on":""}" title="Sort by total">${L.n}</th><th class="l kt">${L.most}</th></tr></thead><tbody>${rows.map(r=>{const m=T[r]||{},t=top(m)[0];
    return`<tr><td class="l rh">${ico(r)}</td>${cols.map(v=>{const n=m[v]||0;return`<td title="${esc(L.cell(r,v,n))}" style="${n?`background:rgba(${col},${(0.08+0.62*n/mx).toFixed(2)})`:"color:var(--faint)"}">${n||"·"}</td>`}).join("")}<td class="kt k1"><b>${nf(RT[r])}</b></td><td class="l kt">${t?`${aIco(t[0])} ×${t[1]}`:""}</td></tr>`}).join("")}
@@ -692,9 +699,11 @@ async function vAdmin(){
    const sel=AS.sds[t]&&by(t)[AS.sds[t]]?AS.sds[t]:main[0][0];
    const B=brk(t,sel),bt=B.reduce((a,x)=>a+x[1],0),bm=B.length?B[0][1]:1;
    return`<div class="sdc" data-t="${t}"><h3 style="color:${tc[t]}">${nm[t]} · ${dm?"deaths":"kills"} by spec</h3>
-    <div class="sdtop">${donut(parts,tot)}<ul class="sdl">${parts.map(([c,v,col])=>`<li data-c="${esc(c)}" class="${c===sel?"on":""}${c==="Other"?" x":""}"><i style="background:${col}"></i>${c==="Other"?`Other (${E.length-9})`:`${aIco(c)}<span>${esc(c)}</span>`}<b>${v}</b><em>${Math.round(100*v/tot)}%</em></li>`).join("")}</ul></div>
+    <div class="sdtop">${donut(parts,tot)}<ul class="sdl">${parts.map(([c,v,col])=>`<li data-c="${esc(c)}" class="${c===sel?"on":""}${c==="Other"?" x":""}"><i style="background:${col}"></i>${c==="Other"?`Other (${E.length-9})`:c==="?"?`<span>❔ Class not read</span>`:`${aIco(c)}<span>${esc(c)}</span>`}<b>${v}</b><em>${Math.round(100*v/tot)}%</em></li>`).join("")}</ul></div>
     <div class="sdb"><h4>${aIco(sel)} <span style="color:${ccol(sel)}">${nm[t]} ${esc(sel)}</span> ${dm?"died to":"killed"} <small class="g">${bt} · ${nm[oth(t)]}'s specs</small></h4>
-    ${B.slice(0,10).map(([c,v])=>`<div class="sdr">${aIco(c)}<span class="n">${esc(c)}</span><span class="sdbar"><i style="width:${(100*v/bm).toFixed(1)}%;background:${ccol(c)}"></i></span><b>${v}</b><em>${Math.round(100*v/Math.max(1,bt))}%</em></div>`).join("")||`<p class="empty">None.</p>`}</div></div>`};
+    ${B.slice(0,10).map(([c,v])=>c==="?"?(()=>{const who=dm?((UNK[oth(t)]||{})[sel]||{}):((UNV[t]||{})[sel]||{});const L=top(who);
+      return`<div class="sdr unk"><span class="aico">❔</span><span class="n" title="${esc(L.map(([n,k])=>n+" ×"+k).join(", "))}">Class not read</span><span class="sdbar"><i style="width:${(100*v/bm).toFixed(1)}%;background:#777"></i></span><b>${v}</b><em>${Math.round(100*v/Math.max(1,bt))}%</em></div>
+      <div class="sdunk">${L.slice(0,12).map(([n,k])=>`<span>${esc(n)} ×${k}</span>`).join("")}${L.length>12?`<span>+${L.length-12} more</span>`:""}</div>`})():`<div class="sdr">${aIco(c)}<span class="n">${esc(c)}</span><span class="sdbar"><i style="width:${(100*v/bm).toFixed(1)}%;background:${ccol(c)}"></i></span><b>${v}</b><em>${Math.round(100*v/Math.max(1,bt))}%</em></div>`).join("")||`<p class="empty">None.</p>`}</div></div>`};
   // head to head: the same spec on each side, Yellow left and Red right
   const Y=by("yellow"),Rr=by("red"),specs=[...new Set([...Object.keys(Y),...Object.keys(Rr)])].sort((a,b)=>((Y[b]||0)+(Rr[b]||0))-((Y[a]||0)+(Rr[a]||0)));
   const hm=Math.max(1,...specs.map(c=>Math.max(Y[c]||0,Rr[c]||0)));
@@ -718,7 +727,8 @@ async function vAdmin(){
    const f=w/n,dev=f-.5,a=Math.min(1,Math.abs(dev)*2)*(n<6?.35:1);const bg=dev>=0?`rgba(72,187,120,${(0.12+0.6*a).toFixed(2)})`:`rgba(229,62,62,${(0.12+0.6*a).toFixed(2)})`;
    return`<td style="background:${bg}" class="${n<6?"few":""}" title="${esc((nmR?nmR+" ":"")+r)} killed ${esc((nmC?nmC+" ":"")+c)} ${w}× · was killed by it ${l}× (${Math.round(100*f)}% won)"><b>${Math.round(100*f)}%</b><small>${w}–${l}</small></td>`};
   const rec=r=>{let w=0,l=0;cols.forEach(c=>{w+=win(r,c);l+=loss(r,c)});return[w,l]};
-  $("#amu").innerHTML=`<table class="acm amu"><thead><tr class="vh"><th class="l corner"><span class="kk">${nmR||"Row"} spec</span> vs<br><span class="vv">${nmC||"column"} spec →</span></th>${cols.map(c=>`<th class="vc">${aIco(c)}<span>${esc(c)}</span></th>`).join("")}<th class="kt k1">Overall</th></tr></thead><tbody>${
+  const RC={red:"#e53e3e",yellow:"#e8b923"},rc=sd?RC[sd]:"#e53e3e",cc=sd?RC[sd==="red"?"yellow":"red"]:"#4a9be8";
+  $("#amu").innerHTML=`<table class="acm amu" style="--rc:${rc};--cc:${cc};--kc:${rc};--vc:${cc}"><thead><tr class="vh"><th class="l corner"><span class="kk">${nmR||"Row"} spec</span> vs<br><span class="vv">${nmC||"column"} spec →</span></th>${cols.map(c=>`<th class="vc">${aIco(c)}<span>${esc(c)}</span></th>`).join("")}<th class="kt k1">Overall</th></tr></thead><tbody>${
    rows.map(r=>{const[w,l]=rec(r),f=w+l?w/(w+l):0;return`<tr><td class="l rh">${aIco(r)} <span class="cn">${esc(r)}</span></td>${cols.map(c=>cell(r,c)).join("")}<td class="kt k1" style="color:${f>=.5?"#7fd8a0":"#ff8a8a"}"><b>${Math.round(100*f)}%</b><small>${w}–${l}</small></td></tr>`}).join("")}</tbody></table>
    <p class="g" style="margin:6px 0 0;font-size:12px">Read across a row: where that spec wins (green) and loses (red). Best counters to a spec: go down its column and find the greenest row.</p>`};
  drawMU();
@@ -768,7 +778,7 @@ function route(){const f=$("#fab");if(f&&!location.hash.match(/^#\/?$/))f.remove
  window.scrollTo(0,0)}
 addEventListener("hashchange",route);route();
 /* a newer upload replaces a cached copy of the site */
-const BUILD="a7417f55bd26";let vAt=0;
+const BUILD="1e06656e6f84";let vAt=0;
 function vchk(){const n=Date.now();if(n-vAt<30000)return;vAt=n;
  fetch(ROOT+"version.txt?"+n,{cache:"no-store"}).then(r=>r.ok?r.text():"").then(v=>{v=(v||"").trim();
   if(!v||v===BUILD||new URLSearchParams(location.search).get("v")===v)return;
