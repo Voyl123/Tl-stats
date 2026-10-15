@@ -190,7 +190,7 @@ const TC=t=>({Yellow:"var(--Yellow)",Red:"var(--Red)",Blue:"var(--Blue)",Green:"
 const M=D.m.map((m,i)=>({...m,i,date:new Date((m.d||"").replace(" ","T")),ym:(m.d||"").slice(0,7)}));
 let incl={war:1,inhouse:0,siege:0,scan:1};
 function counted(m){return m.ty==="merged"?false:m.ty==="war"?true:!!incl[m.ty]}
-const SPECROLE={"Greatsword":"DPS","Crusader":"Tank","Ravager":"DPS","Outrider":"DPS","Ranger":"DPS","Sentinel":"DPS","Paladin":"Support","Gladiator":"DPS","Justicar":"DPS","Juggernaut":"Tank","Sword & Shield":"Tank","Berserker":"Tank","Raider":"Tank","Warden":"Tank","Disciple":"Tank","Templar":"Tank","Steelheart":"Tank","Guardian":"Tank","Mauler":"Tank","Dagger":"DPS","Scorpion":"DPS","Infiltrator":"DPS","Spellblade":"DPS","Darkblighter":"Support","Shadowdancer":"DPS","Lunarch":"DPS","Predator":"DPS","Crossbow":"DPS","Scout":"DPS","Battleweaver":"DPS","Fury":"Support","Cavalier":"DPS","Crucifix":"DPS","Crossbow + Gauntlet":"DPS","Longbow":"DPS","Liberator":"DPS","Seeker":"Support","Impaler":"DPS","Scryer":"DPS","Longbow + Gauntlet":"DPS","Staff":"DPS","Invocator":"Support","Eradicator":"DPS","Enigma":"DPS","Staff + Gauntlet":"DPS","Wand & Tome":"Support","Voidlance":"Support","Oracle":"Support","Wand & Tome + Gauntlet":"Support","Spear":"DPS","Polaris":"DPS","Spear + Gauntlet":"DPS","Orb":"DPS","Orb + Gauntlet":"Tank","Gauntlet":"DPS"};   // role follows the spec
+const SPECROLE={"Greatsword":"DPS","Crusader":"Tank","Ravager":"DPS","Outrider":"DPS","Ranger":"DPS","Sentinel":"DPS","Paladin":"Support","Gladiator":"DPS","Justicar":"DPS","Juggernaut":"Tank","Sword & Shield":"Tank","Berserker":"Tank","Raider":"Tank","Warden":"Tank","Disciple":"Tank","Templar":"Tank","Steelheart":"Tank","Guardian":"Tank","Mauler":"Tank","Dagger":"DPS","Scorpion":"DPS","Infiltrator":"DPS","Spellblade":"DPS","Darkblighter":"Support","Shadowdancer":"DPS","Lunarch":"DPS","Predator":"DPS","Crossbow":"DPS","Scout":"DPS","Battleweaver":"DPS","Fury":"Support","Cavalier":"DPS","Crucifix":"DPS","Crossbow + Gauntlet":"DPS","Longbow":"DPS","Liberator":"DPS","Seeker":"Support","Impaler":"DPS","Scryer":"DPS","Longbow + Gauntlet":"DPS","Staff":"DPS","Invocator":"Support","Eradicator":"DPS","Enigma":"DPS","Staff + Gauntlet":"DPS","Wand & Tome":"Support","Voidlance":"Support","Oracle":"Support","Wand & Tome + Gauntlet":"Support","Spear":"DPS","Polaris":"DPS","Spear + Gauntlet":"DPS","Orb":"DPS","Orb + Gauntlet":"Tank","Soulcrusher":"Tank","Gauntlet":"DPS"};   // role follows the spec
 let P,G;
 // one name, more than one person: when a name shows up twice in the same game on different specs, those are
 // different players, so everywhere that name is split by spec (e.g. "fia (Scorpion)" and "fia (Shadowdancer)")
@@ -601,6 +601,7 @@ async function vAdmin(){
  <div id="asel"></div>
  <h2>Deaths <small class="g">click a player for who they killed and who killed them</small></h2><div class="tw"><table id="at"></table></div><div class="more" id="amore"></div>
  <h2 id="afd-h">Kill feed <small class="g" id="afd-s"></small></h2><div class="tw"><table id="afd"></table></div><div class="more" id="afd-more"></div>
+ <div id="apt-wrap"></div>
  <h2 style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">Class matchups · who beats who <span class="seg" id="amu-sd"><button data-s="">All kills</button><button data-s="red" style="color:#ff6b6b">Red specs vs Yellow specs</button><button data-s="yellow" style="color:#f0d33a">Yellow specs vs Red specs</button></span><small class="g" id="amu-sub"></small></h2><div class="tw" id="amu"></div>
  <h2 style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">Each side · who died to what <span class="seg" id="asd-m"><button data-m="d">💀 Deaths</button><button data-m="k">⚔ Kills</button></span><small class="g" id="asd-sub"></small></h2><div id="asd"></div>
  <h2 style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">Who killed which class <span class="seg" id="acm-sw"><button data-m="k">⚔ Killer → victims</button><button data-m="v">🛡 Victim ← killers</button></span><span class="seg" id="acm-sd"><button data-s="">Both sides</button><button data-s="red" style="color:#ff6b6b">Red's kills</button><button data-s="yellow" style="color:#f0d33a">Yellow's kills</button></span><small class="g" id="acm-sub"></small></h2><div class="tw" id="acm"></div>
@@ -707,6 +708,20 @@ async function vAdmin(){
    rows.map(r=>{const[w,l]=rec(r),f=w+l?w/(w+l):0;return`<tr><td class="l rh">${aIco(r)} <span class="cn">${esc(r)}</span></td>${cols.map(c=>cell(r,c)).join("")}<td class="kt k1" style="color:${f>=.5?"#7fd8a0":"#ff8a8a"}"><b>${Math.round(100*f)}%</b><small>${w}–${l}</small></td></tr>`}).join("")}</tbody></table>
    <p class="g" style="margin:6px 0 0;font-size:12px">Read across a row: where that spec wins (green) and loses (red). Best counters to a spec: go down its column and find the greenest row.</p>`};
  drawMU();
+ // priority targets: per war, set in the app. Our side's kills of them earn the reward.
+ const drawPT=()=>{const W=gs.filter(g=>g.pt&&g.pt.t&&Object.keys(g.pt.t).length);const box=$("#apt-wrap");
+  if(!W.length){box.innerHTML="";return}
+  const H=new Map(),T=[];let tot=0,kills=0,unit=W[0].pt.unit||"pts";
+  W.forEach(g=>{const side=g.pt.side,tg=g.pt.t;(g.p||[]).forEach(([n,gu,tm,cl,ro,ki,de,K])=>{if(String(tm||"").toLowerCase()!==side)return;
+    for(const[t,r]of Object.entries(tg)){const c=(K||{})[t]||0;if(!c)continue;const h=H.get(n)||{n,cl,k:0,r:0,t:{}};h.k+=c;h.r+=c*r;h.t[t]=(h.t[t]||0)+c;H.set(n,h);tot+=c*r;kills+=c}});
+   for(const[t,r]of Object.entries(tg)){let k=0;const by={};(g.p||[]).forEach(([n,gu,tm,cl,ro,ki,de,K])=>{if(String(tm||"").toLowerCase()!==side)return;const c=(K||{})[t]||0;if(c){k+=c;by[n]=(by[n]||0)+c}});T.push({g,t,r,k,by})}});
+  const hs=[...H.values()].sort((a,b)=>b.r-a.r||b.k-a.k),fm=v=>Number.isInteger(v)?nf(v):v.toFixed(1);
+  box.innerHTML=`<h2>🎯 Priority targets · bounty board <small class="g">${W.length} war${W.length===1?"":"s"} with targets · ${kills} target kills · ${fm(tot)} ${esc(unit)} earned</small></h2>
+   <div class="two"><div class="box"><h3 style="margin:0 0 8px;font-size:14px">Hunters</h3><table class="acm" style="width:100%"><thead><tr><th class="l">Player</th><th>Target kills</th><th>Reward</th><th class="l">Took down</th></tr></thead><tbody>
+    ${hs.map((h,i)=>`<tr><td class="l">${i<3?["🥇","🥈","🥉"][i]+" ":""}${aIco(h.cl)} <b>${esc(h.n)}</b></td><td>${h.k}</td><td><b>${fm(h.r)}</b></td><td class="l g" style="white-space:normal">${Object.entries(h.t).map(([t,c])=>`🎯${esc(t)}×${c}`).join(" ")}</td></tr>`).join("")||`<tr><td colspan="4" class="l g">No target was killed by our side yet.</td></tr>`}</tbody></table></div>
+   <div class="box"><h3 style="margin:0 0 8px;font-size:14px">Targets</h3><table class="acm" style="width:100%"><thead><tr><th class="l">Target</th><th class="l">War</th><th>Reward</th><th>Killed</th><th class="l">By</th></tr></thead><tbody>
+    ${T.sort((a,b)=>b.k-a.k||b.r-a.r).map(x=>`<tr><td class="l">🎯 <b>${esc(x.t)}</b></td><td class="l g">${esc((x.g.d||"").slice(0,10))}</td><td>${fm(x.r)}</td><td>${x.k||"–"}</td><td class="l g" style="white-space:normal">${Object.entries(x.by).sort((a,b)=>b[1]-a[1]).map(([n,c])=>`${esc(n)}×${c}`).join(", ")||"never killed"}</td></tr>`).join("")}</tbody></table></div></div>`};
+ drawPT();
  // the kill feed itself: one game -> every kill; all games -> every kill of the selected player
  const drawFD=()=>{const one=!!AS.g,clsOf=g=>{const m={};(g.p||[]).forEach(e=>{if(e[0]&&!(e[0] in m))m[e[0]]=e[3]||""});return m};
   const q=AS.q.trim().toLowerCase(),selN=AS.sel?(A.get(AS.sel)||{}).n:"";
@@ -720,9 +735,10 @@ async function vAdmin(){
   const tm=s=>{s=Math.round(s);return`${Math.floor(s/60)}:${String(s%60).padStart(2,"0")}`};
   $("#afd-s").textContent=`${rows.length.toLocaleString()} kills${selN?" involving "+selN:""}${one?"":" across "+gs.length+" games"} · only names on that game's scoreboard · click a header to sort`;
   const th=(k,l,c="")=>`<th data-fk="${k}" class="${c}${fs.k===k?" on":""}" style="cursor:pointer">${l}${fs.k===k?(fs.a?" ▲":" ▼"):""}</th>`;
-  const nm=(n,c,me)=>n?`<span class="nm"${me?' style="text-decoration:underline"':""}>${esc(n)}</span> ${aIco(c)}`:`<span class="g">unreadable</span>`;
+  const nm=(n,c,me,pt)=>n?`${pt?`<span title="priority target (${pt} reward)">🎯</span>`:""}<span class="nm"${me?' style="text-decoration:underline"':""}>${esc(n)}</span> ${aIco(c)}`:`<span class="g">unreadable</span>`;
+  const isPT=r=>{const P=r.g.pt;return P&&P.t&&P.t[r.v]!=null?(P.t[r.v]||"0"):0};
   const n=AS.fn||300;
-  $("#afd").innerHTML=`<thead><tr>${one?"":th("t","Game","l")}${th("t","Time","l")}${th("k","Killer","l")}<th></th>${th("v","Victim","l")}</tr></thead><tbody>${rows.slice(0,n).map(r=>`<tr>${one?"":`<td class="l g">${esc((r.g.d||"").slice(0,10))} · ${esc(r.g.t||r.g.id)}</td>`}<td class="l">${tm(r.t)}</td><td class="l">${nm(r.k,r.kc,r.k===selN)}</td><td style="color:#e53e3e">⚔</td><td class="l">${nm(r.v,r.vc,r.v===selN)}</td></tr>`).join("")}</tbody>`;
+  $("#afd").innerHTML=`<thead><tr>${one?"":th("t","Game","l")}${th("t","Time","l")}${th("k","Killer","l")}<th></th>${th("v","Victim","l")}</tr></thead><tbody>${rows.slice(0,n).map(r=>`<tr>${one?"":`<td class="l g">${esc((r.g.d||"").slice(0,10))} · ${esc(r.g.t||r.g.id)}</td>`}<td class="l">${tm(r.t)}</td><td class="l">${nm(r.k,r.kc,r.k===selN)}</td><td style="color:#e53e3e">⚔</td><td class="l">${nm(r.v,r.vc,r.v===selN,isPT(r))}</td></tr>`).join("")}</tbody>`;
   $("#afd-more").innerHTML=rows.length>n?`<button>Show more (${(rows.length-n).toLocaleString()} left)</button>`:rows.length?"":`<p class="empty">No kills match.</p>`;
   const mb=$("#afd-more button");if(mb)mb.onclick=()=>{AS.fn=n+500;drawFD()};
   document.querySelectorAll("#afd th[data-fk]").forEach(h=>h.onclick=()=>{const k=h.dataset.fk;if(fs.k===k)fs.a=!fs.a;else{fs.k=k;fs.a=true}drawFD()})};
@@ -738,7 +754,7 @@ function route(){const f=$("#fab");if(f&&!location.hash.match(/^#\/?$/))f.remove
  window.scrollTo(0,0)}
 addEventListener("hashchange",route);route();
 /* a newer upload replaces a cached copy of the site */
-const BUILD="5af914c9477f";let vAt=0;
+const BUILD="6c47c8b62166";let vAt=0;
 function vchk(){const n=Date.now();if(n-vAt<30000)return;vAt=n;
  fetch(ROOT+"version.txt?"+n,{cache:"no-store"}).then(r=>r.ok?r.text():"").then(v=>{v=(v||"").trim();
   if(!v||v===BUILD||new URLSearchParams(location.search).get("v")===v)return;
