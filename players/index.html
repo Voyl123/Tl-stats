@@ -580,17 +580,31 @@ async function vAdmin(){
     try{ADM=await admOpen(pw);admPw.set(pw,$("#arem").checked);admNav();if(onAdmin())vAdmin()}catch(x){$("#aerr").textContent=x.message==="none"?"No admin data uploaded yet.":"Wrong password."}};return}}
  admNav();
  const GL=ADM.games||[];const gs=AS.g?GL.filter(g=>g.id===AS.g):GL;
+ // each player's main class over every game: a game where their weapons weren't read ("?")
+ // takes it, and so do the class charts (a victim's class comes from the same table)
+ const MC=new Map();GL.forEach(g=>(g.p||[]).forEach(r=>{const k=key(r[0]),c=r[3];if(!k||!c||c==="?")return;const m=MC.get(k)||{};m[c]=(m[c]||0)+1;MC.set(k,m)}));
+ const mainCls=n=>{const m=MC.get(key(n));if(!m)return"";return Object.entries(m).sort((a,b)=>b[1]-a[1])[0][0]};
  const A=new Map();const pair=new Map();let dTot=0;
  const CM={},CK={},CD={},CS={red:{CM:{},CK:{},CD:{}},yellow:{CM:{},CK:{},CD:{}}};
  gs.forEach(g=>(g.p||[]).forEach(([n,gu,tm,cl,ro,kills,de,K,Dt,KC,DC])=>{const k=key(n);if(!k)return;
-  let a=A.get(k);if(!a){a={k,n,gu,cl,ro,g:0,ki:0,de:0,dg:0,K:{},Dt:{},KC:{},DC:{},h:[]};A.set(k,a)}
-  const kc=cl||"?",ts=CS[String(tm||"").toLowerCase()];for(const[v,c]of Object.entries(KC||{})){a.KC[v]=(a.KC[v]||0)+c;(CM[kc]??={})[v]=(CM[kc][v]||0)+c;CK[kc]=(CK[kc]||0)+c;CD[v]=(CD[v]||0)+c;
+  let a=A.get(k);if(!a){a={k,n,gu,cl,ro,g:0,ki:0,de:0,dg:0,K:{},Dt:{},KC:{},DC:{},h:[],cs:{}};A.set(k,a)}
+  if(cl&&cl!=="?"){const e=a.cs[cl]||(a.cs[cl]={g:0,ro});e.g++;}
+  // the class they played in this game; when it wasn't read, the class they play most
+  const gcl=g._gc||(g._gc=new Map((g.p||[]).filter(r=>r[3]&&r[3]!=="?").map(r=>[key(r[0]),r[3]])));
+  const clOf=x=>gcl.get(key(x))||mainCls(x)||"?";
+  const kc=clOf(n),ts=CS[String(tm||"").toLowerCase()];
+  const KCx={};for(const[vn,c]of Object.entries(K||{})){const vc=clOf(vn);KCx[vc]=(KCx[vc]||0)+c}
+  const DCx={};for(const[kn,c]of Object.entries(Dt||{})){const xc=clOf(kn);DCx[xc]=(DCx[xc]||0)+c}
+  KC=Object.keys(KCx).length?KCx:KC;DC=Object.keys(DCx).length?DCx:DC;
+  for(const[v,c]of Object.entries(KC||{})){a.KC[v]=(a.KC[v]||0)+c;(CM[kc]??={})[v]=(CM[kc][v]||0)+c;CK[kc]=(CK[kc]||0)+c;CD[v]=(CD[v]||0)+c;
    if(ts){(ts.CM[kc]??={})[v]=(ts.CM[kc][v]||0)+c;ts.CK[kc]=(ts.CK[kc]||0)+c;ts.CD[v]=(ts.CD[v]||0)+c}}
   for(const[v,c]of Object.entries(DC||{}))a.DC[v]=(a.DC[v]||0)+c;
-  a.g++;a.ki+=kills||0;if(de!=null){a.de+=de;a.dg++;dTot+=de}if(gu)a.gu=gu;if(cl){a.cl=cl;a.ro=ro}
+  a.g++;a.ki+=kills||0;if(de!=null){a.de+=de;a.dg++;dTot+=de}if(gu)a.gu=gu;
   for(const[v,c]of Object.entries(K||{})){a.K[v]=(a.K[v]||0)+c;const pk2=n+"\u0000"+v;pair.set(pk2,(pair.get(pk2)||0)+c)}
   for(const[v,c]of Object.entries(Dt||{}))a.Dt[v]=(a.Dt[v]||0)+c;
   a.h.push([g,kills||0,de])}));
+ // a player's class: the one they played in the most games (ties: the latest game's)
+ A.forEach(a=>{const e=Object.entries(a.cs).sort((x,y)=>y[1].g-x[1].g);if(e.length){a.cl=e[0][0];a.ro=e[0][1].ro}else if(a.cl==="?")a.cl=""});
  const top=o=>Object.entries(o).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]));
  const fed=[...pair.values()].reduce((a,b)=>a+b,0);
  const ago=ADM.at?ADM.at.replace("T"," ").slice(0,16):"";
@@ -723,7 +737,7 @@ async function vAdmin(){
     ${T.sort((a,b)=>b.k-a.k||b.r-a.r).map(x=>`<tr><td class="l">🎯 <b>${esc(x.t)}</b></td><td class="l g">${esc((x.g.d||"").slice(0,10))}</td><td>${fm(x.r)}</td><td>${x.k||"–"}</td><td class="l g" style="white-space:normal">${Object.entries(x.by).sort((a,b)=>b[1]-a[1]).map(([n,c])=>`${esc(n)}×${c}`).join(", ")||"never killed"}</td></tr>`).join("")}</tbody></table></div></div>`};
  drawPT();
  // the kill feed itself: one game -> every kill; all games -> every kill of the selected player
- const drawFD=()=>{const one=!!AS.g,clsOf=g=>{const m={};(g.p||[]).forEach(e=>{if(e[0]&&!(e[0] in m))m[e[0]]=e[3]||""});return m};
+ const drawFD=()=>{const one=!!AS.g,clsOf=g=>{const m={};(g.p||[]).forEach(e=>{if(e[0]&&!(e[0] in m))m[e[0]]=(e[3]&&e[3]!=="?")?e[3]:(mainCls(e[0])||"")});return m};
   const q=AS.q.trim().toLowerCase(),selN=AS.sel?(A.get(AS.sel)||{}).n:"";
   let rows=[];gs.forEach(g=>{const fd=(g.kf&&g.kf.feed)||[];if(!fd.length)return;const cm=clsOf(g);
    fd.forEach(([t,k,v])=>rows.push({g,t,k,v,kc:cm[k]||"",vc:cm[v]||""}))});
@@ -754,7 +768,7 @@ function route(){const f=$("#fab");if(f&&!location.hash.match(/^#\/?$/))f.remove
  window.scrollTo(0,0)}
 addEventListener("hashchange",route);route();
 /* a newer upload replaces a cached copy of the site */
-const BUILD="6c47c8b62166";let vAt=0;
+const BUILD="a7417f55bd26";let vAt=0;
 function vchk(){const n=Date.now();if(n-vAt<30000)return;vAt=n;
  fetch(ROOT+"version.txt?"+n,{cache:"no-store"}).then(r=>r.ok?r.text():"").then(v=>{v=(v||"").trim();
   if(!v||v===BUILD||new URLSearchParams(location.search).get("v")===v)return;
