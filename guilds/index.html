@@ -126,6 +126,7 @@ details.asec[open]>summary{border-bottom:1px solid var(--line)}
 .aico+.nm,.aico+.pn{margin-left:5px}.nm+.ge,.nm+img.ge{margin-left:4px}#afd td .aico img{width:18px;height:18px}
 .tlw{position:relative}.tl{width:100%;height:auto;display:block}.tlv{width:100%;height:auto;display:block;margin-top:2px}
 .tlg{stroke:var(--line);stroke-width:1}.tlt{fill:var(--dim);font-size:11px}.tlx{stroke:var(--text);stroke-width:1;stroke-dasharray:3 3}.tl0{stroke:var(--dim);stroke-width:1.4;opacity:.8}
+.dptiles{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 14px}.dpt{flex:1 1 220px;background:var(--panel2);border:1px solid var(--line);border-radius:4px;padding:10px 14px;display:flex;flex-direction:column;gap:2px}.dpt span{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}.dpt b{font-size:28px;line-height:1.1}.dpt small{color:var(--dim);font-size:12px}.dph{font-size:14px;margin:14px 0 8px}.dph small{font-weight:400;margin-left:6px}.dpb{display:flex;gap:6px;align-items:flex-end;height:150px;padding:18px 4px 18px;border-bottom:1px solid var(--line);overflow-x:auto}.dpg{flex:1 0 34px;height:100%;display:flex;align-items:flex-end;gap:2px;position:relative;cursor:pointer;border-radius:3px;transition:background .15s}.dpg:hover{background:rgba(255,255,255,.05)}.dpg i{flex:1;position:relative;border-radius:2px 2px 0 0;opacity:.85}.dpg:hover i{opacity:1}.dpg i em{position:absolute;top:-15px;left:50%;transform:translateX(-50%);font-style:normal;font-size:10px;color:var(--dim);white-space:nowrap}.dpg u{position:absolute;bottom:-17px;left:0;right:0;text-align:center;text-decoration:none;font-size:10px;color:var(--dim)}.dpa{position:relative;text-align:left!important}.dpbar{position:absolute;left:4px;top:50%;height:14px;transform:translateY(-50%);opacity:.28;border-radius:2px}.dpa b{position:relative;padding-left:6px}.dps{width:70px;height:18px;vertical-align:middle}.dpt-t tbody tr{cursor:pointer}
 .anod{opacity:.4;filter:grayscale(.6);transition:opacity .2s}.anod:hover{opacity:.7}.anod-note{margin:10px 0;padding:8px 12px;border:1px dashed var(--line);border-radius:4px;color:var(--dim);font-size:13px}.anod-list{margin:8px 0 0;font-size:12px;color:var(--dim);opacity:.6}.anod-list a{cursor:pointer;text-decoration:underline dotted}.anod-list a:hover{opacity:1;color:var(--text)}option.anopt{color:#777}
 .tl path{transition:opacity .15s}.tl:hover path{opacity:.75}.tl path:hover{opacity:1;stroke-width:3.2}.tl path.tla,.tl:hover path.tla{opacity:.06;pointer-events:none}.tltip .tlh{margin:0 0 3px;color:var(--dim);font-size:11px}
 .tlleg{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.tlleg span{display:inline-flex;align-items:center;gap:5px;font-size:12px;padding:3px 8px;border:1px solid var(--line);border-radius:3px;cursor:pointer;transition:opacity .15s}
@@ -705,8 +706,9 @@ async function vAdmin(){
  ${OFF?`<div class="anod-note">💤 <b>${esc(gs[0].t||"")}</b> has no deaths on its scoreboard (sieges only list kills and assists), so it is left out of every total. Shown faded for reference only.</div>`:GX.length?`<div class="anod-list">Not counted (no deaths): ${GX.map(g=>`<a data-g="${esc(g.id)}">${esc((g.d||"").slice(0,10))} · ${esc(g.t||g.id)}</a>`).join(" · ")}</div>`:""}
  <div class="${OFF?"anod":""}"><div class="stats">${[["Games",gs.length],["Players",A.size],["Deaths",nf(dTot)],["Kills in feed",nf(fed)]].map(([l,v])=>`<div class="stat"><b>${v}</b><span>${l}</span></div>`).join("")}</div>
  <div id="asel"></div>
- <nav class="atabs" id="atabs">${[["at","👤 Players"],["afd","📜 Kill feed"],["atl","📈 Timeline"],["apt-wrap","🎯 Bounty"],["amu","⚖ Matchups"],["asd","🍩 By side"],["acm","▦ Class table"],["apt","⚔ Who killed who"]].map(([k,l])=>`<a data-go="${k}">${l}</a>`).join("")}<span class="grow"></span><a data-all="1" title="Open or close every section">⇕ All</a></nav>
+ <nav class="atabs" id="atabs">${[["at","👤 Players"],["adp","💀 Per game"],["afd","📜 Kill feed"],["atl","📈 Timeline"],["apt-wrap","🎯 Bounty"],["amu","⚖ Matchups"],["asd","🍩 By side"],["acm","▦ Class table"],["apt","⚔ Who killed who"]].map(([k,l])=>`<a data-go="${k}">${l}</a>`).join("")}<span class="grow"></span><a data-all="1" title="Open or close every section">⇕ All</a></nav>
  ${asec("s-at","Deaths","every player: kills, deaths and who killed them most · click a player for the full story",true,`<div class="tw"><table id="at"></table></div><div class="more" id="amore"></div>`)}
+ ${asec("s-adp","Deaths per game · who dies the most",`<span id="adp-sub"></span>`,true,`<div class="actl"><span class="seg" id="adp-sd"></span><span class="seg" id="adp-min"><button data-m="1">1+ games</button><button data-m="3">3+ games</button><button data-m="5">5+ games</button></span></div><div id="adp"></div>`)}
  ${asec("s-afd",`Kill feed`,`<span id="afd-s"></span>`,false,`<div class="tw"><table id="afd"></table></div><div class="more" id="afd-more"></div>`)}
  <div id="apt-wrap"></div>
  ${asec("s-amu","Class matchups · who beats who",`<span id="amu-sub"></span>`,false,`<div class="actl"><span class="seg" id="amu-sd"><button data-s="">All kills</button><button data-s="red" style="color:#ff6b6b">Red specs vs Yellow specs</button><button data-s="yellow" style="color:#f0d33a">Yellow specs vs Red specs</button></span></div><div class="tw" id="amu"></div>`)}
@@ -862,6 +864,46 @@ async function vAdmin(){
    <div class="box"><h3 style="margin:0 0 8px;font-size:14px">Targets</h3><table class="acm" style="width:100%"><thead><tr><th class="l">Target</th><th class="l">War</th><th>Reward</th><th>Killed</th><th class="l">By</th></tr></thead><tbody>
     ${T.sort((a,b)=>b.k-a.k||b.r-a.r).map(x=>`<tr><td class="l">🎯 ${who(x.t,null,true)}</td><td class="l g">${esc((x.g.d||"").slice(0,10))}</td><td>${fm(x.r)}</td><td>${x.k||"–"}</td><td class="l g" style="white-space:normal">${Object.entries(x.by).sort((a,b)=>b[1]-a[1]).map(([n,c])=>`${esc(n)}×${c}`).join(", ")||"never killed"}</td></tr>`).join("")}</tbody></table></div></div>`)};
  drawPT();
+ // deaths per game: how much each side dies in a game, and who dies the most on average
+ AS.dp=AS.dp||{s:"",m:"3"};
+ const drawDP=()=>{const box=$("#adp");if(!box)return;
+  const DG=gs.filter(g=>(g.p||[]).some(r=>(r[6]||0)>0));
+  if(!DG.length){box.innerHTML=`<p class="empty">No game with deaths in this selection.</p>`;$("#adp-sub").textContent="";return}
+  const sides=[...new Set(DG.flatMap(g=>(g.p||[]).map(r=>sideKey(g,r[2]))))].filter(Boolean).sort((a,b)=>(a==="us"?-1:b==="us"?1:a<b?-1:1));
+  const ours=sides.includes("us")?"us":"";if(AS.dp.s===undefined||(AS.dp.s&&!sides.includes(AS.dp.s)))AS.dp.s=ours;if(AS.dp.s===""&&ours&&!AS.dp.touched)AS.dp.s=ours;
+  const sd=AS.dp.s,mg=gs.length===1?1:+AS.dp.m,lab=k=>k==="us"?"Supple":k==="them"?"Opponents":k[0].toUpperCase()+k.slice(1),col=k=>({us:"#e8b923",them:"#e53e3e",yellow:"#e8b923",red:"#e53e3e"})[k]||"#aaa";
+  $("#adp-sd").innerHTML=sides.map(k=>`<button data-s="${k}" style="color:${col(k)}">${lab(k)}</button>`).join("")+`<button data-s="*">Everyone</button>`;
+  document.querySelectorAll("#adp-sd button").forEach(b=>{b.classList.toggle("on",b.dataset.s===(sd||"*"));b.onclick=()=>{AS.dp.s=b.dataset.s==="*"?"":b.dataset.s;AS.dp.touched=1;drawDP()}});
+  document.querySelectorAll("#adp-min button").forEach(b=>{b.classList.toggle("on",b.dataset.m===AS.dp.m);b.hidden=gs.length===1;b.onclick=()=>{AS.dp.m=b.dataset.m;drawDP()}});
+  // per game: each side's deaths, players and deaths per player
+  const GR=DG.map(g=>{const o={g,s:{}};(g.p||[]).forEach(r=>{const k=sideKey(g,r[2]);if(!k)return;const x=o.s[k]||(o.s[k]={d:0,n:0});x.d+=r[6]||0;x.n++});return o});
+  const avg=k=>{const v=GR.filter(o=>o.s[k]);return v.length?{d:v.reduce((a,o)=>a+o.s[k].d,0)/v.length,pp:v.reduce((a,o)=>a+o.s[k].d/o.s[k].n,0)/v.length,n:v.length}:null};
+  const fo=v=>v>=100?Math.round(v).toLocaleString("en-US"):v.toFixed(1);
+  const tiles=sides.map(k=>{const a=avg(k);if(!a)return"";const worst=GR.filter(o=>o.s[k]).sort((x,y)=>y.s[k].d-x.s[k].d)[0];
+   return`<div class="dpt" style="border-top:3px solid ${col(k)}"><span>${lab(k)} · deaths per game</span><b>${fo(a.d)}</b><small>${a.pp.toFixed(1)} per player · ${a.n} game${a.n===1?"":"s"} · worst ${nf(worst.s[k].d)} (${esc((worst.g.t||"").split(" · ").slice(0,2).join(" · "))})</small></div>`}).join("");
+  // game by game bars, every side side by side
+  const mx=Math.max(1,...GR.flatMap(o=>sides.map(k=>(o.s[k]||{}).d||0)));
+  const bars=`<div class="dpb">${GR.slice().sort((a,b)=>(a.g.d||"").localeCompare(b.g.d||"")).map(o=>`<div class="dpg" data-g="${esc(o.g.id)}" title="${esc(o.g.t||"")}">${sides.map(k=>{const x=o.s[k];if(!x)return"";return`<i style="height:${Math.max(2,100*x.d/mx)}%;background:${col(k)}" title="${esc(lab(k))}: ${nf(x.d)} deaths · ${(x.d/x.n).toFixed(1)} per player"><em>${nf(x.d)}</em></i>`}).join("")}<u>${esc((o.g.d||"").slice(5,10))}</u></div>`).join("")}</div>`;
+  // players: average deaths per game
+  const P=new Map();DG.forEach(g=>(g.p||[]).forEach(r=>{const k=sideKey(g,r[2]);if(sd&&k!==sd)return;const id=key(r[0]);if(!id)return;
+   const p=P.get(id)||{n:r[0],k,d:0,g:0,ki:0,h:[]};p.d+=r[6]||0;p.ki+=r[5]||0;p.g++;p.h.push({d:r[6]||0,t:g.d||"",gt:g.t||""});P.set(id,p)}));
+  const L=[...P.values()].filter(p=>p.g>=mg).map(p=>(p.a=p.d/p.g,p.h.sort((a,b)=>a.t.localeCompare(b.t)),p)).sort((a,b)=>b.a-a.a||b.g-a.g);
+  const top=Math.max(1,...L.map(p=>p.a)),allAvg=L.length?L.reduce((a,p)=>a+p.a,0)/L.length:0;
+  const spark=h=>{const v=h.slice(-8).map(x=>x.d),m=Math.max(1,...v),w=70,hh=18;if(v.length<2)return"";
+   return`<svg class="dps" viewBox="0 0 ${w} ${hh}"><polyline points="${v.map((d,i)=>`${(i*(w-4)/(v.length-1)+2).toFixed(1)},${(hh-2-(hh-4)*d/m).toFixed(1)}`).join(" ")}" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>`};
+  const trend=p=>{if(p.h.length<4)return"";const r=p.h.slice(-3).reduce((a,x)=>a+x.d,0)/3,d=r-p.a;return Math.abs(d)<1.5?`<span class="g">→</span>`:d>0?`<span style="color:#e53e3e" title="last 3 games: ${r.toFixed(1)}">▲ ${d.toFixed(1)}</span>`:`<span style="color:#48bb78" title="last 3 games: ${r.toFixed(1)}">▼ ${(-d).toFixed(1)}</span>`};
+  const rows=L.slice(0,AS.dp.all?999:25).map((p,i)=>{const w=Math.max(1,(i<25?100:100)*p.a/top),mx=p.h.reduce((a,x)=>x.d>a.d?x:a,p.h[0]),mn=p.h.reduce((a,x)=>x.d<a.d?x:a,p.h[0]);
+   return`<tr data-k="${esc(key(p.n))}"><td class="l">${i<3?["💀","☠️","⚰️"][i]+" ":`<span class="g">${i+1}</span> `}${who(p.n)}</td><td>${p.g}</td><td class="dpa"><span class="dpbar" style="width:${w}%;background:${col(p.k)}"></span><b>${p.a.toFixed(1)}</b></td>
+    <td>${(p.a-allAvg>=0?"+":"")+(p.a-allAvg).toFixed(1)}</td><td title="${esc(mx.gt)}">${mx.d}</td><td title="${esc(mn.gt)}">${mn.d}</td><td>${(p.ki/Math.max(1,p.d)).toFixed(2)}</td><td style="color:${col(p.k)}">${spark(p.h)}</td><td>${trend(p)}</td></tr>`}).join("");
+  $("#adp-sub").textContent=`${DG.length} game${DG.length===1?"":"s"} with deaths · ${sd?lab(sd):"everyone"} · players with ${mg}+ game${mg===1?"":"s"}`;
+  box.innerHTML=`<div class="dptiles">${tiles}</div>${GR.length>1?`<h3 class="dph">Deaths each game <small class="g">click a game to open it</small></h3>${bars}`:""}
+   <h3 class="dph">Who dies the most per game <small class="g">average deaths per game played · team average ${allAvg.toFixed(1)}</small></h3>
+   <div class="tw"><table class="acm dpt-t" style="width:100%"><thead><tr><th class="l">Player</th><th>Games</th><th style="min-width:180px">Deaths / game</th><th>vs avg</th><th>Worst</th><th>Best</th><th>K/D</th><th>Last games</th><th>Trend</th></tr></thead><tbody>${rows||`<tr><td colspan="9" class="l g">Nobody with ${mg}+ games here — try 1+ games.</td></tr>`}</tbody></table></div>
+   ${L.length>25?`<div class="more"><button class="abtn ghost" id="adp-all">${AS.dp.all?"Show top 25":`Show all ${L.length}`}</button></div>`:""}`;
+  const ab=$("#adp-all");if(ab)ab.onclick=()=>{AS.dp.all=!AS.dp.all;drawDP()};
+  box.querySelectorAll(".dpg[data-g]").forEach(d=>d.onclick=()=>{AS.g=d.dataset.g;AS.sel="";vAdmin()});
+  box.querySelectorAll("tr[data-k]").forEach(tr=>tr.onclick=()=>{AS.sel=tr.dataset.k;AS.fn=300;sel();draw();drawFD();const e=$("#asel");if(e)e.scrollIntoView({behavior:"smooth",block:"start"})})};
+ drawDP();
  // kill timeline: every class's running total of kills through the game, like a market chart.
  // "Kills ⇅ deaths" mirrors deaths below the zero line (negative), so a class's kills and its
  // deaths read as one shape: the gap between its line above and its reflection below is its K/D.
@@ -960,7 +1002,7 @@ function route(){const f=$("#fab");if(f&&!location.hash.match(/^#\/?$/))f.remove
  window.scrollTo(0,0)}
 addEventListener("hashchange",route);route();
 /* a newer upload replaces a cached copy of the site */
-const BUILD="d05e7e2ecacf";let vAt=0;
+const BUILD="1fb47ea839ef";let vAt=0;
 function vchk(){const n=Date.now();if(n-vAt<30000)return;vAt=n;
  fetch(ROOT+"version.txt?"+n,{cache:"no-store"}).then(r=>r.ok?r.text():"").then(v=>{v=(v||"").trim();
   if(!v||v===BUILD||new URLSearchParams(location.search).get("v")===v)return;
