@@ -93,6 +93,10 @@ table.gh{width:100%;table-layout:fixed}table.gh td{padding:5px 6px;white-space:n
 .akl{list-style:none;margin:0;padding:0;display:grid;gap:3px}.akl li{position:relative;display:flex;justify-content:space-between;gap:10px;padding:3px 8px;font-size:13px;z-index:0}
 .akl li i{position:absolute;left:0;top:0;bottom:0;background:color-mix(in srgb,var(--acc) 9%,transparent);z-index:-1;border-radius:2px}.akl b{font-variant-numeric:tabular-nums}
 #at tr.on td{background:var(--hover)}
+.acm{border-collapse:collapse;font-size:12.5px}.acm th,.acm td{padding:4px 6px;text-align:center;border-bottom:1px solid var(--line)}
+.acm th.l,.acm td.l{text-align:left;white-space:nowrap}.acm th{cursor:pointer;font-weight:600;color:var(--dim)}
+.acm th.vh span{writing-mode:vertical-rl;transform:rotate(180deg);display:inline-block;white-space:nowrap}.acm th.on{text-decoration:underline}
+.acm tr.tot td{color:var(--dim)}
 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:12px}
 .box{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:12px 14px}
 .box>h2:first-child,.box>h3:first-child{margin:-12px -14px 10px!important;padding:8px 14px;background:var(--panel2);border-bottom:1px solid var(--line)}
@@ -541,8 +545,11 @@ async function vAdmin(){
  admNav();
  const GL=ADM.games||[];const gs=AS.g?GL.filter(g=>g.id===AS.g):GL;
  const A=new Map();const pair=new Map();let dTot=0;
- gs.forEach(g=>(g.p||[]).forEach(([n,gu,tm,cl,ro,kills,de,K,Dt])=>{const k=key(n);if(!k)return;
-  let a=A.get(k);if(!a){a={k,n,gu,cl,ro,g:0,ki:0,de:0,dg:0,K:{},Dt:{},h:[]};A.set(k,a)}
+ const CM={},CK={},CD={};
+ gs.forEach(g=>(g.p||[]).forEach(([n,gu,tm,cl,ro,kills,de,K,Dt,KC,DC])=>{const k=key(n);if(!k)return;
+  let a=A.get(k);if(!a){a={k,n,gu,cl,ro,g:0,ki:0,de:0,dg:0,K:{},Dt:{},KC:{},DC:{},h:[]};A.set(k,a)}
+  const kc=cl||"?";for(const[v,c]of Object.entries(KC||{})){a.KC[v]=(a.KC[v]||0)+c;(CM[kc]??={})[v]=(CM[kc][v]||0)+c;CK[kc]=(CK[kc]||0)+c;CD[v]=(CD[v]||0)+c}
+  for(const[v,c]of Object.entries(DC||{}))a.DC[v]=(a.DC[v]||0)+c;
   a.g++;a.ki+=kills||0;if(de!=null){a.de+=de;a.dg++;dTot+=de}if(gu)a.gu=gu;if(cl){a.cl=cl;a.ro=ro}
   for(const[v,c]of Object.entries(K||{})){a.K[v]=(a.K[v]||0)+c;const pk2=n+"\u0000"+v;pair.set(pk2,(pair.get(pk2)||0)+c)}
   for(const[v,c]of Object.entries(Dt||{}))a.Dt[v]=(a.Dt[v]||0)+c;
@@ -556,14 +563,17 @@ async function vAdmin(){
  <div class="stats">${[["Games",gs.length],["Players",A.size],["Deaths",nf(dTot)],["Kills in feed",nf(fed)]].map(([l,v])=>`<div class="stat"><b>${v}</b><span>${l}</span></div>`).join("")}</div>
  <div id="asel"></div>
  <h2>Deaths <small class="g">click a player for who they killed and who killed them</small></h2><div class="tw"><table id="at"></table></div><div class="more" id="amore"></div>
+ <h2>Who killed which class <small class="g">rows: the killer's spec · columns: the victim's · click a header to sort</small></h2><div class="tw" id="acm"></div>
  <h2>Who killed who <small class="g">killer → victim, from the kill feed</small></h2><div class="tw"><table id="apt"></table></div><div class="more" id="apmore"></div>`;
  const cols=[["name","Player","l",a=>a.n.toLowerCase()],["cls","Class","l",a=>a.cl||"~"],["g","Games","",a=>a.g],["k","Kills","",a=>a.ki],["de","Deaths","",a=>a.dg?a.de:-1],
   ["kd","K/D","",a=>a.dg?(a.de?a.ki/a.de:a.ki):-1],["dpg","Deaths / game","",a=>a.dg?a.de/a.dg:-1],["tk","Killed most by","l",a=>(top(a.Dt)[0]||[""])[0].toLowerCase()||"~"]];
  const sel=()=>{const a=A.get(AS.sel);const el=$("#asel");if(!a){el.innerHTML="";return}
+  const colC=(t,o)=>{const l=top(o),tot=l.reduce((s,x)=>s+x[1],0),mx=l[0]?.[1]||1;return`<div class="box"><h3 style="margin:0 0 8px">${t} <small class="g">${nf(tot)}</small></h3>${l.length?`<ol class="akl">${l.map(([c,v])=>`<li><span style="color:${ccol(c)};font-weight:600">${esc(c)}</span><b>${v}</b><i style="width:${(100*v/mx).toFixed(1)}%;background:color-mix(in srgb,${ccol(c)} 22%,transparent)"></i></li>`).join("")}</ol>`:`<div class="sub">none read</div>`}</div>`};
   const col=(t,o)=>{const l=top(o),tot=l.reduce((s,x)=>s+x[1],0),mx=l[0]?.[1]||1;return`<div class="box"><h3 style="margin:0 0 8px">${t} <small class="g">${nf(tot)}</small></h3>${l.length?`<ol class="akl">${l.slice(0,25).map(([n,c])=>`<li><span>${pLink(n)}</span><b>${c}</b><i style="width:${(100*c/mx).toFixed(1)}%"></i></li>`).join("")}</ol>${l.length>25?`<div class="sub">+ ${l.length-25} more</div>`:""}`:`<div class="sub">none read</div>`}</div>`};
   el.innerHTML=`<div class="box asb"><div class="ahd"><h2 style="margin:0;color:${ccol(a.cl,a.ro)}">${esc(a.n)} ${gTag(a.gu)}</h2><button class="abtn ghost" id="ax">Close</button></div>
   <div class="sub">${esc(a.cl||"")} · ${a.g} game${a.g===1?"":"s"} · ${nf(a.ki)} kills · ${a.dg?nf(a.de)+" deaths · K/D "+(a.de?a.ki/a.de:a.ki).toFixed(2):"deaths not tracked"} · <a href="${ROOT}#/player/${encodeURIComponent(pk(a.n))}">public profile</a></div>
   <div class="two" style="margin-top:10px">${col("Killed",a.K)}${col("Died to",a.Dt)}</div>
+  <div class="two" style="margin-top:10px">${colC("Classes they killed",a.KC)}${colC("Classes that killed them",a.DC)}</div>
   <div class="tw" style="margin-top:10px"><table><thead><tr><th class="l">Game</th><th>Kills</th><th>Deaths</th></tr></thead><tbody>${a.h.map(([g,k,d])=>`<tr><td class="l">${esc((g.d||"").slice(0,10))} · ${esc(g.t||g.id)}</td><td>${nf(k)}</td><td>${d==null?"<span class=g>–</span>":nf(d)}</td></tr>`).join("")}</tbody></table></div></div>`;
   $("#ax").onclick=()=>{AS.sel="";sel();draw()};el.scrollIntoView({block:"nearest"})};
  const draw=()=>{const q=AS.q.trim().toLowerCase();
@@ -583,6 +593,15 @@ async function vAdmin(){
   bindSort($("#apt"),AS.ps,draw)};
  $("#ag").onchange=e=>{AS.g=e.target.value;AS.sel="";vAdmin()};$("#aq").oninput=e=>{AS.q=e.target.value;AS.n=150;draw()};
  $("#alock").onclick=()=>{admPw.clear();ADM=null;document.querySelector('nav a[data-v=admin]')?.remove();vAdmin()};
+ const drawCM=()=>{const rows=Object.keys(CK);if(!rows.length){$("#acm").innerHTML=`<p class="empty">No class data yet.</p>`;return}
+  const cols=Object.keys(CD).sort((a,b)=>CD[b]-CD[a]).slice(0,16);
+  rows.sort((a,b)=>AS.cs==="tot"||!AS.cs?CK[b]-CK[a]:((CM[b]||{})[AS.cs]||0)-((CM[a]||{})[AS.cs]||0)||CK[b]-CK[a]);
+  const mx=Math.max(1,...rows.flatMap(r=>cols.map(v=>(CM[r]||{})[v]||0)));
+  $("#acm").innerHTML=`<table class="acm"><thead><tr><th class="l">Killer ↓ / victim →</th>${cols.map(v=>`<th data-x="${esc(v)}" class="vh${AS.cs===v?" on":""}" style="color:${ccol(v)}"><span>${esc(v)}</span></th>`).join("")}<th data-x="tot" class="${!AS.cs||AS.cs==="tot"?"on":""}">Kills</th><th class="l">Killed most</th></tr></thead><tbody>${rows.map(r=>{const m=CM[r]||{},t=top(m)[0];
+   return`<tr><td class="l" style="color:${ccol(r)};font-weight:600">${esc(r)}</td>${cols.map(v=>{const n=m[v]||0;return`<td title="${esc(r)} killed ${esc(v)} ×${n}" style="${n?`background:rgba(229,62,62,${(0.08+0.62*n/mx).toFixed(2)})`:"color:var(--faint)"}">${n||"·"}</td>`}).join("")}<td><b>${nf(CK[r])}</b></td><td class="l">${t?`<span style="color:${ccol(t[0])}">${esc(t[0])}</span> ×${t[1]}`:""}</td></tr>`}).join("")}
+   <tr class="tot"><td class="l">Deaths</td>${cols.map(v=>`<td>${nf(CD[v])}</td>`).join("")}<td></td><td></td></tr></tbody></table>`;
+  document.querySelectorAll("#acm th[data-x]").forEach(th=>th.onclick=()=>{AS.cs=th.dataset.x;drawCM()})};
+ drawCM();
  sel();draw()}
 admNav();
 
@@ -594,7 +613,7 @@ function route(){const f=$("#fab");if(f&&!location.hash.match(/^#\/?$/))f.remove
  window.scrollTo(0,0)}
 addEventListener("hashchange",route);route();
 /* a newer upload replaces a cached copy of the site */
-const BUILD="770580a80570";let vAt=0;
+const BUILD="17c51be9f1b2";let vAt=0;
 function vchk(){const n=Date.now();if(n-vAt<30000)return;vAt=n;
  fetch(ROOT+"version.txt?"+n,{cache:"no-store"}).then(r=>r.ok?r.text():"").then(v=>{v=(v||"").trim();
   if(!v||v===BUILD||new URLSearchParams(location.search).get("v")===v)return;
