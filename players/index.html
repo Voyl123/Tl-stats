@@ -93,6 +93,7 @@ table.gh{width:100%;table-layout:fixed}table.gh td{padding:5px 6px;white-space:n
 .akl{list-style:none;margin:0;padding:0;display:grid;gap:3px}.akl li{position:relative;display:flex;justify-content:space-between;gap:10px;padding:3px 8px;font-size:13px;z-index:0}
 .akl li i{position:absolute;left:0;top:0;bottom:0;background:color-mix(in srgb,var(--acc) 9%,transparent);z-index:-1;border-radius:2px}.akl b{font-variant-numeric:tabular-nums}
 #at tr.on td{background:var(--hover)}
+.amu td{min-width:54px;line-height:1.15}.amu td b{display:block;font-size:12.5px}.amu td small{display:block;font-size:10.5px;color:rgba(255,255,255,.65)}.amu td.few{opacity:.75}.amu td.mu0{color:var(--faint)}
 .sdg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:12px;margin-bottom:12px}
 .sdc{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:12px 14px}.sdc h3,.sdh h3{margin:0 0 10px;font-size:14px}
 .sdtop{display:flex;gap:14px;align-items:center}.dn{width:132px;height:132px;flex:none}.dn path{cursor:pointer;stroke:var(--panel);stroke-width:.8}.dn path:hover{opacity:.8}
@@ -600,6 +601,7 @@ async function vAdmin(){
  <div id="asel"></div>
  <h2>Deaths <small class="g">click a player for who they killed and who killed them</small></h2><div class="tw"><table id="at"></table></div><div class="more" id="amore"></div>
  <h2 id="afd-h">Kill feed <small class="g" id="afd-s"></small></h2><div class="tw"><table id="afd"></table></div><div class="more" id="afd-more"></div>
+ <h2 style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">Class matchups · who beats who <span class="seg" id="amu-sd"><button data-s="">All kills</button><button data-s="red" style="color:#ff6b6b">Red specs vs Yellow specs</button><button data-s="yellow" style="color:#f0d33a">Yellow specs vs Red specs</button></span><small class="g" id="amu-sub"></small></h2><div class="tw" id="amu"></div>
  <h2 style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">Each side · who died to what <span class="seg" id="asd-m"><button data-m="d">💀 Deaths</button><button data-m="k">⚔ Kills</button></span><small class="g" id="asd-sub"></small></h2><div id="asd"></div>
  <h2 style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">Who killed which class <span class="seg" id="acm-sw"><button data-m="k">⚔ Killer → victims</button><button data-m="v">🛡 Victim ← killers</button></span><span class="seg" id="acm-sd"><button data-s="">Both sides</button><button data-s="red" style="color:#ff6b6b">Red's kills</button><button data-s="yellow" style="color:#f0d33a">Yellow's kills</button></span><small class="g" id="acm-sub"></small></h2><div class="tw" id="acm"></div>
  <h2>Who killed who <small class="g">killer → victim, from the kill feed</small></h2><div class="tw"><table id="apt"></table></div><div class="more" id="apmore"></div>`;
@@ -686,6 +688,25 @@ async function vAdmin(){
   $("#asd").innerHTML=`<div class="sdg">${sides.map(card).join("")}</div>${h2h}`;
   document.querySelectorAll("#asd .sdc").forEach(cd=>cd.onclick=e=>{const li=e.target.closest("[data-c]");if(!li||li.dataset.c==="Other")return;AS.sds[cd.dataset.t]=li.dataset.c;drawSD()})};
  drawSD();
+ // matchups: for each pair, how often the row spec killed the column spec against the reverse.
+ // Green = the row spec wins that matchup, red = it loses; faded = too few kills to say.
+ const drawMU=()=>{const sd=AS.musd||"";
+  document.querySelectorAll("#amu-sd button").forEach(b=>{b.classList.toggle("on",(b.dataset.s||"")===sd);b.onclick=()=>{AS.musd=b.dataset.s;drawMU()}});
+  const A=sd?CS[sd]:{CM,CK,CD},B=sd?CS[sd==="red"?"yellow":"red"]:{CM,CK,CD};
+  const win=(r,c)=>((A.CM[r]||{})[c]||0),loss=(r,c)=>((B.CM[c]||{})[r]||0);
+  const rows=Object.keys(A.CK).filter(r=>A.CK[r]+(B.CD[r]||0)>=5).sort((a,b)=>(A.CK[b]||0)-(A.CK[a]||0)).slice(0,16);
+  const cols=Object.keys(B.CK).filter(c=>(B.CK[c]||0)+(A.CD[c]||0)>=5).sort((a,b)=>(B.CK[b]||0)-(B.CK[a]||0)).slice(0,16);
+  if(!rows.length||!cols.length){$("#amu").innerHTML=`<p class="empty">Not enough kills yet.</p>`;return}
+  const nmR=sd?(sd==="red"?"Red":"Yellow"):"",nmC=sd?(sd==="red"?"Yellow":"Red"):"";
+  $("#amu-sub").textContent=`cell = row spec's kills on the column spec – the column's kills on it · green: row wins, red: row loses · faded: under 6 kills between them`;
+  const cell=(r,c)=>{const w=win(r,c),l=loss(r,c),n=w+l;if(!n)return`<td class="mu0">·</td>`;
+   const f=w/n,dev=f-.5,a=Math.min(1,Math.abs(dev)*2)*(n<6?.35:1);const bg=dev>=0?`rgba(72,187,120,${(0.12+0.6*a).toFixed(2)})`:`rgba(229,62,62,${(0.12+0.6*a).toFixed(2)})`;
+   return`<td style="background:${bg}" class="${n<6?"few":""}" title="${esc((nmR?nmR+" ":"")+r)} killed ${esc((nmC?nmC+" ":"")+c)} ${w}× · was killed by it ${l}× (${Math.round(100*f)}% won)"><b>${Math.round(100*f)}%</b><small>${w}–${l}</small></td>`};
+  const rec=r=>{let w=0,l=0;cols.forEach(c=>{w+=win(r,c);l+=loss(r,c)});return[w,l]};
+  $("#amu").innerHTML=`<table class="acm amu"><thead><tr class="vh"><th class="l corner"><span class="kk">${nmR||"Row"} spec</span> vs<br><span class="vv">${nmC||"column"} spec →</span></th>${cols.map(c=>`<th class="vc">${aIco(c)}<span>${esc(c)}</span></th>`).join("")}<th class="kt k1">Overall</th></tr></thead><tbody>${
+   rows.map(r=>{const[w,l]=rec(r),f=w+l?w/(w+l):0;return`<tr><td class="l rh">${aIco(r)} <span class="cn">${esc(r)}</span></td>${cols.map(c=>cell(r,c)).join("")}<td class="kt k1" style="color:${f>=.5?"#7fd8a0":"#ff8a8a"}"><b>${Math.round(100*f)}%</b><small>${w}–${l}</small></td></tr>`}).join("")}</tbody></table>
+   <p class="g" style="margin:6px 0 0;font-size:12px">Read across a row: where that spec wins (green) and loses (red). Best counters to a spec: go down its column and find the greenest row.</p>`};
+ drawMU();
  // the kill feed itself: one game -> every kill; all games -> every kill of the selected player
  const drawFD=()=>{const one=!!AS.g,clsOf=g=>{const m={};(g.p||[]).forEach(e=>{if(e[0]&&!(e[0] in m))m[e[0]]=e[3]||""});return m};
   const q=AS.q.trim().toLowerCase(),selN=AS.sel?(A.get(AS.sel)||{}).n:"";
@@ -717,7 +738,7 @@ function route(){const f=$("#fab");if(f&&!location.hash.match(/^#\/?$/))f.remove
  window.scrollTo(0,0)}
 addEventListener("hashchange",route);route();
 /* a newer upload replaces a cached copy of the site */
-const BUILD="6f1916800b7f";let vAt=0;
+const BUILD="5af914c9477f";let vAt=0;
 function vchk(){const n=Date.now();if(n-vAt<30000)return;vAt=n;
  fetch(ROOT+"version.txt?"+n,{cache:"no-store"}).then(r=>r.ok?r.text():"").then(v=>{v=(v||"").trim();
   if(!v||v===BUILD||new URLSearchParams(location.search).get("v")===v)return;
