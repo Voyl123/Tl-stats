@@ -126,7 +126,7 @@ details.asec[open]>summary{border-bottom:1px solid var(--line)}
 .aico+.nm,.aico+.pn{margin-left:5px}.nm+.ge,.nm+img.ge{margin-left:4px}#afd td .aico img{width:18px;height:18px}
 .tlw{position:relative}.tl{width:100%;height:auto;display:block}.tlv{width:100%;height:auto;display:block;margin-top:2px}
 .tlg{stroke:var(--line);stroke-width:1}.tlt{fill:var(--dim);font-size:11px}.tlx{stroke:var(--text);stroke-width:1;stroke-dasharray:3 3}.tl0{stroke:var(--dim);stroke-width:1.4;opacity:.8}
-.dptiles{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 14px}.dpt{flex:1 1 220px;background:var(--panel2);border:1px solid var(--line);border-radius:4px;padding:10px 14px;display:flex;flex-direction:column;gap:2px}.dpt span{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}.dpt b{font-size:28px;line-height:1.1}.dpt small{color:var(--dim);font-size:12px}.dph{font-size:14px;margin:14px 0 8px}.dph small{font-weight:400;margin-left:6px}.dpb{display:flex;gap:6px;align-items:flex-end;height:150px;padding:18px 4px 18px;border-bottom:1px solid var(--line);overflow-x:auto}.dpg{flex:1 0 34px;height:100%;display:flex;align-items:flex-end;gap:2px;position:relative;cursor:pointer;border-radius:3px;transition:background .15s}.dpg:hover{background:rgba(255,255,255,.05)}.dpg i{flex:1;position:relative;border-radius:2px 2px 0 0;opacity:.85}.dpg:hover i{opacity:1}.dpg i em{position:absolute;top:-15px;left:50%;transform:translateX(-50%);font-style:normal;font-size:10px;color:var(--dim);white-space:nowrap}.dpg u{position:absolute;bottom:-17px;left:0;right:0;text-align:center;text-decoration:none;font-size:10px;color:var(--dim)}.dpa{position:relative;text-align:left!important}.dpbar{position:absolute;left:4px;top:50%;height:14px;transform:translateY(-50%);opacity:.28;border-radius:2px}.dpa b{position:relative;padding-left:6px}.dps{width:70px;height:18px;vertical-align:middle}.dpt-t tbody tr{cursor:pointer}
+.dptiles{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 14px}.dpt{flex:1 1 220px;background:var(--panel2);border:1px solid var(--line);border-radius:4px;padding:10px 14px;display:flex;flex-direction:column;gap:2px}.dpt span{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}.dpt b{font-size:28px;line-height:1.1}.dpt small{color:var(--dim);font-size:12px}.dph{font-size:14px;margin:14px 0 8px}.dph small{font-weight:400;margin-left:6px}.dpb{display:flex;gap:6px;align-items:flex-end;height:150px;padding:18px 4px 18px;border-bottom:1px solid var(--line);overflow-x:auto}.dpg{flex:1 0 34px;height:100%;display:flex;align-items:flex-end;gap:2px;position:relative;cursor:pointer;border-radius:3px;transition:background .15s}.dpg:hover{background:rgba(255,255,255,.05)}.dpg i{flex:1;position:relative;border-radius:2px 2px 0 0;opacity:.85}.dpg:hover i{opacity:1}.dpg i em{position:absolute;top:-15px;left:50%;transform:translateX(-50%);font-style:normal;font-size:10px;color:var(--dim);white-space:nowrap}.dpg u{position:absolute;bottom:-17px;left:0;right:0;text-align:center;text-decoration:none;font-size:10px;color:var(--dim)}.dpa{position:relative;text-align:left!important}.dpbar{position:absolute;left:4px;top:50%;height:14px;transform:translateY(-50%);opacity:.28;border-radius:2px}.dpa b{position:relative;padding-left:6px}.dps{width:70px;height:18px;vertical-align:middle}.dpt-t tbody tr{cursor:pointer}.dpinc{margin:0 0 12px;border:1px solid var(--line);border-radius:4px;padding:6px 12px;background:var(--panel2)}.dpinc summary{cursor:pointer;font-size:13px}.dpinc-l{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:4px 14px;margin:8px 0}.dpinc-l label{font-size:12px;cursor:pointer;display:flex;gap:6px;align-items:center}.dpinc-l label.off{opacity:.45;text-decoration:line-through}.dpinc-b{display:flex;gap:8px;margin-bottom:4px}.dpsh{font-size:11px;color:var(--dim);border:1px dashed var(--line);border-radius:3px;padding:0 5px;margin-left:4px}.dpshl{float:right;font-size:12px;font-weight:400;color:var(--dim);cursor:pointer}
 .anod{opacity:.4;filter:grayscale(.6);transition:opacity .2s}.anod:hover{opacity:.7}.anod-note{margin:10px 0;padding:8px 12px;border:1px dashed var(--line);border-radius:4px;color:var(--dim);font-size:13px}.anod-list{margin:8px 0 0;font-size:12px;color:var(--dim);opacity:.6}.anod-list a{cursor:pointer;text-decoration:underline dotted}.anod-list a:hover{opacity:1;color:var(--text)}option.anopt{color:#777}
 .tl path{transition:opacity .15s}.tl:hover path{opacity:.75}.tl path:hover{opacity:1;stroke-width:3.2}.tl path.tla,.tl:hover path.tla{opacity:.06;pointer-events:none}.tltip .tlh{margin:0 0 3px;color:var(--dim);font-size:11px}
 .tlleg{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.tlleg span{display:inline-flex;align-items:center;gap:5px;font-size:12px;padding:3px 8px;border:1px solid var(--line);border-radius:3px;cursor:pointer;transition:opacity .15s}
@@ -867,8 +867,14 @@ async function vAdmin(){
  // deaths per game: how much each side dies in a game, and who dies the most on average
  AS.dp=AS.dp||{s:"",m:"3"};
  const drawDP=()=>{const box=$("#adp");if(!box)return;
-  const DG=gs.filter(g=>(g.p||[]).some(r=>(r[6]||0)>0));
-  if(!DG.length){box.innerHTML=`<p class="empty">No game with deaths in this selection.</p>`;$("#adp-sub").textContent="";return}
+  let EXC={};try{EXC=JSON.parse(localStorage.getItem("adm.dp.exc")||"{}")}catch(e){}
+  const saveExc=()=>{try{localStorage.setItem("adm.dp.exc",JSON.stringify(EXC))}catch(e){}};
+  const DA=gs.filter(g=>(g.p||[]).some(r=>(r[6]||0)>0)),DG=DA.filter(g=>gs.length===1||!EXC[g.id]);
+  const pick=DA.length>1?`<details class="dpinc"${AS.dp.inc?" open":""}><summary>Games included: <b>${DG.length}</b> of ${DA.length}${DA.length-DG.length?` · <span style="color:#e8b923">${DA.length-DG.length} left out</span>`:""}</summary><div class="dpinc-l">${DA.slice().sort((a,b)=>(b.d||"").localeCompare(a.d||"")).map(g=>`<label class="${EXC[g.id]?"off":""}"><input type="checkbox" data-g="${esc(g.id)}"${EXC[g.id]?"":" checked"}> ${esc((g.d||"").slice(0,10))} · ${esc(g.t||g.id)}</label>`).join("")}</div><div class="dpinc-b"><button class="abtn ghost" data-all="1">Include all</button><button class="abtn ghost" data-all="0">Leave all out</button></div></details>`:"";
+  const bindInc=()=>{box.querySelectorAll(".dpinc").forEach(d=>d.ontoggle=()=>{AS.dp.inc=d.open});
+   box.querySelectorAll(".dpinc input[data-g]").forEach(c=>c.onchange=()=>{if(c.checked)delete EXC[c.dataset.g];else EXC[c.dataset.g]=1;saveExc();drawDP()});
+   box.querySelectorAll(".dpinc button[data-all]").forEach(b=>b.onclick=()=>{EXC={};if(b.dataset.all==="0")DA.forEach(g=>EXC[g.id]=1);saveExc();drawDP()})};
+  if(!DG.length){box.innerHTML=pick+`<p class="empty">No game included — tick at least one above.</p>`;$("#adp-sub").textContent="";bindInc();return}
   const sides=[...new Set(DG.flatMap(g=>(g.p||[]).map(r=>sideKey(g,r[2]))))].filter(Boolean).sort((a,b)=>(a==="us"?-1:b==="us"?1:a<b?-1:1));
   const ours=sides.includes("us")?"us":"";if(AS.dp.s===undefined||(AS.dp.s&&!sides.includes(AS.dp.s)))AS.dp.s=ours;if(AS.dp.s===""&&ours&&!AS.dp.touched)AS.dp.s=ours;
   const sd=AS.dp.s,mg=gs.length===1?1:+AS.dp.m,lab=k=>k==="us"?"Supple":k==="them"?"Opponents":k[0].toUpperCase()+k.slice(1),col=k=>({us:"#e8b923",them:"#e53e3e",yellow:"#e8b923",red:"#e53e3e"})[k]||"#aaa";
@@ -885,22 +891,28 @@ async function vAdmin(){
   const mx=Math.max(1,...GR.flatMap(o=>sides.map(k=>(o.s[k]||{}).d||0)));
   const bars=`<div class="dpb">${GR.slice().sort((a,b)=>(a.g.d||"").localeCompare(b.g.d||"")).map(o=>`<div class="dpg" data-g="${esc(o.g.id)}" title="${esc(o.g.t||"")}">${sides.map(k=>{const x=o.s[k];if(!x)return"";return`<i style="height:${Math.max(2,100*x.d/mx)}%;background:${col(k)}" title="${esc(lab(k))}: ${nf(x.d)} deaths · ${(x.d/x.n).toFixed(1)} per player"><em>${nf(x.d)}</em></i>`}).join("")}<u>${esc((o.g.d||"").slice(5,10))}</u></div>`).join("")}</div>`;
   // players: average deaths per game
+  // a name on two rows of one game is two people sharing it (e.g. "fia"): each row counts as its own
+  // game appearance, and the name is flagged, so their deaths aren't added up as one player's
+  const SH={};DA.forEach(g=>{const c={};(g.p||[]).forEach(r=>{const id=key(r[0]);if(id)c[id]=(c[id]||0)+1});for(const[id,n]of Object.entries(c))if(n>1)SH[id]=Math.max(SH[id]||0,n)});
   const P=new Map();DG.forEach(g=>(g.p||[]).forEach(r=>{const k=sideKey(g,r[2]);if(sd&&k!==sd)return;const id=key(r[0]);if(!id)return;
    const p=P.get(id)||{n:r[0],k,d:0,g:0,ki:0,h:[]};p.d+=r[6]||0;p.ki+=r[5]||0;p.g++;p.h.push({d:r[6]||0,t:g.d||"",gt:g.t||""});P.set(id,p)}));
-  const L=[...P.values()].filter(p=>p.g>=mg).map(p=>(p.a=p.d/p.g,p.h.sort((a,b)=>a.t.localeCompare(b.t)),p)).sort((a,b)=>b.a-a.a||b.g-a.g);
+  if(AS.dp.sh===undefined)AS.dp.sh=0;
+  const nSh=[...P.keys()].filter(id=>SH[id]).length;
+  const L=[...P.values()].filter(p=>p.g>=mg&&(AS.dp.sh||!SH[key(p.n)])).map(p=>(p.a=p.d/p.g,p.h.sort((a,b)=>a.t.localeCompare(b.t)),p)).sort((a,b)=>b.a-a.a||b.g-a.g);
   const top=Math.max(1,...L.map(p=>p.a)),allAvg=L.length?L.reduce((a,p)=>a+p.a,0)/L.length:0;
   const spark=h=>{const v=h.slice(-8).map(x=>x.d),m=Math.max(1,...v),w=70,hh=18;if(v.length<2)return"";
    return`<svg class="dps" viewBox="0 0 ${w} ${hh}"><polyline points="${v.map((d,i)=>`${(i*(w-4)/(v.length-1)+2).toFixed(1)},${(hh-2-(hh-4)*d/m).toFixed(1)}`).join(" ")}" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>`};
   const trend=p=>{if(p.h.length<4)return"";const r=p.h.slice(-3).reduce((a,x)=>a+x.d,0)/3,d=r-p.a;return Math.abs(d)<1.5?`<span class="g">→</span>`:d>0?`<span style="color:#e53e3e" title="last 3 games: ${r.toFixed(1)}">▲ ${d.toFixed(1)}</span>`:`<span style="color:#48bb78" title="last 3 games: ${r.toFixed(1)}">▼ ${(-d).toFixed(1)}</span>`};
   const rows=L.slice(0,AS.dp.all?999:25).map((p,i)=>{const w=Math.max(1,(i<25?100:100)*p.a/top),mx=p.h.reduce((a,x)=>x.d>a.d?x:a,p.h[0]),mn=p.h.reduce((a,x)=>x.d<a.d?x:a,p.h[0]);
-   return`<tr data-k="${esc(key(p.n))}"><td class="l">${i<3?["💀","☠️","⚰️"][i]+" ":`<span class="g">${i+1}</span> `}${who(p.n)}</td><td>${p.g}</td><td class="dpa"><span class="dpbar" style="width:${w}%;background:${col(p.k)}"></span><b>${p.a.toFixed(1)}</b></td>
+   return`<tr data-k="${esc(key(p.n))}"><td class="l">${i<3?["💀","☠️","⚰️"][i]+" ":`<span class="g">${i+1}</span> `}${who(p.n)}${SH[key(p.n)]?` <span class="dpsh" title="${SH[key(p.n)]} different players use this name in one game, so this is an average of everyone called that — not one person">👥 shared name</span>`:""}</td><td>${p.g}</td><td class="dpa"><span class="dpbar" style="width:${w}%;background:${col(p.k)}"></span><b>${p.a.toFixed(1)}</b></td>
     <td>${(p.a-allAvg>=0?"+":"")+(p.a-allAvg).toFixed(1)}</td><td title="${esc(mx.gt)}">${mx.d}</td><td title="${esc(mn.gt)}">${mn.d}</td><td>${(p.ki/Math.max(1,p.d)).toFixed(2)}</td><td style="color:${col(p.k)}">${spark(p.h)}</td><td>${trend(p)}</td></tr>`}).join("");
   $("#adp-sub").textContent=`${DG.length} game${DG.length===1?"":"s"} with deaths · ${sd?lab(sd):"everyone"} · players with ${mg}+ game${mg===1?"":"s"}`;
-  box.innerHTML=`<div class="dptiles">${tiles}</div>${GR.length>1?`<h3 class="dph">Deaths each game <small class="g">click a game to open it</small></h3>${bars}`:""}
-   <h3 class="dph">Who dies the most per game <small class="g">average deaths per game played · team average ${allAvg.toFixed(1)}</small></h3>
+  box.innerHTML=pick+`<div class="dptiles">${tiles}</div>${GR.length>1?`<h3 class="dph">Deaths each game <small class="g">click a game to open it</small></h3>${bars}`:""}
+   <h3 class="dph">Who dies the most per game <small class="g">average deaths per game played · team average ${allAvg.toFixed(1)}</small>${nSh?`<label class="dpshl"><input type="checkbox" id="adp-sh"${AS.dp.sh?" checked":""}> show ${nSh} shared name${nSh===1?"":"s"} 👥</label>`:""}</h3>
    <div class="tw"><table class="acm dpt-t" style="width:100%"><thead><tr><th class="l">Player</th><th>Games</th><th style="min-width:180px">Deaths / game</th><th>vs avg</th><th>Worst</th><th>Best</th><th>K/D</th><th>Last games</th><th>Trend</th></tr></thead><tbody>${rows||`<tr><td colspan="9" class="l g">Nobody with ${mg}+ games here — try 1+ games.</td></tr>`}</tbody></table></div>
    ${L.length>25?`<div class="more"><button class="abtn ghost" id="adp-all">${AS.dp.all?"Show top 25":`Show all ${L.length}`}</button></div>`:""}`;
-  const ab=$("#adp-all");if(ab)ab.onclick=()=>{AS.dp.all=!AS.dp.all;drawDP()};
+  const ab=$("#adp-all");if(ab)ab.onclick=()=>{AS.dp.all=!AS.dp.all;drawDP()};bindInc();
+  const shb=$("#adp-sh");if(shb)shb.onchange=()=>{AS.dp.sh=shb.checked?1:0;drawDP()};
   box.querySelectorAll(".dpg[data-g]").forEach(d=>d.onclick=()=>{AS.g=d.dataset.g;AS.sel="";vAdmin()});
   box.querySelectorAll("tr[data-k]").forEach(tr=>tr.onclick=()=>{AS.sel=tr.dataset.k;AS.fn=300;sel();draw();drawFD();const e=$("#asel");if(e)e.scrollIntoView({behavior:"smooth",block:"start"})})};
  drawDP();
@@ -1002,7 +1014,7 @@ function route(){const f=$("#fab");if(f&&!location.hash.match(/^#\/?$/))f.remove
  window.scrollTo(0,0)}
 addEventListener("hashchange",route);route();
 /* a newer upload replaces a cached copy of the site */
-const BUILD="1fb47ea839ef";let vAt=0;
+const BUILD="330ba0e3c25a";let vAt=0;
 function vchk(){const n=Date.now();if(n-vAt<30000)return;vAt=n;
  fetch(ROOT+"version.txt?"+n,{cache:"no-store"}).then(r=>r.ok?r.text():"").then(v=>{v=(v||"").trim();
   if(!v||v===BUILD||new URLSearchParams(location.search).get("v")===v)return;
