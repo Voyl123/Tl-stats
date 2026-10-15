@@ -126,6 +126,7 @@ details.asec[open]>summary{border-bottom:1px solid var(--line)}
 .aico+.nm,.aico+.pn{margin-left:5px}.nm+.ge,.nm+img.ge{margin-left:4px}#afd td .aico img{width:18px;height:18px}
 .tlw{position:relative}.tl{width:100%;height:auto;display:block}.tlv{width:100%;height:auto;display:block;margin-top:2px}
 .tlg{stroke:var(--line);stroke-width:1}.tlt{fill:var(--dim);font-size:11px}.tlx{stroke:var(--text);stroke-width:1;stroke-dasharray:3 3}.tl0{stroke:var(--dim);stroke-width:1.4;opacity:.8}
+.anod{opacity:.4;filter:grayscale(.6);transition:opacity .2s}.anod:hover{opacity:.7}.anod-note{margin:10px 0;padding:8px 12px;border:1px dashed var(--line);border-radius:4px;color:var(--dim);font-size:13px}.anod-list{margin:8px 0 0;font-size:12px;color:var(--dim);opacity:.6}.anod-list a{cursor:pointer;text-decoration:underline dotted}.anod-list a:hover{opacity:1;color:var(--text)}option.anopt{color:#777}
 .tl path{transition:opacity .15s}.tl:hover path{opacity:.75}.tl path:hover{opacity:1;stroke-width:3.2}.tl path.tla,.tl:hover path.tla{opacity:.06;pointer-events:none}.tltip .tlh{margin:0 0 3px;color:var(--dim);font-size:11px}
 .tlleg{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.tlleg span{display:inline-flex;align-items:center;gap:5px;font-size:12px;padding:3px 8px;border:1px solid var(--line);border-radius:3px;cursor:pointer;transition:opacity .15s}
 .tlleg span.off{opacity:.35}.tlleg i{width:10px;height:3px;display:inline-block}.tlleg .aico img{width:16px;height:16px}
@@ -637,11 +638,15 @@ async function vAdmin(){
    $("#alf").onsubmit=async e=>{e.preventDefault();const pw=$("#apw").value;$("#aerr").textContent="Unlocking…";
     try{ADM=await admOpen(pw);admPw.set(pw,$("#arem").checked);admNav();if(onAdmin())vAdmin()}catch(x){$("#aerr").textContent=x.message==="none"?"No admin data uploaded yet.":"Wrong password."}};return}}
  admNav();
- const GL=ADM.games||[];const gs=AS.g?GL.filter(g=>g.id===AS.g):GL;
+ const GL=ADM.games||[];
+ // a game without real deaths (a siege: its scoreboard has no deaths column, and older uploads put
+ // Assists there) is left out of every total; picking it on its own still shows it, dimmed
+ const ND=g=>!!g.sg||/\bsiege\b/i.test(g.t||"")||(!(g.kf&&g.kf.feed&&g.kf.feed.length)&&!(g.p||[]).some(r=>(r[6]||0)>0||Object.keys(r[8]||{}).length));
+ const GC=GL.filter(g=>!ND(g)),GX=GL.filter(ND);const gs=AS.g?GL.filter(g=>g.id===AS.g):GC;const OFF=!!AS.g&&gs.length&&ND(gs[0]);
  // each player's main class over every game: a game where their weapons weren't read ("?")
  // takes it, and so do the class charts (a victim's class comes from the same table)
  const MC=new Map();const mcAdd=(n,c)=>{const k=key(n);if(!k||!c||c==="?")return;const m=MC.get(k)||{};m[c]=(m[c]||0)+1;MC.set(k,m)};
- GL.forEach(g=>{const seen=new Set();(g.p||[]).forEach(r=>{mcAdd(r[0],r[3]);seen.add(key(r[0]))});for(const[n,c]of Object.entries(g.cls||{}))if(!seen.has(key(n)))mcAdd(n,c)});
+ GC.forEach(g=>{const seen=new Set();(g.p||[]).forEach(r=>{mcAdd(r[0],r[3]);seen.add(key(r[0]))});for(const[n,c]of Object.entries(g.cls||{}))if(!seen.has(key(n)))mcAdd(n,c)});
  const mainCls=n=>{const m=MC.get(key(n));if(!m)return"";return Object.entries(m).sort((a,b)=>b[1]-a[1])[0][0]};
  const A=new Map();const pair=new Map();let dTot=0;const UNV={},UNK={};   // who is behind a "?" class, for the charts
  const PCS={};   // side -> class -> players (a name counted once per side)
@@ -694,10 +699,11 @@ async function vAdmin(){
  const who=(n,cls,plain)=>`${aIco(cls!=null?cls:mainCls(n))}<span class="nm"${plain?"":` style="color:${ccol(mainCls(n))}"`}>${esc(n)}</span>${gIcon(guildOf(n))}`;
  const fed=[...pair.values()].reduce((a,b)=>a+b,0);
  const ago=ADM.at?ADM.at.replace("T"," ").slice(0,16):"";
- $("#app").innerHTML=`<div class="ahd"><div><h1>Admin</h1><div class="sub">Private · deaths and who killed who · ${GL.length} kill-feed game${GL.length===1?"":"s"}${ago?` · uploaded ${esc(ago)}`:""}</div></div><button class="abtn ghost" id="alock" title="Forget the password on this device">Lock</button></div>
- <div class="bar" style="margin-top:14px"><select id="ag" style="max-width:100%;min-width:0"><option value="">All games</option>${GL.map(g=>`<option value="${esc(g.id)}"${g.id===AS.g?" selected":""}>${esc((g.d||"").slice(0,10))} · ${esc(g.t||g.id)}</option>`).join("")}</select>
+ $("#app").innerHTML=`<div class="ahd"><div><h1>Admin</h1><div class="sub">Private · deaths and who killed who · ${GC.length} game${GC.length===1?"":"s"} counted${GX.length?` · ${GX.length} without deaths left out`:""}${ago?` · uploaded ${esc(ago)}`:""}</div></div><button class="abtn ghost" id="alock" title="Forget the password on this device">Lock</button></div>
+ <div class="bar" style="margin-top:14px"><select id="ag" style="max-width:100%;min-width:0"><option value="">All games (${GC.length} with deaths)</option>${GC.map(g=>`<option value="${esc(g.id)}"${g.id===AS.g?" selected":""}>${esc((g.d||"").slice(0,10))} · ${esc(g.t||g.id)}</option>`).join("")}${GX.length?`<optgroup label="No deaths — not counted">${GX.map(g=>`<option class="anopt" value="${esc(g.id)}"${g.id===AS.g?" selected":""}>${esc((g.d||"").slice(0,10))} · ${esc(g.t||g.id)}</option>`).join("")}</optgroup>`:""}</select>
  <input id="aq" type="search" placeholder="Find a player…" value="${esc(AS.q)}"></div>
- <div class="stats">${[["Games",gs.length],["Players",A.size],["Deaths",nf(dTot)],["Kills in feed",nf(fed)]].map(([l,v])=>`<div class="stat"><b>${v}</b><span>${l}</span></div>`).join("")}</div>
+ ${OFF?`<div class="anod-note">💤 <b>${esc(gs[0].t||"")}</b> has no deaths on its scoreboard (sieges only list kills and assists), so it is left out of every total. Shown faded for reference only.</div>`:GX.length?`<div class="anod-list">Not counted (no deaths): ${GX.map(g=>`<a data-g="${esc(g.id)}">${esc((g.d||"").slice(0,10))} · ${esc(g.t||g.id)}</a>`).join(" · ")}</div>`:""}
+ <div class="${OFF?"anod":""}"><div class="stats">${[["Games",gs.length],["Players",A.size],["Deaths",nf(dTot)],["Kills in feed",nf(fed)]].map(([l,v])=>`<div class="stat"><b>${v}</b><span>${l}</span></div>`).join("")}</div>
  <div id="asel"></div>
  <nav class="atabs" id="atabs">${[["at","👤 Players"],["afd","📜 Kill feed"],["atl","📈 Timeline"],["apt-wrap","🎯 Bounty"],["amu","⚖ Matchups"],["asd","🍩 By side"],["acm","▦ Class table"],["apt","⚔ Who killed who"]].map(([k,l])=>`<a data-go="${k}">${l}</a>`).join("")}<span class="grow"></span><a data-all="1" title="Open or close every section">⇕ All</a></nav>
  ${asec("s-at","Deaths","every player: kills, deaths and who killed them most · click a player for the full story",true,`<div class="tw"><table id="at"></table></div><div class="more" id="amore"></div>`)}
@@ -707,7 +713,7 @@ async function vAdmin(){
  ${asec("s-asd","Each side · who died to what",`<span id="asd-sub"></span>`,false,`<div class="actl"><span class="seg" id="asd-m"><button data-m="d">💀 Deaths</button><button data-m="k">⚔ Kills</button></span></div><div id="asd"></div>`)}
  ${asec("s-acm","Who killed which class",`<span id="acm-sub"></span>`,false,`<div class="actl"><span class="seg" id="acm-sw"><button data-m="k">⚔ Killer → victims</button><button data-m="v">🛡 Victim ← killers</button></span><span class="seg" id="acm-sd"><button data-s="">Both sides</button><button data-s="red" style="color:#ff6b6b">Red's kills</button><button data-s="yellow" style="color:#f0d33a">Yellow's kills</button></span></div><div class="tw" id="acm"></div>`)}
  ${asec("s-atl","Kill timeline · class market",`<span id="atl-sub"></span>`,false,`<div class="actl"><span class="seg" id="atl-m"><button data-m="kd">⇅ Kills / deaths</button><button data-m="k">⚔ Kills</button><button data-m="d">💀 Deaths</button></span><span class="seg" id="atl-s"></span><select id="atl-g" hidden></select></div><div id="atl"></div>`)}
- ${asec("s-apt","Who killed who","killer → victim pairs, from the kill feed",false,`<div class="tw"><table id="apt"></table></div><div class="more" id="apmore"></div>`)}`;
+ ${asec("s-apt","Who killed who","killer → victim pairs, from the kill feed",false,`<div class="tw"><table id="apt"></table></div><div class="more" id="apmore"></div>`)}</div>`;
  admSections();
  const cols=[["name","Player","l",a=>a.n.toLowerCase()],["cls","Class","l",a=>a.cl||"~"],["g","Games","",a=>a.g],["k","Kills","",a=>a.ki],["de","Deaths","",a=>a.dg?a.de:-1],
   ["kd","K/D","",a=>a.dg?(a.de?a.ki/a.de:a.ki):-1],["dpg","Deaths / game","",a=>a.dg?a.de/a.dg:-1],["tk","Killed most by","l",a=>(top(a.Dt)[0]||[""])[0].toLowerCase()||"~"]];
@@ -735,7 +741,7 @@ async function vAdmin(){
   $("#apmore").innerHTML=prs.length>(AS.pn||200)?`<button>Show more (${nf(prs.length-(AS.pn||200))} left)</button>`:prs.length?"":`<p class="empty">No kills read.</p>`;
   const pb=$("#apmore button");if(pb)pb.onclick=()=>{AS.pn=(AS.pn||200)+500;draw()};
   bindSort($("#apt"),AS.ps,draw)};
- $("#ag").onchange=e=>{AS.g=e.target.value;AS.sel="";vAdmin()};$("#aq").oninput=e=>{AS.q=e.target.value;AS.n=150;draw();drawFD()};
+ $("#ag").onchange=e=>{AS.g=e.target.value;AS.sel="";vAdmin()};document.querySelectorAll(".anod-list a[data-g]").forEach(a=>a.onclick=()=>{AS.g=a.dataset.g;AS.sel="";vAdmin()});$("#aq").oninput=e=>{AS.q=e.target.value;AS.n=150;draw();drawFD()};
  $("#alock").onclick=()=>{admPw.clear();ADM=null;document.querySelector('nav a[data-v=admin]')?.remove();vAdmin()};
  const SK=Object.keys(CS.us.CK).length||Object.keys(CS.them.CK).length||FB.d.us||FB.d.them||FB.k.us||FB.k.them?["us","them"]:["yellow","red"];
  const SOTH=k=>SK[0]===k?SK[1]:SK[0],SCOL={us:"#e8b923",them:"#e53e3e",yellow:"#e8b923",red:"#e53e3e"};
@@ -954,7 +960,7 @@ function route(){const f=$("#fab");if(f&&!location.hash.match(/^#\/?$/))f.remove
  window.scrollTo(0,0)}
 addEventListener("hashchange",route);route();
 /* a newer upload replaces a cached copy of the site */
-const BUILD="14d68555edc4";let vAt=0;
+const BUILD="d05e7e2ecacf";let vAt=0;
 function vchk(){const n=Date.now();if(n-vAt<30000)return;vAt=n;
  fetch(ROOT+"version.txt?"+n,{cache:"no-store"}).then(r=>r.ok?r.text():"").then(v=>{v=(v||"").trim();
   if(!v||v===BUILD||new URLSearchParams(location.search).get("v")===v)return;
