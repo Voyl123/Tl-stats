@@ -124,6 +124,13 @@ details.asec[open]>summary{border-bottom:1px solid var(--line)}
 .amu td.sel{outline:2px solid var(--acc);outline-offset:-2px}.amu td[data-r]:hover{filter:brightness(1.25)}
 .mudr{margin-top:12px;border:1px solid var(--line);border-radius:6px;padding:12px 14px;background:var(--panel2);animation:asecIn .2s ease-out}.mudh{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px}.mudr h4{margin:0 0 6px;font-size:13px}
 .aico+.nm,.aico+.pn{margin-left:5px}.nm+.ge,.nm+img.ge{margin-left:4px}#afd td .aico img{width:18px;height:18px}
+.tlw{position:relative}.tl{width:100%;height:auto;display:block}.tlv{width:100%;height:auto;display:block;margin-top:2px}
+.tlg{stroke:var(--line);stroke-width:1}.tlt{fill:var(--dim);font-size:11px}.tlx{stroke:var(--text);stroke-width:1;stroke-dasharray:3 3}
+.tl path{transition:opacity .15s}.tl:hover path{opacity:.75}.tl path:hover{opacity:1;stroke-width:3.2}
+.tlleg{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.tlleg span{display:inline-flex;align-items:center;gap:5px;font-size:12px;padding:3px 8px;border:1px solid var(--line);border-radius:3px;cursor:pointer;transition:opacity .15s}
+.tlleg span.off{opacity:.35}.tlleg i{width:10px;height:3px;display:inline-block}.tlleg .aico img{width:16px;height:16px}
+.tltip{position:absolute;top:10px;background:var(--panel2);border:1px solid var(--line);border-radius:4px;padding:6px 9px;font-size:12px;pointer-events:none;min-width:150px;box-shadow:0 6px 18px rgba(0,0,0,.4)}
+.tltip div{display:grid;grid-template-columns:10px 1fr auto;gap:6px;align-items:center}.tltip i{width:9px;height:9px;display:inline-block;border-radius:2px}
 .pc{font-size:10.5px;color:var(--dim);font-weight:500;margin-left:3px;font-variant-numeric:tabular-nums}.pcv{display:block;font-style:normal;font-size:10px;color:var(--text);opacity:.8;margin:2px 0}
 .sdg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:12px;margin-bottom:12px}
 .sdc{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:12px 14px}.sdc h3,.sdh h3{margin:0 0 10px;font-size:14px}
@@ -692,13 +699,14 @@ async function vAdmin(){
  <input id="aq" type="search" placeholder="Find a player…" value="${esc(AS.q)}"></div>
  <div class="stats">${[["Games",gs.length],["Players",A.size],["Deaths",nf(dTot)],["Kills in feed",nf(fed)]].map(([l,v])=>`<div class="stat"><b>${v}</b><span>${l}</span></div>`).join("")}</div>
  <div id="asel"></div>
- <nav class="atabs" id="atabs">${[["at","👤 Players"],["afd","📜 Kill feed"],["apt-wrap","🎯 Bounty"],["amu","⚖ Matchups"],["asd","🍩 By side"],["acm","▦ Class table"],["apt","⚔ Who killed who"]].map(([k,l])=>`<a data-go="${k}">${l}</a>`).join("")}<span class="grow"></span><a data-all="1" title="Open or close every section">⇕ All</a></nav>
+ <nav class="atabs" id="atabs">${[["at","👤 Players"],["afd","📜 Kill feed"],["atl","📈 Timeline"],["apt-wrap","🎯 Bounty"],["amu","⚖ Matchups"],["asd","🍩 By side"],["acm","▦ Class table"],["apt","⚔ Who killed who"]].map(([k,l])=>`<a data-go="${k}">${l}</a>`).join("")}<span class="grow"></span><a data-all="1" title="Open or close every section">⇕ All</a></nav>
  ${asec("s-at","Deaths","every player: kills, deaths and who killed them most · click a player for the full story",true,`<div class="tw"><table id="at"></table></div><div class="more" id="amore"></div>`)}
  ${asec("s-afd",`Kill feed`,`<span id="afd-s"></span>`,false,`<div class="tw"><table id="afd"></table></div><div class="more" id="afd-more"></div>`)}
  <div id="apt-wrap"></div>
  ${asec("s-amu","Class matchups · who beats who",`<span id="amu-sub"></span>`,false,`<div class="actl"><span class="seg" id="amu-sd"><button data-s="">All kills</button><button data-s="red" style="color:#ff6b6b">Red specs vs Yellow specs</button><button data-s="yellow" style="color:#f0d33a">Yellow specs vs Red specs</button></span></div><div class="tw" id="amu"></div>`)}
  ${asec("s-asd","Each side · who died to what",`<span id="asd-sub"></span>`,false,`<div class="actl"><span class="seg" id="asd-m"><button data-m="d">💀 Deaths</button><button data-m="k">⚔ Kills</button></span></div><div id="asd"></div>`)}
  ${asec("s-acm","Who killed which class",`<span id="acm-sub"></span>`,false,`<div class="actl"><span class="seg" id="acm-sw"><button data-m="k">⚔ Killer → victims</button><button data-m="v">🛡 Victim ← killers</button></span><span class="seg" id="acm-sd"><button data-s="">Both sides</button><button data-s="red" style="color:#ff6b6b">Red's kills</button><button data-s="yellow" style="color:#f0d33a">Yellow's kills</button></span></div><div class="tw" id="acm"></div>`)}
+ ${asec("s-atl","Kill timeline · class market",`<span id="atl-sub"></span>`,false,`<div class="actl"><span class="seg" id="atl-m"><button data-m="k">⚔ Kills</button><button data-m="d">💀 Deaths</button></span><span class="seg" id="atl-s"></span><select id="atl-g" hidden></select></div><div id="atl"></div>`)}
  ${asec("s-apt","Who killed who","killer → victim pairs, from the kill feed",false,`<div class="tw"><table id="apt"></table></div><div class="more" id="apmore"></div>`)}`;
  admSections();
  const cols=[["name","Player","l",a=>a.n.toLowerCase()],["cls","Class","l",a=>a.cl||"~"],["g","Games","",a=>a.g],["k","Kills","",a=>a.ki],["de","Deaths","",a=>a.dg?a.de:-1],
@@ -848,6 +856,55 @@ async function vAdmin(){
    <div class="box"><h3 style="margin:0 0 8px;font-size:14px">Targets</h3><table class="acm" style="width:100%"><thead><tr><th class="l">Target</th><th class="l">War</th><th>Reward</th><th>Killed</th><th class="l">By</th></tr></thead><tbody>
     ${T.sort((a,b)=>b.k-a.k||b.r-a.r).map(x=>`<tr><td class="l">🎯 ${who(x.t,null,true)}</td><td class="l g">${esc((x.g.d||"").slice(0,10))}</td><td>${fm(x.r)}</td><td>${x.k||"–"}</td><td class="l g" style="white-space:normal">${Object.entries(x.by).sort((a,b)=>b[1]-a[1]).map(([n,c])=>`${esc(n)}×${c}`).join(", ")||"never killed"}</td></tr>`).join("")}</tbody></table></div></div>`)};
  drawPT();
+ // kill timeline: every class's running total of kills (or deaths) through the game, like a
+ // market chart -- one line per class, a volume bar of kills per minute for each side under it
+ AS.tl=AS.tl||{m:"k",s:""};
+ const drawTL=()=>{const box=$("#atl");if(!box)return;const FG=gs.filter(g=>g.kf&&g.kf.feed&&g.kf.feed.length);
+  if(!FG.length){box.innerHTML=`<p class="empty">No kill feed with times in this selection — read a match's video in the app's Kill feed tab.</p>`;$("#atl-sub").textContent="";return}
+  const gsel=$("#atl-g");if(FG.length>1){gsel.hidden=false;if(!gsel.options.length)gsel.innerHTML=FG.map(g=>`<option value="${esc(g.id)}">${esc((g.d||"").slice(0,10))} · ${esc(g.t||g.id)}</option>`).join("");gsel.onchange=()=>{AS.tl.g=gsel.value;drawTL()}}else gsel.hidden=true;
+  const g=FG.find(x=>x.id===AS.tl.g)||FG[0];if(FG.length>1)gsel.value=g.id;
+  const dm=AS.tl.m==="d",sd=AS.tl.s;
+  document.querySelectorAll("#atl-m button").forEach(b=>{b.classList.toggle("on",b.dataset.m===AS.tl.m);b.onclick=()=>{AS.tl.m=b.dataset.m;drawTL()}});
+  $("#atl-s").innerHTML=`<button data-s="">Both sides</button>`+SK.map(k=>`<button data-s="${k}" style="color:${SCOL[k]}">${esc(SNAME[k])}</button>`).join("");
+  document.querySelectorAll("#atl-s button").forEach(b=>{b.classList.toggle("on",(b.dataset.s||"")===sd);b.onclick=()=>{AS.tl.s=b.dataset.s;drawTL()}});
+  const gcl=new Map([...Object.entries(g.cls||{}).map(([n,c])=>[key(n),c]),...(g.p||[]).filter(r=>r[3]&&r[3]!=="?").map(r=>[key(r[0]),r[3]])]);
+  const cl=n=>gcl.get(key(n))||mainCls(n)||"?";const nsd=new Map((g.p||[]).map(r=>[key(r[0]),sideKey(g,r[2])]));
+  // each feed line: who it counts for (killer for kills, victim for deaths), their class and side
+  const ev=g.kf.feed.map(([t,k,v])=>{const who=dm?v:k;if(!who)return null;const ks=k?nsd.get(key(k)):null,vs=nsd.get(key(v));
+   const side=dm?(vs||(ks?SOTH(ks):"")):(ks||(vs?SOTH(vs):""));return{t:+t,c:cl(who),side}}).filter(x=>x&&x.c!=="?"&&(!sd||x.side===sd)).sort((a,b)=>a.t-b.t);
+  if(!ev.length){box.innerHTML=`<p class="empty">Nothing to plot for this side.</p>`;return}
+  const T0=ev[0].t,T1=Math.max(ev[ev.length-1].t,T0+60),tot={};ev.forEach(e=>tot[e.c]=(tot[e.c]||0)+1);
+  const CL=Object.keys(tot).sort((a,b)=>tot[b]-tot[a]).slice(0,10),on=AS.tl.hide||(AS.tl.hide={});
+  const W=1000,H=300,PL=34,PR=110,PT=10,PB=24,ymax=Math.max(1,...CL.map(c=>tot[c]));
+  const X=t=>PL+(W-PL-PR)*(t-T0)/(T1-T0),Y=v=>PT+(H-PT-PB)*(1-v/ymax);
+  const fm=t=>{t=Math.round(t);return`${Math.floor(t/60)}:${String(t%60).padStart(2,"0")}`};
+  const vis=CL.filter(c=>!on[c]);
+  // end labels pushed apart so they never sit on top of each other
+  const lab=vis.map(c=>({c,y:Y(tot[c])+4})).sort((a,b)=>a.y-b.y);for(let i=1;i<lab.length;i++)if(lab[i].y-lab[i-1].y<14)lab[i].y=lab[i-1].y+14;
+  const over=lab.length?lab[lab.length-1].y-(H-PB+4):0;if(over>0)lab.forEach(l=>l.y-=over);const ly=Object.fromEntries(lab.map(l=>[l.c,l.y]));
+  const paths=vis.map(c=>{let n=0,d=`M${X(T0).toFixed(1)},${Y(0).toFixed(1)}`;ev.forEach(e=>{if(e.c!==c)return;d+=`H${X(e.t).toFixed(1)}`;n++;d+=`V${Y(n).toFixed(1)}`});d+=`H${X(T1).toFixed(1)}`;
+   return`<path d="${d}" fill="none" stroke="${ccol(c)}" stroke-width="2.2" stroke-linejoin="round"><title>${esc(c)}: ${tot[c]}</title></path><text x="${X(T1)+6}" y="${ly[c]}" fill="${ccol(c)}" font-size="12">${esc(c)} ${n}</text>`}).join("");
+  const grid=[0,.25,.5,.75,1].map(f=>{const v=Math.round(ymax*f);return`<line x1="${PL}" x2="${W-PR}" y1="${Y(v)}" y2="${Y(v)}" class="tlg"/><text x="${PL-6}" y="${Y(v)+4}" text-anchor="end" class="tlt">${v}</text>`}).join("")
+   +Array.from({length:7},(_,i)=>T0+(T1-T0)*i/6).map(t=>`<text x="${X(t)}" y="${H-6}" text-anchor="middle" class="tlt">${fm(t)}</text>`).join("");
+  // volume: kills per minute for each side (all classes)
+  const all=g.kf.feed.map(([t,k,v])=>({t:+t,side:k?nsd.get(key(k)):(nsd.get(key(v))?SOTH(nsd.get(key(v))):"")})).filter(x=>x.side);
+  const bins={},B=60;all.forEach(e=>{const b=Math.floor((e.t-T0)/B);(bins[b]??={})[e.side]=((bins[b]||{})[e.side]||0)+1});
+  const nb=Math.ceil((T1-T0)/B)||1,vmax=Math.max(1,...Object.values(bins).map(o=>Math.max(...SK.map(k=>o[k]||0)))),VH=70,bw=(W-PL-PR)/nb;
+  const vol=Array.from({length:nb},(_,i)=>{const o=bins[i]||{};return SK.map((k,j)=>{const v=o[k]||0,h=VH*v/vmax;return`<rect x="${PL+i*bw+j*bw/2+1}" y="${VH-h}" width="${Math.max(1,bw/2-2)}" height="${h}" fill="${SCOL[k]}" opacity=".85"><title>${fm(T0+i*B)}–${fm(T0+(i+1)*B)} · ${esc(SNAME[k])}: ${v} kills</title></rect>`}).join("")}).join("");
+  $("#atl-sub").textContent=`${esc(g.t||g.id)} · each line is a class's running ${dm?"deaths":"kills"} · bars under it: kills per minute for each side · click a class to hide or show it`;
+  box.innerHTML=`<div class="tlw"><svg viewBox="0 0 ${W} ${H}" class="tl" id="tlsvg">${grid}${paths}<line id="tlx" y1="${PT}" y2="${H-PB}" class="tlx" visibility="hidden"/></svg>
+   <svg viewBox="0 0 ${W} ${VH+4}" class="tlv">${vol}<text x="${W-PR+6}" y="14" class="tlt">kills / min</text></svg>
+   <div class="tlleg">${CL.map(c=>`<span data-c="${esc(c)}" class="${on[c]?"off":""}">${aIco(c)}<i style="background:${ccol(c)}"></i>${esc(c)} <b>${tot[c]}</b><small class="pc">${pcn(sd||"",c)}p</small></span>`).join("")}</div>
+   <div class="tltip" id="tltip" hidden></div></div>`;
+  box.querySelector(".tlleg").onclick=e=>{const x=e.target.closest("[data-c]");if(!x)return;on[x.dataset.c]=!on[x.dataset.c];drawTL()};
+  const sv=$("#tlsvg"),tip=$("#tltip"),ln=$("#tlx");
+  sv.onmousemove=e=>{const r=sv.getBoundingClientRect(),x=(e.clientX-r.left)*W/r.width;if(x<PL||x>W-PR){ln.setAttribute("visibility","hidden");tip.hidden=true;return}
+   const t=T0+(x-PL)*(T1-T0)/(W-PL-PR),cnt={};ev.forEach(q=>{if(q.t<=t)cnt[q.c]=(cnt[q.c]||0)+1});
+   ln.setAttribute("x1",x);ln.setAttribute("x2",x);ln.setAttribute("visibility","visible");
+   tip.hidden=false;tip.style.left=Math.min(r.width-180,(e.clientX-r.left)+12)+"px";
+   tip.innerHTML=`<b>${fm(t)}</b>`+CL.filter(c=>!on[c]).sort((a,b)=>(cnt[b]||0)-(cnt[a]||0)).map(c=>`<div><i style="background:${ccol(c)}"></i>${esc(c)}<b>${cnt[c]||0}</b></div>`).join("")};
+  sv.onmouseleave=()=>{ln.setAttribute("visibility","hidden");tip.hidden=true}};
+ drawTL();
  // the kill feed itself: one game -> every kill; all games -> every kill of the selected player
  const drawFD=()=>{const one=!!AS.g,clsOf=g=>{const m={};(g.p||[]).forEach(e=>{if(e[0]&&!(e[0] in m))m[e[0]]=(e[3]&&e[3]!=="?")?e[3]:(mainCls(e[0])||"")});return m};
   const q=AS.q.trim().toLowerCase(),selN=AS.sel?(A.get(AS.sel)||{}).n:"";
@@ -880,7 +937,7 @@ function route(){const f=$("#fab");if(f&&!location.hash.match(/^#\/?$/))f.remove
  window.scrollTo(0,0)}
 addEventListener("hashchange",route);route();
 /* a newer upload replaces a cached copy of the site */
-const BUILD="be48c9dcb828";let vAt=0;
+const BUILD="dddc06ab8441";let vAt=0;
 function vchk(){const n=Date.now();if(n-vAt<30000)return;vAt=n;
  fetch(ROOT+"version.txt?"+n,{cache:"no-store"}).then(r=>r.ok?r.text():"").then(v=>{v=(v||"").trim();
   if(!v||v===BUILD||new URLSearchParams(location.search).get("v")===v)return;
