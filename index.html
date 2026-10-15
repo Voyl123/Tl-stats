@@ -640,7 +640,9 @@ async function vAdmin(){
  const PCS={};   // side -> class -> players (a name counted once per side)
  const pcAdd=(side,cl,n)=>{if(!cl||cl==="?")return;((PCS[side]??={})[cl]??=new Set()).add(key(n));((PCS[""]??={})[cl]??=new Set()).add(key(n))};
  const pcn=(side,cl)=>((PCS[side||""]||{})[cl]||{size:0}).size;
- const SAME={n:0};   // same-side "kills" left out (misread feed lines)
+ const SAME={n:0};
+ // games imported with deaths but no who-killed-who: their kills and deaths still count per class
+ const FB={d:{},k:{}},FBG=new Set();   // same-side "kills" left out (misread feed lines)
  const PX=[];   // every killer -> victim pair with both classes and sides: the charts drill down into these
  const CM={},CK={},CD={},CS={};["us","them","red","yellow"].forEach(k=>CS[k]={CM:{},CK:{},CD:{}});
  // sides by guild: the team our guild played on is "us" in every game, so games add up whatever
@@ -658,6 +660,9 @@ async function vAdmin(){
   const gcl=g._gc||(g._gc=new Map([...Object.entries(g.cls||{}).map(([n,c])=>[key(n),c]),...(g.p||[]).filter(r=>r[3]&&r[3]!=="?").map(r=>[key(r[0]),r[3]])]));
   const clOf=x=>gcl.get(key(x))||mainCls(x)||"?";
   const kc=clOf(n),ts=CS[sideKey(g,tm)];pcAdd(sideKey(g,tm),kc,n);
+  if(g._nok===undefined)g._nok=!(g.p||[]).some(r=>r[7]&&Object.keys(r[7]).length);
+  if(g._nok&&kc!=="?"){const sk=sideKey(g,tm);FBG.add(g.id);
+   if(de)(FB.d[sk]??={})[kc]=((FB.d[sk]||{})[kc]||0)+de;if(kills)(FB.k[sk]??={})[kc]=((FB.k[sk]||{})[kc]||0)+kills}
   const KCx={};const tl=sideKey(g,tm);
   // each name's own side in this game: a "kill" of someone on the killer's own side is a misread
   // feed line (the colours or a name read wrong), so it stays out of every class chart
@@ -724,7 +729,7 @@ async function vAdmin(){
   bindSort($("#apt"),AS.ps,draw)};
  $("#ag").onchange=e=>{AS.g=e.target.value;AS.sel="";vAdmin()};$("#aq").oninput=e=>{AS.q=e.target.value;AS.n=150;draw();drawFD()};
  $("#alock").onclick=()=>{admPw.clear();ADM=null;document.querySelector('nav a[data-v=admin]')?.remove();vAdmin()};
- const SK=Object.keys(CS.us.CK).length||Object.keys(CS.them.CK).length?["us","them"]:["yellow","red"];
+ const SK=Object.keys(CS.us.CK).length||Object.keys(CS.them.CK).length||FB.d.us||FB.d.them||FB.k.us||FB.k.them?["us","them"]:["yellow","red"];
  const SOTH=k=>SK[0]===k?SK[1]:SK[0],SCOL={us:"#e8b923",them:"#e53e3e",yellow:"#e8b923",red:"#e53e3e"};
  const SNAME={};SK.forEach(k=>SNAME[k]=sideLabel(k));
  const sideBtns=(id)=>`<button data-s="">Both sides</button>`+SK.map(k=>`<button data-s="${k}" style="color:${SCOL[k]}">${esc(SNAME[k])}${/s$/.test(SNAME[k])?"'":"'s"} kills</button>`).join("");
@@ -732,7 +737,7 @@ async function vAdmin(){
   const sdEl=document.querySelector("#acm-sd");if(!sdEl.dataset.done){sdEl.dataset.done=1;sdEl.innerHTML=sideBtns();document.querySelector("#amu-sd").innerHTML=`<button data-s="">All kills</button>`+SK.map(k=>`<button data-s="${k}" style="color:${SCOL[k]}">${esc(SNAME[k])} specs vs ${esc(SNAME[SOTH(k)])}</button>`).join("")}
   document.querySelectorAll("#acm-sd button").forEach(b=>{b.classList.toggle("on",(b.dataset.s||"")===(AS.csd||""));b.onclick=()=>{AS.csd=b.dataset.s;AS.cs="tot";drawCM()}});
   {const CM=SD.CM,CK=SD.CK,CD=SD.CD;
-  if(!Object.keys(CK).length){$("#acm").innerHTML=`<p class="empty">No class data for this side.</p>`;return}
+  if(!Object.keys(CK).length){$("#acm").innerHTML=`<p class="empty">${FBG.size?"This game was imported with deaths per player but no who-killed-who, so there is no class-vs-class data — the By side pies still show its classes.":"No class data for this side."}</p>`;return}
   const fl=AS.cf==="v";                       // flipped: rows = victim class, columns = the classes that killed it
   const T={};if(fl){for(const[k,m]of Object.entries(CM))for(const[v,n]of Object.entries(m||{}))(T[v]??={})[k]=n}else Object.assign(T,CM);
   const RT=fl?CD:CK,CT=fl?CK:CD,rk=fl?"vv":"kk",ck=fl?"kk":"vv",col=fl?"74,155,232":"229,62,62";
@@ -772,7 +777,7 @@ async function vAdmin(){
   document.querySelectorAll("#asd-m button").forEach(b=>{b.classList.toggle("on",(b.dataset.m==="d")===dm);b.onclick=()=>{AS.sdm=b.dataset.m;drawSD()}});
   $("#asd-sub").textContent=dm?"each side's specs by how often they died · click a spec for what killed it":"each side's specs by kills · click a spec for what it killed";
   const sides=SK,nm=SNAME,tc=SCOL,oth=SOTH;
-  const by=t=>dm?CS[oth(t)].CD:CS[t].CK;
+  const by=t=>{const o={...(dm?CS[oth(t)].CD:CS[t].CK)};for(const[c,v]of Object.entries((dm?FB.d[t]:FB.k[t])||{}))o[c]=(o[c]||0)+v;return o};
   const brk=(t,spec)=>{const o={};if(dm){for(const[k,m]of Object.entries(CS[oth(t)].CM))if(m[spec])o[k]=m[spec]}else Object.assign(o,CS[t].CM[spec]||{});return top(o)};
   const card=t=>{const E=top(by(t)).filter(x=>x[1]>0),tot=E.reduce((a,x)=>a+x[1],0);
    if(!tot)return`<div class="sdc"><h3 style="color:${tc[t]}">${nm[t]} · ${dm?"deaths":"kills"} by spec</h3><p class="empty">Nothing read for this side.</p></div>`;
@@ -794,7 +799,7 @@ async function vAdmin(){
   const hm=Math.max(1,...specs.map(c=>Math.max(Y[c]||0,Rr[c]||0)));
   const h2h=`<div class="sdh"><h3>Head to head · ${dm?"deaths":"kills"} by spec <small class="g"><span style="color:${tc[SK[0]]}">${esc(nm[SK[0]])}</span> on the left, <span style="color:${tc[SK[1]]}">${esc(nm[SK[1]])}</span> on the right${dm?" — the longer bar died more":" — the longer bar won that spec"}</small></h3>
    ${specs.slice(0,16).map(c=>{const y=Y[c]||0,r=Rr[c]||0;return`<div class="hh"><div class="hn">${aIco(c)}<span style="color:${ccol(c)}">${esc(c)}</span><small class="pc"><b style="color:${tc[SK[0]]}">${pcn(SK[0],c)}</b> v <b style="color:${tc[SK[1]]}">${pcn(SK[1],c)}</b> players</small></div><div class="hb"><b class="${y>=r?"w":""}">${y||"–"}</b><span class="l"><i style="width:${(100*y/hm).toFixed(1)}%;background:${tc[SK[0]]}"></i></span><span class="r"><i style="width:${(100*r/hm).toFixed(1)}%;background:${tc[SK[1]]}"></i></span><b class="${r>=y?"w":""}">${r||"–"}</b></div></div>`}).join("")}</div>`;
-  $("#asd").innerHTML=`<div class="sdg">${sides.map(card).join("")}</div>${h2h}${SAME.n?`<p class="g" style="font-size:12px;margin:6px 0 0">${SAME.n} kill${SAME.n===1?"":"s"} where both names were on the same side (a misread feed line) are left out of these charts.</p>`:""}`;
+  $("#asd").innerHTML=`<div class="sdg">${sides.map(card).join("")}</div>${h2h}${FBG.size?`<p class="g" style="font-size:12px;margin:6px 0 0">${FBG.size} game${FBG.size===1?" has":"s have"} deaths and kills per player but no who-killed-who (imported that way): ${FBG.size===1?"its":"their"} numbers count in the pies and head to head, not in the "died to" lists or the class tables.</p>`:""}${SAME.n?`<p class="g" style="font-size:12px;margin:6px 0 0">${SAME.n} kill${SAME.n===1?"":"s"} where both names were on the same side (a misread feed line) are left out of these charts.</p>`:""}`;
   document.querySelectorAll("#asd .sdc").forEach(cd=>cd.onclick=e=>{const t=cd.dataset.t;
    if(e.target.closest("details.sdp"))return;
    if(e.target.closest("[data-clear]")){AS.sdb[t]="";drawSD();return}
@@ -809,7 +814,7 @@ async function vAdmin(){
   const win=(r,c)=>((A.CM[r]||{})[c]||0),loss=(r,c)=>((B.CM[c]||{})[r]||0);
   const rows=Object.keys(A.CK).filter(r=>A.CK[r]+(B.CD[r]||0)>=5).sort((a,b)=>(A.CK[b]||0)-(A.CK[a]||0)).slice(0,16);
   const cols=Object.keys(B.CK).filter(c=>(B.CK[c]||0)+(A.CD[c]||0)>=5).sort((a,b)=>(B.CK[b]||0)-(B.CK[a]||0)).slice(0,16);
-  if(!rows.length||!cols.length){$("#amu").innerHTML=`<p class="empty">Not enough kills yet.</p>`;return}
+  if(!rows.length||!cols.length){$("#amu").innerHTML=`<p class="empty">${FBG.size?"No who-killed-who in this selection (imported with deaths only), so no matchups to show.":"Not enough kills yet."}</p>`;return}
   const nmR=sd?SNAME[sd]:"",nmC=sd?SNAME[SOTH(sd)]:"";
   $("#amu-sub").textContent=`cell = row spec's kills on the column spec – the column's kills on it · green: row wins, red: row loses · faded: under 6 kills between them`;
   const cell=(r,c)=>{const w=win(r,c),l=loss(r,c),n=w+l;if(!n)return`<td class="mu0">·</td>`;
@@ -875,7 +880,7 @@ function route(){const f=$("#fab");if(f&&!location.hash.match(/^#\/?$/))f.remove
  window.scrollTo(0,0)}
 addEventListener("hashchange",route);route();
 /* a newer upload replaces a cached copy of the site */
-const BUILD="bda1bc412847";let vAt=0;
+const BUILD="be48c9dcb828";let vAt=0;
 function vchk(){const n=Date.now();if(n-vAt<30000)return;vAt=n;
  fetch(ROOT+"version.txt?"+n,{cache:"no-store"}).then(r=>r.ok?r.text():"").then(v=>{v=(v||"").trim();
   if(!v||v===BUILD||new URLSearchParams(location.search).get("v")===v)return;
