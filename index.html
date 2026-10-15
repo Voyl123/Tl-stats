@@ -97,6 +97,8 @@ table.gh{width:100%;table-layout:fixed}table.gh td{padding:5px 6px;white-space:n
 .acm th.l,.acm td.l{text-align:left;white-space:nowrap}.acm th{cursor:pointer;font-weight:600;color:var(--dim)}
 .acm th.vh span{writing-mode:vertical-rl;transform:rotate(180deg);display:inline-block;white-space:nowrap}.acm th.on{text-decoration:underline}
 .acm tr.tot td{color:var(--dim)}
+.aico{display:inline-flex;gap:2px;vertical-align:middle}.aico img{width:22px;height:22px;object-fit:contain;border-radius:3px;background:rgba(0,0,0,.35);outline:1px solid rgba(255,255,255,.08)}
+.acm th .aico img{width:24px;height:24px}
 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:12px}
 .box{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:12px 14px}
 .box>h2:first-child,.box>h3:first-child{margin:-12px -14px 10px!important;padding:8px 14px;background:var(--panel2);border-bottom:1px solid var(--line)}
@@ -533,6 +535,9 @@ async function admOpen(pw){const r=await fetch(ROOT+"admin.json?"+Date.now(),{ca
  return JSON.parse(new TextDecoder().decode(await crypto.subtle.decrypt({name:"AES-GCM",iv:b64(E.i)},k,b64(E.c))))}
 function admNav(){if(admPw.get()&&!document.querySelector('nav a[data-v=admin]'))$("nav").insertAdjacentHTML("beforeend",`<a data-v="admin" href="${ROOT}#/admin">Admin</a>`)}
 const onAdmin=()=>/^#\/?admin/.test(location.hash);
+// a class drawn as its weapon pair (icons travel inside the encrypted admin file); name on hover
+const aIco=c=>{const w=ADM&&ADM.cw&&ADM.cw[c],wi=ADM&&ADM.wi||{};
+ return w&&wi[w[0]]&&wi[w[1]]?`<span class="aico" title="${esc(c)}"><img src="${wi[w[0]]}" alt=""><img src="${wi[w[1]]}" alt=""></span>`:`<span title="${esc(c||"")}" style="color:${ccol(c)};font-weight:600">${esc(c||"–")}</span>`};
 async function vAdmin(){
  if(!ADM){const saved=admPw.get();
   if(saved){$("#app").innerHTML=`<h1>Admin</h1><div class="sub">Unlocking…</div>`;try{ADM=await admOpen(saved)}catch(e){if(e.message!=="none")admPw.clear()}if(!onAdmin())return}
@@ -568,7 +573,7 @@ async function vAdmin(){
  const cols=[["name","Player","l",a=>a.n.toLowerCase()],["cls","Class","l",a=>a.cl||"~"],["g","Games","",a=>a.g],["k","Kills","",a=>a.ki],["de","Deaths","",a=>a.dg?a.de:-1],
   ["kd","K/D","",a=>a.dg?(a.de?a.ki/a.de:a.ki):-1],["dpg","Deaths / game","",a=>a.dg?a.de/a.dg:-1],["tk","Killed most by","l",a=>(top(a.Dt)[0]||[""])[0].toLowerCase()||"~"]];
  const sel=()=>{const a=A.get(AS.sel);const el=$("#asel");if(!a){el.innerHTML="";return}
-  const colC=(t,o)=>{const l=top(o),tot=l.reduce((s,x)=>s+x[1],0),mx=l[0]?.[1]||1;return`<div class="box"><h3 style="margin:0 0 8px">${t} <small class="g">${nf(tot)}</small></h3>${l.length?`<ol class="akl">${l.map(([c,v])=>`<li><span style="color:${ccol(c)};font-weight:600">${esc(c)}</span><b>${v}</b><i style="width:${(100*v/mx).toFixed(1)}%;background:color-mix(in srgb,${ccol(c)} 22%,transparent)"></i></li>`).join("")}</ol>`:`<div class="sub">none read</div>`}</div>`};
+  const colC=(t,o)=>{const l=top(o),tot=l.reduce((s,x)=>s+x[1],0),mx=l[0]?.[1]||1;return`<div class="box"><h3 style="margin:0 0 8px">${t} <small class="g">${nf(tot)}</small></h3>${l.length?`<ol class="akl">${l.map(([c,v])=>`<li><span>${aIco(c)}</span><b>${v}</b><i style="width:${(100*v/mx).toFixed(1)}%;background:color-mix(in srgb,${ccol(c)} 22%,transparent)"></i></li>`).join("")}</ol>`:`<div class="sub">none read</div>`}</div>`};
   const col=(t,o)=>{const l=top(o),tot=l.reduce((s,x)=>s+x[1],0),mx=l[0]?.[1]||1;return`<div class="box"><h3 style="margin:0 0 8px">${t} <small class="g">${nf(tot)}</small></h3>${l.length?`<ol class="akl">${l.slice(0,25).map(([n,c])=>`<li><span>${pLink(n)}</span><b>${c}</b><i style="width:${(100*c/mx).toFixed(1)}%"></i></li>`).join("")}</ol>${l.length>25?`<div class="sub">+ ${l.length-25} more</div>`:""}`:`<div class="sub">none read</div>`}</div>`};
   el.innerHTML=`<div class="box asb"><div class="ahd"><h2 style="margin:0;color:${ccol(a.cl,a.ro)}">${esc(a.n)} ${gTag(a.gu)}</h2><button class="abtn ghost" id="ax">Close</button></div>
   <div class="sub">${esc(a.cl||"")} · ${a.g} game${a.g===1?"":"s"} · ${nf(a.ki)} kills · ${a.dg?nf(a.de)+" deaths · K/D "+(a.de?a.ki/a.de:a.ki).toFixed(2):"deaths not tracked"} · <a href="${ROOT}#/player/${encodeURIComponent(pk(a.n))}">public profile</a></div>
@@ -578,7 +583,7 @@ async function vAdmin(){
   $("#ax").onclick=()=>{AS.sel="";sel();draw()};el.scrollIntoView({block:"nearest"})};
  const draw=()=>{const q=AS.q.trim().toLowerCase();
   const rows=[...A.values()].filter(a=>!q||(a.n+" "+(a.gu||"")+" "+(a.cl||"")).toLowerCase().includes(q));
-  $("#at").innerHTML=sortable(cols,rows,AS.st)+`<tbody>${rows.slice(0,AS.n).map(a=>{const tk=top(a.Dt)[0];return`<tr class="go${a.k===AS.sel?" on":""}" data-a="${esc(a.k)}"><td class="l"><span class="nm" style="color:${ccol(a.cl,a.ro)}">${esc(a.n)}</span>${gTag(a.gu)}</td><td class="l">${roleDot(a.ro)}${esc(a.cl||"")}</td><td>${a.g}</td><td>${nf(a.ki)}</td>
+  $("#at").innerHTML=sortable(cols,rows,AS.st)+`<tbody>${rows.slice(0,AS.n).map(a=>{const tk=top(a.Dt)[0];return`<tr class="go${a.k===AS.sel?" on":""}" data-a="${esc(a.k)}"><td class="l"><span class="nm" style="color:${ccol(a.cl,a.ro)}">${esc(a.n)}</span>${gTag(a.gu)}</td><td class="l">${aIco(a.cl)}</td><td>${a.g}</td><td>${nf(a.ki)}</td>
    <td>${a.dg?nf(a.de):"<span class=g>–</span>"}</td><td>${a.dg?(a.de?a.ki/a.de:a.ki).toFixed(2):"<span class=g>–</span>"}</td><td>${a.dg?(a.de/a.dg).toFixed(1):"<span class=g>–</span>"}</td><td class="l">${tk?`${esc(tk[0])} <span class="g">×${tk[1]}</span>`:"<span class=g>–</span>"}</td></tr>`}).join("")}</tbody>`;
   $("#amore").innerHTML=rows.length>AS.n?`<button>Show more (${nf(rows.length-AS.n)} left)</button>`:rows.length?"":`<p class="empty">No player matches.</p>`;
   const mb=$("#amore button");if(mb)mb.onclick=()=>{AS.n+=300;draw()};
@@ -597,8 +602,8 @@ async function vAdmin(){
   const cols=Object.keys(CD).sort((a,b)=>CD[b]-CD[a]).slice(0,16);
   rows.sort((a,b)=>AS.cs==="tot"||!AS.cs?CK[b]-CK[a]:((CM[b]||{})[AS.cs]||0)-((CM[a]||{})[AS.cs]||0)||CK[b]-CK[a]);
   const mx=Math.max(1,...rows.flatMap(r=>cols.map(v=>(CM[r]||{})[v]||0)));
-  $("#acm").innerHTML=`<table class="acm"><thead><tr><th class="l">Killer ↓ / victim →</th>${cols.map(v=>`<th data-x="${esc(v)}" class="vh${AS.cs===v?" on":""}" style="color:${ccol(v)}"><span>${esc(v)}</span></th>`).join("")}<th data-x="tot" class="${!AS.cs||AS.cs==="tot"?"on":""}">Kills</th><th class="l">Killed most</th></tr></thead><tbody>${rows.map(r=>{const m=CM[r]||{},t=top(m)[0];
-   return`<tr><td class="l" style="color:${ccol(r)};font-weight:600">${esc(r)}</td>${cols.map(v=>{const n=m[v]||0;return`<td title="${esc(r)} killed ${esc(v)} ×${n}" style="${n?`background:rgba(229,62,62,${(0.08+0.62*n/mx).toFixed(2)})`:"color:var(--faint)"}">${n||"·"}</td>`}).join("")}<td><b>${nf(CK[r])}</b></td><td class="l">${t?`<span style="color:${ccol(t[0])}">${esc(t[0])}</span> ×${t[1]}`:""}</td></tr>`}).join("")}
+  $("#acm").innerHTML=`<table class="acm"><thead><tr><th class="l">Killer ↓ / victim →</th>${cols.map(v=>`<th data-x="${esc(v)}" class="${AS.cs===v?"on":""}" title="${esc(v)} — click to sort">${aIco(v)}</th>`).join("")}<th data-x="tot" class="${!AS.cs||AS.cs==="tot"?"on":""}">Kills</th><th class="l">Killed most</th></tr></thead><tbody>${rows.map(r=>{const m=CM[r]||{},t=top(m)[0];
+   return`<tr><td class="l">${aIco(r)}</td>${cols.map(v=>{const n=m[v]||0;return`<td title="${esc(r)} killed ${esc(v)} ×${n}" style="${n?`background:rgba(229,62,62,${(0.08+0.62*n/mx).toFixed(2)})`:"color:var(--faint)"}">${n||"·"}</td>`}).join("")}<td><b>${nf(CK[r])}</b></td><td class="l">${t?`${aIco(t[0])} ×${t[1]}`:""}</td></tr>`}).join("")}
    <tr class="tot"><td class="l">Deaths</td>${cols.map(v=>`<td>${nf(CD[v])}</td>`).join("")}<td></td><td></td></tr></tbody></table>`;
   document.querySelectorAll("#acm th[data-x]").forEach(th=>th.onclick=()=>{AS.cs=th.dataset.x;drawCM()})};
  drawCM();
@@ -613,7 +618,7 @@ function route(){const f=$("#fab");if(f&&!location.hash.match(/^#\/?$/))f.remove
  window.scrollTo(0,0)}
 addEventListener("hashchange",route);route();
 /* a newer upload replaces a cached copy of the site */
-const BUILD="17c51be9f1b2";let vAt=0;
+const BUILD="0d1d7eacb306";let vAt=0;
 function vchk(){const n=Date.now();if(n-vAt<30000)return;vAt=n;
  fetch(ROOT+"version.txt?"+n,{cache:"no-store"}).then(r=>r.ok?r.text():"").then(v=>{v=(v||"").trim();
   if(!v||v===BUILD||new URLSearchParams(location.search).get("v")===v)return;
