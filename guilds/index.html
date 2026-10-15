@@ -93,7 +93,24 @@ table.gh{width:100%;table-layout:fixed}table.gh td{padding:5px 6px;white-space:n
 .akl{list-style:none;margin:0;padding:0;display:grid;gap:3px}.akl li{position:relative;display:flex;justify-content:space-between;gap:10px;padding:3px 8px;font-size:13px;z-index:0}
 .akl li i{position:absolute;left:0;top:0;bottom:0;background:color-mix(in srgb,var(--acc) 9%,transparent);z-index:-1;border-radius:2px}.akl b{font-variant-numeric:tabular-nums}
 #at tr.on td{background:var(--hover)}
-.acm.amu tr.vh th{background:color-mix(in srgb,var(--cc) 42%,#111);border-bottom:3px solid var(--cc)}.acm.amu tr.vh th.corner{background:transparent;border-bottom:3px solid var(--cc)}.amu tr.vh th span{color:var(--text)}
+.acm.amu tr.vh th{background:color-mix(in srgb,var(--cc) 42%,#111);border-bottom:3px solid var(--cc)}
+.atabs{position:sticky;top:var(--navh,56px);z-index:5;display:flex;gap:4px;flex-wrap:wrap;align-items:center;margin:14px 0 6px;padding:6px;background:color-mix(in srgb,var(--panel) 92%,transparent);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:6px}
+.atabs a{cursor:pointer;padding:6px 11px;border-radius:4px;font-size:12.5px;font-weight:600;color:var(--dim);text-decoration:none;transition:background .15s,color .15s}
+.atabs a:hover{background:var(--hover);color:var(--text)}.atabs a.on{background:color-mix(in srgb,var(--acc) 18%,transparent);color:var(--gold2,var(--acc))}
+details.asec{scroll-margin-top:calc(var(--navh,56px) + 64px);margin:10px 0;border:1px solid var(--line);border-radius:6px;background:var(--panel);overflow:hidden;transition:box-shadow .25s,border-color .25s}
+details.asec:hover{border-color:color-mix(in srgb,var(--acc) 30%,var(--line))}details.asec.flash{box-shadow:0 0 0 2px var(--acc)}
+details.asec>summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;padding:12px 16px;user-select:none;transition:background .15s}
+details.asec>summary::-webkit-details-marker{display:none}details.asec>summary:hover{background:var(--hover)}
+details.asec>summary h2{margin:0;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold2,var(--acc))}
+details.asec>summary small{font-size:12px;color:var(--dim)}
+.ach{display:inline-block;transition:transform .2s;color:var(--dim);font-size:12px;width:10px}details.asec[open]>summary .ach{transform:rotate(90deg);color:var(--acc)}
+details.asec[open]>summary{border-bottom:1px solid var(--line)}
+.abody{padding:12px 16px 14px}details.asec[open] .abody{animation:asecIn .22s ease-out}
+@keyframes asecIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.actl{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.abody .tw{margin-top:0}.abody table tbody tr{transition:background .12s}.abody table tbody tr:hover td{background:var(--hover)}
+@media (max-width:640px){.atabs{position:static}details.asec{scroll-margin-top:calc(var(--navh,56px) + 8px)}.atabs a{padding:5px 8px;font-size:12px}details.asec>summary{padding:10px 12px}.abody{padding:10px 10px 12px}}
+.acm.amu tr.vh th.corner{background:transparent;border-bottom:3px solid var(--cc)}.amu tr.vh th span{color:var(--text)}
 .amu td{min-width:54px;line-height:1.15}.amu td b{display:block;font-size:12.5px}.amu td small{display:block;font-size:10.5px;color:rgba(255,255,255,.65)}.amu td.few{opacity:.75}.amu td.mu0{color:var(--faint)}
 .sdg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:12px;margin-bottom:12px}
 .sdc{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:12px 14px}.sdc h3,.sdh h3{margin:0 0 10px;font-size:14px}
@@ -572,6 +589,24 @@ const onAdmin=()=>/^#\/?admin/.test(location.hash);
 // a class drawn as its weapon pair (icons travel inside the encrypted admin file); name on hover
 const aIco=c=>{const w=ADM&&ADM.cw&&ADM.cw[c],wi=ADM&&ADM.wi||{};
  return w&&wi[w[0]]&&wi[w[1]]?`<span class="aico" title="${esc(c)}"><img src="${wi[w[0]]}" alt=""><img src="${wi[w[1]]}" alt=""></span>`:`<span title="${esc(c||"")}" style="color:${ccol(c)};font-weight:600">${esc(c||"–")}</span>`};
+
+// Admin sections: each is a drop-down (open state remembered on this device), with a tab bar
+// that jumps to (and opens) one, and highlights the one you're looking at.
+const ASO=(()=>{try{return JSON.parse(localStorage.getItem("ss_asec")||"{}")}catch(e){return{}}})();
+const asec=(id,title,sub,open,body)=>{const o=ASO[id]!=null?ASO[id]:open;
+ return`<details class="asec" id="${id}"${o?" open":""}><summary><span class="ach">▸</span><h2>${title}</h2><small class="g">${sub}</small></summary><div class="abody">${body}</div></details>`};
+function admSections(){
+ if(!window._asecT){window._asecT=1;document.addEventListener("toggle",e=>{const d=e.target;if(!d.classList||!d.classList.contains("asec"))return;ASO[d.id]=d.open;try{localStorage.setItem("ss_asec",JSON.stringify(ASO))}catch(x){}},true)}
+ const nav=$("#atabs");if(!nav)return;
+ const hdr=document.querySelector(".top");if(hdr)document.documentElement.style.setProperty("--navh",hdr.offsetHeight+"px");
+ setTimeout(()=>{const b=nav.querySelector('[data-go="apt-wrap"]');if(b)b.hidden=!document.getElementById("s-bounty")},0);
+ nav.onclick=e=>{const a=e.target.closest("a");if(!a)return;
+  if(a.dataset.all){const ds=[...document.querySelectorAll("details.asec")],open=!ds.every(d=>d.open);ds.forEach(d=>d.open=open);return}
+  const el=document.getElementById(a.dataset.go);if(!el)return;const d=el.closest("details");if(d)d.open=true;
+  (d||el).scrollIntoView({behavior:"smooth",block:"start"});(d||el).classList.add("flash");setTimeout(()=>(d||el).classList.remove("flash"),900)};
+ if("IntersectionObserver" in window){const io=new IntersectionObserver(es=>es.forEach(en=>{if(!en.isIntersecting)return;const id=en.target.id.replace(/^s-/,"");
+  nav.querySelectorAll("a").forEach(x=>x.classList.toggle("on",x.dataset.go===id||(id==="apt-wrap"&&x.dataset.go==="apt-wrap")))}),{rootMargin:"-30% 0px -60% 0px"});
+  document.querySelectorAll("details.asec,#apt-wrap").forEach(x=>io.observe(x))}}
 async function vAdmin(){
  if(!ADM){const saved=admPw.get();
   if(saved){$("#app").innerHTML=`<h1>Admin</h1><div class="sub">Unlocking…</div>`;try{ADM=await admOpen(saved)}catch(e){if(e.message!=="none")admPw.clear()}if(!onAdmin())return}
@@ -628,13 +663,15 @@ async function vAdmin(){
  <input id="aq" type="search" placeholder="Find a player…" value="${esc(AS.q)}"></div>
  <div class="stats">${[["Games",gs.length],["Players",A.size],["Deaths",nf(dTot)],["Kills in feed",nf(fed)]].map(([l,v])=>`<div class="stat"><b>${v}</b><span>${l}</span></div>`).join("")}</div>
  <div id="asel"></div>
- <h2>Deaths <small class="g">click a player for who they killed and who killed them</small></h2><div class="tw"><table id="at"></table></div><div class="more" id="amore"></div>
- <h2 id="afd-h">Kill feed <small class="g" id="afd-s"></small></h2><div class="tw"><table id="afd"></table></div><div class="more" id="afd-more"></div>
+ <nav class="atabs" id="atabs">${[["at","👤 Players"],["afd","📜 Kill feed"],["apt-wrap","🎯 Bounty"],["amu","⚖ Matchups"],["asd","🍩 By side"],["acm","▦ Class table"],["apt","⚔ Who killed who"]].map(([k,l])=>`<a data-go="${k}">${l}</a>`).join("")}<span class="grow"></span><a data-all="1" title="Open or close every section">⇕ All</a></nav>
+ ${asec("s-at","Deaths","every player: kills, deaths and who killed them most · click a player for the full story",true,`<div class="tw"><table id="at"></table></div><div class="more" id="amore"></div>`)}
+ ${asec("s-afd",`Kill feed`,`<span id="afd-s"></span>`,false,`<div class="tw"><table id="afd"></table></div><div class="more" id="afd-more"></div>`)}
  <div id="apt-wrap"></div>
- <h2 style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">Class matchups · who beats who <span class="seg" id="amu-sd"><button data-s="">All kills</button><button data-s="red" style="color:#ff6b6b">Red specs vs Yellow specs</button><button data-s="yellow" style="color:#f0d33a">Yellow specs vs Red specs</button></span><small class="g" id="amu-sub"></small></h2><div class="tw" id="amu"></div>
- <h2 style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">Each side · who died to what <span class="seg" id="asd-m"><button data-m="d">💀 Deaths</button><button data-m="k">⚔ Kills</button></span><small class="g" id="asd-sub"></small></h2><div id="asd"></div>
- <h2 style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">Who killed which class <span class="seg" id="acm-sw"><button data-m="k">⚔ Killer → victims</button><button data-m="v">🛡 Victim ← killers</button></span><span class="seg" id="acm-sd"><button data-s="">Both sides</button><button data-s="red" style="color:#ff6b6b">Red's kills</button><button data-s="yellow" style="color:#f0d33a">Yellow's kills</button></span><small class="g" id="acm-sub"></small></h2><div class="tw" id="acm"></div>
- <h2>Who killed who <small class="g">killer → victim, from the kill feed</small></h2><div class="tw"><table id="apt"></table></div><div class="more" id="apmore"></div>`;
+ ${asec("s-amu","Class matchups · who beats who",`<span id="amu-sub"></span>`,false,`<div class="actl"><span class="seg" id="amu-sd"><button data-s="">All kills</button><button data-s="red" style="color:#ff6b6b">Red specs vs Yellow specs</button><button data-s="yellow" style="color:#f0d33a">Yellow specs vs Red specs</button></span></div><div class="tw" id="amu"></div>`)}
+ ${asec("s-asd","Each side · who died to what",`<span id="asd-sub"></span>`,false,`<div class="actl"><span class="seg" id="asd-m"><button data-m="d">💀 Deaths</button><button data-m="k">⚔ Kills</button></span></div><div id="asd"></div>`)}
+ ${asec("s-acm","Who killed which class",`<span id="acm-sub"></span>`,false,`<div class="actl"><span class="seg" id="acm-sw"><button data-m="k">⚔ Killer → victims</button><button data-m="v">🛡 Victim ← killers</button></span><span class="seg" id="acm-sd"><button data-s="">Both sides</button><button data-s="red" style="color:#ff6b6b">Red's kills</button><button data-s="yellow" style="color:#f0d33a">Yellow's kills</button></span></div><div class="tw" id="acm"></div>`)}
+ ${asec("s-apt","Who killed who","killer → victim pairs, from the kill feed",false,`<div class="tw"><table id="apt"></table></div><div class="more" id="apmore"></div>`)}`;
+ admSections();
  const cols=[["name","Player","l",a=>a.n.toLowerCase()],["cls","Class","l",a=>a.cl||"~"],["g","Games","",a=>a.g],["k","Kills","",a=>a.ki],["de","Deaths","",a=>a.dg?a.de:-1],
   ["kd","K/D","",a=>a.dg?(a.de?a.ki/a.de:a.ki):-1],["dpg","Deaths / game","",a=>a.dg?a.de/a.dg:-1],["tk","Killed most by","l",a=>(top(a.Dt)[0]||[""])[0].toLowerCase()||"~"]];
  const sel=()=>{const a=A.get(AS.sel);const el=$("#asel");if(!a){el.innerHTML="";return}
@@ -754,11 +791,11 @@ async function vAdmin(){
     for(const[t,r]of Object.entries(tg)){const c=(K||{})[t]||0;if(!c)continue;const h=H.get(n)||{n,cl,k:0,r:0,t:{}};h.k+=c;h.r+=c*r;h.t[t]=(h.t[t]||0)+c;H.set(n,h);tot+=c*r;kills+=c}});
    for(const[t,r]of Object.entries(tg)){let k=0;const by={};(g.p||[]).forEach(([n,gu,tm,cl,ro,ki,de,K])=>{if(String(tm||"").toLowerCase()!==side)return;const c=(K||{})[t]||0;if(c){k+=c;by[n]=(by[n]||0)+c}});T.push({g,t,r,k,by})}});
   const hs=[...H.values()].sort((a,b)=>b.r-a.r||b.k-a.k),fm=v=>Number.isInteger(v)?nf(v):v.toFixed(1);
-  box.innerHTML=`<h2>🎯 Priority targets · bounty board <small class="g">${W.length} war${W.length===1?"":"s"} with targets · ${kills} target kills · ${fm(tot)} ${esc(unit)} earned</small></h2>
+  box.innerHTML=asec("s-bounty",`🎯 Priority targets · bounty board`,`${W.length} war${W.length===1?"":"s"} with targets · ${kills} target kills · ${fm(tot)} ${esc(unit)} earned`,true,`
    <div class="two"><div class="box"><h3 style="margin:0 0 8px;font-size:14px">Hunters</h3><table class="acm" style="width:100%"><thead><tr><th class="l">Player</th><th>Target kills</th><th>Reward</th><th class="l">Took down</th></tr></thead><tbody>
     ${hs.map((h,i)=>`<tr><td class="l">${i<3?["🥇","🥈","🥉"][i]+" ":""}${aIco(h.cl)} <b>${esc(h.n)}</b></td><td>${h.k}</td><td><b>${fm(h.r)}</b></td><td class="l g" style="white-space:normal">${Object.entries(h.t).map(([t,c])=>`🎯${esc(t)}×${c}`).join(" ")}</td></tr>`).join("")||`<tr><td colspan="4" class="l g">No target was killed by our side yet.</td></tr>`}</tbody></table></div>
    <div class="box"><h3 style="margin:0 0 8px;font-size:14px">Targets</h3><table class="acm" style="width:100%"><thead><tr><th class="l">Target</th><th class="l">War</th><th>Reward</th><th>Killed</th><th class="l">By</th></tr></thead><tbody>
-    ${T.sort((a,b)=>b.k-a.k||b.r-a.r).map(x=>`<tr><td class="l">🎯 <b>${esc(x.t)}</b></td><td class="l g">${esc((x.g.d||"").slice(0,10))}</td><td>${fm(x.r)}</td><td>${x.k||"–"}</td><td class="l g" style="white-space:normal">${Object.entries(x.by).sort((a,b)=>b[1]-a[1]).map(([n,c])=>`${esc(n)}×${c}`).join(", ")||"never killed"}</td></tr>`).join("")}</tbody></table></div></div>`};
+    ${T.sort((a,b)=>b.k-a.k||b.r-a.r).map(x=>`<tr><td class="l">🎯 <b>${esc(x.t)}</b></td><td class="l g">${esc((x.g.d||"").slice(0,10))}</td><td>${fm(x.r)}</td><td>${x.k||"–"}</td><td class="l g" style="white-space:normal">${Object.entries(x.by).sort((a,b)=>b[1]-a[1]).map(([n,c])=>`${esc(n)}×${c}`).join(", ")||"never killed"}</td></tr>`).join("")}</tbody></table></div></div>`)};
  drawPT();
  // the kill feed itself: one game -> every kill; all games -> every kill of the selected player
  const drawFD=()=>{const one=!!AS.g,clsOf=g=>{const m={};(g.p||[]).forEach(e=>{if(e[0]&&!(e[0] in m))m[e[0]]=(e[3]&&e[3]!=="?")?e[3]:(mainCls(e[0])||"")});return m};
@@ -792,7 +829,7 @@ function route(){const f=$("#fab");if(f&&!location.hash.match(/^#\/?$/))f.remove
  window.scrollTo(0,0)}
 addEventListener("hashchange",route);route();
 /* a newer upload replaces a cached copy of the site */
-const BUILD="91dee6624b05";let vAt=0;
+const BUILD="52ac44a68d16";let vAt=0;
 function vchk(){const n=Date.now();if(n-vAt<30000)return;vAt=n;
  fetch(ROOT+"version.txt?"+n,{cache:"no-store"}).then(r=>r.ok?r.text():"").then(v=>{v=(v||"").trim();
   if(!v||v===BUILD||new URLSearchParams(location.search).get("v")===v)return;
