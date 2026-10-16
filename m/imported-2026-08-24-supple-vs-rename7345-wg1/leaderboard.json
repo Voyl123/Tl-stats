@@ -1891,7 +1891,13 @@
     "match_id": "2003641477",
     "original_class": "Oracle"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 86,
+    "class": "Oracle",
+    "label": "me (Oracle) · rank 86",
+    "shared_name": "me"
+   }
   },
   {
    "rank": 87,
@@ -2084,7 +2090,13 @@
     "match_id": "2003641477",
     "original_class": "Steelheart"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 95,
+    "class": "Steelheart",
+    "label": "me (Steelheart)",
+    "shared_name": "me"
+   }
   },
   {
    "rank": 96,
@@ -2106,7 +2118,13 @@
     "match_id": "2003641477",
     "original_class": "Oracle"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 96,
+    "class": "Oracle",
+    "label": "me (Oracle) · rank 96",
+    "shared_name": "me"
+   }
   }
  ]
 }

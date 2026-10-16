@@ -393,7 +393,13 @@
     "match_id": "845269282",
     "original_class": "Shadowdancer"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 17,
+    "class": "Shadowdancer",
+    "label": "me (Shadowdancer)",
+    "shared_name": "me"
+   }
   },
   {
    "rank": 18,
@@ -437,7 +443,13 @@
     "match_id": "845269282",
     "original_class": "Gladiator"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 19,
+    "class": "Gladiator",
+    "label": "me (Gladiator)",
+    "shared_name": "me"
+   }
   },
   {
    "rank": 20,
@@ -1588,7 +1600,13 @@
     "match_id": "845269282",
     "original_class": "Oracle"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 72,
+    "class": "Oracle",
+    "label": "me (Oracle) · rank 72",
+    "shared_name": "me"
+   }
   },
   {
    "rank": 73,
@@ -1649,7 +1667,13 @@
     "match_id": "845269282",
     "original_class": "Oracle"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 75,
+    "class": "Oracle",
+    "label": "me (Oracle) · rank 75",
+    "shared_name": "me"
+   }
   },
   {
    "rank": 76,
@@ -2084,7 +2108,13 @@
     "match_id": "845269282",
     "original_class": "Steelheart"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 95,
+    "class": "Steelheart",
+    "label": "me (Steelheart)",
+    "shared_name": "me"
+   }
   },
   {
    "rank": 96,

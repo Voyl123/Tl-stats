@@ -278,7 +278,13 @@
     "match_id": "1695523289",
     "original_class": "Shadowdancer"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 12,
+    "class": "Shadowdancer",
+    "label": "fia (Shadowdancer)",
+    "shared_name": "fia"
+   }
   },
   {
    "rank": 13,
@@ -427,7 +433,13 @@
     "match_id": "1695523289",
     "original_class": "Shadowdancer"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 19,
+    "class": "Shadowdancer",
+    "label": "me (Shadowdancer)",
+    "shared_name": "me"
+   }
   },
   {
    "rank": 20,
@@ -664,7 +676,13 @@
     "match_id": "1695523289",
     "original_class": "Gladiator"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 30,
+    "class": "Gladiator",
+    "label": "me (Gladiator)",
+    "shared_name": "me"
+   }
   },
   {
    "rank": 31,
@@ -686,7 +704,13 @@
     "match_id": "1695523289",
     "original_class": "Spellblade"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 31,
+    "class": "Spellblade",
+    "label": "fia (Spellblade)",
+    "shared_name": "fia"
+   }
   },
   {
    "rank": 32,
@@ -796,7 +820,13 @@
     "match_id": "1695523289",
     "original_class": "Ranger"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 36,
+    "class": "Ranger",
+    "label": "me (Ranger)",
+    "shared_name": "me"
+   }
   },
   {
    "rank": 37,
@@ -1556,7 +1586,13 @@
     "match_id": "1695523289",
     "original_class": "Oracle"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 71,
+    "class": "Oracle",
+    "label": "me (Oracle) · rank 71",
+    "shared_name": "me"
+   }
   },
   {
    "rank": 72,
@@ -1705,7 +1741,13 @@
     "match_id": "1695523289",
     "original_class": "Oracle"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 78,
+    "class": "Oracle",
+    "label": "me (Oracle) · rank 78",
+    "shared_name": "me"
+   }
   },
   {
    "rank": 79,
@@ -1925,7 +1967,13 @@
     "match_id": "1695523289",
     "original_class": "Steelheart"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 88,
+    "class": "Steelheart",
+    "label": "me (Steelheart)",
+    "shared_name": "me"
+   }
   },
   {
    "rank": 89,

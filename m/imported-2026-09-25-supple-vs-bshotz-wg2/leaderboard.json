@@ -151,7 +151,13 @@
     "match_id": "gw-0925-2",
     "original_class": "Shadowdancer"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 6,
+    "class": "Shadowdancer",
+    "label": "fia (Shadowdancer)",
+    "shared_name": "fia"
+   }
   },
   {
    "rank": 7,
@@ -498,7 +504,13 @@
     "match_id": "gw-0925-2",
     "original_class": "Scorpion"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 22,
+    "class": "Scorpion",
+    "label": "fia (Scorpion)",
+    "shared_name": "fia"
+   }
   },
   {
    "rank": 23,

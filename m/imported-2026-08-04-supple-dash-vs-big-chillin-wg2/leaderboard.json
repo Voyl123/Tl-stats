@@ -635,7 +635,13 @@
     "match_id": "259225623",
     "original_class": "Scorpion"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 28,
+    "class": "Scorpion",
+    "label": "socks (Scorpion)",
+    "shared_name": "socks"
+   }
   },
   {
    "rank": 29,
@@ -1703,7 +1709,13 @@
     "match_id": "259225623",
     "original_class": "Oracle"
    },
-   "class_status": "weapons"
+   "class_status": "weapons",
+   "scoreboard_identity": {
+    "rank": 77,
+    "class": "Oracle",
+    "label": "socks (Oracle)",
+    "shared_name": "socks"
+   }
   },
   {
    "rank": 78,
