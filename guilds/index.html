@@ -127,6 +127,7 @@ details.asec[open]>summary{border-bottom:1px solid var(--line)}
 .tlw{position:relative}.tl{width:100%;height:auto;display:block}.tlv{width:100%;height:auto;display:block;margin-top:2px}
 .tlg{stroke:var(--line);stroke-width:1}.tlt{fill:var(--dim);font-size:11px}.tlx{stroke:var(--text);stroke-width:1;stroke-dasharray:3 3}.tl0{stroke:var(--dim);stroke-width:1.4;opacity:.8}
 .dptiles{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 14px}.dpt{flex:1 1 220px;background:var(--panel2);border:1px solid var(--line);border-radius:4px;padding:10px 14px;display:flex;flex-direction:column;gap:2px}.dpt span{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}.dpt b{font-size:28px;line-height:1.1}.dpt small{color:var(--dim);font-size:12px}.dph{font-size:14px;margin:14px 0 8px}.dph small{font-weight:400;margin-left:6px}.dpb{display:flex;gap:6px;align-items:flex-end;height:150px;padding:18px 4px 18px;border-bottom:1px solid var(--line);overflow-x:auto}.dpg{flex:1 0 34px;height:100%;display:flex;align-items:flex-end;gap:2px;position:relative;cursor:pointer;border-radius:3px;transition:background .15s}.dpg:hover{background:rgba(255,255,255,.05)}.dpg i{flex:1;position:relative;border-radius:2px 2px 0 0;opacity:.85}.dpg:hover i{opacity:1}.dpg i em{position:absolute;top:-15px;left:50%;transform:translateX(-50%);font-style:normal;font-size:10px;color:var(--dim);white-space:nowrap}.dpg u{position:absolute;bottom:-17px;left:0;right:0;text-align:center;text-decoration:none;font-size:10px;color:var(--dim)}.dpa{position:relative;text-align:left!important}.dpbar{position:absolute;left:4px;top:50%;height:14px;transform:translateY(-50%);opacity:.28;border-radius:2px}.dpa b{position:relative;padding-left:6px}.dps{width:70px;height:18px;vertical-align:middle}.dpt-t tbody tr{cursor:pointer}.dpinc{margin:0 0 12px;border:1px solid var(--line);border-radius:4px;padding:6px 12px;background:var(--panel2)}.dpinc summary{cursor:pointer;font-size:13px}.dpinc-l{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:4px 14px;margin:8px 0}.dpinc-l label{font-size:12px;cursor:pointer;display:flex;gap:6px;align-items:center}.dpinc-l label.off{opacity:.45;text-decoration:line-through}.dpinc-b{display:flex;gap:8px;margin-bottom:4px}.dpsh{font-size:11px;color:var(--dim);border:1px dashed var(--line);border-radius:3px;padding:0 5px;margin-left:4px}.dpshl{float:right;font-size:12px;font-weight:400;color:var(--dim);cursor:pointer}
+.bty-top{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch;margin:0 0 12px}.bty-k{background:var(--panel2);border:1px solid var(--line);border-radius:4px;padding:8px 14px;min-width:110px}.bty-k b{display:block;font-size:22px}.bty-k span{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em}.bty-k.gold b{color:#e8b923}.bty-top p{flex:1 1 260px;margin:auto 0}.bty-auto{font-size:10px;border:1px dashed var(--line);border-radius:3px;padding:0 4px;color:var(--dim);cursor:help}.bty-miss td{opacity:.55}
 .anod{opacity:.4;filter:grayscale(.6);transition:opacity .2s}.anod:hover{opacity:.7}.anod-note{margin:10px 0;padding:8px 12px;border:1px dashed var(--line);border-radius:4px;color:var(--dim);font-size:13px}.anod-list{margin:8px 0 0;font-size:12px;color:var(--dim);opacity:.6}.anod-list a{cursor:pointer;text-decoration:underline dotted}.anod-list a:hover{opacity:1;color:var(--text)}option.anopt{color:#777}
 .tl path{transition:opacity .15s}.tl:hover path{opacity:.75}.tl path:hover{opacity:1;stroke-width:3.2}.tl path.tla,.tl:hover path.tla{opacity:.06;pointer-events:none}.tltip .tlh{margin:0 0 3px;color:var(--dim);font-size:11px}.tl{cursor:crosshair;user-select:none}.tlbr{fill:rgba(232,185,35,.12);stroke:#e8b923;stroke-dasharray:4 3}.tld{transition:r .1s}.tld:hover{r:6}.tls{margin-top:4px}.tln{font-size:11px}.tln.hit{font-weight:700;fill:#fff}.tlbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 8px}.tlbar .seg button[disabled]{opacity:.35;cursor:default}.tlzw{font-size:12px;color:var(--dim)}.tlpk{margin-left:auto;font-size:12px;color:var(--dim);display:flex;gap:6px;align-items:center}.tlpk input{background:var(--panel2);border:1px solid var(--line);color:var(--text);padding:4px 8px;border-radius:3px;width:200px}.tlpk button{background:none;border:0;color:var(--dim);cursor:pointer}.tlpsum{font-size:13px;margin:0 0 8px;padding:6px 10px;border-left:3px solid #e53e3e;background:var(--panel2)}
 .tlleg{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.tlleg span{display:inline-flex;align-items:center;gap:5px;font-size:12px;padding:3px 8px;border:1px solid var(--line);border-radius:3px;cursor:pointer;transition:opacity .15s}
@@ -851,18 +852,42 @@ async function vAdmin(){
   dr()};
  drawMU();
  // priority targets: per war, set in the app. Our side's kills of them earn the reward.
- const drawPT=()=>{const W=gs.filter(g=>g.pt&&g.pt.t&&Object.keys(g.pt.t).length);const box=$("#apt-wrap");
-  if(!W.length){box.innerHTML="";return}
-  const H=new Map(),T=[];let tot=0,kills=0,unit=W[0].pt.unit||"pts";
-  W.forEach(g=>{const side=g.pt.side,tg=g.pt.t;(g.p||[]).forEach(([n,gu,tm,cl,ro,ki,de,K])=>{if(String(tm||"").toLowerCase()!==side)return;
-    for(const[t,r]of Object.entries(tg)){const c=(K||{})[t]||0;if(!c)continue;const h=H.get(n)||{n,cl,k:0,r:0,t:{}};h.k+=c;h.r+=c*r;h.t[t]=(h.t[t]||0)+c;H.set(n,h);tot+=c*r;kills+=c}});
-   for(const[t,r]of Object.entries(tg)){let k=0;const by={};(g.p||[]).forEach(([n,gu,tm,cl,ro,ki,de,K])=>{if(String(tm||"").toLowerCase()!==side)return;const c=(K||{})[t]||0;if(c){k+=c;by[n]=(by[n]||0)+c}});T.push({g,t,r,k,by})}});
+ // bounty board: each war's priority targets (set in the app, or auto-picked) and who hunted them.
+ // A game uploaded without targets gets them picked here from its kill data: the enemy players
+ // with the biggest share of their side's kills and of the kills on us, rewarded 10-50.
+ const autoPT=g=>{const us=usTeam(g);if(!us)return null;const E=(g.p||[]).filter(r=>String(r[2]||"").toLowerCase()!==us&&r[0]);
+  if(!E.length)return null;const ours=new Set((g.p||[]).filter(r=>String(r[2]||"").toLowerCase()===us).map(r=>r[0]));
+  const tk=E.reduce((a,r)=>a+(r[5]||0),0)||1,onus=r=>Object.entries(r[7]||{}).reduce((a,[v,c])=>a+(ours.has(v)?c:0),0),tu=E.reduce((a,r)=>a+onus(r),0)||1;
+  const S=E.map(r=>({n:r[0],ks:(r[5]||0)/tk,ku:onus(r)/tu})).map(x=>(x.sc=.6*x.ks+.4*x.ku,x)).sort((a,b)=>b.sc-a.sc).slice(0,6);
+  const hi=S[0]&&S[0].sc||1,side=String(E[0][2]||"").toLowerCase()==="red"?"yellow":"red";
+  return{side:us,unit:"pts",auto:true,t:Object.fromEntries(S.map(x=>[x.n,Math.round((10+40*x.sc/hi)/5)*5])),
+   why:Object.fromEntries(S.map(x=>[x.n,[x.ks>=.04?`${Math.round(100*x.ks)}% of their kills`:"",x.ku>=.04?`${Math.round(100*x.ku)}% of the kills on us`:""].filter(Boolean).join(", ")||"high impact"]))}};
+ const drawPT=()=>{const box=$("#apt-wrap");const W=gs.map(g=>({g,pt:(g.pt&&g.pt.t&&Object.keys(g.pt.t).length)?g.pt:autoPT(g)})).filter(x=>x.pt);
+  if(!W.length){box.innerHTML=asec("s-bounty","🎯 Priority targets · bounty board","",false,`<p class="empty">No war with both sides on the board in this selection.</p>`);return}
+  const H=new Map(),T=[];let tot=0,kills=0,nAuto=0;const unit=W[0].pt.unit||"pts";
+  W.forEach(({g,pt})=>{if(pt.auto)nAuto++;const side=pt.side,tg=pt.t;
+   (g.p||[]).forEach(([n,gu,tm,cl,ro,ki,de,K])=>{if(String(tm||"").toLowerCase()!==side)return;
+    for(const[t,r]of Object.entries(tg)){const c=(K||{})[t]||0;if(!c)continue;const h=H.get(n)||{n,k:0,r:0,t:{},w:new Set()};h.k+=c;h.r+=c*r;h.t[t]=(h.t[t]||0)+c;h.w.add(g.id);H.set(n,h);tot+=c*r;kills+=c}});
+   for(const[t,r]of Object.entries(tg)){let k=0;const by={};(g.p||[]).forEach(([n,gu,tm,cl,ro,ki,de,K])=>{if(String(tm||"").toLowerCase()!==side)return;const c=(K||{})[t]||0;if(c){k+=c;by[n]=(by[n]||0)+c}});
+    const tr=(g.p||[]).find(r=>r[0]===t);T.push({g,t,r,k,by,auto:!!pt.auto,why:(pt.why||{})[t]||"",died:tr?tr[6]:null})}});
   const hs=[...H.values()].sort((a,b)=>b.r-a.r||b.k-a.k),fm=v=>Number.isInteger(v)?nf(v):v.toFixed(1);
-  box.innerHTML=asec("s-bounty",`🎯 Priority targets · bounty board`,`${W.length} war${W.length===1?"":"s"} with targets · ${kills} target kills · ${fm(tot)} ${esc(unit)} earned`,true,`
-   <div class="two"><div class="box"><h3 style="margin:0 0 8px;font-size:14px">Hunters</h3><table class="acm" style="width:100%"><thead><tr><th class="l">Player</th><th>Target kills</th><th>Reward</th><th class="l">Took down</th></tr></thead><tbody>
-    ${hs.map((h,i)=>`<tr><td class="l">${i<3?["🥇","🥈","🥉"][i]+" ":""}${who(h.n,h.cl,true)}</td><td>${h.k}</td><td><b>${fm(h.r)}</b></td><td class="l g" style="white-space:normal">${Object.entries(h.t).map(([t,c])=>`🎯${esc(t)}×${c}`).join(" ")}</td></tr>`).join("")||`<tr><td colspan="4" class="l g">No target was killed by our side yet.</td></tr>`}</tbody></table></div>
-   <div class="box"><h3 style="margin:0 0 8px;font-size:14px">Targets</h3><table class="acm" style="width:100%"><thead><tr><th class="l">Target</th><th class="l">War</th><th>Reward</th><th>Killed</th><th class="l">By</th></tr></thead><tbody>
-    ${T.sort((a,b)=>b.k-a.k||b.r-a.r).map(x=>`<tr><td class="l">🎯 ${who(x.t,null,true)}</td><td class="l g">${esc((x.g.d||"").slice(0,10))}</td><td>${fm(x.r)}</td><td>${x.k||"–"}</td><td class="l g" style="white-space:normal">${Object.entries(x.by).sort((a,b)=>b[1]-a[1]).map(([n,c])=>`${esc(n)}×${c}`).join(", ")||"never killed"}</td></tr>`).join("")}</tbody></table></div></div>`)};
+  const claimed=T.filter(x=>x.k).length;
+  // one row per target player across the selected wars
+  const TA=new Map();T.forEach(x=>{const a=TA.get(x.t)||{t:x.t,wars:0,r:0,k:0,earned:0,by:{},auto:0,why:x.why};a.wars++;a.r=Math.max(a.r,x.r);a.k+=x.k;a.earned+=x.k*x.r;a.auto+=x.auto?1:0;
+   for(const[n,c]of Object.entries(x.by))a.by[n]=(a.by[n]||0)+c;TA.set(x.t,a)});
+  const TL=[...TA.values()].sort((a,b)=>b.earned-a.earned||b.r-a.r);
+  const lim=(arr,k,key)=>AS[key]?arr:arr.slice(0,k),more=(arr,k,key,lab)=>arr.length>k?`<div class="more"><button class="abtn ghost" data-more="${key}">${AS[key]?"Show fewer":`Show all ${arr.length} ${lab}`}</button></div>`:"";
+  const top=(o,k)=>{const e=Object.entries(o).sort((a,b)=>b[1]-a[1]);return e.slice(0,k).map(([n,c])=>`${esc(n)}×${c}`).join(", ")+(e.length>k?` <span class="g">+${e.length-k} more</span>`:"")};
+  box.innerHTML=asec("s-bounty",`🎯 Priority targets · bounty board`,`${W.length} war${W.length===1?"":"s"} · ${T.length} targets · ${claimed} hunted · ${kills} target kills · ${fm(tot)} ${esc(unit)} earned`,true,`
+   <div class="bty-top">
+    <div class="bty-k"><b>${T.length}</b><span>targets</span></div><div class="bty-k"><b>${claimed}</b><span>hunted down</span></div>
+    <div class="bty-k"><b>${kills}</b><span>target kills</span></div><div class="bty-k gold"><b>${fm(tot)}</b><span>${esc(unit)} earned</span></div>
+    <p class="hint">${nAuto?`${nAuto===W.length?"All":nAuto} war${nAuto===1?"":"s"} use <b>auto-picked</b> targets (their top killers and the players who killed us most). `:""}Set your own per war in the app: Results → the match → 🎯 Priority targets, then Upload to Admin. Pick one war at the top to see just its board.</p></div>
+   <div class="two"><div class="box"><h3 style="margin:0 0 8px;font-size:14px">🏆 Hunters</h3><table class="acm" style="width:100%"><thead><tr><th class="l">Player</th><th>Target kills</th><th>Reward</th><th class="l">Took down</th></tr></thead><tbody>
+    ${lim(hs,12,"btyH").map((h,i)=>`<tr><td class="l">${i<3?["🥇","🥈","🥉"][i]+" ":`<span class="g">${i+1}</span> `}${who(h.n,null,true)}</td><td>${h.k}</td><td><b>${fm(h.r)}</b></td><td class="l g" style="white-space:normal">${top(h.t,4)}</td></tr>`).join("")||`<tr><td colspan="4" class="l g">No target was killed by our side yet.</td></tr>`}</tbody></table>${more(hs,12,"btyH","hunters")}</div>
+   <div class="box"><h3 style="margin:0 0 8px;font-size:14px">🎯 Targets</h3><table class="acm" style="width:100%"><thead><tr><th class="l">Target</th><th>Wars</th><th>Reward</th><th>Killed by us</th><th class="l">Top hunters</th></tr></thead><tbody>
+    ${lim(TL,15,"btyT").map(x=>`<tr class="${x.k?"":"bty-miss"}"><td class="l">🎯 ${who(x.t,null,true)}${x.auto?` <span class="bty-auto" title="${esc(x.why)}">auto</span>`:""}${x.why&&W.length===1?`<div class="g" style="font-size:11px">${esc(x.why)}</div>`:""}</td><td>${x.wars}</td><td>${fm(x.r)}</td><td>${x.k?`<b>${x.k}</b>`:"–"}</td><td class="l g" style="white-space:normal">${top(x.by,3)||"never killed"}</td></tr>`).join("")}</tbody></table>${more(TL,15,"btyT","targets")}</div></div>`);
+  box.querySelectorAll("[data-more]").forEach(b=>b.onclick=()=>{AS[b.dataset.more]=!AS[b.dataset.more];drawPT()})};
  drawPT();
  // deaths per game: how much each side dies in a game, and who dies the most on average
  AS.dp=AS.dp||{s:"",m:"3"};
@@ -1056,7 +1081,7 @@ function route(){const f=$("#fab");if(f&&!location.hash.match(/^#\/?$/))f.remove
  window.scrollTo(0,0)}
 addEventListener("hashchange",route);route();
 /* a newer upload replaces a cached copy of the site */
-const BUILD="c3d4d7b02333";let vAt=0;
+const BUILD="1c4e3c5fdfb8";let vAt=0;
 function vchk(){const n=Date.now();if(n-vAt<30000)return;vAt=n;
  fetch(ROOT+"version.txt?"+n,{cache:"no-store"}).then(r=>r.ok?r.text():"").then(v=>{v=(v||"").trim();
   if(!v||v===BUILD||new URLSearchParams(location.search).get("v")===v)return;
