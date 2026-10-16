@@ -14,7 +14,12 @@
   },
   "inhouse": false,
   "siege": false,
-  "zone": "Cherno"
+  "zone": "Cherno",
+  "class_quality": {
+   "known": 96,
+   "total": 96,
+   "missing": 0
+  }
  },
  "players": [
   {
@@ -31,7 +36,13 @@
    "damage_dealt": 7038438,
    "damage_taken": 1747412,
    "amount_healed": 0,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Shadowdancer"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 2,
@@ -47,7 +58,13 @@
    "damage_dealt": 5660552,
    "damage_taken": 11407037,
    "amount_healed": 21848,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Shadowdancer"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 3,
@@ -63,7 +80,13 @@
    "damage_dealt": 5933867,
    "damage_taken": 1018003,
    "amount_healed": 27604,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Guardian"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 4,
@@ -79,7 +102,13 @@
    "damage_dealt": 5681173,
    "damage_taken": 11048609,
    "amount_healed": 0,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Enigma"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 5,
@@ -95,7 +124,13 @@
    "damage_dealt": 5797880,
    "damage_taken": 3325742,
    "amount_healed": 68707,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Gladiator"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 6,
@@ -111,7 +146,13 @@
    "damage_dealt": 4538498,
    "damage_taken": 926992,
    "amount_healed": 0,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Spellblade"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 7,
@@ -127,7 +168,13 @@
    "damage_dealt": 4100580,
    "damage_taken": 1423028,
    "amount_healed": 10192,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Lunarch"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 8,
@@ -143,7 +190,13 @@
    "damage_dealt": 4064742,
    "damage_taken": 1931071,
    "amount_healed": 9966,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Enigma"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 9,
@@ -159,7 +212,13 @@
    "damage_dealt": 3926347,
    "damage_taken": 1112881,
    "amount_healed": 14219,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Lunarch"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 10,
@@ -175,7 +234,13 @@
    "damage_dealt": 3966070,
    "damage_taken": 1529099,
    "amount_healed": 46833,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Shadowdancer"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 11,
@@ -191,7 +256,13 @@
    "damage_dealt": 2856657,
    "damage_taken": 1189269,
    "amount_healed": 63457,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Raider"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 12,
@@ -207,7 +278,13 @@
    "damage_dealt": 2477731,
    "damage_taken": 1757234,
    "amount_healed": 37898,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Shadowdancer"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 13,
@@ -223,7 +300,13 @@
    "damage_dealt": 4098175,
    "damage_taken": 2910444,
    "amount_healed": 22450,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Gladiator"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 14,
@@ -239,7 +322,13 @@
    "damage_dealt": 2298576,
    "damage_taken": 1621550,
    "amount_healed": 12649,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Ravager"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 15,
@@ -255,7 +344,13 @@
    "damage_dealt": 3389892,
    "damage_taken": 2157358,
    "amount_healed": 0,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Shadowdancer"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 16,
@@ -271,7 +366,13 @@
    "damage_dealt": 3227453,
    "damage_taken": 874164,
    "amount_healed": 63556,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Raider"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 17,
@@ -287,7 +388,13 @@
    "damage_dealt": 21903587,
    "damage_taken": 1251910,
    "amount_healed": 13309,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Scorpion"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 18,
@@ -303,7 +410,13 @@
    "damage_dealt": 4165591,
    "damage_taken": 1498599,
    "amount_healed": 54033,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Shadowdancer"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 19,
@@ -319,7 +432,13 @@
    "damage_dealt": 2512206,
    "damage_taken": 1002278,
    "amount_healed": 39386,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Raider"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 20,
@@ -335,7 +454,13 @@
    "damage_dealt": 2419769,
    "damage_taken": 1324686,
    "amount_healed": 4825,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Lunarch"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 21,
@@ -351,7 +476,13 @@
    "damage_dealt": 1385597,
    "damage_taken": 871716,
    "amount_healed": 12201,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Infiltrator"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 22,
@@ -367,7 +498,13 @@
    "damage_dealt": 2205901,
    "damage_taken": 1716506,
    "amount_healed": 19853,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Lunarch"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 23,
@@ -383,7 +520,13 @@
    "damage_dealt": 1703495,
    "damage_taken": 854007,
    "amount_healed": 61877,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Raider"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 24,
@@ -399,7 +542,13 @@
    "damage_dealt": 2462188,
    "damage_taken": 585162,
    "amount_healed": 12231,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Spellblade"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 25,
@@ -415,7 +564,8 @@
    "damage_dealt": 2629085,
    "damage_taken": 1386201,
    "amount_healed": 0,
-   "flags": []
+   "flags": [],
+   "class_status": "weapons"
   },
   {
    "rank": 26,
@@ -431,7 +581,8 @@
    "damage_dealt": 1727263,
    "damage_taken": 1934442,
    "amount_healed": 30070,
-   "flags": []
+   "flags": [],
+   "class_status": "weapons"
   },
   {
    "rank": 27,
@@ -447,7 +598,13 @@
    "damage_dealt": 1406087,
    "damage_taken": 991023,
    "amount_healed": 2363,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Infiltrator"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 28,
@@ -463,7 +620,13 @@
    "damage_dealt": 1203331,
    "damage_taken": 1631542,
    "amount_healed": 67071,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Ravager"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 29,
@@ -479,7 +642,13 @@
    "damage_dealt": 1286260,
    "damage_taken": 906258,
    "amount_healed": 34823,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Ravager"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 30,
@@ -495,7 +664,13 @@
    "damage_dealt": 133281,
    "damage_taken": 1452838,
    "amount_healed": 39669,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Crusader"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 31,
@@ -511,7 +686,13 @@
    "damage_dealt": 88229,
    "damage_taken": 596598,
    "amount_healed": 1091048,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Ranger"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 32,
@@ -527,7 +708,13 @@
    "damage_dealt": 49568,
    "damage_taken": 309798,
    "amount_healed": 1042736,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 33,
@@ -543,7 +730,13 @@
    "damage_dealt": 101496,
    "damage_taken": 908205,
    "amount_healed": 55920,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Steelheart"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 34,
@@ -559,7 +752,13 @@
    "damage_dealt": 73000,
    "damage_taken": 1113818,
    "amount_healed": 10532,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Steelheart"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 35,
@@ -575,7 +774,13 @@
    "damage_dealt": 44113,
    "damage_taken": 663940,
    "amount_healed": 810619,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 36,
@@ -591,7 +796,13 @@
    "damage_dealt": 88139,
    "damage_taken": 869073,
    "amount_healed": 2424503,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Seeker"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 37,
@@ -607,7 +818,13 @@
    "damage_dealt": 57044,
    "damage_taken": 1403549,
    "amount_healed": 913804,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Ranger"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 38,
@@ -623,7 +840,13 @@
    "damage_dealt": 97832,
    "damage_taken": 1254439,
    "amount_healed": 1943528,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Seeker"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 39,
@@ -639,7 +862,13 @@
    "damage_dealt": 145880,
    "damage_taken": 872070,
    "amount_healed": 29557,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Crusader"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 40,
@@ -655,7 +884,13 @@
    "damage_dealt": 35136,
    "damage_taken": 1399751,
    "amount_healed": 21587,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Crusader"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 41,
@@ -671,7 +906,13 @@
    "damage_dealt": 67147,
    "damage_taken": 1171836,
    "amount_healed": 2496498,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Seeker"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 42,
@@ -687,7 +928,8 @@
    "damage_dealt": 25214,
    "damage_taken": 668480,
    "amount_healed": 814492,
-   "flags": []
+   "flags": [],
+   "class_status": "weapons"
   },
   {
    "rank": 43,
@@ -703,7 +945,13 @@
    "damage_dealt": 40148,
    "damage_taken": 388499,
    "amount_healed": 600769,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 44,
@@ -719,7 +967,13 @@
    "damage_dealt": 104437,
    "damage_taken": 1553385,
    "amount_healed": 4838520,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Seeker"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 45,
@@ -735,7 +989,13 @@
    "damage_dealt": 20243,
    "damage_taken": 566415,
    "amount_healed": 963985,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 46,
@@ -751,7 +1011,13 @@
    "damage_dealt": 18265,
    "damage_taken": 514106,
    "amount_healed": 703452,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 47,
@@ -767,7 +1033,13 @@
    "damage_dealt": 21630,
    "damage_taken": 851289,
    "amount_healed": 2466182,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 48,
@@ -783,7 +1055,13 @@
    "damage_dealt": 86404,
    "damage_taken": 646936,
    "amount_healed": 2861589,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Seeker"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 49,
@@ -799,7 +1077,13 @@
    "damage_dealt": 54171,
    "damage_taken": 824038,
    "amount_healed": 2065292,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Seeker"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 50,
@@ -815,7 +1099,13 @@
    "damage_dealt": 9844,
    "damage_taken": 521874,
    "amount_healed": 586718,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 51,
@@ -831,7 +1121,13 @@
    "damage_dealt": 3105,
    "damage_taken": 445036,
    "amount_healed": 1508000,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 52,
@@ -847,7 +1143,13 @@
    "damage_dealt": 9283,
    "damage_taken": 580525,
    "amount_healed": 1577440,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 53,
@@ -863,7 +1165,13 @@
    "damage_dealt": 145632,
    "damage_taken": 1191998,
    "amount_healed": 109943,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Steelheart"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 54,
@@ -879,7 +1187,13 @@
    "damage_dealt": 33925,
    "damage_taken": 428281,
    "amount_healed": 968918,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 55,
@@ -895,7 +1209,13 @@
    "damage_dealt": 18926,
    "damage_taken": 512163,
    "amount_healed": 1112038,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 56,
@@ -911,7 +1231,13 @@
    "damage_dealt": 19382,
    "damage_taken": 658799,
    "amount_healed": 2102502,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Warden"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 57,
@@ -927,7 +1253,13 @@
    "damage_dealt": 132256,
    "damage_taken": 661506,
    "amount_healed": 71967,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Seeker"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 58,
@@ -943,7 +1275,8 @@
    "damage_dealt": 115726,
    "damage_taken": 503986,
    "amount_healed": 1799773,
-   "flags": []
+   "flags": [],
+   "class_status": "weapons"
   },
   {
    "rank": 59,
@@ -959,7 +1292,13 @@
    "damage_dealt": 8535,
    "damage_taken": 859358,
    "amount_healed": 1472977,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Seeker"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 60,
@@ -975,7 +1314,13 @@
    "damage_dealt": 84913,
    "damage_taken": 1031575,
    "amount_healed": 2569337,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Ranger"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 61,
@@ -991,7 +1336,13 @@
    "damage_dealt": 84364,
    "damage_taken": 702481,
    "amount_healed": 778107,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 62,
@@ -1007,7 +1358,13 @@
    "damage_dealt": 40025,
    "damage_taken": 560614,
    "amount_healed": 956852,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Seeker"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 63,
@@ -1023,7 +1380,13 @@
    "damage_dealt": 55316,
    "damage_taken": 743028,
    "amount_healed": 1344723,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 64,
@@ -1039,7 +1402,13 @@
    "damage_dealt": 7713,
    "damage_taken": 638133,
    "amount_healed": 996158,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 65,
@@ -1055,7 +1424,8 @@
    "damage_dealt": 1511,
    "damage_taken": 359035,
    "amount_healed": 1060961,
-   "flags": []
+   "flags": [],
+   "class_status": "weapons"
   },
   {
    "rank": 66,
@@ -1071,7 +1441,13 @@
    "damage_dealt": 20482,
    "damage_taken": 505606,
    "amount_healed": 569668,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 67,
@@ -1087,7 +1463,13 @@
    "damage_dealt": 17476,
    "damage_taken": 805796,
    "amount_healed": 1161150,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 68,
@@ -1103,7 +1485,13 @@
    "damage_dealt": 14899,
    "damage_taken": 442416,
    "amount_healed": 1120099,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 69,
@@ -1119,7 +1507,13 @@
    "damage_dealt": 101508,
    "damage_taken": 730192,
    "amount_healed": 170552,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Warden"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 70,
@@ -1135,7 +1529,13 @@
    "damage_dealt": 18940,
    "damage_taken": 699620,
    "amount_healed": 669210,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 71,
@@ -1151,7 +1551,13 @@
    "damage_dealt": 9182,
    "damage_taken": 691871,
    "amount_healed": 978955,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 72,
@@ -1167,7 +1573,13 @@
    "damage_dealt": 243996,
    "damage_taken": 690031,
    "amount_healed": 33457,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Steelheart"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 73,
@@ -1183,7 +1595,8 @@
    "damage_dealt": 193136,
    "damage_taken": 1402162,
    "amount_healed": 2845656,
-   "flags": []
+   "flags": [],
+   "class_status": "weapons"
   },
   {
    "rank": 74,
@@ -1199,7 +1612,13 @@
    "damage_dealt": 119022,
    "damage_taken": 1198087,
    "amount_healed": 13951,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Steelheart"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 75,
@@ -1215,23 +1634,35 @@
    "damage_dealt": 32374,
    "damage_taken": 824427,
    "amount_healed": 421084,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 76,
    "name": "HubertCumbrdale",
    "guild": "Disregarded",
    "team": "Red",
-   "weapon1": "",
-   "weapon2": "",
-   "class": "Bastion",
+   "weapon1": "Sword & Shield",
+   "weapon2": "Gauntlet",
+   "class": "Juggernaut",
    "role": "Tank",
    "defeat": 0,
    "assist": 27,
    "damage_dealt": 92672,
    "damage_taken": 824516,
    "amount_healed": 13217,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Bastion"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 77,
@@ -1247,7 +1678,13 @@
    "damage_dealt": 160471,
    "damage_taken": 801956,
    "amount_healed": 10623,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Steelheart"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 78,
@@ -1263,7 +1700,13 @@
    "damage_dealt": 70185,
    "damage_taken": 1487116,
    "amount_healed": 158755,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Warden"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 79,
@@ -1279,7 +1722,13 @@
    "damage_dealt": 59829,
    "damage_taken": 934248,
    "amount_healed": 16149,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Crusader"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 80,
@@ -1295,7 +1744,8 @@
    "damage_dealt": 59618,
    "damage_taken": 1270980,
    "amount_healed": 174905,
-   "flags": []
+   "flags": [],
+   "class_status": "weapons"
   },
   {
    "rank": 81,
@@ -1311,7 +1761,13 @@
    "damage_dealt": 14270,
    "damage_taken": 945482,
    "amount_healed": 1025464,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 82,
@@ -1327,7 +1783,13 @@
    "damage_dealt": 81811,
    "damage_taken": 1582910,
    "amount_healed": 47760,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Crusader"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 83,
@@ -1343,7 +1805,13 @@
    "damage_dealt": 46848,
    "damage_taken": 1288303,
    "amount_healed": 127490,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Crusader"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 84,
@@ -1359,7 +1827,8 @@
    "damage_dealt": 34152,
    "damage_taken": 1331560,
    "amount_healed": 2900251,
-   "flags": []
+   "flags": [],
+   "class_status": "weapons"
   },
   {
    "rank": 85,
@@ -1375,7 +1844,13 @@
    "damage_dealt": 77706,
    "damage_taken": 925962,
    "amount_healed": 35045,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Crusader"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 86,
@@ -1391,7 +1866,13 @@
    "damage_dealt": 77747,
    "damage_taken": 1627561,
    "amount_healed": 36045,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Crusader"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 87,
@@ -1407,7 +1888,13 @@
    "damage_dealt": 68560,
    "damage_taken": 1103361,
    "amount_healed": 6563,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Crusader"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 88,
@@ -1423,7 +1910,13 @@
    "damage_dealt": 10272,
    "damage_taken": 175474,
    "amount_healed": 353541,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Oracle"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 89,
@@ -1439,7 +1932,8 @@
    "damage_dealt": 18934,
    "damage_taken": 917568,
    "amount_healed": 748054,
-   "flags": []
+   "flags": [],
+   "class_status": "weapons"
   },
   {
    "rank": 90,
@@ -1455,7 +1949,13 @@
    "damage_dealt": 21644,
    "damage_taken": 1024220,
    "amount_healed": 27690,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Crusader"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 91,
@@ -1471,7 +1971,13 @@
    "damage_dealt": 42296,
    "damage_taken": 1170586,
    "amount_healed": 42102,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Crusader"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 92,
@@ -1487,7 +1993,13 @@
    "damage_dealt": 33859,
    "damage_taken": 733651,
    "amount_healed": 55029,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Berserker"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 93,
@@ -1503,7 +2015,13 @@
    "damage_dealt": 22268,
    "damage_taken": 246896,
    "amount_healed": 207586,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Ranger"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 94,
@@ -1519,7 +2037,13 @@
    "damage_dealt": 37695,
    "damage_taken": 1085728,
    "amount_healed": 16314,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Crusader"
+   },
+   "class_status": "weapons"
   },
   {
    "rank": 95,
@@ -1535,7 +2059,8 @@
    "damage_dealt": 24095,
    "damage_taken": 929660,
    "amount_healed": 1325036,
-   "flags": []
+   "flags": [],
+   "class_status": "weapons"
   },
   {
    "rank": 96,
@@ -1551,7 +2076,13 @@
    "damage_dealt": 10612,
    "damage_taken": 1265759,
    "amount_healed": 10180,
-   "flags": []
+   "flags": [],
+   "class_source": {
+    "kind": "source_match",
+    "match_id": "374810856",
+    "original_class": "Disciple"
+   },
+   "class_status": "weapons"
   }
  ]
 }

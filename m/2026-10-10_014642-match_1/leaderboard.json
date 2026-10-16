@@ -17,6 +17,11 @@
    "weapons_fixed": 0,
    "weapons_doubt": 1,
    "missing": 0
+  },
+  "class_quality": {
+   "known": 96,
+   "total": 96,
+   "missing": 0
   }
  },
  "players": [
@@ -50,7 +55,10 @@
    },
    "checks": 8,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Predator",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 10,
@@ -82,7 +90,10 @@
    },
    "checks": 9,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Enigma",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 11,
@@ -100,7 +111,7 @@
    "amount_healed": 10075,
    "agreement": {
     "rank": 1.0,
-    "name": 0.95,
+    "name": 0.94,
     "guild": 1.0,
     "team": 1.0,
     "weapon1": 1.0,
@@ -117,15 +128,18 @@
     "name": [
      [
       "boringg",
-      0.92
+      0.91
      ],
      [
       "boringgV",
-      0.08
+      0.09
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Spellblade",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 13,
@@ -157,7 +171,10 @@
    },
    "checks": 13,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Predator",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 14,
@@ -189,7 +206,10 @@
    },
    "checks": 14,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Ravager",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 14,
@@ -221,7 +241,10 @@
    },
    "checks": 14,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Ravager",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 15,
@@ -274,7 +297,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Scorpion",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 14,
@@ -319,7 +345,10 @@
    },
    "flags": [
     "same name on two rows"
-   ]
+   ],
+   "class": "Shadowdancer",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 15,
@@ -372,7 +401,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Enigma",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 17,
@@ -389,47 +421,55 @@
    "damage_taken": 1132373,
    "amount_healed": 7233,
    "agreement": {
-    "rank": 0.97,
+    "rank": 0.94,
     "name": 0.97,
-    "guild": 0.98,
+    "guild": 0.97,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
     "guild_icon": 1.0,
-    "defeat": 0.98,
-    "assist": 0.94,
+    "defeat": 0.96,
+    "assist": 0.93,
     "damage_dealt": 0.99,
     "damage_taken": 1.0,
-    "amount_healed": 0.96
+    "amount_healed": 0.95
    },
    "checks": 15,
    "alts": {
     "name": [
      [
       "NGH",
-      0.96
+      0.0
+     ],
+     [
+      "NGH",
+      0.95
      ],
      [
       "H8N",
-      0.02
+      0.04
      ],
      [
       "NHSHO",
-      0.02
+      0.01
      ]
     ],
     "guild": [
      [
       "Supple On 3",
-      0.97
+      0.95
      ],
      [
       "Supple OR 3",
-      0.03
+      0.05
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "snapped": "fix",
+   "class": "Ravager",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 8,
@@ -447,46 +487,49 @@
    "amount_healed": 0,
    "agreement": {
     "rank": 1.0,
-    "name": 0.85,
-    "guild": 0.95,
+    "name": 0.95,
+    "guild": 0.98,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
     "guild_icon": 1.0,
     "defeat": 0.95,
-    "assist": 0.93,
+    "assist": 0.98,
     "damage_dealt": 0.96,
     "damage_taken": 1.0,
-    "amount_healed": 0.83
+    "amount_healed": 0.88
    },
    "checks": 5,
    "alts": {
     "name": [
      [
       "dabldoya",
-      0.78
+      0.93
      ],
      [
       "dahldova",
-      0.14
+      0.05
      ],
      [
       "gabidoya",
-      0.07
+      0.02
      ]
     ],
     "guild": [
      [
       "Supple On 3",
-      0.92
+      0.98
      ],
      [
       "Supple On",
-      0.08
+      0.02
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Spellblade",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 12,
@@ -505,31 +548,34 @@
    "agreement": {
     "rank": 1.0,
     "name": 1.0,
-    "guild": 0.97,
+    "guild": 0.96,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
     "guild_icon": 1.0,
     "defeat": 1.0,
-    "assist": 0.96,
-    "damage_dealt": 0.98,
-    "damage_taken": 0.96,
-    "amount_healed": 0.98
+    "assist": 0.93,
+    "damage_dealt": 0.97,
+    "damage_taken": 0.93,
+    "amount_healed": 0.97
    },
    "checks": 11,
    "alts": {
     "guild": [
      [
       "Supple On 3",
-      0.96
+      0.93
      ],
      [
       "Supple On",
-      0.04
+      0.07
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Scorpion",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 12,
@@ -548,23 +594,23 @@
    "agreement": {
     "rank": 1.0,
     "name": 1.0,
-    "guild": 0.94,
+    "guild": 0.96,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
     "guild_icon": 1.0,
     "defeat": 1.0,
     "assist": 0.97,
-    "damage_dealt": 0.94,
-    "damage_taken": 0.94,
-    "amount_healed": 0.96
+    "damage_dealt": 0.97,
+    "damage_taken": 0.97,
+    "amount_healed": 0.97
    },
    "checks": 10,
    "alts": {
     "guild": [
      [
       "Supple On 3",
-      0.91
+      0.94
      ],
      [
       "Supple On",
@@ -572,11 +618,14 @@
      ],
      [
       "Supple 8n 3",
-      0.04
+      0.01
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Shadowdancer",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 12,
@@ -595,31 +644,34 @@
    "agreement": {
     "rank": 1.0,
     "name": 1.0,
-    "guild": 0.97,
+    "guild": 0.99,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
     "guild_icon": 1.0,
     "defeat": 0.96,
-    "assist": 0.91,
-    "damage_dealt": 0.93,
-    "damage_taken": 0.98,
-    "amount_healed": 0.93
+    "assist": 0.95,
+    "damage_dealt": 0.97,
+    "damage_taken": 0.99,
+    "amount_healed": 0.97
    },
    "checks": 10,
    "alts": {
     "guild": [
      [
       "Supple On 3",
-      0.95
+      0.99
      ],
      [
       "Supple On à",
-      0.05
+      0.01
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Predator",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 12,
@@ -637,54 +689,57 @@
    "amount_healed": 23645,
    "agreement": {
     "rank": 1.0,
-    "name": 0.91,
-    "guild": 0.94,
+    "name": 0.93,
+    "guild": 0.99,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
     "guild_icon": 1.0,
     "defeat": 1.0,
-    "assist": 0.98,
-    "damage_dealt": 0.98,
-    "damage_taken": 0.95,
-    "amount_healed": 0.96
+    "assist": 0.99,
+    "damage_dealt": 0.99,
+    "damage_taken": 0.99,
+    "amount_healed": 0.99
    },
    "checks": 9,
    "alts": {
     "name": [
      [
       "ホツ",
-      0.86
+      0.9
      ],
      [
       "ホッ",
-      0.08
+      0.09
      ],
      [
       "染彩",
-      0.04
+      0.01
      ],
      [
       "来",
-      0.02
+      0.01
      ]
     ],
     "guild": [
      [
       "BShotz",
-      0.91
+      0.98
      ],
      [
       "BShz",
-      0.05
+      0.01
      ],
      [
       "BShôtz",
-      0.04
+      0.01
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Shadowdancer",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 12,
@@ -703,12 +758,12 @@
    "agreement": {
     "rank": 0.95,
     "name": 0.97,
-    "guild": 0.98,
+    "guild": 0.97,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
     "guild_icon": 1.0,
-    "defeat": 0.97,
+    "defeat": 0.96,
     "assist": 1.0,
     "damage_dealt": 1.0,
     "damage_taken": 1.0,
@@ -719,11 +774,11 @@
     "name": [
      [
       "Cxshew",
-      0.96
+      0.95
      ],
      [
       "Exshew",
-      0.04
+      0.05
      ]
     ],
     "guild": [
@@ -737,7 +792,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Spellblade",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 12,
@@ -790,7 +848,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Ravager",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 12,
@@ -824,7 +885,10 @@
    "alts": {},
    "flags": [
     "same name on two rows"
-   ]
+   ],
+   "class": "Scorpion",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 12,
@@ -851,12 +915,15 @@
     "defeat": 1.0,
     "assist": 1.0,
     "damage_dealt": 1.0,
-    "damage_taken": 0.81,
+    "damage_taken": 0.8,
     "amount_healed": 0.91
    },
    "checks": 10,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Spellblade",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 12,
@@ -883,12 +950,15 @@
     "defeat": 1.0,
     "assist": 1.0,
     "damage_dealt": 1.0,
-    "damage_taken": 0.86,
+    "damage_taken": 0.92,
     "amount_healed": 0.94
    },
    "checks": 10,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Predator",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 11,
@@ -906,7 +976,7 @@
    "amount_healed": 0,
    "agreement": {
     "rank": 1.0,
-    "name": 0.49,
+    "name": 0.6,
     "guild": 1.0,
     "team": 1.0,
     "weapon1": 1.0,
@@ -915,34 +985,30 @@
     "defeat": 1.0,
     "assist": 1.0,
     "damage_dealt": 1.0,
-    "damage_taken": 0.91,
-    "amount_healed": 0.94
+    "damage_taken": 0.99,
+    "amount_healed": 0.98
    },
-   "checks": 5,
+   "checks": 4,
    "alts": {
     "name": [
      [
-      "Bini",
-      0.0
-     ],
-     [
-      "Bini",
-      0.59
-     ],
-     [
       "Biniツ",
-      0.34
+      0.48
+     ],
+     [
+      "Bini",
+      0.4
      ],
      [
       "Biní",
-      0.07
+      0.12
      ]
     ]
    },
-   "flags": [
-    "name"
-   ],
-   "snapped": true
+   "flags": [],
+   "class": "Spellblade",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -959,9 +1025,9 @@
    "damage_taken": 1867652,
    "amount_healed": 732,
    "agreement": {
-    "rank": 0.91,
-    "name": 0.91,
-    "guild": 0.94,
+    "rank": 0.97,
+    "name": 0.97,
+    "guild": 0.98,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
@@ -969,33 +1035,36 @@
     "defeat": 1.0,
     "assist": 1.0,
     "damage_dealt": 1.0,
-    "damage_taken": 0.96,
-    "amount_healed": 0.92
+    "damage_taken": 0.99,
+    "amount_healed": 0.98
    },
    "checks": 5,
    "alts": {
     "name": [
      [
       "DJMath3matics",
-      0.91
+      0.97
      ],
      [
       "BMath3matiEs",
-      0.09
+      0.03
      ]
     ],
     "guild": [
      [
       "BShotz",
-      0.91
+      0.98
      ],
      [
       "BShoŁ",
-      0.09
+      0.02
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Enigma",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 5,
@@ -1038,7 +1107,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Predator",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 5,
@@ -1070,7 +1142,10 @@
    },
    "checks": 5,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Enigma",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 5,
@@ -1123,7 +1198,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Scout",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -1171,7 +1249,10 @@
     ]
    },
    "flags": [],
-   "snapped": true
+   "snapped": "lookalike",
+   "class": "Ravager",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -1224,7 +1305,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Ravager",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 5,
@@ -1241,33 +1325,36 @@
    "damage_taken": 1015933,
    "amount_healed": 226843,
    "agreement": {
-    "rank": 0.89,
-    "name": 0.92,
+    "rank": 0.88,
+    "name": 0.98,
     "guild": 1.0,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
     "guild_icon": 1.0,
     "defeat": 1.0,
-    "assist": 0.77,
-    "damage_dealt": 0.74,
-    "damage_taken": 0.94,
-    "amount_healed": 0.79
+    "assist": 0.84,
+    "damage_dealt": 0.81,
+    "damage_taken": 0.98,
+    "amount_healed": 0.89
    },
    "checks": 3,
    "alts": {
     "name": [
      [
       "Etius1025",
-      0.88
+      0.97
      ],
      [
       "EHus1025",
-      0.12
+      0.03
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Scout",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 5,
@@ -1285,36 +1372,39 @@
    "amount_healed": 62137,
    "agreement": {
     "rank": 1.0,
-    "name": 0.74,
+    "name": 0.85,
     "guild": 1.0,
     "team": 1.0,
-    "weapon1": 0.87,
+    "weapon1": 0.84,
     "weapon2": 1.0,
     "guild_icon": 1.0,
-    "defeat": 0.91,
-    "assist": 0.87,
-    "damage_dealt": 0.94,
-    "damage_taken": 0.88,
-    "amount_healed": 0.94
+    "defeat": 0.9,
+    "assist": 0.84,
+    "damage_dealt": 0.93,
+    "damage_taken": 0.86,
+    "amount_healed": 0.93
    },
    "checks": 3,
    "alts": {
     "name": [
      [
       "Shrubertx",
-      0.64
-     ],
-     [
-      "Shrubert",
-      0.25
+      0.78
      ],
      [
       "Shruber炎",
-      0.11
+      0.13
+     ],
+     [
+      "Shrubert",
+      0.09
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Ravager",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 5,
@@ -1367,7 +1457,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 5,
@@ -1420,7 +1513,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Paladin",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -1473,7 +1569,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Predator",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -1490,43 +1589,46 @@
    "damage_taken": 300099,
    "amount_healed": 1973647,
    "agreement": {
-    "rank": 0.9,
-    "name": 0.94,
-    "guild": 0.93,
+    "rank": 0.88,
+    "name": 0.93,
+    "guild": 0.92,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
     "guild_icon": 1.0,
     "defeat": 1.0,
-    "assist": 0.89,
-    "damage_dealt": 0.96,
-    "damage_taken": 0.9,
-    "amount_healed": 0.96
+    "assist": 0.88,
+    "damage_dealt": 0.95,
+    "damage_taken": 0.89,
+    "amount_healed": 0.95
    },
    "checks": 5,
    "alts": {
     "name": [
      [
       "Sueming",
-      0.9
+      0.89
      ],
      [
       "Susming",
-      0.1
+      0.11
      ]
     ],
     "guild": [
      [
       "Supple On 3",
-      0.9
+      0.88
      ],
      [
       "Supple  3",
-      0.1
+      0.12
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 7,
@@ -1544,16 +1646,16 @@
    "amount_healed": 27427,
    "agreement": {
     "rank": 1.0,
-    "name": 0.64,
+    "name": 0.59,
     "guild": 0.94,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
     "guild_icon": 1.0,
     "defeat": 1.0,
-    "assist": 0.95,
+    "assist": 0.94,
     "damage_dealt": 1.0,
-    "damage_taken": 0.92,
+    "damage_taken": 0.91,
     "amount_healed": 0.96
    },
    "checks": 4,
@@ -1561,33 +1663,38 @@
     "name": [
      [
       "Grimm",
-      0.59
+      0.54
      ],
      [
       "Grimmッ",
-      0.19
+      0.21
      ],
      [
       "Grimm ツ",
-      0.15
+      0.16
      ],
      [
       "δrimm影",
-      0.08
+      0.09
      ]
     ],
     "guild": [
      [
       "Supple On 3",
-      0.91
+      0.9
      ],
      [
       "Supple R 3",
-      0.09
+      0.1
      ]
     ]
    },
-   "flags": []
+   "flags": [
+    "name"
+   ],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -1605,48 +1712,56 @@
    "amount_healed": 0,
    "agreement": {
     "rank": 1.0,
-    "name": 0.54,
-    "guild": 0.94,
+    "name": 0.56,
+    "guild": 0.98,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
     "guild_icon": 1.0,
     "defeat": 1.0,
     "assist": 1.0,
-    "damage_dealt": 0.96,
-    "damage_taken": 0.96,
-    "amount_healed": 0.89
+    "damage_dealt": 0.99,
+    "damage_taken": 0.99,
+    "amount_healed": 0.97
    },
    "checks": 3,
    "alts": {
     "name": [
      [
       "pollo",
-      0.54
+      0.0
+     ],
+     [
+      "pollo",
+      0.56
      ],
      [
       "polloツ",
-      0.4
+      0.42
      ],
      [
       "pll",
-      0.06
+      0.02
      ]
     ],
     "guild": [
      [
       "BShotz",
-      0.91
+      0.97
      ],
      [
       "Bshgz",
-      0.09
+      0.03
      ]
     ]
    },
    "flags": [
     "name"
-   ]
+   ],
+   "snapped": "decor",
+   "class": "Scorpion",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 7,
@@ -1663,43 +1778,46 @@
    "damage_taken": 921404,
    "amount_healed": 3939015,
    "agreement": {
-    "rank": 0.91,
-    "name": 0.96,
-    "guild": 0.95,
+    "rank": 0.97,
+    "name": 0.99,
+    "guild": 0.98,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
     "guild_icon": 1.0,
     "defeat": 1.0,
-    "assist": 0.91,
-    "damage_dealt": 0.91,
-    "damage_taken": 0.92,
-    "amount_healed": 0.96
+    "assist": 0.97,
+    "damage_dealt": 0.97,
+    "damage_taken": 0.97,
+    "amount_healed": 0.99
    },
    "checks": 6,
    "alts": {
     "name": [
      [
       "ホシ",
-      0.94
+      0.98
      ],
      [
       "彩",
-      0.06
+      0.02
      ]
     ],
     "guild": [
      [
       "BShotz",
-      0.92
+      0.97
      ],
      [
       "BSR8",
-      0.08
+      0.03
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -1746,7 +1864,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -1778,7 +1899,10 @@
    },
    "checks": 6,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Warden",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -1810,7 +1934,10 @@
    },
    "checks": 6,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Warden",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 7,
@@ -1853,7 +1980,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -1885,7 +2015,10 @@
    },
    "checks": 6,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 7,
@@ -1903,42 +2036,45 @@
    "amount_healed": 20532,
    "agreement": {
     "rank": 1.0,
-    "name": 0.96,
-    "guild": 0.94,
+    "name": 0.99,
+    "guild": 0.98,
     "team": 1.0,
-    "weapon1": 0.85,
+    "weapon1": 0.82,
     "weapon2": 1.0,
     "guild_icon": 1.0,
     "defeat": 1.0,
     "assist": 1.0,
-    "damage_dealt": 0.96,
-    "damage_taken": 0.92,
-    "amount_healed": 0.97
+    "damage_dealt": 0.99,
+    "damage_taken": 0.98,
+    "amount_healed": 0.99
    },
    "checks": 6,
    "alts": {
     "name": [
      [
       "AtHoldTheLine",
-      0.93
+      0.98
      ],
      [
       "AlHgiaTheLing",
-      0.07
+      0.02
      ]
     ],
     "guild": [
      [
       "Supple On 3",
-      0.91
+      0.97
      ],
      [
       "Supple 8 3",
-      0.09
+      0.03
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -1955,17 +2091,17 @@
    "damage_taken": 878772,
    "amount_healed": 37888,
    "agreement": {
-    "rank": 0.93,
-    "name": 0.83,
+    "rank": 0.92,
+    "name": 0.8,
     "guild": 1.0,
     "team": 1.0,
-    "weapon1": 0.82,
+    "weapon1": 0.79,
     "weapon2": 1.0,
     "guild_icon": 1.0,
     "defeat": 1.0,
-    "assist": 0.9,
-    "damage_dealt": 0.91,
-    "damage_taken": 0.9,
+    "assist": 0.89,
+    "damage_dealt": 0.89,
+    "damage_taken": 0.89,
     "amount_healed": 1.0
    },
    "checks": 4,
@@ -1973,19 +2109,22 @@
     "name": [
      [
       "Forrest",
-      0.75
+      0.71
      ],
      [
       "Förrest",
-      0.17
+      0.19
      ],
      [
       "Fgrrest",
-      0.08
+      0.1
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Warden",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -2003,7 +2142,7 @@
    "amount_healed": 32244,
    "agreement": {
     "rank": 1.0,
-    "name": 0.95,
+    "name": 0.99,
     "guild": 1.0,
     "team": 1.0,
     "weapon1": 1.0,
@@ -2020,15 +2159,18 @@
     "name": [
      [
       "cagedup",
-      0.92
+      0.98
      ],
      [
       "EggeduB",
-      0.08
+      0.02
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 5,
@@ -2062,7 +2204,10 @@
    "alts": {},
    "flags": [
     "weapon2"
-   ]
+   ],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -2079,43 +2224,46 @@
    "damage_taken": 1168534,
    "amount_healed": 1043952,
    "agreement": {
-    "rank": 0.91,
-    "name": 0.94,
-    "guild": 0.94,
+    "rank": 0.9,
+    "name": 0.93,
+    "guild": 0.93,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
     "guild_icon": 1.0,
     "defeat": 1.0,
-    "assist": 0.93,
-    "damage_dealt": 0.96,
+    "assist": 0.92,
+    "damage_dealt": 0.95,
     "damage_taken": 1.0,
-    "amount_healed": 0.96
+    "amount_healed": 0.95
    },
    "checks": 5,
    "alts": {
     "name": [
      [
       "Hosted“",
-      0.91
+      0.9
      ],
      [
       "Hasted",
-      0.09
+      0.1
      ]
     ],
     "guild": [
      [
       "BShotz",
-      0.91
+      0.89
      ],
      [
       "BSha",
-      0.09
+      0.11
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -2133,8 +2281,8 @@
    "amount_healed": 2221653,
    "agreement": {
     "rank": 1.0,
-    "name": 0.81,
-    "guild": 0.94,
+    "name": 0.82,
+    "guild": 0.98,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
@@ -2150,29 +2298,37 @@
     "name": [
      [
       "Tikkit",
-      0.73
+      0.0
+     ],
+     [
+      "Tikkit",
+      0.74
      ],
      [
       "Tikki+",
-      0.18
+      0.23
      ],
      [
       "tiRki+",
-      0.09
+      0.03
      ]
     ],
     "guild": [
      [
       "Supple On 3",
-      0.91
+      0.97
      ],
      [
       "Süpple On 3",
-      0.09
+      0.03
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "snapped": "fix",
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -2189,47 +2345,50 @@
    "damage_taken": 1380906,
    "amount_healed": 37954,
    "agreement": {
-    "rank": 0.81,
-    "name": 0.94,
-    "guild": 0.85,
+    "rank": 0.78,
+    "name": 0.93,
+    "guild": 0.83,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
     "guild_icon": 1.0,
-    "defeat": 0.77,
-    "assist": 0.79,
-    "damage_dealt": 0.84,
-    "damage_taken": 0.84,
-    "amount_healed": 0.85
+    "defeat": 0.74,
+    "assist": 0.75,
+    "damage_dealt": 0.81,
+    "damage_taken": 0.82,
+    "amount_healed": 0.82
    },
    "checks": 4,
    "alts": {
     "name": [
      [
       "Regentlord",
-      0.91
+      0.9
      ],
      [
       "Rsgentlord",
-      0.09
+      0.1
      ]
     ],
     "guild": [
      [
       "Supple On 3",
-      0.78
+      0.75
      ],
      [
       "Supple On",
-      0.11
+      0.13
      ],
      [
       "Supple 0R3",
-      0.1
+      0.12
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -2246,43 +2405,46 @@
    "damage_taken": 729378,
    "amount_healed": 787957,
    "agreement": {
-    "rank": 0.95,
-    "name": 0.85,
-    "guild": 0.93,
+    "rank": 0.98,
+    "name": 0.88,
+    "guild": 0.98,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
     "guild_icon": 1.0,
-    "defeat": 0.76,
-    "assist": 0.78,
+    "defeat": 0.81,
+    "assist": 0.82,
     "damage_dealt": 1.0,
-    "damage_taken": 0.91,
-    "amount_healed": 0.95
+    "damage_taken": 0.97,
+    "amount_healed": 0.94
    },
    "checks": 4,
    "alts": {
     "name": [
      [
       "Dash",
-      0.78
+      0.82
      ],
      [
       "Bash",
-      0.22
+      0.18
      ]
     ],
     "guild": [
      [
       "Supple On 3",
-      0.9
+      0.97
      ],
      [
       "Supple 6R 3",
-      0.1
+      0.03
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -2314,7 +2476,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 5,
@@ -2349,6 +2514,10 @@
     "name": [
      [
       "Bribrixx",
+      0.0
+     ],
+     [
+      "Bribrixx",
       0.65
      ],
      [
@@ -2371,7 +2540,11 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "snapped": "fix",
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 5,
@@ -2414,7 +2587,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 5,
@@ -2448,6 +2624,10 @@
    "alts": {
     "name": [
      [
+      "·Azulibuli",
+      0.0
+     ],
+     [
       "Azulibuli",
       0.89
      ],
@@ -2457,7 +2637,11 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "snapped": "decor",
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -2475,42 +2659,45 @@
    "amount_healed": 1755913,
    "agreement": {
     "rank": 1.0,
-    "name": 0.94,
-    "guild": 0.94,
+    "name": 0.93,
+    "guild": 0.93,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
     "guild_icon": 1.0,
-    "defeat": 0.89,
-    "assist": 0.93,
-    "damage_dealt": 0.96,
-    "damage_taken": 0.9,
-    "amount_healed": 0.96
+    "defeat": 0.88,
+    "assist": 0.91,
+    "damage_dealt": 0.95,
+    "damage_taken": 0.89,
+    "amount_healed": 0.95
    },
    "checks": 5,
    "alts": {
     "name": [
      [
       "Atoshen",
-      0.91
+      0.9
      ],
      [
       "AtosheR",
-      0.09
+      0.1
      ]
     ],
     "guild": [
      [
       "Supple On 3",
-      0.9
+      0.89
      ],
      [
       "Suppie OA 3",
-      0.1
+      0.11
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -2527,43 +2714,46 @@
    "damage_taken": 289446,
    "amount_healed": 434041,
    "agreement": {
-    "rank": 0.91,
-    "name": 0.94,
-    "guild": 0.94,
+    "rank": 0.89,
+    "name": 0.93,
+    "guild": 0.93,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
     "guild_icon": 1.0,
-    "defeat": 0.89,
+    "defeat": 0.88,
     "assist": 1.0,
     "damage_dealt": 1.0,
-    "damage_taken": 0.9,
-    "amount_healed": 0.96
+    "damage_taken": 0.88,
+    "amount_healed": 0.95
    },
    "checks": 5,
    "alts": {
     "name": [
      [
       "Dartz",
-      0.91
+      0.9
      ],
      [
       "Baftz",
-      0.09
+      0.1
      ]
     ],
     "guild": [
      [
       "Supple On 3",
-      0.9
+      0.89
      ],
      [
       "Supple O 3",
-      0.1
+      0.11
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 5,
@@ -2595,7 +2785,10 @@
    },
    "checks": 5,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -2627,7 +2820,10 @@
    },
    "checks": 6,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 5,
@@ -2659,12 +2855,15 @@
    },
    "checks": 5,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 7,
    "rank": 59,
-   "name": "Voyl",
+   "name": "J",
    "guild": "Supple On 3",
    "team": "Yellow",
    "weapon1": "Wand & Tome",
@@ -2677,7 +2876,7 @@
    "amount_healed": 1162840,
    "agreement": {
     "rank": 1.0,
-    "name": 0.64,
+    "name": 0.72,
     "guild": 1.0,
     "team": 1.0,
     "weapon1": 1.0,
@@ -2694,15 +2893,18 @@
     "name": [
      [
       "J",
-      0.53
+      0.61
      ],
      [
       "了",
-      0.47
+      0.39
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 7,
@@ -2734,7 +2936,10 @@
    },
    "checks": 7,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 7,
@@ -2766,7 +2971,10 @@
    },
    "checks": 7,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -2798,7 +3006,10 @@
    },
    "checks": 6,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 7,
@@ -2830,7 +3041,10 @@
    },
    "checks": 7,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 7,
@@ -2861,8 +3075,19 @@
     "amount_healed": 1.0
    },
    "checks": 7,
-   "alts": {},
-   "flags": []
+   "alts": {
+    "name": [
+     [
+      "SalsaSriracha",
+      0.0
+     ]
+    ]
+   },
+   "flags": [],
+   "snapped": "decor",
+   "class": "Ranger",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 7,
@@ -2894,7 +3119,10 @@
    },
    "checks": 7,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 7,
@@ -2926,7 +3154,10 @@
    },
    "checks": 7,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 7,
@@ -2958,7 +3189,10 @@
    },
    "checks": 7,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 7,
@@ -2975,33 +3209,36 @@
    "damage_taken": 2126305,
    "amount_healed": 101163,
    "agreement": {
-    "rank": 0.91,
+    "rank": 0.97,
     "name": 1.0,
-    "guild": 0.96,
+    "guild": 0.98,
     "team": 1.0,
-    "weapon1": 0.91,
-    "weapon2": 0.91,
-    "guild_icon": 0.91,
-    "defeat": 0.91,
+    "weapon1": 0.97,
+    "weapon2": 0.97,
+    "guild_icon": 0.97,
+    "defeat": 0.97,
     "assist": 1.0,
-    "damage_dealt": 0.96,
-    "damage_taken": 0.96,
-    "amount_healed": 0.96
+    "damage_dealt": 0.99,
+    "damage_taken": 0.99,
+    "amount_healed": 0.99
    },
    "checks": 6,
    "alts": {
     "guild": [
      [
       "BShotz",
-      0.93
+      0.97
      ],
      [
       "Bshtz",
-      0.07
+      0.03
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -3019,12 +3256,12 @@
    "amount_healed": 1286677,
    "agreement": {
     "rank": 1.0,
-    "name": 0.93,
-    "guild": 0.9,
+    "name": 0.98,
+    "guild": 0.97,
     "team": 1.0,
-    "weapon1": 0.84,
+    "weapon1": 0.95,
     "weapon2": 1.0,
-    "guild_icon": 0.84,
+    "guild_icon": 0.95,
     "defeat": 1.0,
     "assist": 1.0,
     "damage_dealt": 1.0,
@@ -3036,25 +3273,28 @@
     "name": [
      [
       "Jules",
-      0.89
+      0.96
      ],
      [
       "llac",
-      0.11
+      0.04
      ]
     ],
     "guild": [
      [
       "BShotz",
-      0.85
+      0.95
      ],
      [
       "RShotz",
-      0.15
+      0.05
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 7,
@@ -3107,7 +3347,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 9,
@@ -3125,15 +3368,15 @@
    "amount_healed": 2492072,
    "agreement": {
     "rank": 1.0,
-    "name": 0.98,
-    "guild": 0.96,
+    "name": 0.99,
+    "guild": 0.99,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
     "guild_icon": 1.0,
-    "defeat": 0.94,
+    "defeat": 0.98,
     "assist": 1.0,
-    "damage_dealt": 0.95,
+    "damage_dealt": 0.99,
     "damage_taken": 1.0,
     "amount_healed": 1.0
    },
@@ -3142,25 +3385,28 @@
     "name": [
      [
       "Sueby",
-      0.97
+      0.99
      ],
      [
       "SusBY",
-      0.03
+      0.01
      ]
     ],
     "guild": [
      [
       "BShotz",
-      0.94
+      0.98
      ],
      [
       "BShot",
-      0.06
+      0.02
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 8,
@@ -3203,7 +3449,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 7,
@@ -3220,43 +3469,46 @@
    "damage_taken": 951385,
    "amount_healed": 923698,
    "agreement": {
-    "rank": 0.94,
-    "name": 0.96,
-    "guild": 0.96,
+    "rank": 0.98,
+    "name": 0.99,
+    "guild": 0.99,
     "team": 1.0,
-    "weapon1": 0.92,
+    "weapon1": 0.98,
     "weapon2": 1.0,
     "guild_icon": 1.0,
-    "defeat": 0.92,
+    "defeat": 0.98,
     "assist": 1.0,
-    "damage_dealt": 0.97,
+    "damage_dealt": 0.99,
     "damage_taken": 1.0,
-    "amount_healed": 0.97
+    "amount_healed": 0.99
    },
    "checks": 6,
    "alts": {
     "name": [
      [
       "djcarsun",
-      0.94
+      0.98
      ],
      [
       "dicarsun",
-      0.06
+      0.02
      ]
     ],
     "guild": [
      [
       "BShotz",
-      0.93
+      0.98
      ],
      [
       "BSht",
-      0.07
+      0.02
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -3309,7 +3561,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -3328,41 +3583,44 @@
    "agreement": {
     "rank": 1.0,
     "name": 0.94,
-    "guild": 0.94,
+    "guild": 0.93,
     "team": 1.0,
     "weapon1": 1.0,
-    "weapon2": 0.83,
+    "weapon2": 0.94,
     "guild_icon": 1.0,
-    "defeat": 0.91,
-    "assist": 0.91,
+    "defeat": 0.9,
+    "assist": 0.9,
     "damage_dealt": 1.0,
     "damage_taken": 1.0,
-    "amount_healed": 0.92
+    "amount_healed": 0.91
    },
    "checks": 5,
    "alts": {
     "name": [
      [
       "America",
-      0.91
+      0.9
      ],
      [
       "Ameriel",
-      0.09
+      0.1
      ]
     ],
     "guild": [
      [
       "BShotz",
-      0.91
+      0.9
      ],
      [
       "BShot",
-      0.09
+      0.1
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Juggernaut",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -3379,15 +3637,15 @@
    "damage_taken": 337158,
    "amount_healed": 2383616,
    "agreement": {
-    "rank": 0.92,
+    "rank": 0.91,
     "name": 1.0,
     "guild": 0.95,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
     "guild_icon": 1.0,
-    "defeat": 0.91,
-    "assist": 0.92,
+    "defeat": 0.9,
+    "assist": 0.9,
     "damage_dealt": 1.0,
     "damage_taken": 1.0,
     "amount_healed": 0.96
@@ -3397,15 +3655,25 @@
     "guild": [
      [
       "BShotz",
-      0.93
+      0.92
      ],
      [
       "BSholz",
-      0.07
+      0.08
+     ]
+    ],
+    "name": [
+     [
+      "neko",
+      0.0
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "snapped": "decor",
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -3422,33 +3690,36 @@
    "damage_taken": 1383553,
    "amount_healed": 2378076,
    "agreement": {
-    "rank": 0.93,
+    "rank": 0.98,
     "name": 1.0,
-    "guild": 0.95,
+    "guild": 0.99,
     "team": 1.0,
-    "weapon1": 0.91,
+    "weapon1": 0.97,
     "weapon2": 1.0,
     "guild_icon": 1.0,
-    "defeat": 0.91,
-    "assist": 0.94,
-    "damage_dealt": 0.96,
-    "damage_taken": 0.96,
-    "amount_healed": 0.97
+    "defeat": 0.97,
+    "assist": 0.98,
+    "damage_dealt": 0.99,
+    "damage_taken": 0.99,
+    "amount_healed": 0.99
    },
    "checks": 5,
    "alts": {
     "guild": [
      [
       "BShotz",
-      0.93
+      0.98
      ],
      [
       "BShqz",
-      0.07
+      0.02
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 5,
@@ -3466,8 +3737,8 @@
    "amount_healed": 274832,
    "agreement": {
     "rank": 1.0,
-    "name": 0.33,
-    "guild": 0.61,
+    "name": 0.38,
+    "guild": 0.53,
     "team": 1.0,
     "weapon1": 1.0,
     "weapon2": 1.0,
@@ -3487,36 +3758,40 @@
      ],
      [
       "しeddy",
-      0.37
-     ],
-     [
-      "Leddyッ",
-      0.23
+      0.44
      ],
      [
       "しeddyツ",
-      0.21
+      0.25
      ],
      [
       "Leddyツ",
-      0.19
+      0.23
+     ],
+     [
+      "Leddyッ",
+      0.08
      ]
     ],
     "guild": [
      [
       "JAILEDシ",
-      0.61
+      0.53
      ],
      [
       "JAILED",
-      0.39
+      0.47
      ]
     ]
    },
    "flags": [
-    "name"
+    "name",
+    "guild"
    ],
-   "snapped": true
+   "snapped": "decor",
+   "class": "Warden",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -3548,7 +3823,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -3583,6 +3861,10 @@
     "name": [
      [
       "·Boo",
+      0.0
+     ],
+     [
+      "·Boo",
       0.84
      ],
      [
@@ -3601,7 +3883,11 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "snapped": "decor",
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -3633,7 +3919,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -3686,7 +3975,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Warden",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 5,
@@ -3739,7 +4031,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -3771,7 +4066,10 @@
    },
    "checks": 6,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -3803,12 +4101,15 @@
    },
    "checks": 6,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
    "rank": 86,
-   "name": "一大",
+   "name": "Benji",
    "guild": "Supple On 3",
    "team": "Yellow",
    "weapon1": "Sword & Shield",
@@ -3835,7 +4136,10 @@
    },
    "checks": 6,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Juggernaut",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 9,
@@ -3856,7 +4160,7 @@
     "name": 1.0,
     "guild": 1.0,
     "team": 1.0,
-    "weapon1": 0.89,
+    "weapon1": 0.96,
     "weapon2": 1.0,
     "guild_icon": 1.0,
     "defeat": 1.0,
@@ -3867,7 +4171,10 @@
    },
    "checks": 9,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 9,
@@ -3899,7 +4206,10 @@
    },
    "checks": 9,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 8,
@@ -3931,7 +4241,10 @@
    },
    "checks": 8,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Steelheart",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 8,
@@ -3949,7 +4262,7 @@
    "amount_healed": 63822,
    "agreement": {
     "rank": 1.0,
-    "name": 0.51,
+    "name": 0.56,
     "guild": 1.0,
     "team": 1.0,
     "weapon1": 1.0,
@@ -3970,18 +4283,21 @@
      ],
      [
       "Keifrr",
-      0.51
+      0.56
      ],
      [
       "Keifrr4",
-      0.49
+      0.44
      ]
     ]
    },
    "flags": [
     "name"
    ],
-   "snapped": true
+   "snapped": "decor",
+   "class": "Warden",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 7,
@@ -4029,7 +4345,10 @@
     ]
    },
    "flags": [],
-   "snapped": true
+   "snapped": "decor",
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -4069,7 +4388,10 @@
     ]
    },
    "flags": [],
-   "snapped": true
+   "snapped": "decor",
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 5,
@@ -4101,7 +4423,10 @@
    },
    "checks": 5,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -4133,7 +4458,10 @@
    },
    "checks": 4,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -4165,7 +4493,10 @@
    },
    "checks": 4,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -4196,8 +4527,19 @@
     "amount_healed": 1.0
    },
    "checks": 3,
-   "alts": {},
-   "flags": []
+   "alts": {
+    "name": [
+     [
+      "Boda",
+      0.0
+     ]
+    ]
+   },
+   "flags": [],
+   "snapped": "decor",
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   }
  ]
 }

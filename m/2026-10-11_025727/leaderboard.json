@@ -12,12 +12,17 @@
    "rows": 96,
    "kills_in_order": true,
    "corrected": 0,
-   "caution": 9,
+   "caution": 10,
    "weapons_fixed": 0,
    "weapons_doubt": 0,
    "missing": 0
   },
-  "zone": "Grayclaw Forest"
+  "zone": "Grayclaw Forest",
+  "class_quality": {
+   "known": 96,
+   "total": 96,
+   "missing": 0
+  }
  },
  "players": [
   {
@@ -61,7 +66,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Predator",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 61,
@@ -114,7 +122,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Scorpion",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 67,
@@ -148,6 +159,10 @@
    "alts": {
     "name": [
      [
+      "ternos",
+      0.0
+     ],
+     [
       "ternos·",
       0.98
      ],
@@ -158,8 +173,12 @@
     ]
    },
    "flags": [],
+   "snapped": "decor",
    "name_scan": "ternos",
-   "confirmed": true
+   "confirmed": true,
+   "class": "Predator",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 67,
@@ -210,7 +229,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Predator",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 68,
@@ -272,9 +294,12 @@
     ]
    },
    "flags": [],
-   "snapped": true,
+   "snapped": "fix",
    "name_scan": "stepbro老",
-   "confirmed": true
+   "confirmed": true,
+   "class": "Ravager",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 70,
@@ -309,11 +334,11 @@
     "name": [
      [
       "August ッ",
-      0.83
+      0.82
      ],
      [
       "August",
-      0.1
+      0.11
      ],
      [
       "Augustッ1",
@@ -321,7 +346,7 @@
      ],
      [
       "August y",
-      0.01
+      0.02
      ]
     ],
     "guild": [
@@ -335,7 +360,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Spellblade",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 70,
@@ -396,7 +424,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Shadowdancer",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 69,
@@ -439,7 +470,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Scorpion",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 70,
@@ -488,7 +522,10 @@
    },
    "flags": [
     "guild_icon"
-   ]
+   ],
+   "class": "Scorpion",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 71,
@@ -509,10 +546,10 @@
     "name": 1.0,
     "guild": 1.0,
     "team": 1.0,
-    "weapon1": 0.91,
+    "weapon1": 0.93,
     "weapon2": 0.99,
-    "guild_icon": 0.65,
-    "defeat": 0.99,
+    "guild_icon": 0.51,
+    "defeat": 1.0,
     "assist": 1.0,
     "damage_dealt": 1.0,
     "damage_taken": 1.0,
@@ -533,15 +570,20 @@
     "guild": [
      [
       "Ping Gap",
-      0.99
+      1.0
      ],
      [
       "SBingjeGa",
-      0.01
+      0.0
      ]
     ]
    },
-   "flags": []
+   "flags": [
+    "guild_icon"
+   ],
+   "class": "Spellblade",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 10,
@@ -573,7 +615,10 @@
    },
    "checks": 10,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Enigma",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 5,
@@ -605,7 +650,10 @@
    },
    "checks": 5,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Spellblade",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 6,
@@ -648,7 +696,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Spellblade",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 5,
@@ -680,7 +731,10 @@
    },
    "checks": 5,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Scorpion",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 5,
@@ -712,7 +766,10 @@
    },
    "checks": 5,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Scorpion",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -730,7 +787,7 @@
    "amount_healed": 0,
    "agreement": {
     "rank": 1.0,
-    "name": 0.84,
+    "name": 0.8,
     "guild": 1.0,
     "team": 1.0,
     "weapon1": 1.0,
@@ -747,15 +804,18 @@
     "name": [
      [
       "dabldoya",
-      0.76
+      0.71
      ],
      [
       "dalNdoya",
-      0.24
+      0.29
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Spellblade",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -787,7 +847,10 @@
    },
    "checks": 4,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Ravager",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -819,7 +882,10 @@
    },
    "checks": 4,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Ravager",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -850,10 +916,21 @@
     "amount_healed": 1.0
    },
    "checks": 3,
-   "alts": {},
+   "alts": {
+    "name": [
+     [
+      "NGH",
+      0.0
+     ]
+    ]
+   },
    "flags": [],
+   "snapped": "fix",
    "name_scan": "NGH",
-   "confirmed": true
+   "confirmed": true,
+   "class": "Ravager",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -871,7 +948,7 @@
    "amount_healed": 18770,
    "agreement": {
     "rank": 1.0,
-    "name": 0.86,
+    "name": 0.82,
     "guild": 1.0,
     "team": 1.0,
     "weapon1": 1.0,
@@ -888,17 +965,20 @@
     "name": [
      [
       "Aero",
-      0.79
+      0.74
      ],
      [
       "AL",
-      0.21
+      0.26
      ]
     ]
    },
    "flags": [
     "damage_dealt"
-   ]
+   ],
+   "class": "Scorpion",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -930,7 +1010,10 @@
    },
    "checks": 4,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Predator",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -962,7 +1045,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Lunarch",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -1005,7 +1091,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Shadowdancer",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -1045,7 +1134,10 @@
     ]
    },
    "flags": [],
-   "snapped": true
+   "snapped": true,
+   "class": "Enigma",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -1063,7 +1155,7 @@
    "amount_healed": 17859,
    "agreement": {
     "rank": 1.0,
-    "name": 0.84,
+    "name": 0.79,
     "guild": 1.0,
     "team": 1.0,
     "weapon1": 1.0,
@@ -1080,15 +1172,18 @@
     "name": [
      [
       "SapirO",
-      0.76
+      0.71
      ],
      [
       "Sa",
-      0.24
+      0.29
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Scout",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -1120,7 +1215,10 @@
    },
    "checks": 4,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Ravager",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -1163,7 +1261,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Scorpion",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -1195,7 +1296,10 @@
    },
    "checks": 4,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Ravager",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -1243,9 +1347,12 @@
     ]
    },
    "flags": [],
-   "snapped": true,
+   "snapped": "fix",
    "name_scan": "hadley",
-   "confirmed": true
+   "confirmed": true,
+   "class": "Ravager",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -1263,7 +1370,7 @@
    "amount_healed": 25673,
    "agreement": {
     "rank": 1.0,
-    "name": 0.82,
+    "name": 0.75,
     "guild": 1.0,
     "team": 1.0,
     "weapon1": 1.0,
@@ -1280,15 +1387,18 @@
     "name": [
      [
       "Cxshew",
-      0.75
+      0.65
      ],
      [
       "Sxshew",
-      0.25
+      0.35
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Spellblade",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -1320,7 +1430,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Mauler",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -1338,11 +1451,11 @@
    "amount_healed": 0,
    "agreement": {
     "rank": 1.0,
-    "name": 0.76,
-    "guild": 0.76,
+    "name": 0.91,
+    "guild": 0.91,
     "team": 1.0,
-    "weapon1": 0.66,
-    "weapon2": 0.66,
+    "weapon1": 0.87,
+    "weapon2": 0.87,
     "guild_icon": 1.0,
     "defeat": 1.0,
     "assist": 1.0,
@@ -1355,25 +1468,28 @@
     "name": [
      [
       "Bound",
-      0.66
+      0.87
      ],
      [
       "Round",
-      0.34
+      0.13
      ]
     ],
     "guild": [
      [
       "Supple On 3",
-      0.67
+      0.87
      ],
      [
       "Sunnle On 3",
-      0.33
+      0.13
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Ravager",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -1405,7 +1521,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Enigma",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -1437,7 +1556,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -1469,7 +1591,10 @@
    },
    "checks": 4,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Warden",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -1501,7 +1626,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Mauler",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -1549,9 +1677,12 @@
     ]
    },
    "flags": [],
-   "snapped": true,
+   "snapped": "fix",
    "name_scan": "miumiu老",
-   "confirmed": true
+   "confirmed": true,
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -1583,7 +1714,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -1626,7 +1760,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -1658,7 +1795,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Ranger",
+   "role": "DPS",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -1698,7 +1838,10 @@
     ]
    },
    "flags": [],
-   "snapped": true
+   "snapped": "lookalike",
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -1730,7 +1873,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -1762,7 +1908,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 1,
@@ -1796,7 +1945,10 @@
    "alts": {},
    "flags": [
     "single read"
-   ]
+   ],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 1,
@@ -1830,7 +1982,10 @@
    "alts": {},
    "flags": [
     "single read"
-   ]
+   ],
+   "class": "Warden",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 1,
@@ -1864,7 +2019,10 @@
    "alts": {},
    "flags": [
     "single read"
-   ]
+   ],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 1,
@@ -1898,7 +2056,10 @@
    "alts": {},
    "flags": [
     "single read"
-   ]
+   ],
+   "class": "Warden",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -1930,7 +2091,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -1962,7 +2126,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -1997,6 +2164,10 @@
     "name": [
      [
       "Tikkit",
+      0.0
+     ],
+     [
+      "Tikkit",
       0.88
      ],
      [
@@ -2006,8 +2177,12 @@
     ]
    },
    "flags": [],
+   "snapped": "fix",
    "name_scan": "Tikkit",
-   "confirmed": true
+   "confirmed": true,
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -2039,12 +2214,15 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
    "rank": 52,
-   "name": "一大",
+   "name": "Benji",
    "guild": "Supple On 3",
    "team": "Red",
    "weapon1": "Sword & Shield",
@@ -2073,7 +2251,7 @@
    "alts": {
     "name": [
      [
-      "一大",
+      "Benji",
       0.67
      ],
      [
@@ -2082,7 +2260,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Juggernaut",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -2114,7 +2295,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -2157,7 +2341,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -2197,9 +2384,12 @@
     ]
    },
    "flags": [],
-   "snapped": true,
+   "snapped": "fix",
    "name_scan": "moncler老",
-   "confirmed": true
+   "confirmed": true,
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -2231,7 +2421,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -2249,7 +2442,7 @@
    "amount_healed": 4581214,
    "agreement": {
     "rank": 1.0,
-    "name": 0.76,
+    "name": 0.67,
     "guild": 1.0,
     "team": 1.0,
     "weapon1": 1.0,
@@ -2266,15 +2459,18 @@
     "name": [
      [
       "xSouless",
-      0.66
+      0.56
      ],
      [
       "Souless",
-      0.34
+      0.44
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -2306,7 +2502,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -2338,7 +2537,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -2370,7 +2572,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -2402,7 +2607,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Paladin",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -2447,7 +2655,10 @@
    },
    "flags": [],
    "name_scan": "Bribrix メ",
-   "confirmed": true
+   "confirmed": true,
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -2465,7 +2676,7 @@
    "amount_healed": 2336202,
    "agreement": {
     "rank": 1.0,
-    "name": 0.47,
+    "name": 0.59,
     "guild": 1.0,
     "team": 1.0,
     "weapon1": 1.0,
@@ -2482,21 +2693,24 @@
     "name": [
      [
       "Roxzor ッ",
-      0.36
-     ],
-     [
-      "Roxzor ツ",
-      0.35
+      0.47
      ],
      [
       "Roxzor",
-      0.3
+      0.39
+     ],
+     [
+      "Roxzor ツ",
+      0.14
      ]
     ]
    },
    "flags": [],
    "name_scan": "Roxzor ッ",
-   "confirmed": true
+   "confirmed": true,
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -2539,7 +2753,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -2571,7 +2788,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -2603,7 +2823,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Warden",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -2646,7 +2869,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -2678,7 +2904,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -2710,7 +2939,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -2742,7 +2974,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -2774,7 +3009,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -2806,7 +3044,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 1,
@@ -2840,7 +3081,10 @@
    "alts": {},
    "flags": [
     "single read"
-   ]
+   ],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -2872,7 +3116,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -2904,7 +3151,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -2936,7 +3186,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -2968,7 +3221,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 1,
@@ -3002,7 +3258,10 @@
    "alts": {},
    "flags": [
     "single read"
-   ]
+   ],
+   "class": "Warden",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -3034,7 +3293,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -3066,7 +3328,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -3098,7 +3363,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -3130,7 +3398,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 1,
@@ -3161,15 +3432,26 @@
     "amount_healed": 1.0
    },
    "checks": 1,
-   "alts": {},
+   "alts": {
+    "name": [
+     [
+      "LARCLAW",
+      0.0
+     ]
+    ]
+   },
    "flags": [],
+   "snapped": "fix",
    "name_scan": "LARCLAW",
-   "confirmed": true
+   "confirmed": true,
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 1,
    "rank": 84,
-   "name": "Voyl",
+   "name": "J",
    "guild": "Supple On 3",
    "team": "Red",
    "weapon1": "Wand & Tome",
@@ -3199,7 +3481,10 @@
    "flags": [
     "single read"
    ],
-   "name_scan": "J"
+   "name_scan": "J",
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -3231,7 +3516,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -3263,7 +3551,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 4,
@@ -3295,7 +3586,10 @@
    },
    "checks": 4,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -3327,7 +3621,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -3362,6 +3659,10 @@
     "name": [
      [
       "ッッッ",
+      0.0
+     ],
+     [
+      "ッッッ",
       0.36
      ],
      [
@@ -3375,8 +3676,12 @@
     ]
    },
    "flags": [],
+   "snapped": "fix",
    "name_scan": "ッッッ",
-   "confirmed": true
+   "confirmed": true,
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -3408,7 +3713,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -3440,7 +3748,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Warden",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -3483,7 +3794,10 @@
      ]
     ]
    },
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -3515,7 +3829,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Seeker",
+   "role": "Support",
+   "class_status": "weapons"
   },
   {
    "seen": 3,
@@ -3547,7 +3864,10 @@
    },
    "checks": 3,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Crusader",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -3579,7 +3899,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Warden",
+   "role": "Tank",
+   "class_status": "weapons"
   },
   {
    "seen": 2,
@@ -3611,7 +3934,10 @@
    },
    "checks": 2,
    "alts": {},
-   "flags": []
+   "flags": [],
+   "class": "Oracle",
+   "role": "Support",
+   "class_status": "weapons"
   }
  ]
 }

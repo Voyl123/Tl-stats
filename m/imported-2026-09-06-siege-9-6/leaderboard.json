@@ -13,7 +13,12 @@
    "tab": "Siege 9/6"
   },
   "inhouse": false,
-  "siege": true
+  "siege": true,
+  "class_quality": {
+   "known": 0,
+   "total": 54,
+   "missing": 54
+  }
  },
  "players": [
   {
@@ -28,7 +33,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 2,
@@ -42,7 +50,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 3,
@@ -56,7 +67,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 4,
@@ -70,7 +84,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 5,
@@ -84,7 +101,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 6,
@@ -98,7 +118,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 7,
@@ -112,7 +135,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 8,
@@ -126,7 +152,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 9,
@@ -140,7 +169,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 10,
@@ -154,7 +186,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 11,
@@ -168,7 +203,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 12,
@@ -182,7 +220,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 13,
@@ -196,7 +237,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 14,
@@ -210,7 +254,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 15,
@@ -224,7 +271,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 16,
@@ -238,7 +288,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 17,
@@ -252,7 +305,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 18,
@@ -266,7 +322,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 19,
@@ -280,7 +339,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 20,
@@ -294,7 +356,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 21,
@@ -308,7 +373,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 22,
@@ -322,7 +390,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 23,
@@ -336,7 +407,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 24,
@@ -350,7 +424,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 25,
@@ -364,7 +441,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 26,
@@ -378,7 +458,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 27,
@@ -392,7 +475,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 28,
@@ -406,11 +492,14 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 29,
-   "name": "Voyl",
+   "name": "Griefer",
    "guild": "",
    "team": "",
    "weapon1": "",
@@ -420,7 +509,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 30,
@@ -434,7 +526,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 31,
@@ -448,7 +543,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 32,
@@ -462,7 +560,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 33,
@@ -476,7 +577,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 34,
@@ -490,7 +594,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 35,
@@ -504,7 +611,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 36,
@@ -518,7 +628,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 37,
@@ -532,7 +645,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 38,
@@ -546,7 +662,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 39,
@@ -560,7 +679,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 40,
@@ -574,7 +696,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 41,
@@ -588,7 +713,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 42,
@@ -602,7 +730,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 43,
@@ -616,7 +747,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 44,
@@ -630,7 +764,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 45,
@@ -644,7 +781,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 46,
@@ -658,7 +798,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 47,
@@ -672,7 +815,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 48,
@@ -686,7 +832,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 49,
@@ -700,7 +849,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 50,
@@ -714,7 +866,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 51,
@@ -728,7 +883,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 52,
@@ -742,7 +900,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 53,
@@ -756,7 +917,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   },
   {
    "rank": 54,
@@ -770,7 +934,10 @@
    "damage_dealt": null,
    "damage_taken": null,
    "amount_healed": null,
-   "flags": []
+   "flags": [],
+   "class": "",
+   "role": "",
+   "class_status": "not_recorded"
   }
  ]
 }
